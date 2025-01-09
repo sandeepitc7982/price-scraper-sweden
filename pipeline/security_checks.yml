@@ -1,0 +1,217 @@
+
+trigger:
+- none
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+- template: ./global_variables.yml
+
+stages:
+
+- stage: SecretScanner_scan
+  ############################
+  ##                        ##
+  ##     secret scanner     ## 
+  ##                        ##
+  ############################
+  displayName: Run secret scanner 
+  # Documentation:
+  # https://git.daimler.com/secret-scanner/secret-scanner-public/blob/master/secret-scanner-doc/src/docs/asciidoc/documents/techdoc/06_faq.adoc#how-can-i-reduce-the-amount-of-false-positives
+  jobs:
+    - job: SecretScanner
+      displayName: 'SecretScanner - Check for credentials within repo'
+      steps:
+        - task: AzureKeyVault@2
+          inputs:
+            azureSubscription: ${{ variables.serviceConnection }}
+            KeyVaultName: ${{ variables.azureKeyVault }}
+            SecretsFilter: ${{ variables.secretScannerPIDTokenSecret }}
+            RunAsPreJob: false
+        - script: |
+            cd $TMPDIR; curl -sL -H "Authorization: token $(${{ variables.secretScannerPIDTokenSecret }})" -H "Accept: application/json"  ${{ variables.secretScannerGithubApiEndpoint }}/repos/${{ variables.secretScannerGithubProject }}/${{ variables.secretScannerGitehubRepo }}/releases/latest \
+              | echo $(jq '.assets[0].url') \
+              | xargs -n1 curl -sL --header "Authorization: token $(${{ variables.secretScannerPIDTokenSecret }})" -H "Accept: application/octet-stream" > ./${{ variables.secretScannerFile }} && echo "Finished downloading"
+          displayName: 'download scanner uses double quotes'
+        - script: cd $TMPDIR; unzip -o ./${{ variables.secretScannerFile }} -d ./secretscan_dist
+          displayName: 'unzip scanner'
+        - script: cd $TMPDIR; cd ./secretscan_dist; ./secretscan --session-clean --mode ${{ variables.secretScannerMode }} -p $(System.DefaultWorkingDirectory) -r $(System.DefaultWorkingDirectory)${{ variables.secretScannerConfigPath }} -f --false-positives-file $(System.DefaultWorkingDirectory)${{ variables.secretScannerFalsePositveConfigPath }}
+          displayName: 'run scan'
+        - task: PublishPipelineArtifact@1
+          inputs:
+            targetPath: '/home/vsts/secretscan_dist/scan/secret-scan-session.json'
+            artifactName: 'Secret-Scanner-Result'
+
+        - script: |
+            cd $TMPDIR && if cat ./secretscan_dist/scan/secret-scan-session.json | jq -e '.done[].findings[] | select(.reliability >= ${{ variables.secretScannerCriticalReliability }})'; \
+            then echo "##vso[task.logissue type=warning] WARN SecretScanner found at least 1 finding with a reliability >= ${{ variables.secretScannerCriticalReliability }} percent. Check the findings above."; \
+            else echo "SecretScanner didn't find any reliabilites >= ${{ variables.secretScannerCriticalReliability }} percent." && exit 0; fi;
+          displayName: check result uses double quotes
+
+
+# Please add correct Sechub secrets to keyvault and add them here 
+
+# - stage: Sechub_scan
+#   displayName: Run Sechub scanner
+#   jobs:
+#     - job: SecHub
+#       timeoutInMinutes: 15
+#       displayName: 'SecHub - Check for vulnerabilities within repo'
+#       steps:
+#         - task: AzureKeyVault@1
+#           inputs:
+#             azureSubscription: ${{ variables.serviceConnection }}
+#             KeyVaultName: ${{ variables.azureKeyVault }}
+#             SecretsFilter: 'sechub-user,sechub-apitoken'
+#             RunAsPreJob: false
+#         - script: |
+#             rm -rf $(System.DefaultWorkingDirectory)/../sechub
+#             mkdir $(System.DefaultWorkingDirectory)/../sechub
+#             cd $(System.DefaultWorkingDirectory)/../sechub
+#             curl -L -o sechub-cli.zip ${{ variables.secHubScannerGit }}
+#           displayName: 'download sechub zip file'
+#         - script: |
+#             cd $(System.DefaultWorkingDirectory)/../sechub
+#             unzip sechub-cli.zip
+#           displayName: 'unzip sechub zip file'
+#         - script: |
+#             cd $(System.DefaultWorkingDirectory)/../sechub/platform/linux-amd64
+#             echo '{' > sechub.json
+#             echo '  "apiVersion": "${{ variables.secHubApiVersion }}",' >> sechub.json
+#             echo '  "project": "${{ variables.secHubProject }}",' >> sechub.json
+#             echo '  "codeScan": {' >> sechub.json
+#             echo '    "fileSystem": {' >> sechub.json
+#             echo '      "folders": ["$(System.DefaultWorkingDirectory)/"]' >> sechub.json
+#             echo '    }' >> sechub.json
+#             echo '  }' >> sechub.json
+#             echo '}' >> sechub.json
+#             cat sechub.json
+#           displayName: 'create sechub config file uses double quotes'
+#         - script: |
+#             cd $(System.DefaultWorkingDirectory)/../sechub/platform/linux-amd64
+#             export SECHUB_USERID=$(sechub-user)
+#             export SECHUB_APITOKEN=$(sechub-apitoken)
+#             export SECHUB_SERVER=${{ variables.secHubServer }}
+#             #./sechub -reportformat html -stop-on-yellow scan
+#             #mv *.html result.html
+#             ./sechub -reportformat json -stop-on-yellow scan
+#             mv sechub_report*.json result.json
+#           displayName: 'execute scan'
+#         - task: PublishPipelineArtifact@1
+#           inputs:
+#             targetPath: $(System.DefaultWorkingDirectory)/../sechub/platform/linux-amd64/result.json
+#             artifactName: 'SecHub-Result'
+- stage: Blackduck_scan
+  ############################
+  ##                        ##
+  ##   Blackduck scanner    ## 
+  ##                        ##
+  ############################
+  displayName: Blackduck Scan
+  jobs:
+    - job: install_and_exec_pipreqs_exec_bdscan
+      displayName: 'Install and run pipreqs, run Black Duck scan'
+      steps:
+        - task: usePythonVersion@0
+          inputs:
+            versionSpec: ${{ variables.defaultPythonVersion }}
+          displayName: 'Use Python in Databricks Version'
+
+        - bash: 'pip3 install --upgrade pip'
+          displayName: 'install upgrade pip3'
+
+        - bash: 'pip install pipreqs'
+          displayName: 'install pipreqs'
+
+        # - bash: 'mkdir $(System.DefaultWorkingDirectory)/requirements'
+        #   displayName: 'create folder reqs for requirement.txt'
+
+        - bash: 'mkdir $(System.DefaultWorkingDirectory)/libs'
+          displayName: 'create folder libs for transitive lib installation'
+
+        - bash: 'sudo apt install python3-testresources'
+          displayName: 'install testresources'
+
+        - bash: 'pipreqs $(System.DefaultWorkingDirectory)/databricks --savepath $(System.DefaultWorkingDirectory)/pipeline/requirements/pipreqs.txt --ignore $(System.DefaultWorkingDirectory)/databricks/templates/ --encoding=iso-8859-1'
+          displayName: 'create requirement.txt with transitive libs with pipreqs'
+
+        # Exported into git repo file requirements.txt
+        # - bash: |
+        #     cd $(System.DefaultWorkingDirectory)/requirements/
+        #     echo 'delta_spark==1.0.0' > req.txt
+        #     echo 'numpy==1.19.2' >> req.txt
+        #     echo 'openpyxl==3.0.9' >> req.txt
+        #     echo 'pandas==1.2.4' >> req.txt
+        #     echo 'pyspark==3.2.1' >> req.txt
+        #     echo 'python_dateutil==2.8.1' >> req.txt
+        #     echo 'requests==2.25.1' >> req.txt
+        #     echo 'great_expectations==0.15.2' >> req.txt 
+        #   displayName: 'Generate req.txt'
+
+        - bash: |
+            cd $(System.DefaultWorkingDirectory)/pipeline/requirements
+            echo "##[section]File "pipreqs.txt
+            cat pipreqs.txt
+            echo "##[section]File "requirements.txt
+            cat requirements.txt
+            # cut line behind first = removes lines starting with # and empty lines
+            cat "pipreqs.txt" | sed -e "s/\=.*//" | sed -e "s/^#.*$//g" | sed -e "s/\s*$//g" | sed -e "/\S/!d" | while read LINE; do
+              grep -q "${LINE}" "requirements.txt"
+              if [ $? -ne 0 ]
+                  then
+                      echo "##vso[task.logissue type=warning] WARN dependcies need to be checked. The libary ${LINE} is not listed in requirements.txt."
+                      #exit 1
+                      echo ${LINE} >> requirements-conflict.txt
+              fi
+            done
+          displayName: 'check if pipreqs contains libs that are not listed in requirements.txt'
+
+        - bash: |
+            cat $(System.DefaultWorkingDirectory)/pipeline/requirements/requirements.txt $(System.DefaultWorkingDirectory)/pipeline/requirements/requirements-conflict.txt | sort -u > $(System.DefaultWorkingDirectory)/pipeline/requirements/requirements-all.txt
+            echo "##[section]File "requirements-all.txt
+            cat $(System.DefaultWorkingDirectory)/pipeline/requirements/requirements-all.txt
+          displayName: 'show transitive libs'
+
+        - bash: |
+            set -e
+            pip3 install -r $(System.DefaultWorkingDirectory)/pipeline/requirements/requirements-all.txt -t $(System.DefaultWorkingDirectory)/libs 
+          displayName: 'Install Requirements'
+
+        - bash: ls $(System.DefaultWorkingDirectory)/libs
+          displayName: 'show content of libs folder'
+
+        - bash: rm -rf /home/vsts/blackduck/runs/*
+          displayName: 'clean run dir'       
+        - task: SynopsysDetectTask@7
+          inputs:
+            BlackDuckService: 'PriceScraper'
+            DetectArguments: |
+              --detect.project.name="PriceScraper"
+              --detect.project.version.name="$(BlackDuckAPIVersion)"
+              --detect.project.description="$(Build.SourceVersion): $(Build.SourceVersionMessage)"
+              --detect.source.path="$(System.DefaultWorkingDirectory)"
+              --detect.blackduck.signature.scanner.exclusion.name.patterns="jars"
+              --detect.timeout="3600"
+              --blackduck.offline.mode="false"
+              --detect.cleanup="false"
+              --detect.policy.check.fail.on.severities="$(BlackDuck-SeverityLevel)"
+            DetectVersion: 'latest'
+        
+        - script: |
+            echo PRE STEP FOR PUBLISH REPORT
+            cat /home/vsts/blackduck/runs/*/status/status.json
+            mv /home/vsts/blackduck/runs/*/status/status.json /home/vsts/blackduck/runs/BlackDuck_Report.json
+            echo ==============================================================================
+
+        - task: PublishPipelineArtifact@1
+          inputs:
+            targetPath: '/home/vsts/blackduck/runs/BlackDuck_Report.json'
+            artifactName: 'Black Duck Result'
+
+        - task: PublishPipelineArtifact@1
+          inputs:
+            targetPath: '$(System.DefaultWorkingDirectory)/pipeline/requirements/'
+            artifact: 'Requirements'
+            publishLocation: 'pipeline'
+

@@ -1,0 +1,19 @@
+{
+  "environment": "Production",
+  "output": {
+    "directory": "data/",
+    "prices_filename": "prices_with_mercedes_types",
+    "differences_filename": "changelog",
+    "file_type": "avro"
+  },
+    "scraper": {
+    "enabled": {
+      "mercedes_benz": [
+        "UK"
+      ]
+    }
+  },
+  "feature_toggle": {
+    "is_type_hierarchy_enabled_MB": true
+  }
+}

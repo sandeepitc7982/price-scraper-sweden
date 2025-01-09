@@ -1,0 +1,6 @@
+delta==0.4.1
+flake8==3.9.1
+great_expectations==0.15.2
+pep8-naming==0.12.1
+pycodestyle_magic==0.5
+pyspark==3.2.1

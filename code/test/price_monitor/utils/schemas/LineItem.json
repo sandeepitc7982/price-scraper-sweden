@@ -1,0 +1,208 @@
+{
+  "type": "record",
+  "name": "LineItem",
+  "fields": [
+    {
+      "name": "recorded_at",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "vendor",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Vendor",
+          "symbols": [
+            "bmw",
+            "tesla",
+            "audi",
+            "mercedes_benz"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "series",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_range_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_range_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "line_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "line_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "line_option_codes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "LineItemOptionCode",
+            "fields": [
+              {
+                "name": "code",
+                "type": "string"
+              },
+              {
+                "name": "description",
+                "type": "string"
+              },
+              {
+                "name": "type",
+                "type": "string"
+              },
+              {
+                "name": "included",
+                "type": "boolean"
+              },
+              {
+                "name": "net_list_price",
+                "type": "double",
+                "default": 0
+              },
+              {
+                "name": "gross_list_price",
+                "type": "double",
+                "default": 0
+              },
+              {
+                "name": "predicted_category",
+                "type": "string",
+                "default": ""
+              }
+            ]
+          },
+          "name": "line_option_code"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "currency",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "net_list_price",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "gross_list_price",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "on_the_road_price",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "market",
+      "type": {
+        "type": "enum",
+        "name": "Market",
+        "symbols": [
+          "DE",
+          "FR",
+          "AU",
+          "AT",
+          "NL",
+          "US",
+          "UK",
+          "SE"
+        ]
+      },
+      "default": "UK"
+    },
+    {
+      "name": "engine_performance_kw",
+      "type": "string",
+      "default": "NA"
+    },
+    {
+      "name": "engine_performance_hp",
+      "type": "string",
+      "default": "NA"
+    },
+    {
+      "name": "last_scraped_on",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "is_current",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "data": {
+    "configuration": {
+      "prString": "F5PS5A0_2023|T9T9|EI",
+      "carline": { "id": "s5coupe", "__typename": "Carline" },
+      "availableOptions": [
+        {
+          "id": "04A",
+          "mbvId": "MAGS04A",
+          "itemType": "equipment",
+          "name": "Basis",
+          "tyreLabels": null,
+          "__typename": "Option"
+        },
+        {
+          "id": "0E0E",
+          "mbvId": "F14 0E0E",
+          "itemType": "exteriorColor",
+          "name": "Mythosschwarz \nMetallic",
+          "tyreLabels": null,
+          "__typename": "Option"
+        },
+        {
+          "id": "0K4",
+          "mbvId": "MASY0K4",
+          "itemType": "equipment",
+          "name": "Mild-Hybrid",
+          "tyreLabels": null,
+          "__typename": "Option"
+        },
+        {
+          "id": "0M2",
+          "mbvId": "MKBV0M2",
+          "itemType": "equipment",
+          "name": "Kraftstoffbehälter mit erhöhtem Füllvolumen (quattro)",
+          "tyreLabels": null,
+          "__typename": "Option"
+        }
+      ],
+      "__typename": "Configuration"
+    }
+  }
+}

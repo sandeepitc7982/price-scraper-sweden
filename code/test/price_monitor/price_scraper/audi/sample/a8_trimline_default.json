@@ -1,0 +1,287 @@
+{
+    "configuration": {
+        "assets": {
+            "exterior": {
+                "flyout": "/live/50000/nmfc/4nc04a-0-asgeb3/2023/14+f4f4/56+wh/aaue0a/aed7iv/aer0p0/agm4bi/ahv1d0/aib4uf/appgs4/ase6xl/asgeb3/asl5sl/asr6ts/asy0k4/aud9wc/ausa8s/bah1kf/batj2d/bav1lj/bbo6fb/bdhqf0/bhf2l0/blbb0a/btr9z0/cdw7a0/cpcje3/cpdiw3/ctxgw0/dae1bk/dei3fa/dekgt0/dfo6f0/dls3x0/eih5mc/eilvt0/eph7x2/esi7w1/essuf7/estgz0/feu6a0/fhwvf0/fls8k4/fri2v5/fvs7g0/fzsf0a/gef9r0/gksep0/gmot2p/gps6m0/gra8t8/grtvc0/gspg1g/heb6v1/hgd5n1/hia0n1/him6nj/his3nd/hka9ak/hsw8iu/hudks0/insu5a/kark8b/kbx1w2/klt1u0/kms4d0/koh3q1/krs0f3/ksa5c0/ksuka2/kzv6w6/lcpqq1/lddnj0/ldgfu0/ldoes0/leal0l/lel8s9/lia8g5/lor7p1/lra2zq/lrvav1/lse9vd/lum7ha/mas6e1/mdsfm0/mfa9s8/mik3d1/mku8z5/moaix2/motdv8/nav7ug/nnnfz1/pamgp1/pgaft0/radcd3/raoi8z/rau9ja/rcoer1/reih18/rer1g8/sab4x4/sag6q2/sbr8sc/scrfk2/sctql1/sdh4e7/sfs2k1/sfz2f0/sgk9p9/sibn5e/sie3pn/sih4a4/siz0lw/sna7l8/son5xc/spu7y0/srh6i6/ssh4kc/ssr3y8/sttgj0/swr8x1/swz9pa/tkv4f2/tpg9b0/tplb01/trf5d1/tveqv3/twl1vh/twu1sa/typ1ex/tyz2z8/vbk1t3/vosq1a/vtv9ze/wal9ta/wss4gf/zabqw0/zbr2wa/zfm0td/zie4zb/zkv3b4/zss0rz/ztrvh2/zuh9m0.png"
+            },
+            "exterior_front": {
+                "carstore.new": "/live/50000/n5c01/4nc04a-0-asgeb3/2023/14+f4f4/56+wh/aaue0a/aed7iv/aer0p0/agm4bi/ahv1d0/aib4uf/appgs4/ase6xl/asgeb3/asl5sl/asr6ts/asy0k4/aud9wc/ausa8s/bah1kf/batj2d/bav1lj/bbo6fb/bdhqf0/bhf2l0/blbb0a/btr9z0/cdw7a0/cpcje3/cpdiw3/ctxgw0/dae1bk/dei3fa/dekgt0/dfo6f0/dls3x0/eih5mc/eilvt0/eph7x2/esi7w1/essuf7/estgz0/feu6a0/fhwvf0/fls8k4/fri2v5/fvs7g0/fzsf0a/gef9r0/gksep0/gmot2p/gps6m0/gra8t8/grtvc0/gspg1g/heb6v1/hgd5n1/hia0n1/him6nj/his3nd/hka9ak/hsw8iu/hudks0/insu5a/kark8b/kbx1w2/klt1u0/kms4d0/koh3q1/krs0f3/ksa5c0/ksuka2/kzv6w6/lcpqq1/lddnj0/ldgfu0/ldoes0/leal0l/lel8s9/lia8g5/lor7p1/lra2zq/lrvav1/lse9vd/lum7ha/mas6e1/mdsfm0/mfa9s8/mik3d1/mku8z5/moaix2/motdv8/nav7ug/nnnfz1/pamgp1/pgaft0/radcd3/raoi8z/rau9ja/rcoer1/reih18/rer1g8/sab4x4/sag6q2/sbr8sc/scrfk2/sctql1/sdh4e7/sfs2k1/sfz2f0/sgk9p9/sibn5e/sie3pn/sih4a4/siz0lw/sna7l8/son5xc/spu7y0/srh6i6/ssh4kc/ssr3y8/sttgj0/swr8x1/swz9pa/tkv4f2/tpg9b0/tplb01/trf5d1/tveqv3/twl1vh/twu1sa/typ1ex/tyz2z8/vbk1t3/vosq1a/vtv9ze/wal9ta/wss4gf/zabqw0/zbr2wa/zfm0td/zie4zb/zkv3b4/zss0rz/ztrvh2/zuh9m0.jpeg",
+                "compare.new": "/live/50000/n8c01/4nc04a-0-asgeb3/2023/14+f4f4/56+wh/aaue0a/aed7iv/aer0p0/agm4bi/ahv1d0/aib4uf/appgs4/ase6xl/asgeb3/asl5sl/asr6ts/asy0k4/aud9wc/ausa8s/bah1kf/batj2d/bav1lj/bbo6fb/bdhqf0/bhf2l0/blbb0a/btr9z0/cdw7a0/cpcje3/cpdiw3/ctxgw0/dae1bk/dei3fa/dekgt0/dfo6f0/dls3x0/eih5mc/eilvt0/eph7x2/esi7w1/essuf7/estgz0/feu6a0/fhwvf0/fls8k4/fri2v5/fvs7g0/fzsf0a/gef9r0/gksep0/gmot2p/gps6m0/gra8t8/grtvc0/gspg1g/heb6v1/hgd5n1/hia0n1/him6nj/his3nd/hka9ak/hsw8iu/hudks0/insu5a/kark8b/kbx1w2/klt1u0/kms4d0/koh3q1/krs0f3/ksa5c0/ksuka2/kzv6w6/lcpqq1/lddnj0/ldgfu0/ldoes0/leal0l/lel8s9/lia8g5/lor7p1/lra2zq/lrvav1/lse9vd/lum7ha/mas6e1/mdsfm0/mfa9s8/mik3d1/mku8z5/moaix2/motdv8/nav7ug/nnnfz1/pamgp1/pgaft0/radcd3/raoi8z/rau9ja/rcoer1/reih18/rer1g8/sab4x4/sag6q2/sbr8sc/scrfk2/sctql1/sdh4e7/sfs2k1/sfz2f0/sgk9p9/sibn5e/sie3pn/sih4a4/siz0lw/sna7l8/son5xc/spu7y0/srh6i6/ssh4kc/ssr3y8/sttgj0/swr8x1/swz9pa/tkv4f2/tpg9b0/tplb01/trf5d1/tveqv3/twl1vh/twu1sa/typ1ex/tyz2z8/vbk1t3/vosq1a/vtv9ze/wal9ta/wss4gf/zabqw0/zbr2wa/zfm0td/zie4zb/zkv3b4/zss0rz/ztrvh2/zuh9m0.png",
+                "layerstage.new": "/live/50000/n2c01/4nc04a-0-asgeb3/2023/14+f4f4/56+wh/aaue0a/aed7iv/aer0p0/agm4bi/ahv1d0/aib4uf/appgs4/ase6xl/asgeb3/asl5sl/asr6ts/asy0k4/aud9wc/ausa8s/bah1kf/batj2d/bav1lj/bbo6fb/bdhqf0/bhf2l0/blbb0a/btr9z0/cdw7a0/cpcje3/cpdiw3/ctxgw0/dae1bk/dei3fa/dekgt0/dfo6f0/dls3x0/eih5mc/eilvt0/eph7x2/esi7w1/essuf7/estgz0/feu6a0/fhwvf0/fls8k4/fri2v5/fvs7g0/fzsf0a/gef9r0/gksep0/gmot2p/gps6m0/gra8t8/grtvc0/gspg1g/heb6v1/hgd5n1/hia0n1/him6nj/his3nd/hka9ak/hsw8iu/hudks0/insu5a/kark8b/kbx1w2/klt1u0/kms4d0/koh3q1/krs0f3/ksa5c0/ksuka2/kzv6w6/lcpqq1/lddnj0/ldgfu0/ldoes0/leal0l/lel8s9/lia8g5/lor7p1/lra2zq/lrvav1/lse9vd/lum7ha/mas6e1/mdsfm0/mfa9s8/mik3d1/mku8z5/moaix2/motdv8/nav7ug/nnnfz1/pamgp1/pgaft0/radcd3/raoi8z/rau9ja/rcoer1/reih18/rer1g8/sab4x4/sag6q2/sbr8sc/scrfk2/sctql1/sdh4e7/sfs2k1/sfz2f0/sgk9p9/sibn5e/sie3pn/sih4a4/siz0lw/sna7l8/son5xc/spu7y0/srh6i6/ssh4kc/ssr3y8/sttgj0/swr8x1/swz9pa/tkv4f2/tpg9b0/tplb01/trf5d1/tveqv3/twl1vh/twu1sa/typ1ex/tyz2z8/vbk1t3/vosq1a/vtv9ze/wal9ta/wss4gf/zabqw0/zbr2wa/zfm0td/zie4zb/zkv3b4/zss0rz/ztrvh2/zuh9m0.jpeg"
+            },
+            "interior": {
+                "fullscreen.new": "/live/50000/n4n05/4nc04a-0-asgeb3/2023/14+f4f4/56+wh/aaue0a/aed7iv/aer0p0/agm4bi/ahv1d0/aib4uf/appgs4/ase6xl/asgeb3/asl5sl/asr6ts/asy0k4/aud9wc/ausa8s/bbo6fb/bdhqf0/bhf2l0/blbb0a/btr9z0/cdw7a0/cpcje3/cpdiw3/ctxgw0/dae1bk/dei3fa/dekgt0/dfo6f0/dls3x0/edw7al/eih5mc/eilvt0/eph7x2/esi7w1/essuf7/estgz0/feu6a0/fhwvf0/fri2v5/fvs7g0/fzsf0a/gef9r0/gksep0/gmot2p/gps6m0/gra8t8/grtvc0/gspg1g/heb6v1/hgd5n1/hia0n1/him6nj/his3nd/hka9ak/hsw8iu/hudks0/insu5a/kark8b/kbx1w2/klt1u0/klz0y1/kms4d0/koh3q1/krs0f3/ksa5c0/ksuka2/kzv6w6/lcpqq1/lddnj0/ldgfu0/ldoes0/leal0l/lel8s9/lia8g5/lkaev0/lkb73a/lor7p1/lra2zq/lrvav1/lse9vd/lum7ha/mas6e1/mdsfm0/mfa9s8/mik3d1/mku8z5/moaix2/motdv8/nav7ug/nnnfz1/pamgp1/pgaft0/radcd3/raoi8z/rau9ja/rcoer1/rer1g8/sab4x4/sag6q2/sbr8sc/scrfk2/sctql1/sdh4e7/sfs2k1/sfz2f0/sgk9p9/sibn5e/sie3pn/sih4a4/siz0lw/sna7l8/son5xc/spu7y0/srh6i6/ssh4kc/ssr3y8/sttgj0/swr8x1/swz9pa/tkv4f2/tpg9b0/tplb01/trf5d1/tveqv3/twl1vh/typ1ex/tyz2z8/vbk1t3/vosq1a/vtv9ze/wal9ta/wss4gf/zabqw0/zfm0td/zie4zb/zkv3b4/zss0rz/ztrvh2/zuh9m0.jpeg"
+            }
+        },
+        "ave": "a8,4NC04A,2023,F4F4,WH,E0A,1PR,7IV,0P0,4BI,1D0,4UF,GS4,6XL,EB3,5SL,GM0,6TS,0K4,9WC,A8S,6K8,1KF,J2D,1LJ,6FB,QF0,2L0,B0A,1S2,0VC,9Z0,7A0,C31,IT3,IU0,JE3,IW3,GW0,1BK,3FA,GT0,6F0,3X0,7AL,5MC,VT0,7X2,7W1,UF7,GZ0,6A0,VL1,VF0,8K4,2V5,7G0,F0A,9R0,9G8,0YF,EP0,0JH,T2P,6M0,8T8,VC0,G1G,6Y0,GH1,6V1,A51,5N1,0N1,6NJ,3ND,9AK,8IU,KS0,U5A,K8B,0M1,1W2,1U0,0Y1,QR9,4D0,3Q1,GB1,1Z2,A60,0F3,5C0,KA2,KK3,6W6,5K5,QQ1,NJ0,FU0,ES0,L0L,8S9,8G5,EV0,73A,76A,EH0,7P1,2ZQ,AV1,9VD,7HA,6E1,FM0,9S8,3D1,8Z5,IX2,DV8,7UG,78A,FZ1,GP1,FT0,FQ0,AQ0,CD3,I8Z,9JA,ER1,7K1,H18,V0A,1G8,4X4,6Q2,A00,2KR,8SC,FK2,QL1,4E7,QI6,2K1,2F0,9P9,N5E,3PN,4A4,0LW,JX0,7L8,8Y1,5XC,7Y0,6I6,4KC,3Y8,GJ0,FA0,8X1,9PA,4F2,9B0,B01,5D1,NT0,QV3,1VH,1SA,1EX,2Z8,1T3,GA0,Q1A,9ZE,9TA,EW0,7E6,4GF,QW0,2WA,0TD,4ZB,3B4,0RZ,VH2,9M0",
+        "carline": "a8",
+        "carlineName": "A8",
+        "description": "50 TDI quattro tiptronic",
+        "eec": {
+            "canonical-source": "NEDC_FALLBACK_WLTP",
+            "co2emission": "170 g/km",
+            "consumption": "6,5 l/100km",
+            "consumptioninner": "8,6 l/100km",
+            "consumptionouter": "5,2 l/100km",
+            "efficiency": "B",
+            "efficiency-images": {
+                "eec_image": "https://mediaservice.audi.com/media/b2c/v6-common/img-HEAD.zip/v6/new_eec/eec-label-b.png",
+                "eec_image_small": "https://mediaservice.audi.com/media/b2c/v6-common/img-HEAD.zip/v6/new_eec/eec-label-b-small.png"
+            },
+            "energycost": "1.943&nbsp;EUR",
+            "wltp-status": "wltp",
+            "yearlytaxcost": "504&nbsp;EUR"
+        },
+        "extColorCode": {
+            "backgroundColor": "#1B2227",
+            "selected": "F4",
+            "textColor": "white"
+        },
+        "financeParameterList": [
+            {
+                "id": "Duration",
+                "name": "Laufzeit",
+                "relevant": true,
+                "text": "36",
+                "textAndUnit": "36 Monate",
+                "unit": "Monate",
+                "value": "36"
+            },
+            {
+                "id": "Mileage",
+                "name": "Jährliche Fahrleistung",
+                "relevant": true,
+                "text": "10.000",
+                "textAndUnit": "10.000 km",
+                "unit": "km",
+                "unitSymbol": "km",
+                "value": "10000"
+            },
+            {
+                "id": "DownPayment",
+                "name": "Sonderzahlung",
+                "relevant": true,
+                "text": "20.202,00",
+                "textAndUnit": "20.202,00 €",
+                "unit": "EUR",
+                "unitSymbol": "€",
+                "value": "20202"
+            },
+            {
+                "id": "LRV",
+                "name": "Leasingratenversicherung",
+                "relevant": true,
+                "text": "keine",
+                "textAndUnit": "keine",
+                "value": "NONE"
+            },
+            {
+                "id": "Rate",
+                "name": "36 monatliche Leasingraten à",
+                "relevant": false,
+                "text": "700,00",
+                "textAndUnit": "700,00 €",
+                "unit": "EUR",
+                "unitSymbol": "€",
+                "value": "700"
+            },
+            {
+                "id": "AudiServices_New",
+                "name": "Service Pakete",
+                "relevant": true,
+                "text": "keine",
+                "textAndUnit": "keine",
+                "value": "NONE"
+            }
+        ],
+        "financeParameters": "Laufzeit: 36 Monate, Jährliche Fahrleistung: 10.000 km, Sonderzahlung: 20.202,00 €, Leasingratenversicherung: keine, 36 monatliche Leasingraten à: 700,00 €, Service Pakete: keine (mit PrivatLeasing)",
+        "financeProductDisclaimer": "Die Höhe der monatlichen Rate ist abhängig von Sonderzahlung, jährlicher Fahrleistung und Laufzeit sowie ggf. ausgewählten Dienstleistungen.",
+        "financeProductId": "PL",
+        "financeProductName": "PrivatLeasing",
+        "financeSummaryDisclaimer": "Ein unverbindliches Leasingangebot der Audi Leasing, Zweigniederlassung der Volkswagen Leasing GmbH, Gifhorner Str. 57, 38112 Braunschweig. Das Angebot richtet sich an Einzelabnehmer. Die Berechnung basiert auf derzeit gültigen Konditionen. Für ein individuelles Angebot wenden Sie sich bitte an Ihren Audi Partner. Angebot nur gültig bei teilnehmenden Händlern. ",
+        "items": [
+            "F4F4",
+            "WH",
+            "4NC04A0EB3_2023"
+        ],
+        "mbv-ids": {
+            "exteriorColor": "F14 F4F4",
+            "interiorColor": "F56     WH",
+            "model": "4NC04A\\0\\MASGEB3",
+            "modelyear": "2023",
+            "prstring": "51003\\2023|4NC04A\\0\\MASGEB3|F14 F4F4|F56     WH",
+            "salesgroup": "51003"
+        },
+        "model": "4NC04A0EB3_2023",
+        "modelPrice": "99.900,00 EUR",
+        "modelyear": "2023",
+        "optionsPrice": "1.110,00 EUR",
+        "price": "101.010,00 EUR",
+        "prices": {
+            "financeableTotal": "101.010,00 EUR",
+            "financeableTotalRaw": 101010.0,
+            "model": "99.900,00 EUR",
+            "modelRaw": 99900.0,
+            "nonFinanceableTotal": "0,00 EUR",
+            "nonFinanceableTotalRaw": 0.0,
+            "options": "1.110,00 EUR",
+            "optionsRaw": 1110.0,
+            "total": "101.010,00 EUR",
+            "totalRate": "700,00 EUR",
+            "totalRateRaw": 700.0,
+            "totalRaw": 101010.0,
+            "rotr": "70,715.00 GBP",
+            "rotrRaw": 70715.0
+        },
+        "prstring": "4NC04A0EB3_2023|F4F4|WH",
+        "rate": "700,00 EUR",
+        "rawModelPrice": 99900.0,
+        "rawOptionsPrice": 1110.0,
+        "rawPrice": 101010.0,
+        "showWltpWarning": false,
+        "stock-car-attrs": {
+            "attrs": [
+                "CARLINE.51003\\2023",
+                "TRIMLINE.tl_notrimline",
+                "air-condition-type.automatic",
+                "airbag-type.side-airbags-rear",
+                "anti-theft-type.alarm",
+                "assistance-system-type.adaptive-air",
+                "body-doors.4",
+                "body-type.limousine",
+                "brake-material.default",
+                "carline.a8",
+                "chassis-type.default",
+                "color-type.metallic",
+                "convenience-type.memory-function",
+                "drive-train.MHEV",
+                "drive.quattro",
+                "engine-technology.tdi",
+                "engine-type.combustion",
+                "exterior-color.gray",
+                "fuel-type.diesel",
+                "gear-type.automatic",
+                "gear.tiptronic",
+                "interface-type.poh-box",
+                "interior-color-carpet.black",
+                "interior-color-dashboard.black",
+                "interior-color-headlining.silver",
+                "interior-color-seats.black",
+                "light-type.led-matrix",
+                "locking-system-type.comfort-key",
+                "material.leather",
+                "mbv-handbook.51003",
+                "model-group-range.a8",
+                "model-range.a8",
+                "modelCode.4NC04A",
+                "modelYear.2023",
+                "navigation-system-type.mmi",
+                "package-type.glance",
+                "seat-type.normal",
+                "sound-system-type.audi",
+                "steering-wheel-material.leather",
+                "steering-wheel-type.multi-function",
+                "tail-light-type.led",
+                "trimline.default",
+                "type.radio",
+                "tyre-season.summer",
+                "vtp-drivetrain.diesel",
+                "wheel-material.light-metal",
+                "wheel-size.18",
+                "wheel-type.default"
+            ]
+        },
+        "techdata": {
+            "carbon-dioxide-emissions": "170 g/km",
+            "consumption-combined": "6,5 l/100km",
+            "consumption-extra-urban": "5,2 l/100km",
+            "consumption-urban": "8,6 l/100km",
+            "efficiency-class": "B",
+            "nedc-co2-combined": "170 g/km",
+            "nedc-co2-extra-urban": "138 g/km",
+            "nedc-co2-urban": "226 g/km",
+            "nedc-consumption-combined": "6,5 l/100km",
+            "nedc-consumption-extra-urban": "5,2 l/100km",
+            "nedc-consumption-urban": "8,6 l/100km",
+            "nox-combined": "16 mg/km",
+            "tank-capacity": "82 l",
+            "top-speed": "250 km/h",
+            "warnings": "range response has empty response data margins",
+            "wltp-co2-sustaining-combined": "183 g/km",
+            "wltp-co2-sustaining-extra-high": "168 g/km",
+            "wltp-co2-sustaining-high": "152 g/km",
+            "wltp-co2-sustaining-low": "271 g/km",
+            "wltp-co2-sustaining-medium": "201 g/km",
+            "wltp-consumption-sustaining-combined": "7,0 l/100km",
+            "wltp-consumption-sustaining-extra-high": "6,4 l/100km",
+            "wltp-consumption-sustaining-high": "5,8 l/100km",
+            "wltp-consumption-sustaining-low": "10,3 l/100km",
+            "wltp-consumption-sustaining-medium": "7,7 l/100km",
+            "wltp-nox-combined": "16 mg/km"
+        },
+        "wltp-status": {
+            "engineType": "NOVC_HEV",
+            "fuelTypes": [
+                "DIESEL"
+            ],
+            "nedcForConfComplete": true,
+            "nedcMandatory": false,
+            "nedcRangeComplete": false,
+            "nedcRangeMandatory": false,
+            "warnings": [
+                "range response has empty response data margins"
+            ],
+            "wltpComputationStatus": "OK",
+            "wltpForConfComplete": true,
+            "wltpMandatory": false,
+            "wltpRangeComplete": false,
+            "wltpRangeInconsistent": false,
+            "wltpRangeMandatory": false,
+            "wltpRelevant": true
+        }
+    },
+    "header": {
+        "context": "nemo-de:de",
+        "hiddenRevision": "0",
+        "logged-in": false,
+        "manualRevision": "5",
+        "marketVersion": "mv-0-1275",
+        "mode": "price",
+        "statuscode": 200,
+        "subsession": "31227530-1",
+        "taggedVersion": "mv-0-1275",
+        "version": "a8-4N-20221026-083644"
+    },
+    "items": {
+        "0E0E": {
+            "id": "0E0E",
+            "itemType": "exteriorColor",
+            "price": "1.110,00 EUR",
+            "priceValue": 1110.0,
+            "status": "11000"
+        },
+        "0E02": {
+            "id": "0E02",
+            "itemType": "exterior",
+            "price": "1.110,00 EUR",
+            "priceValue": 120.0,
+            "status": "11000"
+        },
+        "AQ7": {
+            "id": "AQ7",
+            "itemType": "equipment",
+            "status": "00000"
+        },
+        "AS1": {
+            "id": "AS1",
+            "itemType": "equipment",
+            "status": "00000"
+        },
+        "trimline_default": {
+            "id": "trimline_default",
+            "itemType": "trimline",
+            "status": "11010"
+        }
+    },
+    "itemsUpdateMode": "full"
+}

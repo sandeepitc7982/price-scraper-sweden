@@ -1,0 +1,1305 @@
+{
+    "data": {
+        "carlineStructure": {
+            "carlineGroups": [
+                {
+                    "identifier": {
+                        "id": "etrongt"
+                    },
+                    "name": "e-tron GT",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "etrongt",
+                                "active": true
+                            },
+                            "name": "e-tron GT quattro",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rsetrongt",
+                                "active": true
+                            },
+                            "name": "RS e-tron GT",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "a1"
+                    },
+                    "name": "A1",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "a1sb",
+                                "active": true
+                            },
+                            "name": "A1 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "a3"
+                    },
+                    "name": "A3",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "a3sb",
+                                "active": true
+                            },
+                            "name": "A3 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a3sbetron",
+                                "active": true
+                            },
+                            "name": "A3 Sportback TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a3limo",
+                                "active": true
+                            },
+                            "name": "A3 Saloon",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "s3limo",
+                                "active": true
+                            },
+                            "name": "S3 Saloon",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "s3sb",
+                                "active": true
+                            },
+                            "name": "S3 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rs3sb",
+                                "active": true
+                            },
+                            "name": "RS 3 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rs3limo",
+                                "active": true
+                            },
+                            "name": "RS 3 Saloon",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "a4"
+                    },
+                    "name": "A4",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "a4limo",
+                                "active": true
+                            },
+                            "name": "A4 Saloon",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a4avant",
+                                "active": true
+                            },
+                            "name": "A4 Avant",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rs4avant",
+                                "active": true
+                            },
+                            "name": "RS 4 Avant",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "a5"
+                    },
+                    "name": "A5",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "a5coupe",
+                                "active": true
+                            },
+                            "name": "A5 Coupé",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a5sb",
+                                "active": true
+                            },
+                            "name": "A5 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rs5coupe",
+                                "active": true
+                            },
+                            "name": "RS 5 Coupé",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rs5sb",
+                                "active": true
+                            },
+                            "name": "RS 5 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "a6"
+                    },
+                    "name": "A6",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "a6limo",
+                                "active": true
+                            },
+                            "name": "A6 Saloon",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a6limoetron",
+                                "active": true
+                            },
+                            "name": "A6 Saloon TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a6avant",
+                                "active": true
+                            },
+                            "name": "A6 Avant",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a6avantetron",
+                                "active": true
+                            },
+                            "name": "A6 Avant TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "s6limo",
+                                "active": true
+                            },
+                            "name": "S6 Saloon",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "s6avant",
+                                "active": true
+                            },
+                            "name": "S6 Avant",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rs6avant",
+                                "active": true
+                            },
+                            "name": "RS 6 Avant",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "a7"
+                    },
+                    "name": "A7",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "a7sb",
+                                "active": true
+                            },
+                            "name": "A7 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a7sbetron",
+                                "active": true
+                            },
+                            "name": "A7 Sportback TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "s7sb",
+                                "active": true
+                            },
+                            "name": "S7 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rs7sb",
+                                "active": true
+                            },
+                            "name": "RS 7 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "a8"
+                    },
+                    "name": "A8",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "a8",
+                                "active": true
+                            },
+                            "name": "A8",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a8etron",
+                                "active": true
+                            },
+                            "name": "A8 TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a8l",
+                                "active": true
+                            },
+                            "name": "A8 L",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "a8letron",
+                                "active": true
+                            },
+                            "name": "A8 L TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "s8",
+                                "active": true
+                            },
+                            "name": "S8",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q2"
+                    },
+                    "name": "Q2",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q2",
+                                "active": true
+                            },
+                            "name": "Q2",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq2",
+                                "active": true
+                            },
+                            "name": "SQ2",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q3"
+                    },
+                    "name": "Q3",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q3",
+                                "active": true
+                            },
+                            "name": "Q3",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q3etron",
+                                "active": true
+                            },
+                            "name": "Q3 TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q3sb",
+                                "active": true
+                            },
+                            "name": "Q3 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q3sbetron",
+                                "active": true
+                            },
+                            "name": "Q3 Sportback TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q4"
+                    },
+                    "name": "Q4 e-tron",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q4etron",
+                                "active": true
+                            },
+                            "name": "Q4 e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q4sbetron",
+                                "active": true
+                            },
+                            "name": "Q4 Sportback e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q5"
+                    },
+                    "name": "Q5",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q5",
+                                "active": true
+                            },
+                            "name": "Q5",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q5etron",
+                                "active": true
+                            },
+                            "name": "Q5 TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q5sb",
+                                "active": true
+                            },
+                            "name": "Q5 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q5sbetron",
+                                "active": true
+                            },
+                            "name": "Q5 Sportback TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    },
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq5",
+                                "active": false
+                            },
+                            "name": "SQ5",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq5sb",
+                                "active": false
+                            },
+                            "name": "SQ5 Sportback",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q6"
+                    },
+                    "name": "Q6 e-tron",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q6etron",
+                                "active": true
+                            },
+                            "name": "Q6 e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq6etron",
+                                "active": true
+                            },
+                            "name": "SQ6 e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q7"
+                    },
+                    "name": "Q7",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q7",
+                                "active": true
+                            },
+                            "name": "Q7 SUV",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq7",
+                                "active": true
+                            },
+                            "name": "SQ7 SUV",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q7tfsie"
+                            },
+                            "name": "Q7 TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q8"
+                    },
+                    "name": "Q8",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q8",
+                                "active": true
+                            },
+                            "name": "Q8 SUV",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q8tfsie"
+                            },
+                            "name": "Q8 TFSI e",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq8",
+                                "active": true
+                            },
+                            "name": "SQ8 SUV",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "rsq8",
+                                "active": true
+                            },
+                            "name": "RS Q8",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "q8etron"
+                    },
+                    "name": "Q8 e-tron",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "q8etron",
+                                "active": true
+                            },
+                            "name": "Q8 e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "q8sbetron",
+                                "active": true
+                            },
+                            "name": "Q8 Sportback e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq8etron",
+                                "active": true
+                            },
+                            "name": "SQ8 e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "sq8sbetron",
+                                "active": true
+                            },
+                            "name": "SQ8 Sportback e-tron",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-electric"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "r8"
+                    },
+                    "name": "R8",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "r8",
+                                "active": true
+                            },
+                            "name": "R8 Coupé",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "identifier": {
+                        "id": "tt"
+                    },
+                    "name": "TT",
+                    "exteriorViews": {
+                        "side": "https://mediaservice.audi.com"
+                    },
+                    "carlines": [
+                        {
+                            "identifier": {
+                                "id": "ttcoupe",
+                                "active": false
+                            },
+                            "name": "TT Coupé",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "identifier": {
+                                "id": "ttscoupe",
+                                "active": false
+                            },
+                            "name": "TTS Coupé",
+                            "exteriorViews": {
+                                "side": "https://mediaservice.audi.com"
+                            },
+                            "consumptionAndEmission": {
+                                "consumptionAndEmissionPerFuel": [
+                                    {
+                                        "fuelTypeId": "range-benzin-diesel"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

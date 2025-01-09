@@ -1,0 +1,134 @@
+{
+    "data": {
+        "configuredCar": {
+            "catalog": {
+                "features": {
+                    "data": [
+                        {
+                            "featureType": "EQUIPMENT",
+                            "group": {
+                                "id": "Ladeequipment",
+                                "name": "Lade-Equipment",
+                                "__typename": "CarFeatureGroup"
+                            },
+                            "status": {
+                                "selected": true,
+                                "changeable": false,
+                                "standard": true,
+                                "available": true,
+                                "__typename": "Status"
+                            },
+                            "pr3": "70T",
+                            "__typename": "ConfiguredCarFeature"
+                        },
+                        {
+                            "featureType": "EQUIPMENT",
+                            "group": {
+                                "id": "Ladeequipment",
+                                "name": "Lade-Equipment",
+                                "__typename": "CarFeatureGroup"
+                            },
+                            "status": {
+                                "selected": false,
+                                "changeable": false,
+                                "standard": false,
+                                "available": false,
+                                "__typename": "Status"
+                            },
+                            "pr3": "73A",
+                            "__typename": "ConfiguredCarFeature"
+                        },
+                        {
+                            "featureType": "EQUIPMENT",
+                            "group": {
+                                "id": "Ladeequipment",
+                                "name": "Lade-Equipment",
+                                "__typename": "CarFeatureGroup"
+                            },
+                            "status": {
+                                "selected": false,
+                                "changeable": true,
+                                "standard": false,
+                                "available": true,
+                                "__typename": "Status"
+                            },
+                            "pr3": "73J",
+                            "__typename": "ConfiguredCarFeature"
+                        },
+                        {
+                            "featureType": "EQUIPMENT",
+                            "group": {
+                                "id": "Komfort",
+                                "name": "Komfort",
+                                "__typename": "CarFeatureGroup"
+                            },
+                            "status": {
+                                "selected": true,
+                                "changeable": false,
+                                "standard": true,
+                                "available": true,
+                                "__typename": "Status"
+                            },
+                            "pr3": "KH5",
+                            "__typename": "ConfiguredCarFeature"
+                        },
+                        {
+                            "featureType": "EQUIPMENT",
+                            "group": {
+                                "id": "Komfort",
+                                "name": "Komfort",
+                                "__typename": "CarFeatureGroup"
+                            },
+                            "status": {
+                                "selected": false,
+                                "changeable": false,
+                                "standard": false,
+                                "available": false,
+                                "__typename": "Status"
+                            },
+                            "pr3": "4F2",
+                            "__typename": "ConfiguredCarFeature"
+                        },
+                        {
+                            "featureType": "EQUIPMENT",
+                            "group": {
+                                "id": "Komfort",
+                                "name": "Komfort",
+                                "__typename": "CarFeatureGroup"
+                            },
+                            "status": {
+                                "selected": true,
+                                "changeable": false,
+                                "standard": true,
+                                "available": true,
+                                "__typename": "Status"
+                            },
+                            "pr3": "4I3",
+                            "__typename": "ConfiguredCarFeature"
+                        },
+                        {
+                            "featureType": "EQUIPMENT",
+                            "group": {
+                                "id": "Infotainment",
+                                "name": "Infotainment",
+                                "__typename": "CarFeatureGroup"
+                            },
+                            "status": {
+                                "selected": true,
+                                "changeable": false,
+                                "standard": true,
+                                "available": true,
+                                "__typename": "Status"
+                            },
+                            "pr3": "7UG",
+                            "__typename": "ConfiguredCarFeature"
+                        }
+                    ],
+                    "__typename": "ConfiguredCarFeatures"
+                },
+                "__typename": "ConfiguredCarCatalog"
+            },
+            "__typename": "ConfiguredCar"
+        }
+    }
+}

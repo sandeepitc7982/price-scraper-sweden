@@ -1,0 +1,46 @@
+variables:
+  # System environment
+  vmImage: 'ubuntu-18.04'
+  defaultPythonVersion: '3.8'
+  
+
+  #Connections
+  serviceConnection: 'SC XTO-EU-256' #Prod
+
+
+  #Azure
+  subscriptionId: ''
+  resourcegroupName: 'MS-eu-rsv-model-D-Prod'
+
+
+  #DevOps
+  azureProjectUrl: 'https://dev.azure.com/daimler/AllSpark/'
+  
+
+  # AzureKeyVault
+  azureKeyVault: 'MS-eu-model-D-Prod-kv'
+
+
+  # BlackDuck
+  blackDuckAPIVersion: '1.0'
+  blackDuckProject: 'CoDEHub @ DigitalFactory MS'
+  blackDuckSeverityLevel: 'BLOCKER,CRITICAL,MAJOR,UNSPECIFIED'
+
+  # SecretScanner
+  secretScannerCriticalReliability: 50
+  secretScannerMode: localgit
+  secretScannerPIDTokenSecret: AccessTokenPID5F6CgitHub
+  secretScannerConfigPath: /pipeline/secret_scanner_config/secret_scanner.cfg
+  secretScannerFalsePositveConfigPath: /pipeline/secret_scanner_config/secretscanner-false-positives.json
+  secretScannerGithubApiEndpoint: https://git.i.mercedes-benz.com/api/v3
+  secretScannerGithubProject: secret-scanner
+  secretScannerGitehubRepo: secret-scanner-daimler-internal
+  secretScannerFile: secret_scanner_release.zip
+
+  # SecHUB
+  secHubApiToken: 'sechub-apitoken'
+  secHubApiVersion: '1.0'
+  secHubProject: ''
+  secHubServer: 'https://sechub.corpinter.net'
+  secHubServerityLevel: 'yellow'
+  secHubScannerGit: 'https://git.i.mercedes-benz.com/Daimler/sechub/releases/releases/latest'

@@ -1,0 +1,43 @@
+{
+  "Response": {
+    "@Cache": "No",
+    "@RequestId": "f8fdcf91-48ae-4d91-bf18-7877737ab67d#149273397",
+    "Products": {
+      "Default": "835457",
+      "Description": "PCP £22000 Deposit Contribution 8.9% APR",
+      "Product": [
+        {
+          "@ID": "835457",
+          "@Default": "Yes",
+          "@SubType": "PCP",
+          "@Type": "Credit",
+          "@VAT": "Gros",
+          "Description": "The following Representative Example is based on the annual mileage, repayment time, deposit amount and the vehicle that you have selected. It confirms your deposit, monthly payments and the optional final payment, which is the amount deferred to the end of the agreement.",
+          "Label": "PCP £22000 Deposit Contribution 8.9% APR"
+        },
+        {
+          "@ID": "834769",
+          "@SubType": "PCP",
+          "@Type": "Credit",
+          "@VAT": "Gros",
+          "Description": "The following Representative Example is based on the annual mileage, repayment time, deposit amount and the vehicle that you have selected. It confirms your deposit, monthly payments and the optional final payment, which is the amount deferred to the end of the agreement.",
+          "Label": "PCP £14000 Deposit Contribution 4.9% APR"
+        },
+        {
+          "@ID": "834784",
+          "@SubType": "PCH",
+          "@Type": "Lease",
+          "@VAT": "Gros",
+          "Label": "Personal Contract Hire"
+        },
+        {
+          "@ID": "834907",
+          "@SubType": "BCH",
+          "@Type": "Lease",
+          "@VAT": "Net",
+          "Label": "Buisness Contract Hire"
+        }
+      ]
+    }
+  }
+}

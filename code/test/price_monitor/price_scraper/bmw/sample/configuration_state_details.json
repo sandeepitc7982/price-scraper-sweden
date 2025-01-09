@@ -1,0 +1,46 @@
+{
+  "constructible": true,
+  "configuration": {
+    "modelCode": "7K11",
+    "elements": {
+      "S01DZ": { "code": "S01DZ", "type": "option" },
+      "S06C4": { "code": "S06C4", "type": "option" },
+      "S06WD": { "code": "S06WD", "type": "option" },
+      "S0654": { "code": "S0654", "type": "option" },
+      "S0931": { "code": "S0931", "type": "option" },
+      "S06AE": { "code": "S06AE", "type": "option" },
+      "S0879": { "code": "S0879", "type": "option" },
+      "S04GN": { "code": "S04GN", "type": "option" },
+      "S06AF": { "code": "S06AF", "type": "option" },
+      "S08WL": { "code": "S08WL", "type": "option" },
+      "S08KA": { "code": "S08KA", "type": "option" },
+      "S0230": { "code": "S0230", "type": "option" },
+      "S01CB": { "code": "S01CB", "type": "option" },
+      "S0851": { "code": "S0851", "type": "option" },
+      "S05AQ": { "code": "S05AQ", "type": "option" },
+      "FEGAT": { "code": "FEGAT", "type": "option" },
+      "P0668": { "code": "P0668", "type": "option" },
+      "S08TF": { "code": "S08TF", "type": "option" },
+      "S04NE": { "code": "S04NE", "type": "option" },
+      "S02VB": { "code": "S02VB", "type": "option" },
+      "S08R9": { "code": "S08R9", "type": "option" },
+      "S06AK": { "code": "S06AK", "type": "option" },
+      "S09QX": { "code": "S09QX", "type": "option" },
+      "S0423": { "code": "S0423", "type": "option" },
+      "S0249": { "code": "S0249", "type": "option" },
+      "S0548": { "code": "S0548", "type": "option" },
+      "S0801": { "code": "S0801", "type": "option" },
+      "S0428": { "code": "S0428", "type": "option" },
+      "S06NS": { "code": "S06NS", "type": "option" },
+      "S0240": { "code": "S0240", "type": "option" },
+      "S05DA": { "code": "S05DA", "type": "option" },
+      "S01DF": { "code": "S01DF", "type": "option" },
+      "S06U3": { "code": "S06U3", "type": "option" }
+    }
+  },
+  "configurationState": "ddd74851-baa9-4dfd-aeb4-97e30424a7d7",
+  "classifiedConfiguration": {
+    "transmission": { "type": "manual" },
+    "volt48": { "isVolt48Variant": false }
+  }
+}

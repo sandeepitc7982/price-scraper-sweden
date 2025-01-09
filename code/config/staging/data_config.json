@@ -1,0 +1,5 @@
+{
+    "data_dir": "./data",
+    "train_file_name": "training_data.json",
+    "evaluation_file_name": "evaluation_data.json"
+}

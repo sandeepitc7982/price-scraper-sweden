@@ -1,0 +1,35 @@
+#!/bin/bash
+
+set -eu
+
+bucket=tw-mb-price-monitor
+stag_bucket=stag-tw-mb-price-monitor
+workdir=/opt/price-monitor
+
+# Set log level
+export LOGURU_LEVEL=INFO
+export PM_GCP_LOGGING=true
+
+cd $workdir
+
+docker run -e LOGURU_LEVEL -e PM_GCP_LOGGING \
+--volume "${PWD}"/data:/opt/price-monitor/data \
+--volume "${PWD}"/config:/opt/price-monitor/config:ro \
+price-monitor:__VERSION__ sh -c \
+"price-monitor run-scraper --config-file config/config.json __VENDOR__ __MARKET__ && \
+price-monitor run-scraper --config-file config/mercedes_config.json && \
+price-monitor run-finance-scraper --config-file config/config.json __VENDOR__ __MARKET__ && \
+price-monitor run-compare --config-file config/config.json && \
+price-monitor run-finance-compare --config-file config/config.json && \
+price-monitor notify --config-file config/config.json && \
+price-monitor check-data-quality --config-file config/config.json"
+
+echo "Syncing file to storage bucket..."
+gsutil rsync -r data gs://$bucket
+# gsutil rsync -r data gs://$stag_bucket
+
+echo "Cleaning up data older than 3 days"
+find data/ -depth -type f -daystart -mtime +3 -delete
+find data/ -type d -empty -delete
+
+exit 0

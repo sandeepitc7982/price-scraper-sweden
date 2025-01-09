@@ -1,0 +1,2873 @@
+{
+  "classBodyNames": [
+    "EQB Offroader"
+  ],
+  "vehicles": [
+    {
+      "preselected": true,
+      "vehicleId": "de_DE__2436021__AU-311_LE-L_LU-696_MJ-805_PC-904-P59-PBG-PSA-U59-U62_PS-953#-B05#-E01#_SA-01U-02B-13U-20U-218-243-258-261-270-286-294-310-345-351-355-362-365-367-39U-400-428-475-504-51U-521-537-543-55H-567-580-5B0-608-632-63B-677-70B-72B-73B-79B-7U2-82B-83B-859-873-877-88B-890-942-969-986-9B2-B27-B51-B53-B59-L3E-R05-R31-U01-U10-U12-U22-U35-U55-U60_SC-0S3-0U1-1B3-2U1-2U8-502-51B-5V4-6P5-7B4-7S3-7S8-8P3-8S8-8U6-8U8-998-9U8-BAF-EMD-K13-K37-K45-R7H",
+      "name": "EQB 250+",
+      "baumuster": "2436021",
+      "modelYear": "805",
+      "typeClass": "X243",
+      "modelId": "2436021",
+      "vehicleClass": "EQB",
+      "vehicleClassId": "EQB-KLASSE",
+      "vehicleBody": "Offroader",
+      "vehicleBodyId": "OFFROADER",
+      "productGroup": "PC",
+      "tags": [
+        {
+          "id": "technicalInformation.engine.enginePerformance",
+          "label": "Leistung",
+          "value": "140 kW (190 PS)",
+          "workbenchIcon": "engine"
+        },
+        {
+          "id": "technicalInformation.engine.fuelType",
+          "label": "Kraftstoffart",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "fuelType"
+            }
+          ],
+          "value": "Strom",
+          "rawValue": "Strom",
+          "workbenchIcon": "fuel-e"
+        },
+        {
+          "id": "technicalInformation.wltp.range.total.all.individual",
+          "label": "Elektrische Reichweite",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "electricRangeWltp"
+            }
+          ],
+          "value": "534 km",
+          "unit": "km",
+          "rawValue": "534",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "trip-type"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "id": "technicalInformation.acceleration",
+          "label": "Beschleunigung 0-100 km/h",
+          "value": "8,9 s",
+          "unit": "s",
+          "rawValue": "8.9",
+          "workbenchIcon": "mileage-xs"
+        },
+        {
+          "id": "technicalInformation.engine.propulsion.name",
+          "label": "Antriebsart",
+          "value": "Vorderradantrieb",
+          "rawValue": "Vorderradantrieb"
+        },
+        {
+          "id": "technicalInformation.wltp.consumption.total.primaryGear.individual",
+          "label": "Verbrauch gesamt (kombiniert)",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "electricConsumptionWltp"
+            }
+          ],
+          "value": "15,2 kWh/100km",
+          "unit": "kWh/100km",
+          "rawValue": "15.2",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "fuel-e"
+        },
+        {
+          "id": "technicalInformation.wltp.emission.total.primaryGear.individual",
+          "label": "CO₂-Emissionen gesamt (kombiniert)",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "co2EmissionWltp"
+            }
+          ],
+          "value": "0 g/km",
+          "unit": "g/km",
+          "rawValue": "0",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "consumption"
+        }
+      ],
+      "ocapiInformation": {
+        "technicalValues": [
+          {
+            "id": "combustionPowerKw",
+            "label": "Leistung",
+            "value": ""
+          },
+          {
+            "id": "fuelType",
+            "label": "Kraftstoffart",
+            "value": "Strom",
+            "rawValue": "Strom"
+          },
+          {
+            "id": "electricRangeWltp",
+            "label": "Elektrische Reichweite",
+            "value": "534 km",
+            "rawValue": "534"
+          },
+          {
+            "id": "electricConsumptionWltp",
+            "label": "Verbrauch gesamt (kombiniert)",
+            "value": "15,2 kWh/100km",
+            "rawValue": "15.2"
+          },
+          {
+            "id": "co2EmissionWltp",
+            "label": "CO₂-Emissionen gesamt (kombiniert)",
+            "value": "0 g/km",
+            "rawValue": "0"
+          },
+          {
+            "id": "emissionStandard",
+            "label": "Abgasnorm",
+            "value": ""
+          },
+          {
+            "id": "electricPowerKw",
+            "label": "Leistung elektrisch in kW",
+            "value": ""
+          },
+          {
+            "id": "maxWeight",
+            "label": "Zul. Gesamtgewicht (EU)",
+            "value": "2.540 kg",
+            "rawValue": "2540"
+          },
+          {
+            "id": "seats",
+            "label": "Sitzplätze",
+            "value": "5",
+            "rawValue": "5"
+          }
+        ]
+      },
+      "stageV2": {
+        "cosyId": "COSY-EU-100",
+        "hasImageError": false,
+        "metaData": {
+          "baseInfo": {
+            "baseUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/DE/243602/805/iris.webp",
+            "initialStageView": "EXTERIOR_360",
+            "fallbackImageUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/iris.png?q=COSY-EU-100",
+            "backgrounds": [
+              {
+                "id": "MUSEUM",
+                "states": {
+                  "DAY": {
+                    "id": "DAY",
+                    "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/3/ce/f19bab99ea61f29d8282b8d9d13b82b758673.jpg",
+                    "stageViewState": "SZT"
+                  },
+                  "NIGHT": {
+                    "id": "NIGHT",
+                    "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/6/a8/a32b57ca2f1c38a3c00058903c1977cb41912.jpg",
+                    "stageViewState": "SZN"
+                  }
+                }
+              }
+            ]
+          },
+          "views": {
+            "EXTERIOR_360": {
+              "initialModeConfig": {
+                "perspective": "BE020",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BE000",
+                "BE010",
+                "BE020",
+                "BE030",
+                "BE040",
+                "BE050",
+                "BE060",
+                "BE070",
+                "BE080",
+                "BE090",
+                "BE100",
+                "BE110",
+                "BE120",
+                "BE130",
+                "BE140",
+                "BE150",
+                "BE160",
+                "BE170",
+                "BE180",
+                "BE190",
+                "BE200",
+                "BE210",
+                "BE220",
+                "BE230",
+                "BE240",
+                "BE250",
+                "BE260",
+                "BE270",
+                "BE280",
+                "BE290",
+                "BE300",
+                "BE310",
+                "BE320",
+                "BE330",
+                "BE340",
+                "BE350"
+              ],
+              "previewImageParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                },
+                {
+                  "key": "POV",
+                  "value": "BE020"
+                },
+                {
+                  "key": "IMGT",
+                  "value": "W27"
+                }
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "9"
+                },
+                {
+                  "key": "uni",
+                  "value": "m"
+                }
+              ],
+              "fullScreenDefinition": {
+                "perspectives": [
+                  "BE000",
+                  "BE010",
+                  "BE020",
+                  "BE030",
+                  "BE040",
+                  "BE050",
+                  "BE060",
+                  "BE070",
+                  "BE080",
+                  "BE090",
+                  "BE100",
+                  "BE110",
+                  "BE120",
+                  "BE130",
+                  "BE140",
+                  "BE150",
+                  "BE160",
+                  "BE170",
+                  "BE180",
+                  "BE190",
+                  "BE200",
+                  "BE210",
+                  "BE220",
+                  "BE230",
+                  "BE240",
+                  "BE250",
+                  "BE260",
+                  "BE270",
+                  "BE280",
+                  "BE290",
+                  "BE300",
+                  "BE310",
+                  "BE320",
+                  "BE330",
+                  "BE340",
+                  "BE350"
+                ],
+                "states": [
+                  {
+                    "states": [
+                      "SZT",
+                      "SZN"
+                    ]
+                  }
+                ],
+                "additionalParameters": [
+                  {
+                    "key": "BKGND",
+                    "value": "8"
+                  }
+                ],
+                "imageType": {
+                  "value": "A27",
+                  "mimeType": "image/jpeg"
+                }
+              }
+            },
+            "INTERIOR": {
+              "initialModeConfig": {
+                "perspective": "BI1",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BI1",
+                "BI2",
+                "BI3",
+                "BI4"
+              ],
+              "previewImageParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                },
+                {
+                  "key": "POV",
+                  "value": "BI1"
+                },
+                {
+                  "key": "IMGT",
+                  "value": "W27"
+                }
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "fb",
+                  "value": "1"
+                },
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                }
+              ]
+            },
+            "INTERIOR_360": {
+              "initialModeConfig": {
+                "perspective": "BIS1",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BIS1",
+                "BIS2",
+                "BIS3",
+                "BIS4",
+                "BIS5",
+                "BIS6"
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "labels": [
+        "MB",
+        "BESTSELLER",
+        "HIGHEST_RANGE"
+      ],
+      "comparableValues": [
+        {
+          "id": "technicalInformation.engine.fuelType",
+          "value": "Strom"
+        },
+        {
+          "id": "technicalInformation.transmission.transmissionType",
+          "value": "Automatik"
+        },
+        {
+          "id": "comparableValue.wltp.co2emission",
+          "value": "0"
+        },
+        {
+          "id": "comparableValue.wltp.electricConsumption",
+          "value": "15.2"
+        },
+        {
+          "id": "comparableValue.wltp.electricRange",
+          "value": "534"
+        },
+        {
+          "id": "technicalInformation.acceleration",
+          "value": "8.9"
+        },
+        {
+          "id": "BRAND_FILTER",
+          "value": "Mercedes-Benz"
+        },
+        {
+          "id": "price",
+          "value": "53514.30"
+        },
+        {
+          "id": "bestseller",
+          "value": 0
+        }
+      ],
+      "navigationCategories": [
+        {
+          "id": "VARIANTS",
+          "name": "Varianten",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "LINES",
+              "name": "Styles",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "SPECIAL_EQUIPMENT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SPECIAL_EQUIPMENT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "LINES"
+            },
+            {
+              "id": "PACKAGE_TYPES",
+              "name": "Ausstattungspakete",
+              "cardinality": "ONE_OR_NONE",
+              "categoryViewType": "EQUIPMENT_LEVELS",
+              "categoryViewConfiguration": {
+                "categoryViewType": "EQUIPMENT_LEVELS"
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "TYPES"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "VARIANTS"
+        },
+        {
+          "id": "EXTERIOR",
+          "name": "Exterieur",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "PAINTS",
+              "name": "Farben",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "PAINTS"
+            },
+            {
+              "id": "WHEELS",
+              "name": "Räder",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE090",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "WHEELS"
+            },
+            {
+              "id": "TYRES",
+              "name": "Reifen",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE090",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "WHEELS_ACCESSORIES"
+            },
+            {
+              "id": "EXTERIOR_EXTRAS",
+              "name": "Exterieur Extras",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "EXTERIOR"
+        },
+        {
+          "id": "INTERIOR",
+          "name": "Interieur",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "INTERIOR_360",
+              "perspective": "BIS1",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "UPHOLSTERIES",
+              "name": "Polster",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "UPHOLSTERIES"
+            },
+            {
+              "id": "SEATS",
+              "name": "Sitze ",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "SEATS"
+            },
+            {
+              "id": "TRIMS",
+              "name": "Zierelemente",
+              "cardinality": "ONE_OR_NONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "TRIMS"
+            },
+            {
+              "id": "STEERING_WHEEL",
+              "name": "Lenkräder",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "INTERIOR_EXTRAS",
+              "name": "Interieur Extras",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "ZKL24",
+              "name": "Fahrhilfen",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "INTERIOR"
+        },
+        {
+          "id": "MULTIMEDIA_SAFETY",
+          "name": "Multimedia und Sicherheit",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "INTERIOR_360",
+              "perspective": "BIS1",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "MULTIMEDIA",
+              "name": "Multimedia",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "ASSISTANCESYSTEMS",
+              "name": "Assistenzsysteme",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "SAFETY",
+              "name": "Sicherheit",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            }
+          ],
+          "contains": "INTERIOR"
+        },
+        {
+          "id": "CHASSIS",
+          "name": "Antrieb und Fahrwerk",
+          "cardinality": "ARBITRARY",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "CHARGING",
+              "name": "Laden",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            },
+            {
+              "id": "CHASSIS_CHASSIS",
+              "name": "Fahrwerk",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "contains": "EXTERIOR"
+        }
+      ],
+      "priceInformation": {
+        "currencyISO": "EUR",
+        "basePrice": {
+          "price": 53514.30,
+          "formattedPrice": "53.514,30 €",
+          "netPrice": 44970.00,
+          "formattedNetPrice": "44.970,00 €",
+          "currencyISO": "EUR"
+        },
+        "configurationPrice": {
+          "price": 53514.30,
+          "formattedPrice": "53.514,30 €",
+          "netPrice": 44970.00,
+          "formattedNetPrice": "44.970,00 €",
+          "currencyISO": "EUR"
+        },
+        "totalOptionPrice": {
+          "price": 0.00,
+          "formattedPrice": "0,00 €",
+          "netPrice": 0.00,
+          "formattedNetPrice": "0,00 €",
+          "currencyISO": "EUR"
+        }
+      },
+      "plsInformationSection": {
+        "technicalData": {
+          "engine": {
+            "type": "ELECTRIC",
+            "driveCycle": {
+              "wltp": {
+                "range": {
+                  "totalAll": 534
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "preselected": false,
+      "vehicleId": "de_DE__2436081__AU-311_LE-L_LU-696_MJ-805_PC-904-P59-PBG-PSA-U59-U62_PS-953#-B05#-E01#_SA-01U-02B-13U-20U-218-243-258-261-270-286-294-310-345-351-355-362-365-367-39U-400-428-475-504-51U-521-537-543-55H-567-580-5B0-608-632-63B-677-70B-725-72B-73B-79B-7U2-82B-83B-859-873-877-88B-890-942-969-986-9B2-B51-B53-B59-L3E-R05-R31-U01-U10-U12-U22-U35-U55-U60_SC-0S3-0U1-1B3-2U1-2U8-502-51B-5V4-6P5-7B4-7S3-7S8-8P3-8S8-8U6-8U8-998-BAE-EMD-EMT-K13-K37-K45-R7H",
+      "name": "EQB 300 4MATIC",
+      "baumuster": "2436081",
+      "modelYear": "805",
+      "typeClass": "X243",
+      "modelId": "2436081",
+      "vehicleClass": "EQB",
+      "vehicleClassId": "EQB-KLASSE",
+      "vehicleBody": "Offroader",
+      "vehicleBodyId": "OFFROADER",
+      "productGroup": "PC",
+      "tags": [
+        {
+          "id": "technicalInformation.engine.enginePerformance",
+          "label": "Leistung",
+          "value": "168 kW (228 PS)",
+          "workbenchIcon": "engine"
+        },
+        {
+          "id": "technicalInformation.engine.fuelType",
+          "label": "Kraftstoffart",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "fuelType"
+            }
+          ],
+          "value": "Strom",
+          "rawValue": "Strom",
+          "workbenchIcon": "fuel-e"
+        },
+        {
+          "id": "technicalInformation.wltp.range.total.all.individual",
+          "label": "Elektrische Reichweite",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "electricRangeWltp"
+            }
+          ],
+          "value": "445 km",
+          "unit": "km",
+          "rawValue": "445",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "trip-type"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "id": "technicalInformation.acceleration",
+          "label": "Beschleunigung 0-100 km/h",
+          "value": "8 s",
+          "unit": "s",
+          "rawValue": "8",
+          "workbenchIcon": "mileage-xs"
+        },
+        {
+          "id": "technicalInformation.engine.propulsion.name",
+          "label": "Antriebsart",
+          "value": "Allradantrieb",
+          "rawValue": "Allradantrieb"
+        },
+        {
+          "id": "technicalInformation.wltp.consumption.total.primaryGear.individual",
+          "label": "Verbrauch gesamt (kombiniert)",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "electricConsumptionWltp"
+            }
+          ],
+          "value": "17,2 kWh/100km",
+          "unit": "kWh/100km",
+          "rawValue": "17.2",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "fuel-e"
+        },
+        {
+          "id": "technicalInformation.wltp.emission.total.primaryGear.individual",
+          "label": "CO₂-Emissionen gesamt (kombiniert)",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "co2EmissionWltp"
+            }
+          ],
+          "value": "0 g/km",
+          "unit": "g/km",
+          "rawValue": "0",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "consumption"
+        }
+      ],
+      "ocapiInformation": {
+        "technicalValues": [
+          {
+            "id": "combustionPowerKw",
+            "label": "Leistung",
+            "value": ""
+          },
+          {
+            "id": "fuelType",
+            "label": "Kraftstoffart",
+            "value": "Strom",
+            "rawValue": "Strom"
+          },
+          {
+            "id": "electricRangeWltp",
+            "label": "Elektrische Reichweite",
+            "value": "445 km",
+            "rawValue": "445"
+          },
+          {
+            "id": "electricConsumptionWltp",
+            "label": "Verbrauch gesamt (kombiniert)",
+            "value": "17,2 kWh/100km",
+            "rawValue": "17.2"
+          },
+          {
+            "id": "co2EmissionWltp",
+            "label": "CO₂-Emissionen gesamt (kombiniert)",
+            "value": "0 g/km",
+            "rawValue": "0"
+          },
+          {
+            "id": "emissionStandard",
+            "label": "Abgasnorm",
+            "value": ""
+          },
+          {
+            "id": "electricPowerKw",
+            "label": "Leistung elektrisch in kW",
+            "value": ""
+          },
+          {
+            "id": "maxWeight",
+            "label": "Zul. Gesamtgewicht (EU)",
+            "value": "2.580 kg",
+            "rawValue": "2580"
+          },
+          {
+            "id": "seats",
+            "label": "Sitzplätze",
+            "value": "5",
+            "rawValue": "5"
+          }
+        ]
+      },
+      "stageV2": {
+        "cosyId": "COSY-EU-100",
+        "hasImageError": false,
+        "metaData": {
+          "baseInfo": {
+            "baseUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/DE/243608/805/iris.webp",
+            "initialStageView": "EXTERIOR_360",
+            "fallbackImageUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/iris.png?q=COSY-EU-100",
+            "backgrounds": [
+              {
+                "id": "MUSEUM",
+                "states": {
+                  "DAY": {
+                    "id": "DAY",
+                    "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/3/ce/f19bab99ea61f29d8282b8d9d13b82b758673.jpg",
+                    "stageViewState": "SZT"
+                  },
+                  "NIGHT": {
+                    "id": "NIGHT",
+                    "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/6/a8/a32b57ca2f1c38a3c00058903c1977cb41912.jpg",
+                    "stageViewState": "SZN"
+                  }
+                }
+              }
+            ]
+          },
+          "views": {
+            "EXTERIOR_360": {
+              "initialModeConfig": {
+                "perspective": "BE020",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BE000",
+                "BE010",
+                "BE020",
+                "BE030",
+                "BE040",
+                "BE050",
+                "BE060",
+                "BE070",
+                "BE080",
+                "BE090",
+                "BE100",
+                "BE110",
+                "BE120",
+                "BE130",
+                "BE140",
+                "BE150",
+                "BE160",
+                "BE170",
+                "BE180",
+                "BE190",
+                "BE200",
+                "BE210",
+                "BE220",
+                "BE230",
+                "BE240",
+                "BE250",
+                "BE260",
+                "BE270",
+                "BE280",
+                "BE290",
+                "BE300",
+                "BE310",
+                "BE320",
+                "BE330",
+                "BE340",
+                "BE350"
+              ],
+              "previewImageParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                },
+                {
+                  "key": "POV",
+                  "value": "BE020"
+                },
+                {
+                  "key": "IMGT",
+                  "value": "W27"
+                }
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "9"
+                },
+                {
+                  "key": "uni",
+                  "value": "m"
+                }
+              ],
+              "fullScreenDefinition": {
+                "perspectives": [
+                  "BE000",
+                  "BE010",
+                  "BE020",
+                  "BE030",
+                  "BE040",
+                  "BE050",
+                  "BE060",
+                  "BE070",
+                  "BE080",
+                  "BE090",
+                  "BE100",
+                  "BE110",
+                  "BE120",
+                  "BE130",
+                  "BE140",
+                  "BE150",
+                  "BE160",
+                  "BE170",
+                  "BE180",
+                  "BE190",
+                  "BE200",
+                  "BE210",
+                  "BE220",
+                  "BE230",
+                  "BE240",
+                  "BE250",
+                  "BE260",
+                  "BE270",
+                  "BE280",
+                  "BE290",
+                  "BE300",
+                  "BE310",
+                  "BE320",
+                  "BE330",
+                  "BE340",
+                  "BE350"
+                ],
+                "states": [
+                  {
+                    "states": [
+                      "SZT",
+                      "SZN"
+                    ]
+                  }
+                ],
+                "additionalParameters": [
+                  {
+                    "key": "BKGND",
+                    "value": "8"
+                  }
+                ],
+                "imageType": {
+                  "value": "A27",
+                  "mimeType": "image/jpeg"
+                }
+              }
+            },
+            "INTERIOR": {
+              "initialModeConfig": {
+                "perspective": "BI1",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BI1",
+                "BI2",
+                "BI3",
+                "BI4"
+              ],
+              "previewImageParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                },
+                {
+                  "key": "POV",
+                  "value": "BI1"
+                },
+                {
+                  "key": "IMGT",
+                  "value": "W27"
+                }
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "fb",
+                  "value": "1"
+                },
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                }
+              ]
+            },
+            "INTERIOR_360": {
+              "initialModeConfig": {
+                "perspective": "BIS1",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BIS1",
+                "BIS2",
+                "BIS3",
+                "BIS4",
+                "BIS5",
+                "BIS6"
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "labels": [
+        "MB"
+      ],
+      "comparableValues": [
+        {
+          "id": "technicalInformation.engine.fuelType",
+          "value": "Strom"
+        },
+        {
+          "id": "technicalInformation.transmission.transmissionType",
+          "value": "Automatik"
+        },
+        {
+          "id": "comparableValue.wltp.co2emission",
+          "value": "0"
+        },
+        {
+          "id": "comparableValue.wltp.electricConsumption",
+          "value": "17.2"
+        },
+        {
+          "id": "comparableValue.wltp.electricRange",
+          "value": "445"
+        },
+        {
+          "id": "technicalInformation.acceleration",
+          "value": "8"
+        },
+        {
+          "id": "BRAND_FILTER",
+          "value": "Mercedes-Benz"
+        },
+        {
+          "id": "price",
+          "value": "55519.45"
+        },
+        {
+          "id": "bestseller",
+          "value": 1
+        }
+      ],
+      "navigationCategories": [
+        {
+          "id": "VARIANTS",
+          "name": "Varianten",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "LINES",
+              "name": "Styles",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "SPECIAL_EQUIPMENT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SPECIAL_EQUIPMENT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "LINES"
+            },
+            {
+              "id": "PACKAGE_TYPES",
+              "name": "Ausstattungspakete",
+              "cardinality": "ONE_OR_NONE",
+              "categoryViewType": "EQUIPMENT_LEVELS",
+              "categoryViewConfiguration": {
+                "categoryViewType": "EQUIPMENT_LEVELS"
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "TYPES"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "VARIANTS"
+        },
+        {
+          "id": "EXTERIOR",
+          "name": "Exterieur",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "PAINTS",
+              "name": "Farben",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "PAINTS"
+            },
+            {
+              "id": "WHEELS",
+              "name": "Räder",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE090",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "WHEELS"
+            },
+            {
+              "id": "TYRES",
+              "name": "Reifen",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE090",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "WHEELS_ACCESSORIES"
+            },
+            {
+              "id": "EXTERIOR_EXTRAS",
+              "name": "Exterieur Extras",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "EXTERIOR"
+        },
+        {
+          "id": "INTERIOR",
+          "name": "Interieur",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "INTERIOR_360",
+              "perspective": "BIS1",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "UPHOLSTERIES",
+              "name": "Polster",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "UPHOLSTERIES"
+            },
+            {
+              "id": "SEATS",
+              "name": "Sitze ",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "SEATS"
+            },
+            {
+              "id": "TRIMS",
+              "name": "Zierelemente",
+              "cardinality": "ONE_OR_NONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "TRIMS"
+            },
+            {
+              "id": "STEERING_WHEEL",
+              "name": "Lenkräder",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "INTERIOR_EXTRAS",
+              "name": "Interieur Extras",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "ZKL24",
+              "name": "Fahrhilfen",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "INTERIOR"
+        },
+        {
+          "id": "MULTIMEDIA_SAFETY",
+          "name": "Multimedia und Sicherheit",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "INTERIOR_360",
+              "perspective": "BIS1",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "MULTIMEDIA",
+              "name": "Multimedia",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "ASSISTANCESYSTEMS",
+              "name": "Assistenzsysteme",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "SAFETY",
+              "name": "Sicherheit",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            }
+          ],
+          "contains": "INTERIOR"
+        },
+        {
+          "id": "CHASSIS",
+          "name": "Antrieb und Fahrwerk",
+          "cardinality": "ARBITRARY",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "CHARGING",
+              "name": "Laden",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            },
+            {
+              "id": "CHASSIS_CHASSIS",
+              "name": "Fahrwerk",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "contains": "EXTERIOR"
+        }
+      ],
+      "priceInformation": {
+        "currencyISO": "EUR",
+        "basePrice": {
+          "price": 55519.45,
+          "formattedPrice": "55.519,45 €",
+          "netPrice": 46655.00,
+          "formattedNetPrice": "46.655,00 €",
+          "currencyISO": "EUR"
+        },
+        "configurationPrice": {
+          "price": 55519.45,
+          "formattedPrice": "55.519,45 €",
+          "netPrice": 46655.00,
+          "formattedNetPrice": "46.655,00 €",
+          "currencyISO": "EUR"
+        },
+        "totalOptionPrice": {
+          "price": 0.00,
+          "formattedPrice": "0,00 €",
+          "netPrice": 0.00,
+          "formattedNetPrice": "0,00 €",
+          "currencyISO": "EUR"
+        }
+      },
+      "plsInformationSection": {
+        "technicalData": {
+          "engine": {
+            "type": "ELECTRIC",
+            "driveCycle": {
+              "wltp": {
+                "range": {
+                  "totalAll": 445
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "preselected": false,
+      "vehicleId": "de_DE__2436121__AU-311_LE-L_LU-696_MJ-805_PC-904-P59-PBG-PSA-U59-U62_PS-953#-B05#-E01#_SA-01U-02B-13U-20U-218-243-258-261-270-286-294-310-345-351-355-362-365-367-39U-400-428-475-504-51U-521-537-543-55H-567-580-5B0-608-632-63B-677-70B-725-72B-73B-79B-7U2-82B-83B-859-873-877-88B-890-942-969-986-9B2-B51-B53-B59-L3E-R05-R31-U01-U10-U12-U22-U35-U55-U60_SC-0S3-0U1-1B3-2U1-2U8-502-51B-5V4-6P5-7B4-7S3-7S8-8P3-8S8-8U6-8U8-998-BAE-EMD-EMT-K13-K37-K45-R7H",
+      "name": "EQB 350 4MATIC",
+      "baumuster": "2436121",
+      "modelYear": "805",
+      "typeClass": "X243",
+      "modelId": "2436121",
+      "vehicleClass": "EQB",
+      "vehicleClassId": "EQB-KLASSE",
+      "vehicleBody": "Offroader",
+      "vehicleBodyId": "OFFROADER",
+      "productGroup": "PC",
+      "tags": [
+        {
+          "id": "technicalInformation.engine.enginePerformance",
+          "label": "Leistung",
+          "value": "215 kW (292 PS)",
+          "workbenchIcon": "engine"
+        },
+        {
+          "id": "technicalInformation.engine.fuelType",
+          "label": "Kraftstoffart",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "fuelType"
+            }
+          ],
+          "value": "Strom",
+          "rawValue": "Strom",
+          "workbenchIcon": "fuel-e"
+        },
+        {
+          "id": "technicalInformation.wltp.range.total.all.individual",
+          "label": "Elektrische Reichweite",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "electricRangeWltp"
+            }
+          ],
+          "value": "445 km",
+          "unit": "km",
+          "rawValue": "445",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "trip-type"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "id": "technicalInformation.acceleration",
+          "label": "Beschleunigung 0-100 km/h",
+          "value": "6,2 s",
+          "unit": "s",
+          "rawValue": "6.2",
+          "workbenchIcon": "mileage-xs"
+        },
+        {
+          "id": "technicalInformation.engine.propulsion.name",
+          "label": "Antriebsart",
+          "value": "Allradantrieb",
+          "rawValue": "Allradantrieb"
+        },
+        {
+          "id": "technicalInformation.wltp.consumption.total.primaryGear.individual",
+          "label": "Verbrauch gesamt (kombiniert)",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "electricConsumptionWltp"
+            }
+          ],
+          "value": "17,2 kWh/100km",
+          "unit": "kWh/100km",
+          "rawValue": "17.2",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "fuel-e"
+        },
+        {
+          "id": "technicalInformation.wltp.emission.total.primaryGear.individual",
+          "label": "CO₂-Emissionen gesamt (kombiniert)",
+          "aliasDefinitions": [
+            {
+              "id": "OCAPI",
+              "alias": "co2EmissionWltp"
+            }
+          ],
+          "value": "0 g/km",
+          "unit": "g/km",
+          "rawValue": "0",
+          "footnotes": [
+            "2"
+          ],
+          "workbenchIcon": "consumption"
+        }
+      ],
+      "ocapiInformation": {
+        "technicalValues": [
+          {
+            "id": "combustionPowerKw",
+            "label": "Leistung",
+            "value": ""
+          },
+          {
+            "id": "fuelType",
+            "label": "Kraftstoffart",
+            "value": "Strom",
+            "rawValue": "Strom"
+          },
+          {
+            "id": "electricRangeWltp",
+            "label": "Elektrische Reichweite",
+            "value": "445 km",
+            "rawValue": "445"
+          },
+          {
+            "id": "electricConsumptionWltp",
+            "label": "Verbrauch gesamt (kombiniert)",
+            "value": "17,2 kWh/100km",
+            "rawValue": "17.2"
+          },
+          {
+            "id": "co2EmissionWltp",
+            "label": "CO₂-Emissionen gesamt (kombiniert)",
+            "value": "0 g/km",
+            "rawValue": "0"
+          },
+          {
+            "id": "emissionStandard",
+            "label": "Abgasnorm",
+            "value": ""
+          },
+          {
+            "id": "electricPowerKw",
+            "label": "Leistung elektrisch in kW",
+            "value": ""
+          },
+          {
+            "id": "maxWeight",
+            "label": "Zul. Gesamtgewicht (EU)",
+            "value": "2.600 kg",
+            "rawValue": "2600"
+          },
+          {
+            "id": "seats",
+            "label": "Sitzplätze",
+            "value": "5",
+            "rawValue": "5"
+          }
+        ]
+      },
+      "stageV2": {
+        "cosyId": "COSY-EU-100",
+        "hasImageError": false,
+        "metaData": {
+          "baseInfo": {
+            "baseUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/DE/243612/805/iris.webp",
+            "initialStageView": "EXTERIOR_360",
+            "fallbackImageUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/iris.png?q=COSY-EU-100",
+            "backgrounds": [
+              {
+                "id": "MUSEUM",
+                "states": {
+                  "DAY": {
+                    "id": "DAY",
+                    "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/3/ce/f19bab99ea61f29d8282b8d9d13b82b758673.jpg",
+                    "stageViewState": "SZT"
+                  },
+                  "NIGHT": {
+                    "id": "NIGHT",
+                    "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/6/a8/a32b57ca2f1c38a3c00058903c1977cb41912.jpg",
+                    "stageViewState": "SZN"
+                  }
+                }
+              }
+            ]
+          },
+          "views": {
+            "EXTERIOR_360": {
+              "initialModeConfig": {
+                "perspective": "BE020",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BE000",
+                "BE010",
+                "BE020",
+                "BE030",
+                "BE040",
+                "BE050",
+                "BE060",
+                "BE070",
+                "BE080",
+                "BE090",
+                "BE100",
+                "BE110",
+                "BE120",
+                "BE130",
+                "BE140",
+                "BE150",
+                "BE160",
+                "BE170",
+                "BE180",
+                "BE190",
+                "BE200",
+                "BE210",
+                "BE220",
+                "BE230",
+                "BE240",
+                "BE250",
+                "BE260",
+                "BE270",
+                "BE280",
+                "BE290",
+                "BE300",
+                "BE310",
+                "BE320",
+                "BE330",
+                "BE340",
+                "BE350"
+              ],
+              "previewImageParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                },
+                {
+                  "key": "POV",
+                  "value": "BE020"
+                },
+                {
+                  "key": "IMGT",
+                  "value": "W27"
+                }
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "9"
+                },
+                {
+                  "key": "uni",
+                  "value": "m"
+                }
+              ],
+              "fullScreenDefinition": {
+                "perspectives": [
+                  "BE000",
+                  "BE010",
+                  "BE020",
+                  "BE030",
+                  "BE040",
+                  "BE050",
+                  "BE060",
+                  "BE070",
+                  "BE080",
+                  "BE090",
+                  "BE100",
+                  "BE110",
+                  "BE120",
+                  "BE130",
+                  "BE140",
+                  "BE150",
+                  "BE160",
+                  "BE170",
+                  "BE180",
+                  "BE190",
+                  "BE200",
+                  "BE210",
+                  "BE220",
+                  "BE230",
+                  "BE240",
+                  "BE250",
+                  "BE260",
+                  "BE270",
+                  "BE280",
+                  "BE290",
+                  "BE300",
+                  "BE310",
+                  "BE320",
+                  "BE330",
+                  "BE340",
+                  "BE350"
+                ],
+                "states": [
+                  {
+                    "states": [
+                      "SZT",
+                      "SZN"
+                    ]
+                  }
+                ],
+                "additionalParameters": [
+                  {
+                    "key": "BKGND",
+                    "value": "8"
+                  }
+                ],
+                "imageType": {
+                  "value": "A27",
+                  "mimeType": "image/jpeg"
+                }
+              }
+            },
+            "INTERIOR": {
+              "initialModeConfig": {
+                "perspective": "BI1",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BI1",
+                "BI2",
+                "BI3",
+                "BI4"
+              ],
+              "previewImageParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                },
+                {
+                  "key": "POV",
+                  "value": "BI1"
+                },
+                {
+                  "key": "IMGT",
+                  "value": "W27"
+                }
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "fb",
+                  "value": "1"
+                },
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                }
+              ]
+            },
+            "INTERIOR_360": {
+              "initialModeConfig": {
+                "perspective": "BIS1",
+                "state": [
+                  "SZT"
+                ]
+              },
+              "perspectives": [
+                "BIS1",
+                "BIS2",
+                "BIS3",
+                "BIS4",
+                "BIS5",
+                "BIS6"
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "imageTypes": [
+                {
+                  "value": "W27",
+                  "mimeType": "image/webp"
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "labels": [
+        "MB",
+        "MAX_SYSTEM_POWER"
+      ],
+      "comparableValues": [
+        {
+          "id": "technicalInformation.engine.fuelType",
+          "value": "Strom"
+        },
+        {
+          "id": "technicalInformation.transmission.transmissionType",
+          "value": "Automatik"
+        },
+        {
+          "id": "comparableValue.wltp.co2emission",
+          "value": "0"
+        },
+        {
+          "id": "comparableValue.wltp.electricConsumption",
+          "value": "17.2"
+        },
+        {
+          "id": "comparableValue.wltp.electricRange",
+          "value": "445"
+        },
+        {
+          "id": "technicalInformation.acceleration",
+          "value": "6.2"
+        },
+        {
+          "id": "BRAND_FILTER",
+          "value": "Mercedes-Benz"
+        },
+        {
+          "id": "price",
+          "value": "58196.95"
+        },
+        {
+          "id": "bestseller",
+          "value": 2
+        }
+      ],
+      "navigationCategories": [
+        {
+          "id": "VARIANTS",
+          "name": "Varianten",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "LINES",
+              "name": "Styles",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "SPECIAL_EQUIPMENT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SPECIAL_EQUIPMENT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "LINES"
+            },
+            {
+              "id": "PACKAGE_TYPES",
+              "name": "Ausstattungspakete",
+              "cardinality": "ONE_OR_NONE",
+              "categoryViewType": "EQUIPMENT_LEVELS",
+              "categoryViewConfiguration": {
+                "categoryViewType": "EQUIPMENT_LEVELS"
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "TYPES"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "VARIANTS"
+        },
+        {
+          "id": "EXTERIOR",
+          "name": "Exterieur",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "PAINTS",
+              "name": "Farben",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "PAINTS"
+            },
+            {
+              "id": "WHEELS",
+              "name": "Räder",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE090",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "WHEELS"
+            },
+            {
+              "id": "TYRES",
+              "name": "Reifen",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE090",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "WHEELS_ACCESSORIES"
+            },
+            {
+              "id": "EXTERIOR_EXTRAS",
+              "name": "Exterieur Extras",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "EXTERIOR"
+        },
+        {
+          "id": "INTERIOR",
+          "name": "Interieur",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "INTERIOR_360",
+              "perspective": "BIS1",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "UPHOLSTERIES",
+              "name": "Polster",
+              "cardinality": "EXACTLY_ONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "UPHOLSTERIES"
+            },
+            {
+              "id": "SEATS",
+              "name": "Sitze ",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "SEATS"
+            },
+            {
+              "id": "TRIMS",
+              "name": "Zierelemente",
+              "cardinality": "ONE_OR_NONE",
+              "categoryViewType": "SINGLE_CHOICE",
+              "categoryViewConfiguration": {
+                "categoryViewType": "SINGLE_CHOICE",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "TRIMS"
+            },
+            {
+              "id": "STEERING_WHEEL",
+              "name": "Lenkräder",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "fixationInformation": {
+                "filteredBy": [
+                  "PC-P59"
+                ],
+                "affectsFurtherSelection": false
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "INTERIOR_EXTRAS",
+              "name": "Interieur Extras",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "ZKL24",
+              "name": "Fahrhilfen",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "fixationInformation": {
+            "filteredBy": [
+              "PC-P59"
+            ],
+            "affectsFurtherSelection": false
+          },
+          "contains": "INTERIOR"
+        },
+        {
+          "id": "MULTIMEDIA_SAFETY",
+          "name": "Multimedia und Sicherheit",
+          "cardinality": "NOT_DEFINED",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "INTERIOR_360",
+              "perspective": "BIS1",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "MULTIMEDIA",
+              "name": "Multimedia",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "ASSISTANCESYSTEMS",
+              "name": "Assistenzsysteme",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            },
+            {
+              "id": "SAFETY",
+              "name": "Sicherheit",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "INTERIOR_360",
+                  "perspective": "BIS1",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "INTERIOR"
+            }
+          ],
+          "contains": "INTERIOR"
+        },
+        {
+          "id": "CHASSIS",
+          "name": "Antrieb und Fahrwerk",
+          "cardinality": "ARBITRARY",
+          "categoryViewType": "DEFAULT",
+          "categoryViewConfiguration": {
+            "categoryViewType": "DEFAULT",
+            "stageV2": {
+              "view": "EXTERIOR_360",
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            }
+          },
+          "subcategories": [
+            {
+              "id": "CHARGING",
+              "name": "Laden",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            },
+            {
+              "id": "CHASSIS_CHASSIS",
+              "name": "Fahrwerk",
+              "cardinality": "ARBITRARY",
+              "categoryViewType": "DEFAULT",
+              "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                  "view": "EXTERIOR_360",
+                  "perspective": "BE020",
+                  "state": [
+                    "SZT"
+                  ]
+                }
+              },
+              "contains": "EXTERIOR"
+            }
+          ],
+          "contains": "EXTERIOR"
+        }
+      ],
+      "priceInformation": {
+        "currencyISO": "EUR",
+        "basePrice": {
+          "price": 58196.95,
+          "formattedPrice": "58.196,95 €",
+          "netPrice": 48905.00,
+          "formattedNetPrice": "48.905,00 €",
+          "currencyISO": "EUR"
+        },
+        "configurationPrice": {
+          "price": 58196.95,
+          "formattedPrice": "58.196,95 €",
+          "netPrice": 48905.00,
+          "formattedNetPrice": "48.905,00 €",
+          "currencyISO": "EUR"
+        },
+        "totalOptionPrice": {
+          "price": 0.00,
+          "formattedPrice": "0,00 €",
+          "netPrice": 0.00,
+          "formattedNetPrice": "0,00 €",
+          "currencyISO": "EUR"
+        }
+      },
+      "plsInformationSection": {
+        "technicalData": {
+          "engine": {
+            "type": "ELECTRIC",
+            "driveCycle": {
+              "wltp": {
+                "range": {
+                  "totalAll": 445
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "footnotes": {
+    "2": "Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren ermittelt. Es handelt sich um „WLTP-CO₂-Werte“ i.S.v. Art. 2 Nr. 3 Durchführungsverordnung (EU) 2017/1153. Die Kraftstoffverbrauchswerte wurden auf Basis dieser Werte errechnet. Der Stromverbrauch wurde auf der Grundlage VO 683/2008/ EG ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des Angebots, sondern dienen allein Vergleichszwecken zwischen verschiedenen Fahrzeugtypen. Die Werte variieren in Abhängigkeit der gewählten Sonderausstattungen. Ab Januar 2021 sind die Mitgliedstaaten der Europäischen Union verpflichtet, dafür zu sorgen, dass für neue Pkw, die ausgestellt bzw. zum Kauf oder zum Leasing angeboten werden, mit Verbrauchs- und Emissionsangaben nach dem neuen Prüfzyklus WLTP geworben wird. An der Novellierung der deutschen Pkw-EnVKV, durch die diese Verpflichtungen im deutschen Recht umgesetzt werden sollen, wird derzeit gearbeitet; ihre Fertigstellung verzögert sich allerdings. Für eine Reihe von Neufahrzeugen stehen keine NEFZ-Werte mehr zur Verfügung und können daher nicht mehr angegeben werden. Für die Verbraucherinnen und Verbraucher ist es daher sinnvoll, über die realitätsnäheren WLTP-Werte informiert zu werden."
+  },
+  "filters": {
+    "secondaryFilter": [
+      {
+        "id": "comparableValue.wltp.electricConsumption",
+        "label": "Stromverbrauch",
+        "filterType": "RANGE_SLIDER",
+        "values": [
+          15.2,
+          17.2
+        ],
+        "unit": "kWh/100km",
+        "rangeSliderOptions": {
+          "min": 15.2,
+          "max": 17.2,
+          "stepSize": 0.1
+        }
+      },
+      {
+        "id": "comparableValue.wltp.electricRange",
+        "label": "Elektrische Reichweite",
+        "filterType": "RANGE_SLIDER",
+        "values": [
+          445.0,
+          534.0
+        ],
+        "unit": "km",
+        "rangeSliderOptions": {
+          "min": 445.0,
+          "max": 534.0,
+          "stepSize": 1.0
+        }
+      },
+      {
+        "id": "technicalInformation.acceleration",
+        "label": "Beschleunigung 0-100 km/h",
+        "filterType": "RANGE_SLIDER",
+        "values": [
+          6.2,
+          8.0,
+          8.9
+        ],
+        "unit": "s",
+        "rangeSliderOptions": {
+          "min": 6.2,
+          "max": 8.9,
+          "stepSize": 0.1
+        }
+      }
+    ]
+  },
+  "sortingKeys": [
+    {
+      "id": "bestseller",
+      "label": "vehicleFilters.sortingOptions.bestsellerAsc",
+      "direction": "ASCENDING"
+    },
+    {
+      "id": "comparableValue.wltp.electricConsumption",
+      "label": "vehicleFilters.sortingOptions.consumptionAsc",
+      "direction": "ASCENDING"
+    },
+    {
+      "id": "price",
+      "label": "vehicleFilters.sortingOptions.priceAsc",
+      "direction": "ASCENDING",
+      "selected": true
+    },
+    {
+      "id": "price",
+      "label": "vehicleFilters.sortingOptions.priceDesc",
+      "direction": "DESCENDING"
+    }
+  ]
+}

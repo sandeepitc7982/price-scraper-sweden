@@ -1,0 +1,1153 @@
+{
+    "1": {
+        "code": "1",
+        "availableLanguages": [
+            "de"
+        ],
+        "additionalData": {
+            "sortOrder": [
+                "F40"
+            ],
+            "description": {
+                "de": {
+                    "longDescription": "1"
+                }
+            },
+            "seriesOrder": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "X",
+                "M",
+                "Z",
+                "i"
+            ]
+        },
+        "modelRanges": {
+            "F40": {
+                "models": {
+                    "7K31": {
+                        "timeslices": [
+                            {
+                                "effectDateFrom": "2019-07-01",
+                                "orderDateFrom": "2019-02-18"
+                            }
+                        ],
+                        "agBodyStyle": "SH",
+                        "technicalData": {
+                            "cylinderCapacity": "1,50",
+                            "enginePower": "100",
+                            "engNumberOfCylinders": "",
+                            "abeHub": "1499",
+                            "length": "0000",
+                            "width": "0000",
+                            "height": "0000",
+                            "weight": "0000"
+                        },
+                        "engConcept": "I",
+                        "derivative": "118I",
+                        "manufacturer": "WB",
+                        "transmission": "SCH",
+                        "lineMake": "B1",
+                        "modelCode": "7K31",
+                        "additionalData": {
+                            "vehicleTechnicalData": {
+                                "cylinderCapacity": "1,50",
+                                "enginePower": "100",
+                                "engNumberOfCylinders": "",
+                                "abeHub": "1499",
+                                "length": "0000",
+                                "width": "0000",
+                                "height": "0000",
+                                "weight": "0000"
+                            }
+                        },
+                        "lines": {
+                            "0": "S07E8"
+                        },
+                        "brand": "BM",
+                        "dealerOffer": true,
+                        "effectDate": "2022-12-15",
+                        "firstTvoChecked": true,
+                        "driveType": "VR",
+                        "configurationDates": {
+                            "earliestEffectDate": "2019-07-01",
+                            "earliestOrderDate": "2019-02-18"
+                        },
+                        "steering": "LL",
+                        "bodyStyle": "SH",
+                        "transmissionVariants": [
+                            {
+                                "constructible": true,
+                                "includedOptions": [
+                                    "S01CB",
+                                    "S01DF",
+                                    "S01DZ",
+                                    "S01TK",
+                                    "S0230",
+                                    "S0240",
+                                    "S0249",
+                                    "S02PA",
+                                    "S02VB",
+                                    "S02VC",
+                                    "S0302",
+                                    "S0423",
+                                    "S0428",
+                                    "S0493",
+                                    "S04GN",
+                                    "S04NE",
+                                    "S0508",
+                                    "S0544",
+                                    "S05AQ",
+                                    "S05DA",
+                                    "S0654",
+                                    "S06AE",
+                                    "S06AF",
+                                    "S06AK",
+                                    "S06C4",
+                                    "S06U3",
+                                    "S07LC",
+                                    "S0851",
+                                    "S0879",
+                                    "S08KA",
+                                    "S08R9",
+                                    "S08TF",
+                                    "S08WL",
+                                    "S09QX"
+                                ],
+                                "effectDate": "2022-12-15",
+                                "transmission": {
+                                    "type": "manual"
+                                },
+                                "orderDate": "2022-12-15",
+                                "volt48": {
+                                    "isVolt48Variant": false
+                                }
+                            }
+                        ],
+                        "modelRange": "F40",
+                        "taxDate": "2022-12-15",
+                        "fuelType": "O",
+                        "sportsFlag": "N",
+                        "agModelCode": "7K31",
+                        "series": "1",
+                        "phrases": {
+                            "de": {
+                                "longDescription": "BMW 118i"
+                            }
+                        },
+                        "marketExcludedElements": [],
+                        "orderDate": "2022-12-15",
+                        "hybridFlag": "NOHY",
+                        "hybridCode": "NOHY"
+                    }
+                },
+                "code": "F40",
+                "additionalData": {
+                    "sortOrder": [
+                        "7K11",
+                        "7K31",
+                        "7K51",
+                        "7L11",
+                        "7M71",
+                        "7L51",
+                        "7N31",
+                        "7M91",
+                        "7N51"
+                    ],
+                    "description": {
+                        "de": {
+                            "longDescription": "BMW 1er"
+                        }
+                    }
+                },
+                "lines": {
+                    "S07E8": {
+                        "option": "S07E8",
+                        "displayTypeId": 1,
+                        "phrases": {
+                            "de": {
+                                "longDescription": "Edition ColorVision"
+                            }
+                        },
+                        "lineDefaults": {
+                            "S0775": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M dachhimmel anthrazit"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "FLCRS": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "Leder 'Dakota' Schwarz/Rot"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Polster."
+                                    },
+                                    "nodeCode": "UPHOLSTERY",
+                                    "visible": true
+                                }
+                            },
+                            "P0300": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "Alpinweiss"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Außenfarben."
+                                    },
+                                    "nodeCode": "BODY_COLOURS",
+                                    "visible": true
+                                }
+                            },
+                            "S0563": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "Lichtpaket"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S04P2": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "Interieurleisten 'Illuminated Boston'"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Interieurleisten."
+                                    },
+                                    "nodeCode": "TRIMS",
+                                    "visible": true
+                                }
+                            },
+                            "S0760": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M hochglanz Shadowline"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S0715": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Aerodynamikpaket"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S0711": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Sportsitze für Fahrer u. Beifahrer"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S05A1": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "LED-Nebelscheinwerfer"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S0710": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Lederlenkrad"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S0704": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Sportfahrwerk"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S01FP": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "18\"M LMR Y-Sp. 553 M Bicolor Schwarzgrau"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Räder."
+                                    },
+                                    "nodeCode": "RIMS",
+                                    "visible": true
+                                }
+                            },
+                            "S0508": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "Park Distance Control vorn und hinten"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S0544": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "Geschwindigkeitsregelung mit Bremsfkt."
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S0493": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "Ablagenpaket"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S03MQ": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "BMW M 50 Years Emblems"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S0754": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Heckspoiler"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S03M2": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Sportbremse"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S03MF": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Leuchten Shadowline"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S04GQ": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M Sicherheitsgurte"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            },
+                            "S07M9": {
+                                "phrases": {
+                                    "de": {
+                                        "longDescription": "M hochglanz Shadowline m.erweiterten Umfängen"
+                                    }
+                                },
+                                "salesGroup": {
+                                    "name": {
+                                        "de": "Sonderausstattungen."
+                                    },
+                                    "nodeCode": "OPTIONS",
+                                    "visible": true
+                                }
+                            }
+                        },
+                        "includedTransmissionVariants": [
+                            {
+                                "constructible": true,
+                                "configuration": {
+                                    "modelCode": "7K31",
+                                    "elements": {
+                                        "S05A1": {
+                                            "code": "S05A1",
+                                            "type": "option"
+                                        },
+                                        "S06C4": {
+                                            "code": "S06C4",
+                                            "type": "option"
+                                        },
+                                        "S01DZ": {
+                                            "code": "S01DZ",
+                                            "type": "option"
+                                        },
+                                        "S07E8": {
+                                            "code": "S07E8",
+                                            "type": "option"
+                                        },
+                                        "S03MF": {
+                                            "code": "S03MF",
+                                            "type": "option"
+                                        },
+                                        "S0508": {
+                                            "code": "S0508",
+                                            "type": "option"
+                                        },
+                                        "S07M9": {
+                                            "code": "S07M9",
+                                            "type": "option"
+                                        },
+                                        "S0754": {
+                                            "code": "S0754",
+                                            "type": "option"
+                                        },
+                                        "S04P2": {
+                                            "code": "S04P2",
+                                            "type": "option"
+                                        },
+                                        "S0710": {
+                                            "code": "S0710",
+                                            "type": "option"
+                                        },
+                                        "S03MQ": {
+                                            "code": "S03MQ",
+                                            "type": "option"
+                                        },
+                                        "S0711": {
+                                            "code": "S0711",
+                                            "type": "option"
+                                        },
+                                        "S05AC": {
+                                            "code": "S05AC",
+                                            "type": "option"
+                                        },
+                                        "S0879": {
+                                            "code": "S0879",
+                                            "type": "option"
+                                        },
+                                        "S0715": {
+                                            "code": "S0715",
+                                            "type": "option"
+                                        },
+                                        "S08WL": {
+                                            "code": "S08WL",
+                                            "type": "option"
+                                        },
+                                        "S08KA": {
+                                            "code": "S08KA",
+                                            "type": "option"
+                                        },
+                                        "S0230": {
+                                            "code": "S0230",
+                                            "type": "option"
+                                        },
+                                        "S0552": {
+                                            "code": "S0552",
+                                            "type": "option"
+                                        },
+                                        "S04NE": {
+                                            "code": "S04NE",
+                                            "type": "option"
+                                        },
+                                        "S02VB": {
+                                            "code": "S02VB",
+                                            "type": "option"
+                                        },
+                                        "S02VC": {
+                                            "code": "S02VC",
+                                            "type": "option"
+                                        },
+                                        "S08R9": {
+                                            "code": "S08R9",
+                                            "type": "option"
+                                        },
+                                        "S06AK": {
+                                            "code": "S06AK",
+                                            "type": "option"
+                                        },
+                                        "S033B": {
+                                            "code": "S033B",
+                                            "type": "option"
+                                        },
+                                        "S0544": {
+                                            "code": "S0544",
+                                            "type": "option"
+                                        },
+                                        "S0302": {
+                                            "code": "S0302",
+                                            "type": "option"
+                                        },
+                                        "S0423": {
+                                            "code": "S0423",
+                                            "type": "option"
+                                        },
+                                        "S03M2": {
+                                            "code": "S03M2",
+                                            "type": "option"
+                                        },
+                                        "S0428": {
+                                            "code": "S0428",
+                                            "type": "option"
+                                        },
+                                        "S0704": {
+                                            "code": "S0704",
+                                            "type": "option"
+                                        },
+                                        "S05DA": {
+                                            "code": "S05DA",
+                                            "type": "option"
+                                        },
+                                        "S01DF": {
+                                            "code": "S01DF",
+                                            "type": "option"
+                                        },
+                                        "FLCRS": {
+                                            "code": "FLCRS",
+                                            "type": "option"
+                                        },
+                                        "S0775": {
+                                            "code": "S0775",
+                                            "type": "option"
+                                        },
+                                        "S0654": {
+                                            "code": "S0654",
+                                            "type": "option"
+                                        },
+                                        "S06AE": {
+                                            "code": "S06AE",
+                                            "type": "option"
+                                        },
+                                        "S06AF": {
+                                            "code": "S06AF",
+                                            "type": "option"
+                                        },
+                                        "S0493": {
+                                            "code": "S0493",
+                                            "type": "option"
+                                        },
+                                        "S0494": {
+                                            "code": "S0494",
+                                            "type": "option"
+                                        },
+                                        "S01CB": {
+                                            "code": "S01CB",
+                                            "type": "option"
+                                        },
+                                        "S0851": {
+                                            "code": "S0851",
+                                            "type": "option"
+                                        },
+                                        "S05AQ": {
+                                            "code": "S05AQ",
+                                            "type": "option"
+                                        },
+                                        "S08TF": {
+                                            "code": "S08TF",
+                                            "type": "option"
+                                        },
+                                        "S04GQ": {
+                                            "code": "S04GQ",
+                                            "type": "option"
+                                        },
+                                        "P0300": {
+                                            "code": "P0300",
+                                            "type": "option"
+                                        },
+                                        "S02PA": {
+                                            "code": "S02PA",
+                                            "type": "option"
+                                        },
+                                        "S0249": {
+                                            "code": "S0249",
+                                            "type": "option"
+                                        },
+                                        "S01FP": {
+                                            "code": "S01FP",
+                                            "type": "option"
+                                        },
+                                        "S0760": {
+                                            "code": "S0760",
+                                            "type": "option"
+                                        },
+                                        "S0563": {
+                                            "code": "S0563",
+                                            "type": "option"
+                                        },
+                                        "S06U3": {
+                                            "code": "S06U3",
+                                            "type": "option"
+                                        }
+                                    }
+                                },
+                                "configurationState": "edd5fcca-56b1-450b-a5b4-0336bfc8251a",
+                                "classifiedConfiguration": {
+                                    "transmission": {
+                                        "type": "manual"
+                                    },
+                                    "volt48": {
+                                        "isVolt48Variant": false
+                                    }
+                                },
+                                "transmissionName": {},
+                                "bestMatchOptions": [],
+                                "noRangesClassifier": {},
+                                "wltpRanges": {
+                                    "hybridCode": "NOHY",
+                                    "effectDate": "2022-11-01",
+                                    "orderDate": "2022-11-01",
+                                    "modelOptionCombinations": [
+                                        {
+                                            "includedOptions": [],
+                                            "excludedOptions": [
+                                                "S02TF"
+                                            ],
+                                            "computationDate": "2022-11-01",
+                                            "lastComputedDate": "2022-10-31T01:31:03.498Z",
+                                            "ranges": {
+                                                "co2": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 150,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 129,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 154,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 129,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 131,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 111,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 190,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 175,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 146,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 128,
+                                                        "relevant": true
+                                                    }
+                                                },
+                                                "fuelConsumption": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.6,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 5.7,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.8,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 5.7,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 5.8,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 4.9,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 8.4,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.7,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.4,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 5.6,
+                                                        "relevant": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "wltpClassifier": {},
+                                "emissionRanges": {
+                                    "hybridCode": "NOHY",
+                                    "drivingCycle": "NEDCCorrelated",
+                                    "emissionData": {
+                                        "validityDate": "2022-10-31",
+                                        "lastComputedDate": "2022-10-30T04:32:54.801Z",
+                                        "includedOptions": [],
+                                        "excludedOptions": [
+                                            "S02TF"
+                                        ],
+                                        "ranges": {
+                                            "minCo2Combined": 126,
+                                            "maxCo2Combined": 135,
+                                            "minFuelConsumptionCombined": 5.5,
+                                            "maxFuelConsumptionCombined": 5.9,
+                                            "minCo2City": 164,
+                                            "maxCo2City": 173,
+                                            "minCo2Overland": 103,
+                                            "maxCo2Overland": 112,
+                                            "minFuelConsumptionCity": 7.1,
+                                            "maxFuelConsumptionCity": 7.5,
+                                            "minFuelConsumptionOverland": 4.5,
+                                            "maxFuelConsumptionOverland": 4.9
+                                        }
+                                    }
+                                },
+                                "classifier": {},
+                                "otdData": {
+                                    "businessKey": "VK_5001146610",
+                                    "status": 1,
+                                    "values": {
+                                        "C_DREHM_GES_KOMM_FTLBS": {
+                                            "referenceName": "C_DREHM_GES_KOMM_FTLBS",
+                                            "targetValue": 162
+                                        },
+                                        "C_DREHM_GES_KOMM": {
+                                            "referenceName": "C_DREHM_GES_KOMM",
+                                            "targetValue": 220
+                                        },
+                                        "C_LEIST_GES_KOMM_PS": {
+                                            "referenceName": "C_LEIST_GES_KOMM_PS",
+                                            "targetValue": 136
+                                        },
+                                        "C_LEISTUNG": {
+                                            "referenceName": "C_LEISTUNG",
+                                            "targetValue": 100
+                                        },
+                                        "C_LEISTUNG_PS": {
+                                            "referenceName": "C_LEISTUNG_PS",
+                                            "targetValue": 136
+                                        },
+                                        "C_LEIST_GES_KOMM": {
+                                            "referenceName": "C_LEIST_GES_KOMM",
+                                            "targetValue": 100
+                                        },
+                                        "C_LEIST_GES_KOMM_BHP": {
+                                            "referenceName": "C_LEIST_GES_KOMM_BHP",
+                                            "targetValue": 134
+                                        },
+                                        "B_LGEW_EU": {
+                                            "referenceName": "B_LGEW_EU",
+                                            "targetValue": 1365
+                                        },
+                                        "E_0_100KMH": {
+                                            "referenceName": "E_0_100KMH",
+                                            "targetValue": 8.9
+                                        }
+                                    },
+                                    "preConfigurationOptions": [
+                                        "S01CB",
+                                        "S03M2",
+                                        "S01DF",
+                                        "S01DZ",
+                                        "S0704"
+                                    ]
+                                },
+                                "prices": {
+                                    "netListPrice": 34253.87,
+                                    "netPrice": 34253.87,
+                                    "netDiscount": 0.0,
+                                    "netDiscountPercent": 0.0,
+                                    "grossListPrice": 42809.9,
+                                    "grossListPriceUnrounded": 42809.87,
+                                    "grossPrice": 42809.9,
+                                    "grossPriceUnrounded": 42809.87,
+                                    "grossDiscount": 0.0,
+                                    "grossDiscountUnrounded": 0.0,
+                                    "grossDiscountPercent": 0.0,
+                                    "totalTaxes": 8556.0,
+                                    "totalTaxesListPrice": 8556.0,
+                                    "taxes": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "VAT",
+                                            "taxPercentage": 0.2,
+                                            "taxValue": 6850.77,
+                                            "taxBase": 34253.87
+                                        },
+                                        {
+                                            "taxCategory": "DUTY",
+                                            "taxKey": "NOVA",
+                                            "taxPercentage": 0.06,
+                                            "taxValue": 2055.23,
+                                            "taxBase": 34253.87
+                                        },
+                                        {
+                                            "taxCategory": "DUTY",
+                                            "taxKey": "NOVABONUS",
+                                            "taxPercentage": -0.0102,
+                                            "taxValue": -350.0,
+                                            "taxBase": 34253.87
+                                        }
+                                    ],
+                                    "taxesListPrice": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "VAT",
+                                            "taxPercentage": 0.2,
+                                            "taxValue": 6850.77,
+                                            "taxBase": 34253.87
+                                        },
+                                        {
+                                            "taxCategory": "DUTY",
+                                            "taxKey": "NOVA",
+                                            "taxPercentage": 0.06,
+                                            "taxValue": 2055.23,
+                                            "taxBase": 34253.87
+                                        },
+                                        {
+                                            "taxCategory": "DUTY",
+                                            "taxKey": "NOVABONUS",
+                                            "taxPercentage": -0.0102,
+                                            "taxValue": -350.0,
+                                            "taxBase": 34253.87
+                                        }
+                                    ],
+                                    "roundingDifferenceListPrice": -0.03,
+                                    "roundingDifference": -0.03,
+                                    "deltaPrice": {
+                                        "netListPrice": 1116.770000000004,
+                                        "netPrice": 1116.770000000004,
+                                        "netDiscount": 0.0,
+                                        "netDiscountPercent": 0.0,
+                                        "grossListPrice": 1407.0999999999985,
+                                        "grossListPriceUnrounded": 1407.1200000000026,
+                                        "grossPrice": 1407.0999999999985,
+                                        "grossPriceUnrounded": 1407.1200000000026,
+                                        "grossDiscount": 0.0,
+                                        "grossDiscountUnrounded": 0.0,
+                                        "grossDiscountPercent": 0.0,
+                                        "totalTaxes": 290.35000000000036,
+                                        "totalTaxesListPrice": 290.35000000000036,
+                                        "roundingDifferenceListPrice": 0.020000000000000004,
+                                        "roundingDifference": 0.020000000000000004
+                                    }
+                                }
+                            }
+                        ],
+                        "prices": {
+                            "netListPrice": 33137.1,
+                            "netPrice": 33137.1,
+                            "netDiscount": 0.0,
+                            "netDiscountPercent": 0.0,
+                            "grossListPrice": 41402.8,
+                            "grossListPriceUnrounded": 41402.75,
+                            "grossPrice": 41402.8,
+                            "grossPriceUnrounded": 41402.75,
+                            "grossDiscount": 0.0,
+                            "grossDiscountUnrounded": 0.0,
+                            "grossDiscountPercent": 0.0,
+                            "totalTaxes": 8265.65,
+                            "totalTaxesListPrice": 8265.65,
+                            "taxes": [
+                                {
+                                    "taxCategory": "PRODUCT",
+                                    "taxKey": "VAT",
+                                    "taxPercentage": 0.2,
+                                    "taxValue": 6627.42,
+                                    "taxBase": 33137.1
+                                },
+                                {
+                                    "taxCategory": "DUTY",
+                                    "taxKey": "NOVA",
+                                    "taxPercentage": 0.06,
+                                    "taxValue": 1988.23,
+                                    "taxBase": 33137.1
+                                },
+                                {
+                                    "taxCategory": "DUTY",
+                                    "taxKey": "NOVABONUS",
+                                    "taxPercentage": -0.0106,
+                                    "taxValue": -350.0,
+                                    "taxBase": 33137.1
+                                }
+                            ],
+                            "taxesListPrice": [
+                                {
+                                    "taxCategory": "PRODUCT",
+                                    "taxKey": "VAT",
+                                    "taxPercentage": 0.2,
+                                    "taxValue": 6627.42,
+                                    "taxBase": 33137.1
+                                },
+                                {
+                                    "taxCategory": "DUTY",
+                                    "taxKey": "NOVA",
+                                    "taxPercentage": 0.06,
+                                    "taxValue": 1988.23,
+                                    "taxBase": 33137.1
+                                },
+                                {
+                                    "taxCategory": "DUTY",
+                                    "taxKey": "NOVABONUS",
+                                    "taxPercentage": -0.0106,
+                                    "taxValue": -350.0,
+                                    "taxBase": 33137.1
+                                }
+                            ],
+                            "roundingDifferenceListPrice": -0.05,
+                            "roundingDifference": -0.05,
+                            "deltaPrice": {
+                                "netListPrice": 0.0,
+                                "netPrice": 0.0,
+                                "netDiscount": 0.0,
+                                "netDiscountPercent": 0.0,
+                                "grossListPrice": 0.0,
+                                "grossListPriceUnrounded": 0.0,
+                                "grossPrice": 0.0,
+                                "grossPriceUnrounded": 0.0,
+                                "grossDiscount": 0.0,
+                                "grossDiscountUnrounded": 0.0,
+                                "grossDiscountPercent": 0.0,
+                                "totalTaxes": 0.0,
+                                "totalTaxesListPrice": 0.0,
+                                "roundingDifferenceListPrice": 0.0,
+                                "roundingDifference": 0.0
+                            }
+                        },
+                        "defaultModel": {
+                            "prices": {
+                                "netListPrice": 33137.1,
+                                "netPrice": 33137.1,
+                                "netDiscount": 0.0,
+                                "netDiscountPercent": 0.0,
+                                "grossListPrice": 41402.8,
+                                "grossListPriceUnrounded": 41402.75,
+                                "grossPrice": 41402.8,
+                                "grossPriceUnrounded": 41402.75,
+                                "grossDiscount": 0.0,
+                                "grossDiscountUnrounded": 0.0,
+                                "grossDiscountPercent": 0.0,
+                                "totalTaxes": 8265.65,
+                                "totalTaxesListPrice": 8265.65,
+                                "taxes": [
+                                    {
+                                        "taxCategory": "PRODUCT",
+                                        "taxKey": "VAT",
+                                        "taxPercentage": 0.2,
+                                        "taxValue": 6627.42,
+                                        "taxBase": 33137.1
+                                    },
+                                    {
+                                        "taxCategory": "DUTY",
+                                        "taxKey": "NOVA",
+                                        "taxPercentage": 0.06,
+                                        "taxValue": 1988.23,
+                                        "taxBase": 33137.1
+                                    },
+                                    {
+                                        "taxCategory": "DUTY",
+                                        "taxKey": "NOVABONUS",
+                                        "taxPercentage": -0.0106,
+                                        "taxValue": -350.0,
+                                        "taxBase": 33137.1
+                                    }
+                                ],
+                                "taxesListPrice": [
+                                    {
+                                        "taxCategory": "PRODUCT",
+                                        "taxKey": "VAT",
+                                        "taxPercentage": 0.2,
+                                        "taxValue": 6627.42,
+                                        "taxBase": 33137.1
+                                    },
+                                    {
+                                        "taxCategory": "DUTY",
+                                        "taxKey": "NOVA",
+                                        "taxPercentage": 0.06,
+                                        "taxValue": 1988.23,
+                                        "taxBase": 33137.1
+                                    },
+                                    {
+                                        "taxCategory": "DUTY",
+                                        "taxKey": "NOVABONUS",
+                                        "taxPercentage": -0.0106,
+                                        "taxValue": -350.0,
+                                        "taxBase": 33137.1
+                                    }
+                                ],
+                                "roundingDifferenceListPrice": -0.05,
+                                "roundingDifference": -0.05,
+                                "deltaPrice": {
+                                    "netListPrice": 0.0,
+                                    "netPrice": 0.0,
+                                    "netDiscount": 0.0,
+                                    "netDiscountPercent": 0.0,
+                                    "grossListPrice": 0.0,
+                                    "grossListPriceUnrounded": 0.0,
+                                    "grossPrice": 0.0,
+                                    "grossPriceUnrounded": 0.0,
+                                    "grossDiscount": 0.0,
+                                    "grossDiscountUnrounded": 0.0,
+                                    "grossDiscountPercent": 0.0,
+                                    "totalTaxes": 0.0,
+                                    "totalTaxesListPrice": 0.0,
+                                    "roundingDifferenceListPrice": 0.0,
+                                    "roundingDifference": 0.0
+                                }
+                            },
+                            "modelCode": "7K11",
+                            "agModelCode": "7K11",
+                            "options": "FLCRS,P0300,S01CB,S01DF,S01DZ,S01FP,S0230,S0249,S02PA,S02VB,S02VC,S033B,S03M2,S03MF,S03MQ,S0423,S0428,S0493,S0494,S04GQ,S04NE,S04P2,S0508,S0544,S0552,S0563,S05A1,S05AC,S05AQ,S05DA,S0654,S06AE,S06AF,S06AK,S06C4,S06U2,S06WB,S0704,S0710,S0711,S0715,S0754,S0760,S0775,S07E8,S07M9,S0851,S0879,S08KA,S08R9,S08TF,S08WL"
+                        }
+                    }
+                },
+                "modelDefaultCombinationEnabled": false
+            }
+        }
+    }
+}

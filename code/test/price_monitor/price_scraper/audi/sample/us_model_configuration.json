@@ -1,0 +1,525 @@
+{
+  "configuration" : {
+    "assets" : {
+      "exterior" : {
+        "fullscreen.new" : "testing",
+        "stage.new" : "testing"
+      },
+      "exterior_front" : {
+        "carstore.new" : "/fast/H4sIAAAAAAAAANVWZ1BUSxbuYQaEaQGRIUpQYCQHGR9ZMiiSFAElSHTIOSPhgYoiEh0JDoJIkBwkjOSgqOAjCQISBCQpkhREScJe3-6vrXpbW7VVu7Xnx6nbX3d1n3vCd07JMqD29wFoCwt13Z8cLI6OY7JUAAR5AQBQCE5loV6yzrZJQ2s89Q-Y4QGg9vP3sfNEIUfOUWGd3W0diZIuXkRHRhTWW06cGOQn7uN18gCyGw1vxo8p7kpIrHVHjDJN-I86WO3UnAHQT5VQKtU-uSXwSbnwZpQp23qp2RcA18eVvnMfPr424Fna6BfIyU-NlzYEUPwihW8mV8nl-6cocZr86Rcsns0QwLuuCyPl4u6ehhltu-pmqhYC9eN1AF5hEowdz50i3Pz9enuqjP2in0FyGYAtfLyi2ummdzqD31V6puTAcxJ5swA-f8P2Xumwopq_5jfr3MOLBlaR5MsAihJlDLEdohKj2SbiPA399_1wK3IAPvmI38wqiHTYTq3TmxdsitSXPCkPYAXTm_zjcheKRr4XXaST71PMGNhlBTDZ86RmJvardtfprYXGefYpnk2lKAC1-x_fhdyhika9JY17SacIXwKLPwN43T12YAME8D8lbzgPxV96fZa3Bg0gd4is2rCbQlgao7gY5ez8swsBkTwAFoZqBU_30try7cZMrustM0ZME5kBFKHiV9rpy2ihDqIsBMZfaGqjeFsCaHsqZaDsSFJ2Q63WA9H56SCxDdEtAIc9j4qN-ykzHkxt2sF5GanJ-L9DUOWM0JfJ5b2J4iO6ZP9d9vM5o48HAXyl-HiN8y2W9tbgaGQcECjnl6syAbDR1U76A8HkWrZiBAv78b4ngtzWFABT8Nselamt-tHnO2sSrbsckrE5awB6Gp_mae8L7cSrQ9Wnt1L6ZSM35wDcRSuty2-VdGhP-LgWY8mUC0alKQDyyQj078_3HHQQch-jUgAN9j3y3ABSLvfebMDWsvbWeTSNFupQh79-ZAMgYzz_QkaLyC3Z5g9Vhx2FXQPyN48DKB2I3_Kn9-yYPTmQnjy7tPgQbdMCYMCejkldbtCgavDyObcDPXMpFNZM5F5qwrpIxFa3MgGTh67pWpPkGXsJIOfek6avimOEdnZH5UXD_NjUCqlnADoKa9NJDdMvsKqdfYuKnGZPYDiN_AXnZZ1ZVs3HP8xDRnvwYUmXsgccpQGUG52qla4UI8rm8vlsNFgIqvycaAXwwvSphX1SG6GauZB2UICGNaa76AqAgl2LMYl5JYLRkyNeqe5fuWKBXTGAXIkM985uTK0pC5V1xE8KWW6L-DUBeNUsSybM3eO2UQZG1yhFg5nXftYcwBscOeGw4kJrr4ngXZtePZn92HQkU0dpUoLZP2Vx5nfqY2f071jPscQ7AHhscf4-tWwMYc-4gf6tw62IpZGODgBL2AKc-1_bpK7w1NjRt0_yu-i_KgQwViE3W6zi3JYP-kXF74DkEXPp4xCAQblc26SMs-THRMmAOMzO89avGAsAZ5pD8lp0hgT0jRXyKS7KPppWz14A6ErVjDUOX4oNOkOSlEnT9nB6GU0HoEVyZDXqAWunKbli14q0uaQwpr8BoNhiq1YgzAu5dyyG8wav7-GnZ5qOATgwfOFMDFn29TPF0Lb23wIuTmVZ3QXQQaompvjFKT25CQIqfXd-y7deAamh_WpHvGv7gKWRYEYsfb1bQGPmAmLZkdXgQVwTn8ysrlq06bRCQbdrxCsA-Z_qBcn6fdW50xP6hmrxnKOFncA-gEWDGXNVlcrWEwbfGxdj8Ja2FHVlAG99vnxkZyh0NdeLbZ-DrXIyGCj0Aph0P4dhxPsEN6Nskceg0xPmTVIa4smLHBvSpwRZ8L0l1Ff1cUmwOniGE0B8wsd7doxQl-01SZOf-a7U9g9XfYQJ_M8L651QMgisyinyXmXLl3B6ywXgqlj3DTq9xI0ElYJVC6PdeU_CsBKAqe3MqPnY_OG5jfAQm98Vd1iEUn9FXtWQzk7As4QUJlAxWZu1_YwgdB1hrlP1LYwiIVx6rd6SaUetl3z17W8h2XfwKiVmoJxrmIb40HnIiKVnHiMCoHfpTFuy9OkqVjuNlMJoW_mRszETAHbRlwXkvYnhsKOwSh4tq8jORrsaALhCIZhZhGV2hDQVSUwaYLDM3OwHAGzfK43TaG5tzj25DO6YtNTOnehGeOfYoWus3PnFsJLJekt_88oUqWAxEsAfpP0XYVGFhtEdiX6VcbqXsnyspgCUQot4SSRatAGKqGKFQnyZcKYYcvbB8AmO9fydzuyXbZm-vMIGLpefjSP3Yg9qaN8bzTlcrtp1e38-ivmLugbCRmRmHqzHy4vJhrVV55slvXdJZxF7Xewv3vB5ve2bGz6c1iLiW1u-bXwUQA3Zykc5O6u8dmEs5nRHU9Fh-_XfAHytLHP7-_nudP6RK3cWwm_gk_IWTgMog6NjkrRILhrAhXxcbbtvbklTqwVgzXOV2GLzrCgS_wBmrKTwq-5BOsSGPH2-Ox75zDphsX88GRjiZztTGjmCREhXBa9_TnNQS7-IeELBHbPzJu0kgPI9MfZ4LuU9h7uXIkSG9pzM6roJAJLzP_eXYvt66n8XbqV4DHyPFzdiAZA49EjcvfSUxZLS2pA3qv_Lug1hBjl7TZ0hiZTiyDX-RNsPHWhTl1CK9ICE7U8FaNGgI7waPGkyZ1iKOd-leAJ4zcKN1ztlau3QI36BEU3B_ZQR8wdI5yX5DEgc5l5RyVQ2X3rzkLhwwBXhKK6KlyZldmwdO4ale7S96EK-A-9qERu4xTDAeCJJ_RWTc_ZshgDVvTljANmiVvYTGE2bwnsdRx4mWU8n2EgcAdBt-I8jD5qfLHHhfMmuhaFVeDRBHMBTdg9HxQoMS4Vi82gvY39iVvgMkOyr4j2Bezn59sHPplch4zP0OPmYuSykhvLJXag5SSmV3lBdlHP14Ie2lV9MQJMntnn8NO1WXuKYWq427rFvrSKAJN1L2bZDQt20OOY-jTY9_x635FQA5xu16lWbyxswdLcUySpxqwpq1YgNQ3VsVQ_fVhe2nvN72H8DP8ZDSt4D0OM3U0pY2nEVWmp209vhQ2b72RZIj8VEsbpENOsLaA7wCi2nbMTdv6SmibCc0VpUB_3e-osrb26KbK2WFhbZiQL4KU_3HsP2Z4U2HO4RzeEMDaC0IwGgyvXJ0Zk9OU3n9c6C6JYvPwfHKxCWa7Pald5-L77ZF4u6ceXF-6wzBfyIH86noyp0xKspapqshW5acWG6qiZIHd_35yocrVLZWb5kE2pGTKjg7Fi_CaCvhP0xDj-qRoZcinzZtmbWga60PoRpH02yh1YVm0e6U_MYMVWaeXkJTQKYftLwKpXVW2aiJfd03rcmObroxVgAxzBMXQua34wd3m8os12bYmUbOb0LII6jdLnkQO-rjpvfl5VripP67GI_IZEnCgeT5CmMZbnvpYzL6K2KM3_-BDCxP5Qn8BoTf_Zq8HUGveL-2zUuCGpMz-nfXXYU_1nfS1ml4n3gPe1QUwDfXXT0Uby6vpqFZozijOwGlz-WRACYOWOm4Wjt9Fw4pi3d7LzE_N2-AKS_icjQNN6Wa0hTzTixUYCecHbsPWAP4CHeieHl239IU2deyA6qaYnJM0QxAGiznESF-Wh6UKnlMce2sHT3-tN2hLkW-m8tYXLBlmL_0kHhD3cm-YkfEO_YQrBD7vBEc-Xbr7_yT47IbJCZB9A5Kpei6R6gLkEcny24zI_TjGbOBbBy-EWeUU4E9kfjWINARP_CznI1ggp-rhpyIa8_0jOhY_ymZ7vckhJsjURopjDcOSGsYpfcJsz8JnZyiOcHMveNzGI2znmTjaq0CmzVCq0k0qqkEgCspal1oo60qiyjki3qtLVmJPQKrgCoHll3zTK9v9x8xS7O6a3ls4xyEYQ14oUaA8Rz6sut81_eSUOjPq4J-QcCWNdj8BRXrBul46uHXXI97iZTIoXE2L9ESYALHKnHued8Ir6_qNz_86sggKp-9wx1Ue2ZKLp-J-es7msloXM5CHtGTzSPfWGIYg7qqx8V7zho2UX2R-JW1Mn17HhdXn31-oCzzi5-LuuQPKBGZnqqIkShnyOK3hVRdCx_foFf077oLyWJKNQJgEa0FbJsB7-EgcHfx83L1sfWXSLQ-Yqf0yEEowJ_Fxbw1xL9L_b-U0H9xfqf8f8n-V_b_t98_8-3mISk_k1hxqiZ6hj_DTEV_c_PDgAA",
+        "layerstage.new" : "/fast/H4sIAAAAAAAAANVWZ1BUWxI-wwwIcwREhihBgZEgScZHliyKJEVACRIdcs5IeICiiESH5CCIBMlBwkgOigo-kiAgQUCSIklBlCTs9e3-2qq3tVVbtVvbP7rqfLfrnL4dvu6SZUDt6wXQZmZq2j85WOztx2SoAAjwAACgEJzKTK1knW2ThtZw6h8wQxag9vH1snFHISYXqLCOrtb2RAknD6I9_draGiMK6ykrRgzwEfPyOHUAsYiCt-LGFHbFxde6w0aZJnxH7Sx2as4B6KNCKJVsn9wS-KRUeCvSmG291OQLgOvjit-5Dx9fG3AvbfTx5-SnxkvpAyh2mcI3k6vo9P1TpBhN_vQLFvdmCOA954WRcjFXd_2Mtl01ExUzgfrxOgCvMQnGjOdOEW79fqM9Vdp20UcvuQzAFj7eE5rpxnc7A99VuqfkwAviebMAPn_D9l7xsIKqr8Y3y9zDi3oW4eSrAJ4gSutjO06Ij2YbifE09N_3wa3IAvjkI34zqyDcbju1TmdesClcV-KUHIAVTG_yj8teKhr5XnSZTq5PIWNglxXAZPdTGpnYr5pdZ7cWGufZp3g2FSMB1Ox_fA9yBysY9JY07iWeJnzxL_4M4A3XmIEN4Mf_lLzhOBR35fV53ho0gNxBMqrDLvIhaYxiopTz888u-YXzAFgYfCZwupfWmm83enJdZ5kxbJrIDKAIFb_iTl9GC3UAZcE_7lJTG8XTHEDr0ykDZUcSsxtqzzw4MT8dILpxYgvAYfejouM-SowHU5t2cB4GqtK-7xBUKSP4ZXJ5b4LYiDbZd5f9Ys7o40EAXyk8XuN8i6W9PTgaHgsEyvllq4wAbHS2kfpAMIrIVghjYT_e90SQ25ICYAp-260ytVU36mJnTYJll10yNmcNQHfDszztfcGdeDWo8vR2Sr9M-OYcgLtoxXW5rZIOzQkv52IsmXLJoDQFQD5pgf79-Z6DdkKuY1TyoMG2R44bQMrV3lsN2FrW3jq3ptFCLerQ14-sAGSM41_IaBG5LdP8oeqwvbCzX_7mcQCl_PFbvvTuHbOnBtKTZ5cWH6KtWgD029MyqssNGFQJXL7gcqBnLoXCmoncS01YFwnb6lYiYPLQNV1rEjxjLwHk3HvS9FVhjNDObq-0qJ8fk1oh-QxAe2FNOslh-gVW1fNvUeHT7PEMZ5G_4LyqNcuq8fiHadBoDz4k8Ur2gL0UgLKjU7VSlaJEmVw-r40GM0HlnxOtAF6aPr2wT2ojVDMX0g4K0LBGdxddA1CwazE6Ia9EMGpyxCPV9StXDLApBpArgSHp_MbUmpJQWUfcpJD5tohPE4DXTbKkQ1zd7hhkYLQNUtSZeW1nTQG8yZETCisutfYaCd6z6tWR3o9JRyp1lCYlkP1TFmd-py52Rveu5RxLnB2Axxbn71PLRBP2DBvo39rdDlsa6egAsITNz7H_tVXqCk-NDX37JL-T7qtCAGPkc7NFKy5seaFfVPwOSG7RVz4OARiQy7VNyjhPfkyU8IvF7Dxv_YoxA3CmOSivRWtIQNdQPp_ipOSlYfHsBYDOVM1Yw9ClmIBzJAnpNE03h5dRdACaJYdXox6wdhqTK3YtSJtL8mO6GwCKLrae8Yd5QUnHojlv8noffnqu6RiAA8OXzkWTZV4_Uwhua__N7_JUlsU9AO0ka6KLX5zWkZ0goNJ357e86-WRHtqvtsc7tw-YGwhmxNDXu_g1Zi4gnh1ZDRzENfFJz2qrRhlPyxd0O4e9ApD_qU6AjM9Xrbs9wW-oFi_Ym9kI7ANYNJgxV1WpZDmh971xMRpvbk1RUwLw9uerR3aGgldzPdj2OdgqJwOBfC-AifdzGEY8T3IzyhS5DTo8Yd4kpSGRvMyxIXVakAXfW0J9XReXCKsDZzgBxMd_TLJhhNpsr0ka_Mz3JLd_OOsiTOB7UVjnpKKef1VOkecqW764w1suAFdFu2_S6SRsxCsXrJoZ7M67E4YVAUxtZ0bNx-QPz22EBln9rrDDIpT6K_Mq-nQ2Au4lpBCBisnarO1nBKEbCHOdrm9hFAni0mn1lEg7arnkrWt7G6m-g9cp0QPlXMM0xIeOQwYsPfMYEQA9S2fakqXOVrHaqKcURlnLjZyPngCwi77ML-9NNIcNhVXiaFlFdjbaWQ_AFQrBxCwksyOoqUh8Ug-DZeZmPwBg-15prHpza3PuqWVw16ildu5kN8I7xw5FsHLnF8NKJsst3c1rU6SCxXAAf5D2X4REFupHdST4VMZqX8nyspgCUBIt4iGeYNYGKCcUKuTjyoQzRRHbB8MnOdbzdzqzX7ZlevMK6zldfTaO3Is9qK6ZNJpzuFyl687-fCTzFzV1hI3IzDxYt5eXk_Vrqy42S3juks4j_jrZXr7p9XrbOzd0OK1FxLu2fNvwKIDqMpWPcnZWeW1CWEzpjqaiQ_brvwH4Wkn6zveL3en8I9fuLoTexCfmLZwFUBpHxyRhllw0gAv6uNp239ScpvYMgDXPlWOKTbMiSfwDmLGSwq_aB-kQH_J0-e665TNrhcT88WRgiJ_tXGn4CJIhbWW87gWNwTO6RcST8q6YnTdppwCU64m2xXMp7dnduxImMrTnYFLXTQCQnP-5vxTb11P_u3ArxW3ge5yYAQuAxKFHYq6lp82WFNeGPFH9X9atCDOIbYQaQyIpxZ5r_ImmD9rfqi6-FJkB8dufCtAnAo7wqvOkSZ9jKeZ8l-IOYISZC69nytTaoUf8AiMagvspI6YPkMlL8hoQP8y9opypZLr05iFx4YAzwlFcFS-NymzYOnb0S_doe9GFfAfe1SI-cItigOFEotorJsfs2QwBqqQ5QwDZIlf24xmNm0J77UceJlpOx1uJHwHQZfiPIw-anyxx4bzJzoXBVXg0QQzA0zYPR0UL9EuFYvJor2J_Ylb49JDqq-I9iXs5-fbBz6ZXQeMz9Di56LkspIfyyV2oOQlJ5d5gbZRj9eCHtpVfTECTJ7p5_CztVl7CmGquJu6xd60CgCTtK9nWQ0LdtDjmPvU2Hd8el-RUAOcbz9SrNJc3YOhuK5CVY1flVasRH4bq2Koevq0ubL3g87D_Jn6Mh5S8B6Dbb8aUkLTjyrTU7MZ3QodM9rPNkBmLiWR1CmvWFdAY4BVaTtmIvX9FVQNhOYO1yA76vfUX197cEtlaLS0ssjkB4Kc87SSG7c_ybTjcI5rDGepAcUccQOUbk6Mze7IajuudBVEtX34OjlcgLNdmsSu1_V5ssy8GdfPai_dZ5wr4kThcTEdVaIlVU1Q1WAtdzsSGaKsYIX1835ercLRKeWf5ilWwCTG-grNj_RaA3uK2xzh8qBoZcilyZdsaWQe60voQpn00yR5cVWwa7krNY8BUaeLhITQJYPop_etUFm-Ziebc03nfmmTpohZjABzDMHUtaHwztHu_ocQWMcXKNnJ2F0AcR-lyyYHeVx23vi8r1RQn9tnEfEIyTxQOJMlRGMty30saltFbFGf-_AlgQn8wj38EE3_2auANBp3i_js1TghqSM_p2112FP9Z10NJueK9f5JmsDGA7y7beylcX1_NQjNGcoZ3g6sfS8IAzJwxUbe3dHguHN2WbnJRfP5enx8y30SkaRrvyDakqWSc3ChATzja9x6wBfAQ78Tw8p0_pKgzL2UH1LRE5-mjGAC0Wk6kwnw0PqjY8phjW1iqe_1pO8JcC_23lzC5YEuhf-mg8Ie7k_zED0h0rCHYIXe4o7nybddf-SaHZTZIzwPoGJlL0XD1UxMnjs8WXOXHaUQx5wJYOfwizyAnDPujcaxBIKx_YWe5GkEFP1cNOZHXH-kY0TF-07FebkkJtEQyNFMY6hgfUrFLbhNmfhMzOcTzA9n7RmYxGxc8yQZVZwqsVQstxNOqJOMBrKWpdaAOt6gso5Ip6rS2ZCT0Cq4AqBZeF2Ge3l9uumIT6_DW_FlGuQjCGnFCjX5iOfXllvkv76ahUR_XhHz9Aazr0XuKK9aO1PLWwS45H3eRLpFEcuxboijABY7U41xzPhHfX1bq__lVEEAVnyR9bVR7Joqu38ExqzuiJHguB2HPqInmsS8MkcwBffWjYh0HzbvIvkjeijq5nh2vy6uvXh9w1NrFz2UdkgPUyF5PVYQo9HNE0Tsjio4F_KkRhaL9tfYb_DqjetAAUOMQa0HwSxgYfL1cPKy9rF3F_R2v-TgcQjAq8HdhAX8tUf_i238qqL84_zP-_yT_a9__m-__-RaTkOS_KcwYVWMtw78Ba0twO9MOAAA"
+      },
+      "interior" : {
+        "fullscreen.new" : "/fast/H4sIAAAAAAAAAI1VeTjU6x5_jTu2V2Q3jLG0J0uSMGQ_BtmOPY5wMWZsY-zVjexLNOXQzZo9IUv2wUU4FPcoyyHrxFBCQsjW-XXufe7f9_3j83yfz_f7vM_nu7zft2IVoIOpgNXRUdfkECNEJE5eQQEQRgEAsCA8ylG3YlNkl43Deu6_NNswQAcFU938WZAQCxQXydeV6KFApngQeVm4AlTlSH5BclSKMjviJcDCXVL8xrCcQ1dUirC67gSnnUHLKwCVK7lYRdvsPV-vpgbLfWKrVWEkaQDIolZh03NSbFrudZeGzHZu6rdZLVsADQLrH796v519gHFmhsVrHH-GP-gFUPdz53jLbxZpLKnkMN4bK53XVRmSAKKI2LervzzTF8ij25yQKRQVxfYFAHiH2UT4PirP0WEUhFoRPrNrZH6gDeD-atr4Bbz2rP6vG82z0vUcE1SDXADR6ed-Fjfvyao5uJXHU5mu7iPeZwPgee-_F7SFjG2PvblaFYWl8moqH1oBOJJ4qWwq2qNq7Kdq8gkzk8x9zBs-ADE-h27CpmQFbrWZ_ICntwe0T8kmAMi76LFw8cRO4SYTlRe4yx3ySZNrAkAsY-BG7Wx-GSmHX8pu2Pqe9PhoNYA3rVbeuWwQOXrTJz4yvM4sjWzVSAHYOVyecGdP0V3u6wVjdj1J-lojphHAf-ob8V3y0qzWU2UvbVgnX1x4WucEYJpCBs7ZRLDjkPLA_kiyc0-6-TYBQPbvOzy37O7h_TIDKyTpj7foW70qAK5nHRaWkvYPuutqJUUeL2pv1N4xBnC4IU0gV7ni3knXjIZE8RDLm-macwAajzKKpgWaME-KtV4v_JFEyfLZQm4Idw9cXOTNxfEbpRQo5FwgZ-U6RwIYlmXcs-vwjVL_1K33J-YotbRRrAJAOxYVC-KK-eDKVxPJqYaYg6qjBF0AvcNpl9Ca_tenhub_KLZ42fB9XVYQQHVaekUd7V-WWlw8FTr55GPuVm3JAHKmSy-1XHP-eOWya_Z1PG9P-3zbIIDNER9kPQ_77c8JMSQfjTcnLxUEbgMYq8ScWyOkcpQUy3y-MUjVyCmx2gJQdWfv6YxZXBE-Jq7h1y-T6ZQPU9YA7mpGtPWIZgvH7fyjmPFczw8j4SuP6PXrbCfu9FUtX3aea3Ogs8gIgTKkvpGycqETUgTx8-bBgZG1XwurLlwCEM9txuWiImKIn_SPGhm_ojE6NbICYPtoY_XWHW871iOvLR0GdnLRpA-Zvm4pVKmDV5gByr5UQcefWH2zfzcciV3GxP4bNzRH3y-OxWAH1DjMXdWRiUoWO9Q2e3LSJMAs0X3P8f343BiiocDsPsf6HUUN7zKJYsoLWXajXtFVAOXmktRV06OXdQimw6cjTK6ONJzwA9BonBTGpUi71ppXWl6kS6v_1h6GZOxglI_jymQ5Rgxpbbr5rOeInBYlA-DhlZ3U6T2h_Az9wSSBF0FZFCm0KIB5BSqFDkPmdzWuSzE_bGzuJz-0LQHQ8KOJPE6BNYTgOZEb7yNRntOS0QKgAI1fX-mimm1y2mZE7ZwRW44gpgDAjTMTltximbc-LMSeUnzUUCx77AHSTb8oJpoWGD5iEasYJ9OLtn7bhu1GNES-TEiOtu4XV1UTw9rHHL_FoIQibMFl_mK8Th2qa_GghxkaZ8YvOAbgL0oZTnJzx5jcD0V47HF86FSOq9wAXn6P6p1Zq1FyCHHXdDlN22C2GA4B6I8leZkmcxYdGk65CwZZCQ7j3X4GUJS9MaWef3KvyMfm9KtQ6e5Nb2M5AONFT6JnzQ8SF88u6J0Pnqh4aJfyDHnHZTuOEpZxEV53XUY6Bivn61WGkM7TxDj4Nml8gZUvvzQf0b_Ylwg9OQ4gvdx0UD22KQOv4vRiLep-o9IGHdl9YfXPawbeTJr0i81rYtSim7hVYjkB9B1KTpgMkFhaQN1Yy3Zhw77FLyPVOT1t7emZzd3-YBjn1Er-HHrWf7sLQFCkubpAiu7ypexXcprdjVT21sIBWFf_fD1KyIkTp6C9XN_vbVjzLnMJ0dvH8smZ1MKah2tOInFbW07nlCPb0_ic6rts22tFn3KqrjbedhohKvK4AUh2tQgI35GilxACFbSoMcr1i6Z2ACZ2tko98MUl3I_xU8bx93X7s-l9A7BxldWLO8WYT_h3Sky83_D8lJ3ePoD6M6fYu9r2Nlm7-q8N7LSWrPxuiWxwh_V3rxn9j3RsSlM8LiaHzohwRt9H9NoSvO7xvudPkI_QMshsefVbc6ksQP_4U8AP6ECA64fF1vEf_J_nL2QlsAKADvth_EXx8ARTfSiuVFdf-VCSe5AX31nF__MI_E3H1sj6T2p3kQMGBwAA"
+      }
+    },
+    "ave" : "q8etron-2024-GE,GEGCVC,2024,0E0E,HR,WD9,WPT,E0L,UD3,1PA,1TX,0GA,04A,1D7,4UH,GV0,QE1,GS5,6XL,EA0,5SG,GM4,5RW,0K9,1X1,J9U,9WC,A8Y,6K8,1KQ,J2D,1LE,6FJ,B0A,KB3,1S1,0VM,7A0,C24,IT3,IU1,IV2,IW3,GW0,1BK,3S2,3FU,6F0,NI0,7AL,5MC,VT5,7X5,7W3,UE8,GZ2,0FA,6A0,VF0,8K4,FP1,2V5,7G0,F0A,9R0,0YS,0JN,T4K,3U0,8T4,VC2,G1Z,A51,5J1,6NQ,9AQ,8IV,KS1,4L7,K4H,QK1,6SS,0Y4,QR9,4D8,GB0,5ZC,5C1,3G0,KA6,KK3,31C,5K5,QQ2,NW1,NJ0,ES6,L0L,QZ7,8G5,70X,73E,76A,EH1,7P1,1XP,AV2,9VS,2C7,7HD,6E2,FM0,9S9,M1J,7UG,GP1,FT3,FQ1,AQ0,47D,9JA,ER3,7K3,H2H,3F1,4X3,QL5,4E7,VI7,2K7,2F0,9P7,N0Q,3PN,4A4,0LB,JX1,8Y1,S0D,S3Y,5XF,7Y1,6I6,VW0,3Y4,7B3,GJ0,FA0,9PA,4F6,9B1,BU2,5D8,3CA,QV3,1SA,1EP,2Z7,1T0,GA2,Q2J,9ZV,9TF,EW0,7E1,4GF,2WA,0TD,4ZJ,3B7,JS0,LX2",
+    "carline" : "q8etron-2024-GE",
+    "carlineName" : "Audi  Q8  e-tron®",
+    "charges" : {
+      "Destination Charge" : 1195.0
+    },
+    "description" : "quattro®",
+    "eec" : {
+      "canonical-source" : "NEDC"
+    },
+    "extColorCode" : {
+      "backgroundColor" : "#0A0F0F",
+      "selected" : "0E",
+      "textColor" : "white"
+    },
+    "items" : [ "0E0E", "HR", "N0Q", "GEGCVC0S0DWD9WPT_2024" ],
+    "mbv-ids" : {
+      "exteriorColor" : "F14 0E0E",
+      "interiorColor" : "F56     HR",
+      "model" : "GEGCVC\\0\\MSNRS0D\\GWD9WD9\\GWPTWPT",
+      "modelyear" : "2024",
+      "options" : "MSIBN0Q",
+      "prstring" : "51904\\2024|GEGCVC\\0\\MSNRS0D\\GWD9WD9\\GWPTWPT|F14 0E0E|F56     HR|MSIBN0Q",
+      "salesgroup" : "51904"
+    },
+    "model" : "GEGCVC0S0DWD9WPT_2024",
+    "modelPrice" : "$87,550",
+    "modelyear" : "2024",
+    "optionsPrice" : "$595",
+    "price" : "$88,145",
+    "prices" : {
+      "charges" : "$1,195",
+      "chargesRaw" : 1195.0,
+      "model" : "$87,550",
+      "modelRaw" : 87550.0,
+      "options" : "$595",
+      "optionsRaw" : 595.0,
+      "total" : "$88,145",
+      "totalRaw" : 88145.0,
+      "totalWithCharges" : "$89,340",
+      "totalWithChargesRaw" : 89340.0
+    },
+    "prices-pcs" : {
+      "accessoriesNet" : 0.0,
+      "accessoriesVat" : 0.0,
+      "accessoriesWithVat" : 0.0,
+      "colorsNet" : 595.0,
+      "colorsVat" : 0.0,
+      "colorsWithVat" : 595.0,
+      "configExtraTax" : 0.0,
+      "configGross" : 88145.0,
+      "configNet" : 88145.0,
+      "configTotalTax" : 0.0,
+      "configVat" : 0.0,
+      "configWithVat" : 88145.0,
+      "destinationCharge" : 1195.0,
+      "modelExtraTax" : 0.0,
+      "modelGross" : 87550.0,
+      "modelNet" : 87550.0,
+      "modelTotalTax" : 0.0,
+      "modelVat" : 0.0,
+      "modelWithVat" : 87550.0,
+      "optionsAndAccessoriesNet" : 595.0,
+      "optionsAndAccessoriesVat" : 0.0,
+      "optionsAndAccessoriesWithVat" : 595.0,
+      "optionsExtraTax" : 0.0,
+      "optionsNet" : 595.0,
+      "optionsVat" : 0.0,
+      "optionsWithVat" : 595.0,
+      "otrCharges" : 1195.0,
+      "salesPrice" : 89340.0
+    },
+    "prstring" : "GEGCVC0S0DWD9WPT_2024|0E0E|HR|N0Q",
+    "rawModelPrice" : 87550.0,
+    "rawOptionsPrice" : 595.0,
+    "rawPrice" : 88145.0,
+    "showWltpWarning" : false,
+    "stock-car-attrs" : {
+      "attrs" : [ "CARLINE.51904\\2024", "TRIMLINE.tl_launch_edition", "air-condition-type.automatic", "airbag-type.side-airbags-front", "anti-theft-type.alarm", "assistance-system-type.adaptive-air", "body-doors.5", "body-type.suv", "brake-material.default", "carline.q8etron", "chassis-type.default", "color-type.metallic", "convenience-type.memory-function", "drive-train.BEV", "drive.quattro", "engine-type.electrical", "exterior-color.black", "fuel-technology.etron", "fuel-type.etron", "gear-type.automatic", "gear.automatic", "interface-type.poh", "interior-color-carpet.black", "interior-color-dashboard.black", "interior-color-headlining.silver", "interior-color-seats.gray", "light-type.led-digital-matrix", "locking-system-type.central-locking", "material.combination", "mbv-handbook.51904", "model-group-range.q8etron", "model-range.q8etron", "modelCode.GEGCVC", "modelYear.2024", "navigation-system-type.mmi", "package-type.edition-one", "roof-type.panorama", "seat-type.sport", "sound-system-type.bang-olufsen", "steering-type.servo", "steering-wheel-material.leather", "steering-wheel-type.multi-function", "technology.fod", "trimline.default", "type.interface", "tyre-season.summer", "vtp-drivetrain.electrical", "wheel-material.light-metal", "wheel-size.21", "wheel-type.default" ]
+    }
+  },
+  "header" : {
+    "context" : "nemo-us:us-en",
+    "hiddenRevision" : "0",
+    "logged-in" : false,
+    "manualRevision" : "4",
+    "marketVersion" : "mv-0-1222",
+    "mode" : "price",
+    "statuscode" : 200,
+    "subsession" : "884448194-1",
+    "taggedVersion" : "mv-0-1222",
+    "version" : "q8etron-2024-GE-GE-20230329-161750",
+    "visitor-id" : "1585540135|MCIDTS|19474|vVersion|4.4.0|MCMID|01079748238985237090554200064134118793|MCAAMLH-1683204292|12|MCAAMB-1683204292|RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y|MCOPTOUT-1682606692s|NONE|MCAID|NONE"
+  },
+  "items" : {
+    "04A" : {
+      "id" : "04A",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0E0E" : {
+      "id" : "0E0E",
+      "itemType" : "exteriorColor",
+      "price" : "$595",
+      "priceValue" : 595.0,
+      "status" : "11010"
+    },
+    "0FA" : {
+      "id" : "0FA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0GA" : {
+      "id" : "0GA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JA" : {
+      "id" : "0JA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JB" : {
+      "id" : "0JB",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JC" : {
+      "id" : "0JC",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JD" : {
+      "id" : "0JD",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JE" : {
+      "id" : "0JE",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JF" : {
+      "id" : "0JF",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JG" : {
+      "id" : "0JG",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JH" : {
+      "id" : "0JH",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JJ" : {
+      "id" : "0JJ",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JK" : {
+      "id" : "0JK",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JL" : {
+      "id" : "0JL",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JM" : {
+      "id" : "0JM",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JN" : {
+      "id" : "0JN",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JP" : {
+      "id" : "0JP",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JQ" : {
+      "id" : "0JQ",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JR" : {
+      "id" : "0JR",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JS" : {
+      "id" : "0JS",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JT" : {
+      "id" : "0JT",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JU" : {
+      "id" : "0JU",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JV" : {
+      "id" : "0JV",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JW" : {
+      "id" : "0JW",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JX" : {
+      "id" : "0JX",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JY" : {
+      "id" : "0JY",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JZ" : {
+      "id" : "0JZ",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0K9" : {
+      "id" : "0K9",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0LB" : {
+      "id" : "0LB",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0LM" : {
+      "id" : "0LM",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0TD" : {
+      "id" : "0TD",
+      "itemType" : "model",
+      "status" : "10011"
+    },
+    "0TF" : {
+      "id" : "0TF",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0VM" : {
+      "id" : "0VM",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0Y4" : {
+      "id" : "0Y4",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YA" : {
+      "id" : "0YA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YB" : {
+      "id" : "0YB",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YC" : {
+      "id" : "0YC",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YD" : {
+      "id" : "0YD",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YE" : {
+      "id" : "0YE",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YF" : {
+      "id" : "0YF",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YG" : {
+      "id" : "0YG",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YH" : {
+      "id" : "0YH",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YJ" : {
+      "id" : "0YJ",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YK" : {
+      "id" : "0YK",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YL" : {
+      "id" : "0YL",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YM" : {
+      "id" : "0YM",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YN" : {
+      "id" : "0YN",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YP" : {
+      "id" : "0YP",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YQ" : {
+      "id" : "0YQ",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YR" : {
+      "id" : "0YR",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YS" : {
+      "id" : "0YS",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YT" : {
+      "id" : "0YT",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YU" : {
+      "id" : "0YU",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YV" : {
+      "id" : "0YV",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YW" : {
+      "id" : "0YW",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YX" : {
+      "id" : "0YX",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YY" : {
+      "id" : "0YY",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0YZ" : {
+      "id" : "0YZ",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "1BK" : {
+      "id" : "1BK",
+      "itemType" : "equipment",
+      "status" : "10011"
+    },
+    "1D6" : {
+      "id" : "1D6",
+      "price" : "$750",
+      "priceValue" : 750.0,
+      "status" : "11000"
+    },
+    "1PA" : {
+      "id" : "1PA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "1QE" : {
+      "id" : "1QE",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "1T0" : {
+      "id" : "1T0",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "1TX" : {
+      "id" : "1TX",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "1XP" : {
+      "id" : "1XP",
+      "itemType" : "equipment",
+      "message" : [ {
+        "text" : "Hide from option list",
+        "type" : "debug"
+      } ],
+      "status" : "00000"
+    },
+
+    "2F0" : {
+      "id" : "2F0",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "2K7_in_WD9" : {
+      "id" : "2K7_in_WD9",
+      "itemType" : "equipmentContent",
+      "status" : "00000"
+    },
+    "2MB" : {
+      "id" : "2MB",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "2WA" : {
+      "id" : "2WA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "2Y2Y" : {
+      "id" : "2Y2Y",
+      "itemType" : "exteriorColor",
+      "price" : "$595",
+      "priceValue" : 595.0,
+      "status" : "11000"
+    },
+    "2ZM" : {
+      "id" : "2ZM",
+      "itemType" : "ACCESSORIES",
+      "status" : "11000"
+    },
+    "31C" : {
+      "id" : "31C",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "3CA" : {
+      "id" : "3CA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "3D3D" : {
+      "id" : "3D3D",
+      "itemType" : "exteriorColor",
+      "status" : "00000"
+    },
+    "42P" : {
+      "id" : "42P",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "44Q" : {
+      "id" : "44Q",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "47C" : {
+      "id" : "47C",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "47C_in_PPS" : {
+      "id" : "47C_in_PPS",
+      "itemType" : "equipmentContent",
+      "status" : "00000"
+    },
+    "WPR" : {
+      "id" : "WPR",
+      "itemType" : "equipment",
+      "price" : "$1,850",
+      "priceValue" : 1850.0,
+      "status" : "11000"
+    }
+  },
+  "itemsUpdateMode" : "full"
+}

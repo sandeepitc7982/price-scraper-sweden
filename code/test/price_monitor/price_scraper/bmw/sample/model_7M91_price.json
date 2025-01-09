@@ -1,0 +1,181 @@
+{
+    "priceTreeNode": {
+        "effectivePrice": {
+            "netListPrice": 30126.05,
+            "netPrice": 30126.05,
+            "netDiscount": 0.00,
+            "netDiscountPercent": 0.000000,
+            "grossListPrice": 35850.00,
+            "grossPrice": 35850.00,
+            "grossDiscount": 0.00,
+            "grossDiscountPercent": 0.000000,
+            "totalTaxes": 5723.95,
+            "taxes": [
+                {
+                    "taxCategory": "PRODUCT",
+                    "taxKey": "vat-S",
+                    "taxPercentage": 0.19,
+                    "taxValue": 5723.95
+                }
+            ]
+        },
+        "category": "PRODUCT_WITH_DUTIES_AND_EXTRA_TOTAL",
+        "quantity": 1,
+        "subNodes": [
+            {
+                "effectivePrice": {
+                    "netListPrice": 30126.05,
+                    "netPrice": 30126.05,
+                    "netDiscount": 0.00,
+                    "netDiscountPercent": 0.000000,
+                    "grossListPrice": 35850.00,
+                    "grossPrice": 35850.00,
+                    "grossDiscount": 0.00,
+                    "grossDiscountPercent": 0.000000,
+                    "totalTaxes": 5723.95,
+                    "taxes": [
+                        {
+                            "taxCategory": "PRODUCT",
+                            "taxKey": "vat-S",
+                            "taxPercentage": 0.19,
+                            "taxValue": 5723.95
+                        }
+                    ]
+                },
+                "category": "PRODUCT_WITH_DUTIES_TOTAL",
+                "quantity": 1,
+                "subNodes": [
+                    {
+                        "effectivePrice": {
+                            "netListPrice": 30126.05,
+                            "netPrice": 30126.05,
+                            "netDiscount": 0.00,
+                            "netDiscountPercent": 0.000000,
+                            "grossListPrice": 35850.00,
+                            "grossPrice": 35850.00,
+                            "grossDiscount": 0.00,
+                            "grossDiscountPercent": 0.000000,
+                            "totalTaxes": 5723.95,
+                            "taxes": [
+                                {
+                                    "taxCategory": "PRODUCT",
+                                    "taxKey": "vat-S",
+                                    "taxPercentage": 0.19,
+                                    "taxValue": 5723.95
+                                }
+                            ]
+                        },
+                        "category": "PRODUCT_TOTAL",
+                        "quantity": 1,
+                        "subNodes": [
+                            {
+                                "effectivePrice": {
+                                    "netListPrice": 30126.05,
+                                    "netPrice": 30126.05,
+                                    "netDiscount": 0.00,
+                                    "netDiscountPercent": 0.000000,
+                                    "grossListPrice": 35850.00,
+                                    "grossPrice": 35850.00,
+                                    "grossDiscount": 0.00,
+                                    "grossDiscountPercent": 0.000000,
+                                    "totalTaxes": 5723.95,
+                                    "taxes": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "vat-S",
+                                            "taxPercentage": 0.19,
+                                            "taxValue": 5723.95
+                                        }
+                                    ]
+                                },
+                                "category": "VEHICLE_TOTAL",
+                                "quantity": 1,
+                                "subNodes": [
+                                    {
+                                        "effectivePrice": {
+                                            "netListPrice": 30126.05,
+                                            "netPrice": 30126.05,
+                                            "netDiscount": 0.00,
+                                            "netDiscountPercent": 0.000000,
+                                            "grossListPrice": 35850.00,
+                                            "grossPrice": 35850.00,
+                                            "grossDiscount": 0.00,
+                                            "grossDiscountPercent": 0.000000,
+                                            "totalTaxes": 5723.95,
+                                            "taxes": [
+                                                {
+                                                    "taxCategory": "PRODUCT",
+                                                    "taxKey": "vat-S",
+                                                    "taxPercentage": 0.19,
+                                                    "taxValue": 5723.95
+                                                }
+                                            ]
+                                        },
+                                        "category": "MODEL_AND_OPTION_TOTAL",
+                                        "quantity": 1,
+                                        "subNodes": [
+                                            {
+                                                "effectivePrice": {
+                                                    "netListPrice": 30126.05,
+                                                    "netPrice": 30126.05,
+                                                    "netDiscount": 0.00,
+                                                    "netDiscountPercent": 0.000000,
+                                                    "grossListPrice": 35850.00,
+                                                    "grossPrice": 35850.00,
+                                                    "grossDiscount": 0.00,
+                                                    "grossDiscountPercent": 0.000000,
+                                                    "totalTaxes": 5723.95,
+                                                    "taxes": [
+                                                        {
+                                                            "taxCategory": "PRODUCT",
+                                                            "taxKey": "vat-S",
+                                                            "taxPercentage": 0.19,
+                                                            "taxValue": 5723.95
+                                                        }
+                                                    ]
+                                                },
+                                                "category": "MODEL_TOTAL",
+                                                "quantity": 1,
+                                                "subNodes": [
+                                                    {
+                                                        "effectivePrice": {
+                                                            "netListPrice": 30126.05,
+                                                            "netPrice": 30126.05,
+                                                            "netDiscount": 0.00,
+                                                            "netDiscountPercent": 0.000000,
+                                                            "grossListPrice": 35850.00,
+                                                            "grossPrice": 35850.00,
+                                                            "grossDiscount": 0.00,
+                                                            "grossDiscountPercent": 0.000000,
+                                                            "totalTaxes": 5723.95,
+                                                            "taxes": [
+                                                                {
+                                                                    "taxCategory": "PRODUCT",
+                                                                    "taxKey": "vat-S",
+                                                                    "taxPercentage": 0.19,
+                                                                    "taxValue": 5723.95
+                                                                }
+                                                            ]
+                                                        },
+                                                        "category": "MODEL",
+                                                        "key": "7M91",
+                                                        "quantity": 1,
+                                                        "subNodes": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "optionsWithUndefinedPrices": [],
+    "metadata": {
+        "currency": "EUR"
+    }
+}

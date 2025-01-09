@@ -1,0 +1,234 @@
+{
+    "componentCategories": [
+        {
+            "id": "VARIANTS",
+            "name": "Varianten",
+            "cardinality": "NOT_DEFINED",
+            "categoryViewType": "DEFAULT",
+            "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                    "view": "EXTERIOR_360",
+                    "perspective": "BE020",
+                    "state": [
+                        "SZT"
+                    ]
+                }
+            },
+            "subcategories": [
+                {
+                    "id": "LINES",
+                    "name": "Styles",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "SPECIAL_EQUIPMENT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "SPECIAL_EQUIPMENT",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE020",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "ZK017",
+                            "name": "Exterieur Ausstattungslinien",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-P15",
+                                "PC-P31"
+                            ],
+                            "fixationInformation": {
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "LINES_EXTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "LINE_ADD_ON_EXTERIOR",
+                            "name": "Exterieur Erweiterungen",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-P55"
+                            ],
+                            "fixationInformation": {
+                                "filteredBy": [
+                                    "PC-P15"
+                                ],
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "PACKAGES_EXTERIOR",
+                            "incompatible": true,
+                            "preSelect": false
+                        },
+                        {
+                            "id": "ZK018",
+                            "name": "Interieur Ausstattungslinien",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-P14",
+                                "PC-P29"
+                            ],
+                            "fixationInformation": {
+                                "filteredBy": [
+                                    "PC-P15"
+                                ],
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "LINES_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": false
+                        },
+                        {
+                            "id": "LINE_ADD_ON_INTERIOR",
+                            "name": "Interieur Erweiterungen",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-P87"
+                            ],
+                            "fixationInformation": {
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "PACKAGES_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "fixationInformation": {
+                        "filteredBy": [
+                            "PC-P15"
+                        ],
+                        "affectsFurtherSelection": false
+                    },
+                    "contains": "LINES"
+                },
+                {
+                    "id": "PACKAGE_TYPES",
+                    "name": "Ausstattungspakete",
+                    "cardinality": "ONE_OR_NONE",
+                    "categoryViewType": "EQUIPMENT_LEVELS",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "EQUIPMENT_LEVELS"
+                    },
+                    "subcategories": [
+                        {
+                            "id": "PACKAGE_TYPES_MID",
+                            "name": "Ausstattungspakete Electric Art",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "EQUIPMENT_LEVELS",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "EQUIPMENT_LEVELS"
+                            },
+                            "componentIds": [
+                                "PC-PSE",
+                                "PC-PSJ",
+                                "PC-PSN"
+                            ],
+                            "fixationInformation": {
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "TYPES",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "PACKAGE_TYPES_HIGH",
+                            "name": "Ausstattungspakete AMG Line",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "EQUIPMENT_LEVELS",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "EQUIPMENT_LEVELS"
+                            },
+                            "componentIds": [
+                                "PC-PSK",
+                                "PC-PSO",
+                                "PC-PSR",
+                                "PC-PSS"
+                            ],
+                            "fixationInformation": {
+                                "filteredBy": [
+                                    "PC-P15"
+                                ],
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "TYPES",
+                            "incompatible": true,
+                            "preSelect": false
+                        }
+                    ],
+                    "fixationInformation": {
+                        "filteredBy": [
+                            "PC-P15"
+                        ],
+                        "affectsFurtherSelection": false
+                    },
+                    "contains": "TYPES",
+                    "standardComponentIds": [
+                        "PC-PDA",
+                        "PC-PSE"
+                    ]
+                }
+            ],
+            "fixationInformation": {
+                "filteredBy": [
+                    "PC-P15"
+                ],
+                "affectsFurtherSelection": false
+            },
+            "contains": "VARIANTS",
+            "standardComponentIds": [
+                "PC-P15",
+                "PC-P14",
+                "PC-PDA",
+                "PC-PSE"
+            ]
+        }
+    ]
+}

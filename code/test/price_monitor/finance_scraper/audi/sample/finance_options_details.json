@@ -1,0 +1,926 @@
+{
+  "Response": {
+    "@ID": "835457",
+    "@Culture": "en-GB",
+    "@RequestId": "f561b414-88f9-4744-9c5c-896d59bd0a4d#150586675",
+    "CRSData": {
+      "SlopePoints": {
+        "SlopePoint": [
+          {
+            "@ID": "Rate",
+            "Label": "47 Monthly Payments of",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            },
+            "Value": "955.56"
+          },
+          {
+            "@ID": "NetCreditAmount",
+            "Label": "Total Amount of Credit",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            },
+            "Value": "69612"
+          },
+          {
+            "@ID": "TAP",
+            "Label": "Total Amount Payable",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            },
+            "Value": "129120.92"
+          },
+          {
+            "@ID": "INV",
+            "Label": "Retail Cash Price",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            },
+            "Value": "113515"
+          }
+        ]
+      }
+    },
+    "Calculation": {
+      "@FormatVersion": "1.5",
+      "BrandDownPayment": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "22000.00",
+        "#text": "22,000.00"
+      },
+      "BuyBackFeeAmount": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "10.00",
+        "#text": "10.00"
+      },
+      "Duration": {
+        "@Unit": "months",
+        "@UnitSymbol": "Months",
+        "@Value": "48",
+        "#text": "48"
+      },
+      "FinalPayment": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "44296.60",
+        "#text": "44,296.60"
+      },
+      "FirstInstallmentAmount": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "955.56",
+        "#text": "955.56"
+      },
+      "GrossCreditAmount": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "129120.92",
+        "#text": "129,120.92"
+      },
+      "InstallmentGrossAmount": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "955.56",
+        "#text": "955.56"
+      },
+      "InterestAmountEffective": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "15605.92",
+        "#text": "15,605.92"
+      },
+      "InterestRateEffective": {
+        "@Unit": "percent",
+        "@UnitSymbol": "% APR",
+        "@Value": "8.9",
+        "#text": "8.9"
+      },
+      "InterestRateNominal": {
+        "@Unit": "percent",
+        "@UnitSymbol": "% Fixed",
+        "@Value": "8.86",
+        "#text": "8.86"
+      },
+      "Mileage": {
+        "@Unit": "miles",
+        "@UnitSymbol": "mi",
+        "@Value": "10000",
+        "#text": "10,000"
+      },
+      "NetCreditAmount": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "69612.00",
+        "#text": "69,612.00"
+      },
+      "Product": {
+        "@Value": "PersonalContractPurchase",
+        "#text": "Personal Contract Plan"
+      },
+      "ProductId": {
+        "@Value": "835457",
+        "#text": "835457"
+      },
+      "ProductType": {
+        "@Value": "Credit",
+        "#text": "Credit"
+      },
+      "PurchasePrice": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "113515",
+        "#text": "113,515.00"
+      },
+      "TotalDownPayment": {
+        "@Unit": "GBP",
+        "@UnitSymbol": "£",
+        "@Value": "43903.00",
+        "#text": "43,903.00"
+      },
+      "UpperMileageRateTotalGrossAmount": {
+        "@Unit": "per mile",
+        "@UnitSymbol": "p",
+        "@Value": "17.28",
+        "#text": "17.28"
+      },
+      "VATMode": {
+        "@Value": "Gross",
+        "#text": "Gross"
+      }
+    },
+    "Parameters": {
+      "Description": {
+        "@Gender": "neutral",
+        "#text": "PCP £22000 Deposit Contribution 8.9% APR"
+      },
+      "GlobalDisclaimer": null,
+      "Group": {
+        "@Name": "Parameters",
+        "Disclaimer": "Solutions is a Personal Contract Plan from Audi Financial Services. It works by deferring a portion of the cars value to the end of your agreement. This can make your monthly payments lower, or help you get a higher specification car for your monthly budget.",
+        "Label": "Representative Example",
+        "Parameter": [
+          {
+            "@ID": "Duration",
+            "@Relevant": "Yes",
+            "Control": {
+              "@AutoPostBack": "Yes",
+              "@DataType": "Integer",
+              "@Length": "3",
+              "@Type": "Slider",
+              "Max": {
+                "@Value": "49",
+                "#text": "49"
+              },
+              "Min": {
+                "@Value": "18",
+                "#text": "18"
+              },
+              "Step": {
+                "@Value": "1",
+                "#text": "1"
+              }
+            },
+            "Data": {
+              "@Default": "Yes",
+              "@Value": "48",
+              "#text": "48"
+            },
+            "Default": "48",
+            "Help": "You can spread your repayments typically between 18 and 49 months. The longer the term, the lower the monthly payments could be.",
+            "Label": "Contract Duration",
+            "Units": "months"
+          },
+          {
+            "@ID": "Mileage",
+            "@Relevant": "Yes",
+            "Control": {
+              "@AutoPostBack": "Yes",
+              "@DataType": "Integer",
+              "@Length": "6",
+              "@Type": "Slider",
+              "Max": {
+                "@Value": "30",
+                "#text": "30"
+              },
+              "Min": {
+                "@Value": "5",
+                "#text": "5"
+              },
+              "Step": {
+                "@Value": "1",
+                "#text": "1"
+              }
+            },
+            "Data": {
+              "@Default": "Yes",
+              "@Value": "10",
+              "#text": "10"
+            },
+            "Default": "10",
+            "Help": "To get a finance calculation that is right for you, we need an estimate of your annual mileage between 5,000 miles and 30,000 miles. If you go over this annual mileage figure, you may incur an excess mileage charge at the end of your agreement.",
+            "Label": "Annual Mileage",
+            "Units": {
+              "@Symbol": ",000 miles",
+              "#text": ",000 miles"
+            }
+          },
+          {
+            "@ID": "DownPayment",
+            "@Relevant": "Yes",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "8",
+              "@Type": "Edit",
+              "Max": {
+                "@Value": "36757.50",
+                "#text": "36,757.50"
+              },
+              "Min": {
+                "@Value": "0",
+                "#text": "0.00"
+              }
+            },
+            "Data": {
+              "@Default": "Yes",
+              "@Value": "21903.00",
+              "#text": "21,903.00"
+            },
+            "Default": "21903.00",
+            "Help": "Please enter your estimated deposit. The higher the deposit, the lower the monthly payments tend to be. Whilst there is no minimum deposit, the maximum deposit is £36,757.50.",
+            "Label": "Customer Deposit",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "Rate",
+            "@Relevant": "Yes",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "955.56",
+              "#text": "955.56"
+            },
+            "Label": "47 Monthly Payments of",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "CalcTarget",
+            "@Relevant": "Yes",
+            "Control": {
+              "@AutoPostBack": "Yes",
+              "@DataType": "String",
+              "@Length": "20",
+              "@Type": "Select"
+            },
+            "Data": [
+              {
+                "@Default": "Yes",
+                "@Value": "Rental",
+                "#text": "Customer Deposit"
+              },
+              {
+                "@Value": "Deposit",
+                "#text": "My Monthly Payments"
+              }
+            ],
+            "Default": "Rental",
+            "Help": "Your finance example can be calculated according to your personal circumstances. For example you may have a set monthly budget in mind or a specific deposit amount available.",
+            "Label": "Calculate Finance by"
+          },
+          {
+            "@ID": "hdnRate",
+            "@Relevant": "Yes",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Hidden",
+              "#text": "Hidden"
+            },
+            "Data": {
+              "@Value": "955.56",
+              "#text": "955.56"
+            }
+          },
+          {
+            "@ID": "hdnDEP",
+            "@Relevant": "Yes",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Hidden",
+              "#text": "Hidden"
+            },
+            "Data": {
+              "@Value": "21903.00",
+              "#text": "21,903.00"
+            }
+          },
+          {
+            "@ID": "StaticAnnualMileage",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Integer",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "10000",
+              "#text": "10,000"
+            },
+            "Label": "Annual Mileage",
+            "Units": {
+              "@Symbol": "Miles",
+              "#text": "Miles"
+            }
+          },
+          {
+            "@ID": "StaticContractDuration",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Integer",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "48",
+              "#text": "48"
+            },
+            "Label": "Contract Duration",
+            "Units": {
+              "@Symbol": "Months",
+              "#text": "Months"
+            }
+          },
+          {
+            "@ID": "StaticDownPayment",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "21903.00",
+              "#text": "21,903.00"
+            },
+            "Label": "Customer Deposit",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "DEPCONT",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "22000.00",
+              "#text": "22,000.00"
+            },
+            "Help": "The contribution from Audi towards the total amount payable. Can consist of a contribution towards the cash price and a contribution towards the deposit.",
+            "Label": "Audi Contribution",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "TD",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "0",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "43903.00",
+              "#text": "43,903.00"
+            },
+            "Label": "Total Deposit",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "INV",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "113515",
+              "#text": "113,515.00"
+            },
+            "Label": "On The Road Price^",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "GFV",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "44296.60",
+              "#text": "44,296.60"
+            },
+            "Label": "Optional Final Payment",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "OTPFEE",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "10.00",
+              "#text": "10.00"
+            },
+            "Help": "The option to purchase fee is payable at the end of the agreement.",
+            "Label": "Option to Purchase Fee",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "NetCreditAmount",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "69612.00",
+              "#text": "69,612.00"
+            },
+            "Label": "Total Amount of Credit",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "TAP",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "129120.92",
+              "#text": "129,120.92"
+            },
+            "Label": "Total Amount Payable",
+            "Units": {
+              "@Symbol": "£",
+              "#text": "GBP"
+            }
+          },
+          {
+            "@ID": "APR",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "8.9",
+              "#text": "8.9"
+            },
+            "Label": "Representative APR",
+            "Units": {
+              "@Symbol": "% APR",
+              "#text": "percent"
+            }
+          },
+          {
+            "@ID": "AER",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "10",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "8.86",
+              "#text": "8.86"
+            },
+            "Help": "The rate of interest, either fixed or variable, adjusts in accordance with the finance amount.",
+            "Label": "Rate of Interest",
+            "Units": {
+              "@Symbol": "% Fixed",
+              "#text": "percent"
+            }
+          },
+          {
+            "@ID": "XSM",
+            "@Relevant": "No",
+            "Control": {
+              "@DataType": "Decimal",
+              "@Length": "6",
+              "@Type": "Label"
+            },
+            "Data": {
+              "@Value": "17.28",
+              "#text": "17.28"
+            },
+            "Label": "Excess Mileage (per mile)",
+            "Units": {
+              "@Symbol": "p",
+              "#text": "p"
+            }
+          }
+        ]
+      },
+      "ProductDisclaimer": "At the end of the agreement there are three options: i) pay the optional final payment and own the vehicle; ii) return the vehicle: subject to excess mileage and fair wear and tear, charges may apply; or iii) replace: part exchange the vehicle. With Solutions Personal Contract Plan. ^Can consist of a contribution towards the cash price and a contribution towards the finance deposit (Please see Audi Centre for details). Must be aged 18 or over. Subject to status & availability. Terms and conditions apply. Ordered by 01 July 2024 from participating Centres. Exclusions may apply. Indemnities may be required. Subject to changes in vehicle or equipment prices. Not available in conjunction with any other finance offer and may be varied or withdrawn at any time. Accurate at time of publication 05/2024. Freepost Audi Financial Services. **Option to purchase fee is payable at the end of your agreement."
+    },
+    "Result": {
+      "@FormatVersion": "1.5",
+      "CalculationDisclaimer": {
+        "#cdata-section": "<strong>Solutions Personal Contract Plan representative example:</strong> <strong>Contract Duration</strong> 48 Months, <strong>47 Monthly Payments of</strong> £955.56, <strong>Audi Contribution</strong> £22,000.00, <strong>Customer Deposit</strong> £21,903.00, <strong>Total Deposit</strong> £43,903.00, <strong>On The Road Price^</strong> £113,515.00, <strong>Optional Final Payment</strong> £44,296.60, <strong>Option to Purchase Fee</strong> (payable at the end of the agreement) £10.00, <strong>Total Amount Payable</strong> £129,120.92, <strong>Total Amount of Credit</strong> £69,612.00, <strong>Rate of Interest</strong> 8.86% Fixed, <strong>Representative APR</strong> 8.9% APR, <strong>Annual Mileage</strong> 10,000, <strong>Excess Mileage</strong> 17.28p per mile."
+      },
+      "Domain": "AUDI.UK.CRS",
+      "GlobalDisclaimer": null,
+      "ProductDisclaimer": "At the end of the agreement there are three options: i) pay the optional final payment and own the vehicle; ii) return the vehicle: subject to excess mileage and fair wear and tear, charges may apply; or iii) replace: part exchange the vehicle. With Solutions Personal Contract Plan. ^Can consist of a contribution towards the cash price and a contribution towards the finance deposit (Please see Audi Centre for details). Must be aged 18 or over. Subject to status & availability. Terms and conditions apply. Ordered by 01 July 2024 from participating Centres. Exclusions may apply. Indemnities may be required. Subject to changes in vehicle or equipment prices. Not available in conjunction with any other finance offer and may be varied or withdrawn at any time. Accurate at time of publication 05/2024. Freepost Audi Financial Services. **Option to purchase fee is payable at the end of your agreement.",
+      "Summaries": {
+        "Summary": [
+          {
+            "@Type": "Full",
+            "DetailGroups": {
+              "DetailGroup": {
+                "@ID": "Parameters",
+                "Description": "PCP £22000 Deposit Contribution 8.9% APR",
+                "Details": {
+                  "Detail": [
+                    {
+                      "@ID": "Duration",
+                      "Label": "Contract Duration",
+                      "Units": {
+                        "@Symbol": "Months",
+                        "#text": "months"
+                      },
+                      "Value": "48"
+                    },
+                    {
+                      "@ID": "Mileage",
+                      "Label": "Annual Mileage",
+                      "Units": {
+                        "@Symbol": "Miles",
+                        "#text": "Miles"
+                      },
+                      "Value": "10,000"
+                    },
+                    {
+                      "@ID": "DownPayment",
+                      "Label": "Customer Deposit",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "21,903.00"
+                    },
+                    {
+                      "@ID": "DEPCONT",
+                      "Label": "Audi Contribution",
+                      "Note": "The contribution from Audi towards the total amount payable. Can consist of a contribution towards the cash price and a contribution towards the deposit.",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "22,000.00"
+                    },
+                    {
+                      "@ID": "TD",
+                      "Label": "Total Deposit",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "43,903.00"
+                    },
+                    {
+                      "@ID": "Rate",
+                      "Label": "47 Monthly Payments of",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "955.56"
+                    },
+                    {
+                      "@ID": "INV",
+                      "Label": "On The Road Price^",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "113,515.00"
+                    },
+                    {
+                      "@ID": "GFV",
+                      "Label": "Optional Final Payment",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "44,296.60"
+                    },
+                    {
+                      "@ID": "OTPFEE",
+                      "Label": "Option to Purchase Fee",
+                      "Note": "The option to purchase fee is payable at the end of the agreement.",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "10.00"
+                    },
+                    {
+                      "@ID": "TAP",
+                      "Label": "Total Amount Payable",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "129,120.92"
+                    },
+                    {
+                      "@ID": "NetCreditAmount",
+                      "Label": "Total Amount of Credit",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "69,612.00"
+                    },
+                    {
+                      "@ID": "XSM",
+                      "Label": "Excess Mileage (per mile)",
+                      "Units": {
+                        "@Symbol": "p",
+                        "#text": "p"
+                      },
+                      "Value": "17.28"
+                    },
+                    {
+                      "@ID": "APR",
+                      "Label": "Representative APR",
+                      "Units": {
+                        "@Symbol": "% APR",
+                        "#text": "percent"
+                      },
+                      "Value": "8.9"
+                    },
+                    {
+                      "@ID": "AER",
+                      "Label": "Rate of Interest",
+                      "Note": "The rate of interest, either fixed or variable, adjusts in accordance with the finance amount.",
+                      "Units": {
+                        "@Symbol": "% Fixed",
+                        "#text": "percent"
+                      },
+                      "Value": "8.86"
+                    }
+                  ]
+                },
+                "Disclaimer": "At the end of the agreement there are three options: i) pay the optional final payment and own the vehicle; ii) return the vehicle: subject to excess mileage and fair wear and tear, charges may apply; or iii) replace: part exchange the vehicle. With Solutions Personal Contract Plan. ^Can consist of a contribution towards the cash price and a contribution towards the finance deposit (Please see Audi Centre for details). Must be aged 18 or over. Subject to status & availability. Terms and conditions apply. Ordered by 01 July 2024 from participating Centres. Exclusions may apply. Indemnities may be required. Subject to changes in vehicle or equipment prices. Not available in conjunction with any other finance offer and may be varied or withdrawn at any time. Accurate at time of publication 05/2024. Freepost Audi Financial Services. **Option to purchase fee is payable at the end of your agreement.",
+                "Label": {
+                  "@Gender": "neutral",
+                  "#text": "Finance"
+                }
+              }
+            },
+            "Title": {
+              "@Gender": "neutral",
+              "#text": "Finance Summary"
+            }
+          },
+          {
+            "@Type": "Medium",
+            "DetailGroups": {
+              "DetailGroup": {
+                "@ID": "Medium",
+                "Description": "PCP £22000 Deposit Contribution 8.9% APR",
+                "Details": {
+                  "Detail": [
+                    {
+                      "@ID": "Duration",
+                      "Label": "Contract Duration",
+                      "Units": {
+                        "@Symbol": "Months",
+                        "#text": "months"
+                      },
+                      "Value": "48"
+                    },
+                    {
+                      "@ID": "Mileage",
+                      "Label": "Annual Mileage",
+                      "Units": {
+                        "@Symbol": "Miles",
+                        "#text": "Miles"
+                      },
+                      "Value": "10,000"
+                    },
+                    {
+                      "@ID": "DownPayment",
+                      "Label": "Customer Deposit",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "21,903.00"
+                    },
+                    {
+                      "@ID": "DEPCONT",
+                      "Label": "Audi Contribution",
+                      "Note": "The contribution from Audi towards the total amount payable. Can consist of a contribution towards the cash price and a contribution towards the deposit.",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "22,000.00"
+                    },
+                    {
+                      "@ID": "TD",
+                      "Label": "Total Deposit",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "43,903.00"
+                    },
+                    {
+                      "@ID": "Rate",
+                      "Label": "47 Monthly Payments of",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "955.56"
+                    },
+                    {
+                      "@ID": "INV",
+                      "Label": "On The Road Price^",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "113,515.00"
+                    },
+                    {
+                      "@ID": "GFV",
+                      "Label": "Optional Final Payment",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "44,296.60"
+                    },
+                    {
+                      "@ID": "OTPFEE",
+                      "Label": "Option to Purchase Fee",
+                      "Note": "The option to purchase fee is payable at the end of the agreement.",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "10.00"
+                    },
+                    {
+                      "@ID": "TAP",
+                      "Label": "Total Amount Payable",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "129,120.92"
+                    },
+                    {
+                      "@ID": "NetCreditAmount",
+                      "Label": "Total Amount of Credit",
+                      "Units": {
+                        "@Symbol": "£",
+                        "#text": "GBP"
+                      },
+                      "Value": "69,612.00"
+                    },
+                    {
+                      "@ID": "XSM",
+                      "Label": "Excess Mileage (per mile)",
+                      "Units": {
+                        "@Symbol": "p",
+                        "#text": "p"
+                      },
+                      "Value": "17.28"
+                    },
+                    {
+                      "@ID": "APR",
+                      "Label": "Representative APR",
+                      "Units": {
+                        "@Symbol": "% APR",
+                        "#text": "percent"
+                      },
+                      "Value": "8.9"
+                    },
+                    {
+                      "@ID": "AER",
+                      "Label": "Rate of Interest",
+                      "Note": "The rate of interest, either fixed or variable, adjusts in accordance with the finance amount.",
+                      "Units": {
+                        "@Symbol": "% Fixed",
+                        "#text": "percent"
+                      },
+                      "Value": "8.86"
+                    }
+                  ]
+                },
+                "Disclaimer": "At the end of the agreement there are three options: i) pay the optional final payment and own the vehicle; ii) return the vehicle: subject to excess mileage and fair wear and tear, charges may apply; or iii) replace: part exchange the vehicle. With Solutions Personal Contract Plan. ^Can consist of a contribution towards the cash price and a contribution towards the finance deposit (Please see Audi Centre for details). Must be aged 18 or over. Subject to status & availability. Terms and conditions apply. Ordered by 01 July 2024 from participating Centres. Exclusions may apply. Indemnities may be required. Subject to changes in vehicle or equipment prices. Not available in conjunction with any other finance offer and may be varied or withdrawn at any time. Accurate at time of publication 05/2024. Freepost Audi Financial Services. **Option to purchase fee is payable at the end of your agreement.",
+                "Label": {
+                  "@Gender": "neutral",
+                  "#text": "Finance"
+                }
+              }
+            },
+            "Title": {
+              "@Gender": "neutral",
+              "#text": "Finance Summary"
+            }
+          },
+          {
+            "@Type": "RateOnly",
+            "DetailGroups": {
+              "DetailGroup": {
+                "@ID": "RateOnly",
+                "Description": "PCP £22000 Deposit Contribution 8.9% APR",
+                "Details": {
+                  "Detail": {
+                    "@ID": "Rate",
+                    "Label": "47 Monthly Payments of",
+                    "Units": {
+                      "@Symbol": "£",
+                      "#text": "GBP"
+                    },
+                    "Value": "955.56"
+                  }
+                },
+                "Label": {
+                  "@Gender": "neutral",
+                  "#text": "Finance"
+                }
+              }
+            },
+            "Title": {
+              "@Gender": "neutral",
+              "#text": "Finance Summary"
+            }
+          }
+        ]
+      },
+      "Vehicle": {
+        "@Type": "New",
+        "AltKey": "AUEG00VOR4SE A4",
+        "Brand": "AUDI",
+        "Key": "AUEG00VOR4SE A4",
+        "PriceModel": "113515",
+        "PriceTotal": "113515",
+        "Year": "2024"
+      }
+    }
+  }
+}

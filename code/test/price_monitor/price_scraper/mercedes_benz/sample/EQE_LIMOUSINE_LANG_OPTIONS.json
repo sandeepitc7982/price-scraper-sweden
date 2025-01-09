@@ -1,0 +1,7567 @@
+{
+	"componentCategories": [
+		{
+			"id": "VARIANTS",
+			"name": "Varianten",
+			"cardinality": "NOT_DEFINED",
+			"categoryViewType": "DEFAULT",
+			"categoryViewConfiguration": {
+				"categoryViewType": "DEFAULT"
+			},
+			"subcategories": [
+				{
+					"id": "ZK015",
+					"name": "Sondermodell",
+					"cardinality": "ONE_OR_NONE",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT"
+					},
+					"componentIds": [
+						"PC-DB6",
+						"PC-DB7"
+					],
+					"fixationInformation": {
+						"affectsFurtherSelection": true
+					},
+					"contains": "SPECIAL_EDITIONS",
+					"incompatible": false
+				},
+				{
+					"id": "LINES",
+					"name": "Styles",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "SPECIAL_EQUIPMENT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "SPECIAL_EQUIPMENT",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE020",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "ZK096",
+							"name": "Ausstattungslinien",
+							"cardinality": "ONE_OR_NONE",
+							"categoryViewType": "SPECIAL_EQUIPMENT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SPECIAL_EQUIPMENT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-PYF",
+								"PC-PYH"
+							],
+							"fixationInformation": {
+								"affectsFurtherSelection": true
+							},
+							"contains": "LINES",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "LINE_ADD_ON_EXTERIOR",
+							"name": "Exterieur Erweiterungen",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-P55"
+							],
+							"fixationInformation": {
+								"affectsFurtherSelection": true
+							},
+							"contains": "PACKAGES_EXTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK018",
+							"name": "Interieur Ausstattungslinien",
+							"cardinality": "EXACTLY_ONE",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-P14"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": true
+							},
+							"contains": "LINES_INTERIOR",
+							"incompatible": true,
+							"preSelect": false
+						}
+					],
+					"fixationInformation": {
+						"filteredBy": [
+							"PC-PYH"
+						],
+						"affectsFurtherSelection": false
+					},
+					"contains": "LINES"
+				},
+				{
+					"id": "PACKAGE_TYPES",
+					"name": "Ausstattungspakete",
+					"cardinality": "ONE_OR_NONE",
+					"categoryViewType": "EQUIPMENT_LEVELS",
+					"categoryViewConfiguration": {
+						"categoryViewType": "EQUIPMENT_LEVELS"
+					},
+					"subcategories": [
+						{
+							"id": "PACKAGE_TYPES_PACKAGE_TYPES",
+							"name": "Ausstattungspakete",
+							"cardinality": "ONE_OR_NONE",
+							"categoryViewType": "EQUIPMENT_LEVELS",
+							"categoryViewConfiguration": {
+								"categoryViewType": "EQUIPMENT_LEVELS"
+							},
+							"componentIds": [
+								"PC-PYC",
+								"PC-PYM",
+								"PC-PYN",
+								"PC-PYO"
+							],
+							"fixationInformation": {
+								"affectsFurtherSelection": true
+							},
+							"contains": "TYPES",
+							"incompatible": false,
+							"preSelect": true
+						}
+					],
+					"contains": "TYPES"
+				},
+				{
+					"id": "PACKAGES_ADD_ON",
+					"name": "Sonstige Pakete",
+					"cardinality": "NOT_DEFINED",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT"
+					},
+					"subcategories": [
+						{
+							"id": "PACKAGES_ADD_ON_ADD_ON",
+							"name": "Sonstige Pakete",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PC-PYB"
+							],
+							"contains": "PACKAGES",
+							"incompatible": false,
+							"preSelect": true
+						}
+					],
+					"contains": "PACKAGES"
+				}
+			],
+			"fixationInformation": {
+				"filteredBy": [
+					"PC-PYH"
+				],
+				"affectsFurtherSelection": false
+			},
+			"contains": "NOT_DEFINED"
+		},
+		{
+			"id": "EXTERIOR",
+			"name": "Exterieur",
+			"cardinality": "NOT_DEFINED",
+			"categoryViewType": "DEFAULT",
+			"categoryViewConfiguration": {
+				"categoryViewType": "DEFAULT"
+			},
+			"subcategories": [
+				{
+					"id": "PAINTS",
+					"name": "Farben",
+					"cardinality": "EXACTLY_ONE",
+					"categoryViewType": "SINGLE_CHOICE",
+					"categoryViewConfiguration": {
+						"categoryViewType": "SINGLE_CHOICE",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE020",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "ZK020",
+							"name": "MANUFAKTUR Lacke",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"LU-885",
+								"LU-993",
+								"LU-956",
+								"LU-818"
+							],
+							"contains": "PAINTS",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "ZK034",
+							"name": "Metallic",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"LU-197",
+								"LU-831",
+								"LU-842",
+								"LU-922",
+								"LU-992"
+							],
+							"contains": "PAINTS",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK035",
+							"name": "Uni",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"LU-040",
+								"LU-149"
+							],
+							"contains": "PAINTS",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"contains": "PAINTS"
+				},
+				{
+					"id": "WHEELS",
+					"name": "Räder",
+					"cardinality": "EXACTLY_ONE",
+					"categoryViewType": "SINGLE_CHOICE",
+					"categoryViewConfiguration": {
+						"categoryViewType": "SINGLE_CHOICE",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE090",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "19_INCH",
+							"name": "48,3 cm (19\")",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE090",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-R39",
+								"SA-RRH",
+								"SA-65R"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": false
+							},
+							"contains": "WHEELS",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "21_INCH",
+							"name": "53,3 cm (21\")",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE090",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-81R",
+								"SA-RWI"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": false
+							},
+							"contains": "WHEELS",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "20_INCH",
+							"name": "50,8 cm (20\")",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE090",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-R33",
+								"SA-60R",
+								"SA-59R",
+								"SA-RRP",
+								"SA-R61",
+								"SA-RRM"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": false
+							},
+							"contains": "WHEELS",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"fixationInformation": {
+						"filteredBy": [
+							"PC-PYH"
+						],
+						"affectsFurtherSelection": false
+					},
+					"contains": "WHEELS"
+				},
+				{
+					"id": "TYRES",
+					"name": "Reifen",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE090",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "TYRES_TYRES",
+							"name": "Reifen",
+							"cardinality": "EXACTLY_ONE",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-R01",
+								"SA-R03"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						}
+					],
+					"contains": "WHEELS_ACCESSORIES"
+				},
+				{
+					"id": "HEADLIGHTS",
+					"name": "Scheinwerfer",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE000",
+							"state": [
+								"SZN"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "HEADLIGHTS_HEADLIGHTS",
+							"name": "Scheinwerfer",
+							"cardinality": "ONE_OR_NONE",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-P35",
+								"SA-632",
+								"PC-PAX"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						}
+					],
+					"contains": "HEADLIGHTS"
+				},
+				{
+					"id": "EXTERIOR_EXTRAS",
+					"name": "Exterieur Extras",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE020",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "GLASS_AND_ROOF",
+							"name": "Glas und Dach",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"subcategories": [
+								{
+									"id": "ROOFS",
+									"name": "Dächer",
+									"cardinality": "ONE_OR_NONE",
+									"categoryViewType": "DEFAULT",
+									"categoryViewConfiguration": {
+										"categoryViewType": "DEFAULT",
+										"stageV2": {
+											"view": "EXTERIOR_360",
+											"perspective": "BE020",
+											"state": [
+												"SZT"
+											]
+										}
+									},
+									"componentIds": [
+										"SA-413"
+									],
+									"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+									"incompatible": false,
+									"preSelect": true
+								},
+								{
+									"id": "GLASS",
+									"name": "Scheiben",
+									"cardinality": "ARBITRARY",
+									"categoryViewType": "DEFAULT",
+									"categoryViewConfiguration": {
+										"categoryViewType": "DEFAULT",
+										"stageV2": {
+											"view": "INTERIOR_360",
+											"perspective": "BIS1",
+											"state": [
+												"SZT"
+											]
+										}
+									},
+									"componentIds": [
+										"SA-840",
+										"SA-875",
+										"SA-U50",
+										"SA-597",
+										"PC-PAF"
+									],
+									"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+									"incompatible": false,
+									"preSelect": false
+								}
+							],
+							"contains": "PACKAGES_EXTERIOR"
+						},
+						{
+							"id": "TRANSPORT",
+							"name": "Transport",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-553",
+								"SA-550"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false
+						},
+						{
+							"id": "EXTERIOR_EXTRAS_OTHERS",
+							"name": "Sonstiges",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-U49",
+								"SA-589",
+								"SA-5U4",
+								"SA-U47"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+				}
+			],
+			"fixationInformation": {
+				"filteredBy": [
+					"PC-PYH"
+				],
+				"affectsFurtherSelection": false
+			},
+			"contains": "NOT_DEFINED"
+		},
+		{
+			"id": "INTERIOR",
+			"name": "Interieur",
+			"cardinality": "NOT_DEFINED",
+			"categoryViewType": "DEFAULT",
+			"categoryViewConfiguration": {
+				"categoryViewType": "DEFAULT"
+			},
+			"subcategories": [
+				{
+					"id": "UPHOLSTERIES",
+					"name": "Polster",
+					"cardinality": "EXACTLY_ONE",
+					"categoryViewType": "SINGLE_CHOICE",
+					"categoryViewConfiguration": {
+						"categoryViewType": "SINGLE_CHOICE",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "ZK030",
+							"name": "Ledernachbildung ARTICO",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"AU-111",
+								"AU-651",
+								"AU-109",
+								"AU-119",
+								"AU-121",
+								"AU-131"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": false
+							},
+							"contains": "UPHOLSTERIES",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "ZK031",
+							"name": "Leder",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"AU-231",
+								"AU-249",
+								"AU-201",
+								"AU-209",
+								"AU-211",
+								"AU-219",
+								"AU-221"
+							],
+							"contains": "UPHOLSTERIES",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK032",
+							"name": "Leder Nappa",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"AU-801",
+								"AU-804",
+								"AU-814"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": false
+							},
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"fixationInformation": {
+						"filteredBy": [
+							"PC-PYH"
+						],
+						"affectsFurtherSelection": false
+					},
+					"contains": "UPHOLSTERIES"
+				},
+				{
+					"id": "SEATS",
+					"name": "Sitze ",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "SEATS_SEATS",
+							"name": "Sitze ",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-873",
+								"SA-872",
+								"SA-401",
+								"SA-399"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						}
+					],
+					"contains": "SEATS"
+				},
+				{
+					"id": "TRIMS",
+					"name": "Zierelemente",
+					"cardinality": "ONE_OR_NONE",
+					"categoryViewType": "SINGLE_CHOICE",
+					"categoryViewConfiguration": {
+						"categoryViewType": "SINGLE_CHOICE",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "ZK049",
+							"name": "Zierelemente",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "SINGLE_CHOICE",
+							"categoryViewConfiguration": {
+								"categoryViewType": "SINGLE_CHOICE",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-H51",
+								"SA-51H",
+								"SA-H08",
+								"SA-01H",
+								"SA-H67",
+								"SA-07H",
+								"SA-H73"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": false
+							},
+							"contains": "TRIMS",
+							"incompatible": false,
+							"preSelect": true
+						}
+					],
+					"fixationInformation": {
+						"filteredBy": [
+							"PC-PYH"
+						],
+						"affectsFurtherSelection": false
+					},
+					"contains": "TRIMS"
+				},
+				{
+					"id": "CENTER_CONSOLE",
+					"name": "Mittelkonsole",
+					"cardinality": "ONE_OR_NONE",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"componentIds": [
+						"SA-689",
+						"SA-757",
+						"SA-661"
+					],
+					"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+					"incompatible": false
+				},
+				{
+					"id": "STEERING_WHEEL",
+					"name": "Lenkräder",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "ZK012",
+							"name": "Lenkräder",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-L3M"
+							],
+							"fixationInformation": {
+								"filteredBy": [
+									"PC-PYH"
+								],
+								"affectsFurtherSelection": false
+							},
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": true,
+							"preSelect": true
+						},
+						{
+							"id": "STEERING_WHEEL_OTHERS",
+							"name": "Sonstiges",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-443"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"fixationInformation": {
+						"filteredBy": [
+							"PC-PYH"
+						],
+						"affectsFurtherSelection": false
+					},
+					"contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+				},
+				{
+					"id": "AMBIENT",
+					"name": "Ambiente",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZN"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "AMBIENT_OTHERS",
+							"name": "Sonstiges",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-P21",
+								"PC-PBP",
+								"PC-PBR"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						}
+					],
+					"contains": "AMBIENCE"
+				},
+				{
+					"id": "INTERIOR_EXTRAS",
+					"name": "Interieur Extras",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "CLIMATE_CONTROL",
+							"name": "Klimakontrolle",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-580",
+								"SA-581",
+								"PC-P53"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "CEILING",
+							"name": "Innenhimmel",
+							"cardinality": "EXACTLY_ONE",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-61U"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "STORAGE_AND_TRUNK",
+							"name": "Stauraum",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-881"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_TRUNK",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "INTERIOR_EXTRAS_OTHERS",
+							"name": "Sonstiges",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-876",
+								"SA-U17",
+								"SA-Y05",
+								"PC-PAV"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+				},
+				{
+					"id": "ZKL24",
+					"name": "Fahrhilfen",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE020",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "ZK087",
+							"name": "Lenkhilfen",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PV-E65",
+								"PV-E66"
+							],
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "ZK088",
+							"name": "Steuerungs- und Bedienhilfen",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PV-E85",
+								"PV-E88"
+							],
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK089",
+							"name": "Handbediengeräte",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PV-E67",
+								"PV-E68",
+								"PV-E84",
+								"PV-E83"
+							],
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK090",
+							"name": "Ein- und Ausstieghilfen",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PV-E09"
+							],
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK091",
+							"name": "Pedalanpassungen",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PV-E87",
+								"PV-E92",
+								"PV-E89"
+							],
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK092",
+							"name": "Sitzanpassungen",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PV-E94",
+								"PV-E95",
+								"PV-E96",
+								"PV-E97"
+							],
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "ZK093",
+							"name": "Sonstiges",
+							"cardinality": "NOT_DEFINED",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT"
+							},
+							"componentIds": [
+								"PV-E5P",
+								"PV-E08"
+							],
+							"contains": "NOT_DEFINED",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+				}
+			],
+			"fixationInformation": {
+				"filteredBy": [
+					"PC-PYH"
+				],
+				"affectsFurtherSelection": false
+			},
+			"contains": "NOT_DEFINED"
+		},
+		{
+			"id": "MULTIMEDIA_SAFETY",
+			"name": "Multimedia und Sicherheit",
+			"cardinality": "NOT_DEFINED",
+			"categoryViewType": "DEFAULT",
+			"categoryViewConfiguration": {
+				"categoryViewType": "DEFAULT"
+			},
+			"subcategories": [
+				{
+					"id": "MULTIMEDIA",
+					"name": "Multimedia",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "DISPLAY",
+							"name": "Display",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-PAI",
+								"SA-256",
+								"SA-451",
+								"SA-865",
+								"SA-444",
+								"PC-PAG"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false
+						},
+						{
+							"id": "NAVIGATION",
+							"name": "Navigation",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-PBG"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false
+						},
+						{
+							"id": "MULTIMEDIA_CONNECTED_CARS",
+							"name": "Multimedia-Dienste",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-896"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false
+						},
+						{
+							"id": "SOUND",
+							"name": "Sound",
+							"cardinality": "ONE_OR_NONE",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"subcategories": [
+								{
+									"id": "SOUND_SYSTEMS",
+									"name": "Soundsysteme",
+									"cardinality": "ONE_OR_NONE",
+									"categoryViewType": "DEFAULT",
+									"categoryViewConfiguration": {
+										"categoryViewType": "DEFAULT",
+										"stageV2": {
+											"view": "INTERIOR_360",
+											"perspective": "BIS1",
+											"state": [
+												"SZT"
+											]
+										}
+									},
+									"componentIds": [
+										"SA-810"
+									],
+									"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+									"incompatible": false,
+									"preSelect": true
+								}
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+						},
+						{
+							"id": "SMARTpoh_INTEGRATION",
+							"name": "Smartpoh Integration",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-897"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+				},
+				{
+					"id": "ASSISTANCESYSTEMS",
+					"name": "Assistenzsysteme",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "DRIVING",
+							"name": "Fahrassistenten",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"subcategories": [
+								{
+									"id": "DRIVING_ASSISTANTS_SYSTEMS",
+									"name": "Assistenz-Pakete",
+									"cardinality": "ONE_OR_NONE",
+									"categoryViewType": "DEFAULT",
+									"categoryViewConfiguration": {
+										"categoryViewType": "DEFAULT",
+										"stageV2": {
+											"view": "INTERIOR_360",
+											"perspective": "BIS1",
+											"state": [
+												"SZT"
+											]
+										}
+									},
+									"componentIds": [
+										"PC-P20"
+									],
+									"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+									"incompatible": false,
+									"preSelect": true
+								},
+								{
+									"id": "DRIVING_ASSISTANTS_OTHERS",
+									"name": "Sonstiges",
+									"cardinality": "ARBITRARY",
+									"categoryViewType": "DEFAULT",
+									"categoryViewConfiguration": {
+										"categoryViewType": "DEFAULT",
+										"stageV2": {
+											"view": "INTERIOR_360",
+											"perspective": "BIS1",
+											"state": [
+												"SZT"
+											]
+										}
+									},
+									"componentIds": [
+										"SA-207",
+										"SA-258",
+										"SA-5B0",
+										"PC-P16"
+									],
+									"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+									"incompatible": false,
+									"preSelect": false
+								}
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+						},
+						{
+							"id": "PARKING",
+							"name": "Parkassistenten",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"subcategories": [
+								{
+									"id": "PARKING_ASSISTANTS_SYSTEMS",
+									"name": "Park-Pakete",
+									"cardinality": "ONE_OR_NONE",
+									"categoryViewType": "DEFAULT",
+									"categoryViewConfiguration": {
+										"categoryViewType": "DEFAULT",
+										"stageV2": {
+											"view": "EXTERIOR_360",
+											"perspective": "BE020",
+											"state": [
+												"SZT"
+											]
+										}
+									},
+									"componentIds": [
+										"PC-P44",
+										"PC-P47",
+										"PC-PBH"
+									],
+									"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+									"incompatible": false,
+									"preSelect": true
+								}
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+				},
+				{
+					"id": "SAFETY",
+					"name": "Sicherheit",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "INTERIOR_360",
+							"perspective": "BIS1",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "LOCKING_SYSTEMS",
+							"name": "Schließsysteme",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-P17",
+								"SA-889"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "PASSENGER_SAFETY",
+							"name": "Fahrgastsicherheit",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "INTERIOR_360",
+									"perspective": "BIS1",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-682",
+								"SA-293"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						},
+						{
+							"id": "VEHICLE_SAFETY",
+							"name": "Fahrzeugsicherheit",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"PC-P82"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+				}
+			],
+			"contains": "NOT_DEFINED"
+		},
+		{
+			"id": "CHASSIS",
+			"name": "Antrieb und Fahrwerk",
+			"cardinality": "ARBITRARY",
+			"categoryViewType": "DEFAULT",
+			"categoryViewConfiguration": {
+				"categoryViewType": "DEFAULT",
+				"stageV2": {
+					"view": "EXTERIOR_360",
+					"perspective": "BE020",
+					"state": [
+						"SZT"
+					]
+				}
+			},
+			"subcategories": [
+				{
+					"id": "CHARGING",
+					"name": "Laden",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE020",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "CHARGING_SYSTEMS",
+							"name": "Ladesysteme",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-637",
+								"SA-84B"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "CHARGING_CABLES",
+							"name": "Fahrzeugladekabel",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-9B2",
+								"SA-9B6",
+								"SA-B30",
+								"SA-B80",
+								"SA-9B3",
+								"SA-9B7"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+				},
+				{
+					"id": "CHASSIS_CHASSIS",
+					"name": "Fahrwerk",
+					"cardinality": "ARBITRARY",
+					"categoryViewType": "DEFAULT",
+					"categoryViewConfiguration": {
+						"categoryViewType": "DEFAULT",
+						"stageV2": {
+							"view": "EXTERIOR_360",
+							"perspective": "BE020",
+							"state": [
+								"SZT"
+							]
+						}
+					},
+					"subcategories": [
+						{
+							"id": "CHASSIS_SYSTEMS",
+							"name": "Fahrwerksysteme",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-489"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": true
+						},
+						{
+							"id": "REAR_AXLE_STEERING",
+							"name": "Hinterachslenkung",
+							"cardinality": "ARBITRARY",
+							"categoryViewType": "DEFAULT",
+							"categoryViewConfiguration": {
+								"categoryViewType": "DEFAULT",
+								"stageV2": {
+									"view": "EXTERIOR_360",
+									"perspective": "BE020",
+									"state": [
+										"SZT"
+									]
+								}
+							},
+							"componentIds": [
+								"SA-201",
+								"SA-216"
+							],
+							"contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+							"incompatible": false,
+							"preSelect": false
+						}
+					],
+					"contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+				}
+			],
+			"contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+		}
+	],
+	"components": {
+		"SA-9B2": {
+			"id": "SA-9B2",
+			"name": "Ladekabel für Wallbox und öffentliche Ladestation, 5m, glatt",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_CABLES"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-9B3": {
+			"id": "SA-9B3",
+			"name": "Ladekabel für Wallbox und öffentliche Ladestation, 8m, glatt",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_CABLES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					83.30,
+					"83,30 €"
+				],
+				"netPrice": [
+					70.00,
+					"70,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 83.30,
+				"formattedPrice": "83,30 €",
+				"netPrice": 70.00,
+				"formattedNetPrice": "70,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-9B6": {
+			"id": "SA-9B6",
+			"name": "Ladekabel für Wallbox und öffentliche Ladestation, 5m, glatt",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_CABLES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-9B7": {
+			"id": "SA-9B7",
+			"name": "Ladekabel für Wallbox und öffentliche Ladestation, 8m, glatt",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_CABLES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					83.30,
+					"83,30 €"
+				],
+				"netPrice": [
+					70.00,
+					"70,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 83.30,
+				"formattedPrice": "83,30 €",
+				"netPrice": 70.00,
+				"formattedNetPrice": "70,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-B30": {
+			"id": "SA-B30",
+			"name": "Ladekabel für Haushaltssteckdose, 5m, glatt",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_CABLES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-B80": {
+			"id": "SA-B80",
+			"name": "Ladekabel für Haushaltssteckdose, 8m, glatt",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_CABLES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					35.70,
+					"35,70 €"
+				],
+				"netPrice": [
+					30.00,
+					"30,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 35.70,
+				"formattedPrice": "35,70 €",
+				"netPrice": 30.00,
+				"formattedNetPrice": "30,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-637": {
+			"id": "SA-637",
+			"name": "Flexibles Ladesystem",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					785.40,
+					"785,40 €"
+				],
+				"netPrice": [
+					660.00,
+					"660,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 785.40,
+				"formattedPrice": "785,40 €",
+				"netPrice": 660.00,
+				"formattedNetPrice": "660,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-84B": {
+			"id": "SA-84B",
+			"name": "Wechselstrom-Ladesystem (AC-Laden)",
+			"path": [
+				"CHASSIS",
+				"CHARGING",
+				"CHARGING_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1190.00,
+					"1.190,00 €"
+				],
+				"netPrice": [
+					1000.00,
+					"1.000,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1190.00,
+				"formattedPrice": "1.190,00 €",
+				"netPrice": 1000.00,
+				"formattedNetPrice": "1.000,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-489": {
+			"id": "SA-489",
+			"name": "AIRMATIC",
+			"path": [
+				"CHASSIS",
+				"CHASSIS_CHASSIS",
+				"CHASSIS_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2082.50,
+					"2.082,50 €"
+				],
+				"netPrice": [
+					1750.00,
+					"1.750,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2082.50,
+				"formattedPrice": "2.082,50 €",
+				"netPrice": 1750.00,
+				"formattedNetPrice": "1.750,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-201": {
+			"id": "SA-201",
+			"name": "Hinterachslenkung mit 4,5° Lenkwinkelanpassung",
+			"path": [
+				"CHASSIS",
+				"CHASSIS_CHASSIS",
+				"REAR_AXLE_STEERING"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1547.00,
+					"1.547,00 €"
+				],
+				"netPrice": [
+					1300.00,
+					"1.300,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1547.00,
+				"formattedPrice": "1.547,00 €",
+				"netPrice": 1300.00,
+				"formattedNetPrice": "1.300,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-216": {
+			"id": "SA-216",
+			"name": "Hinterachslenkung mit 10° Lenkwinkelanpassung",
+			"path": [
+				"CHASSIS",
+				"CHASSIS_CHASSIS",
+				"REAR_AXLE_STEERING"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1547.00,
+					"1.547,00 €"
+				],
+				"netPrice": [
+					1300.00,
+					"1.300,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1547.00,
+				"formattedPrice": "1.547,00 €",
+				"netPrice": 1300.00,
+				"formattedNetPrice": "1.300,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-589": {
+			"id": "SA-589",
+			"name": "Umfeldbeleuchtung mit animierter Projektion des Mercedes-Benz Pattern, 2-fach",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"EXTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					142.80,
+					"142,80 €"
+				],
+				"netPrice": [
+					120.00,
+					"120,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 142.80,
+				"formattedPrice": "142,80 €",
+				"netPrice": 120.00,
+				"formattedNetPrice": "120,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-5U4": {
+			"id": "SA-5U4",
+			"name": "Kühlerverkleidung mit Mercedes-Benz Pattern",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"EXTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					357.00,
+					"357,00 €"
+				],
+				"netPrice": [
+					300.00,
+					"300,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 357.00,
+				"formattedPrice": "357,00 €",
+				"netPrice": 300.00,
+				"formattedNetPrice": "300,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-U47": {
+			"id": "SA-U47",
+			"name": "AMG Abrisskante",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"EXTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					416.50,
+					"416,50 €"
+				],
+				"netPrice": [
+					350.00,
+					"350,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 416.50,
+				"formattedPrice": "416,50 €",
+				"netPrice": 350.00,
+				"formattedNetPrice": "350,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-U49": {
+			"id": "SA-U49",
+			"name": "Fahrzeugsteckdosenklappe elektrisch",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"EXTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PAF": {
+			"id": "PC-PAF",
+			"name": "Akustik-Komfort-Paket",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"GLASS_AND_ROOF",
+				"GLASS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1071.00,
+					"1.071,00 €"
+				],
+				"netPrice": [
+					900.00,
+					"900,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1071.00,
+				"formattedPrice": "1.071,00 €",
+				"netPrice": 900.00,
+				"formattedNetPrice": "900,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-597": {
+			"id": "SA-597",
+			"name": "Frontscheibe, beheizt",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"GLASS_AND_ROOF",
+				"GLASS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					690.20,
+					"690,20 €"
+				],
+				"netPrice": [
+					580.00,
+					"580,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 690.20,
+				"formattedPrice": "690,20 €",
+				"netPrice": 580.00,
+				"formattedNetPrice": "580,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-840": {
+			"id": "SA-840",
+			"name": "Wärmedämmend dunkel getöntes Glas",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"GLASS_AND_ROOF",
+				"GLASS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-875": {
+			"id": "SA-875",
+			"name": "Scheibenwaschanlage beheizt",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"GLASS_AND_ROOF",
+				"GLASS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-U50": {
+			"id": "SA-U50",
+			"name": "Entfall wärmedämmend dunkel getöntes Glas",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"GLASS_AND_ROOF",
+				"GLASS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-413": {
+			"id": "SA-413",
+			"name": "Panorama-Schiebedach",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"GLASS_AND_ROOF",
+				"ROOFS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1808.80,
+					"1.808,80 €"
+				],
+				"netPrice": [
+					1520.00,
+					"1.520,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1808.80,
+				"formattedPrice": "1.808,80 €",
+				"netPrice": 1520.00,
+				"formattedNetPrice": "1.520,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-550": {
+			"id": "SA-550",
+			"name": "Anhängevorrichtung mit ESP® Anhängerstabilisierung",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"TRANSPORT"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					999.60,
+					"999,60 €"
+				],
+				"netPrice": [
+					840.00,
+					"840,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 999.60,
+				"formattedPrice": "999,60 €",
+				"netPrice": 840.00,
+				"formattedNetPrice": "840,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-553": {
+			"id": "SA-553",
+			"name": "Anhängerrangier-Assistent",
+			"path": [
+				"EXTERIOR",
+				"EXTERIOR_EXTRAS",
+				"TRANSPORT"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					416.50,
+					"416,50 €"
+				],
+				"netPrice": [
+					350.00,
+					"350,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 416.50,
+				"formattedPrice": "416,50 €",
+				"netPrice": 350.00,
+				"formattedNetPrice": "350,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P35": {
+			"id": "PC-P35",
+			"name": "DIGITAL LIGHT",
+			"path": [
+				"EXTERIOR",
+				"HEADLIGHTS",
+				"HEADLIGHTS_HEADLIGHTS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PAX": {
+			"id": "PC-PAX",
+			"name": "DIGITAL LIGHT mit Projektionsfunktion",
+			"path": [
+				"EXTERIOR",
+				"HEADLIGHTS",
+				"HEADLIGHTS_HEADLIGHTS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2112.25,
+					"2.112,25 €"
+				],
+				"netPrice": [
+					1775.00,
+					"1.775,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2112.25,
+				"formattedPrice": "2.112,25 €",
+				"netPrice": 1775.00,
+				"formattedNetPrice": "1.775,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-632": {
+			"id": "SA-632",
+			"name": "LED High Performance-Scheinwerfer",
+			"path": [
+				"EXTERIOR",
+				"HEADLIGHTS",
+				"HEADLIGHTS_HEADLIGHTS"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-818": {
+			"id": "LU-818",
+			"name": "MANUFAKTUR graphitgrau magno",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK020"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					6069.00,
+					"6.069,00 €"
+				],
+				"netPrice": [
+					5100.00,
+					"5.100,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 6069.00,
+				"formattedPrice": "6.069,00 €",
+				"netPrice": 5100.00,
+				"formattedNetPrice": "5.100,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-885": {
+			"id": "LU-885",
+			"name": "MANUFAKTUR opalithweiß bright",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK020"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1178.10,
+					"1.178,10 €"
+				],
+				"netPrice": [
+					990.00,
+					"990,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1178.10,
+				"formattedPrice": "1.178,10 €",
+				"netPrice": 990.00,
+				"formattedNetPrice": "990,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-956": {
+			"id": "LU-956",
+			"name": "MANUFAKTUR alpingrau uni",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK020"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					3689.00,
+					"3.689,00 €"
+				],
+				"netPrice": [
+					3100.00,
+					"3.100,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 3689.00,
+				"formattedPrice": "3.689,00 €",
+				"netPrice": 3100.00,
+				"formattedNetPrice": "3.100,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-993": {
+			"id": "LU-993",
+			"name": "MANUFAKTUR patagonienrot metallic",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK020"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1178.10,
+					"1.178,10 €"
+				],
+				"netPrice": [
+					990.00,
+					"990,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1178.10,
+				"formattedPrice": "1.178,10 €",
+				"netPrice": 990.00,
+				"formattedNetPrice": "990,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-197": {
+			"id": "LU-197",
+			"name": "obsidianschwarz",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK034"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-831": {
+			"id": "LU-831",
+			"name": "graphitgrau",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK034"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-842": {
+			"id": "LU-842",
+			"name": "sodalithblau",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK034"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-922": {
+			"id": "LU-922",
+			"name": "hightechsilber",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK034"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-992": {
+			"id": "LU-992",
+			"name": "selenitgrau",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK034"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-040": {
+			"id": "LU-040",
+			"name": "schwarz",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK035"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"LU-149": {
+			"id": "LU-149",
+			"name": "polarweiß",
+			"path": [
+				"EXTERIOR",
+				"PAINTS",
+				"ZK035"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-R01": {
+			"id": "SA-R01",
+			"name": "Sommerreifen",
+			"path": [
+				"EXTERIOR",
+				"TYRES",
+				"TYRES_TYRES"
+			],
+			"standard": true,
+			"enabled": false,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-R03": {
+			"id": "SA-R03",
+			"name": "Sportreifen",
+			"path": [
+				"EXTERIOR",
+				"TYRES",
+				"TYRES_TYRES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					357.00,
+					"357,00 €"
+				],
+				"netPrice": [
+					300.00,
+					"300,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 357.00,
+				"formattedPrice": "357,00 €",
+				"netPrice": 300.00,
+				"formattedNetPrice": "300,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-65R": {
+			"id": "SA-65R",
+			"name": "48,3 cm (19\") Leichtmetallräder im 5-Doppelspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"19_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					178.50,
+					"178,50 €"
+				],
+				"netPrice": [
+					150.00,
+					"150,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 178.50,
+				"formattedPrice": "178,50 €",
+				"netPrice": 150.00,
+				"formattedNetPrice": "150,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-R39": {
+			"id": "SA-R39",
+			"name": "48,3 cm (19\") Leichtmetallräder im 5-Doppelspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"19_INCH"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-RRH": {
+			"id": "SA-RRH",
+			"name": "48,3 cm (19\") AMG Leichtmetallräder im 5-Doppelspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"19_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG",
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-59R": {
+			"id": "SA-59R",
+			"name": "50,8 cm (20\") Leichtmetallräder im 5-Doppelspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"20_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					1011.50,
+					"1.011,50 €"
+				],
+				"netPrice": [
+					850.00,
+					"850,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1011.50,
+				"formattedPrice": "1.011,50 €",
+				"netPrice": 850.00,
+				"formattedNetPrice": "850,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-60R": {
+			"id": "SA-60R",
+			"name": "50,8 cm (20\") Leichtmetallräder im 5-Doppelspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"20_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					952.00,
+					"952,00 €"
+				],
+				"netPrice": [
+					800.00,
+					"800,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 952.00,
+				"formattedPrice": "952,00 €",
+				"netPrice": 800.00,
+				"formattedNetPrice": "800,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-R33": {
+			"id": "SA-R33",
+			"name": "50,8 cm (20\") Leichtmetallräder im 5-Doppelspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"20_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-R61": {
+			"id": "SA-R61",
+			"name": "50,8 cm (20\") Leichtmetallräder im 5-Speichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"20_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					1190.00,
+					"1.190,00 €"
+				],
+				"netPrice": [
+					1000.00,
+					"1.000,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1190.00,
+				"formattedPrice": "1.190,00 €",
+				"netPrice": 1000.00,
+				"formattedNetPrice": "1.000,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-RRM": {
+			"id": "SA-RRM",
+			"name": "50,8 cm (20\") AMG Leichtmetallräder im 5-Speichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"20_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1249.50,
+					"1.249,50 €"
+				],
+				"netPrice": [
+					1050.00,
+					"1.050,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1249.50,
+				"formattedPrice": "1.249,50 €",
+				"netPrice": 1050.00,
+				"formattedNetPrice": "1.050,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-RRP": {
+			"id": "SA-RRP",
+			"name": "50,8 cm (20\") AMG Leichtmetallräder im 5-Speichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"20_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1071.00,
+					"1.071,00 €"
+				],
+				"netPrice": [
+					900.00,
+					"900,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1071.00,
+				"formattedPrice": "1.071,00 €",
+				"netPrice": 900.00,
+				"formattedNetPrice": "900,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-81R": {
+			"id": "SA-81R",
+			"name": "53,3 cm (21\") Leichtmetallräder im 5-Doppelspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"21_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					1933.75,
+					"1.933,75 €"
+				],
+				"netPrice": [
+					1625.00,
+					"1.625,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1933.75,
+				"formattedPrice": "1.933,75 €",
+				"netPrice": 1625.00,
+				"formattedNetPrice": "1.625,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-RWI": {
+			"id": "SA-RWI",
+			"name": "53,3 cm (21\") AMG Leichtmetallräder im Vielspeichen-Design",
+			"path": [
+				"EXTERIOR",
+				"WHEELS",
+				"21_INCH"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2142.00,
+					"2.142,00 €"
+				],
+				"netPrice": [
+					1800.00,
+					"1.800,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2142.00,
+				"formattedPrice": "2.142,00 €",
+				"netPrice": 1800.00,
+				"formattedNetPrice": "1.800,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P21": {
+			"id": "PC-P21",
+			"name": "AIR-BALANCE Paket",
+			"path": [
+				"INTERIOR",
+				"AMBIENT",
+				"AMBIENT_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PBP": {
+			"id": "PC-PBP",
+			"name": "ENERGIZING Paket",
+			"path": [
+				"INTERIOR",
+				"AMBIENT",
+				"AMBIENT_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PBR": {
+			"id": "PC-PBR",
+			"name": "ENERGIZING Paket Plus",
+			"path": [
+				"INTERIOR",
+				"AMBIENT",
+				"AMBIENT_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2963.10,
+					"2.963,10 €"
+				],
+				"netPrice": [
+					2490.00,
+					"2.490,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2963.10,
+				"formattedPrice": "2.963,10 €",
+				"netPrice": 2490.00,
+				"formattedNetPrice": "2.490,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-661": {
+			"id": "SA-661",
+			"name": "Mittelkonsole Feinstrukturoptik schwarz",
+			"path": [
+				"INTERIOR",
+				"CENTER_CONSOLE"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					178.50,
+					"178,50 €"
+				],
+				"netPrice": [
+					150.00,
+					"150,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 178.50,
+				"formattedPrice": "178,50 €",
+				"netPrice": 150.00,
+				"formattedNetPrice": "150,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-689": {
+			"id": "SA-689",
+			"name": "Mittelkonsole Holz Spitzahorn Schiffsdeck",
+			"path": [
+				"INTERIOR",
+				"CENTER_CONSOLE"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-757": {
+			"id": "SA-757",
+			"name": "Mittelkonsole in Schwarz hochglänzend",
+			"path": [
+				"INTERIOR",
+				"CENTER_CONSOLE"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-61U": {
+			"id": "SA-61U",
+			"name": "Innenhimmel Mikrofaser MICROCUT schwarz",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"CEILING"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2017.05,
+					"2.017,05 €"
+				],
+				"netPrice": [
+					1695.00,
+					"1.695,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2017.05,
+				"formattedPrice": "2.017,05 €",
+				"netPrice": 1695.00,
+				"formattedNetPrice": "1.695,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P53": {
+			"id": "PC-P53",
+			"name": "ENERGIZING AIR CONTROL Plus",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"CLIMATE_CONTROL"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					535.50,
+					"535,50 €"
+				],
+				"netPrice": [
+					450.00,
+					"450,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 535.50,
+				"formattedPrice": "535,50 €",
+				"netPrice": 450.00,
+				"formattedNetPrice": "450,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-580": {
+			"id": "SA-580",
+			"name": "Klimatisierungsautomatik THERMATIC",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"CLIMATE_CONTROL"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-581": {
+			"id": "SA-581",
+			"name": "Klimatisierungsautomatik THERMOTRONIC",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"CLIMATE_CONTROL"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PAV": {
+			"id": "PC-PAV",
+			"name": "Winter-Paket",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"INTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					446.25,
+					"446,25 €"
+				],
+				"netPrice": [
+					375.00,
+					"375,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 446.25,
+				"formattedPrice": "446,25 €",
+				"netPrice": 375.00,
+				"formattedNetPrice": "375,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-876": {
+			"id": "SA-876",
+			"name": "Innenraumlicht-Paket",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"INTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-U17": {
+			"id": "SA-U17",
+			"name": "Entfall Sicherheitsgurte in Rot",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"INTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-Y05": {
+			"id": "SA-Y05",
+			"name": "Sicherheitsgurte in Rot",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"INTERIOR_EXTRAS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					357.00,
+					"357,00 €"
+				],
+				"netPrice": [
+					300.00,
+					"300,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 357.00,
+				"formattedPrice": "357,00 €",
+				"netPrice": 300.00,
+				"formattedNetPrice": "300,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-881": {
+			"id": "SA-881",
+			"name": "Kofferraumdeckelfernschließung",
+			"path": [
+				"INTERIOR",
+				"INTERIOR_EXTRAS",
+				"STORAGE_AND_TRUNK"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-399": {
+			"id": "SA-399",
+			"name": "Multikontursitze für Fahrer und Beifahrer",
+			"path": [
+				"INTERIOR",
+				"SEATS",
+				"SEATS_SEATS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1737.40,
+					"1.737,40 €"
+				],
+				"netPrice": [
+					1460.00,
+					"1.460,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1737.40,
+				"formattedPrice": "1.737,40 €",
+				"netPrice": 1460.00,
+				"formattedNetPrice": "1.460,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-401": {
+			"id": "SA-401",
+			"name": "Sitzklimatisierung für Fahrer und Beifahrer",
+			"path": [
+				"INTERIOR",
+				"SEATS",
+				"SEATS_SEATS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					916.30,
+					"916,30 €"
+				],
+				"netPrice": [
+					770.00,
+					"770,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 916.30,
+				"formattedPrice": "916,30 €",
+				"netPrice": 770.00,
+				"formattedNetPrice": "770,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-872": {
+			"id": "SA-872",
+			"name": "Sitzheizung im Fond",
+			"path": [
+				"INTERIOR",
+				"SEATS",
+				"SEATS_SEATS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					428.40,
+					"428,40 €"
+				],
+				"netPrice": [
+					360.00,
+					"360,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 428.40,
+				"formattedPrice": "428,40 €",
+				"netPrice": 360.00,
+				"formattedNetPrice": "360,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-873": {
+			"id": "SA-873",
+			"name": "Sitzheizung für Fahrer und Beifahrer",
+			"path": [
+				"INTERIOR",
+				"SEATS",
+				"SEATS_SEATS"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-443": {
+			"id": "SA-443",
+			"name": "Lenkradheizung",
+			"path": [
+				"INTERIOR",
+				"STEERING_WHEEL",
+				"STEERING_WHEEL_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-L3M": {
+			"id": "SA-L3M",
+			"name": "Multifunktions-Sportlenkrad in Ledernachbildung ARTICO",
+			"path": [
+				"INTERIOR",
+				"STEERING_WHEEL",
+				"ZK012"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-01H": {
+			"id": "SA-01H",
+			"name": "Zierelemente Holz offenporig braun mit schwarzer Bedruckung",
+			"path": [
+				"INTERIOR",
+				"TRIMS",
+				"ZK049"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					464.10,
+					"464,10 €"
+				],
+				"netPrice": [
+					390.00,
+					"390,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 464.10,
+				"formattedPrice": "464,10 €",
+				"netPrice": 390.00,
+				"formattedNetPrice": "390,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-07H": {
+			"id": "SA-07H",
+			"name": "Zierelemente Holz Spitzahorn Schiffsdeck offenporig",
+			"path": [
+				"INTERIOR",
+				"TRIMS",
+				"ZK049"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					702.10,
+					"702,10 €"
+				],
+				"netPrice": [
+					590.00,
+					"590,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 702.10,
+				"formattedPrice": "702,10 €",
+				"netPrice": 590.00,
+				"formattedNetPrice": "590,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-51H": {
+			"id": "SA-51H",
+			"name": "Zierelemente Lasercut hinterleuchtet mit Mercedes-Benz Pattern",
+			"path": [
+				"INTERIOR",
+				"TRIMS",
+				"ZK049"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					166.60,
+					"166,60 €"
+				],
+				"netPrice": [
+					140.00,
+					"140,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 166.60,
+				"formattedPrice": "166,60 €",
+				"netPrice": 140.00,
+				"formattedNetPrice": "140,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-H08": {
+			"id": "SA-H08",
+			"name": "Zierelemente Holz Linde linestructure anthrazit offenporig",
+			"path": [
+				"INTERIOR",
+				"TRIMS",
+				"ZK049"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-H51": {
+			"id": "SA-H51",
+			"name": "Zierelemente Feinstrukturoptik schwarz",
+			"path": [
+				"INTERIOR",
+				"TRIMS",
+				"ZK049"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"SA-H67": {
+			"id": "SA-H67",
+			"name": "Zierelemente 3D Reliefoptik anthrazit",
+			"path": [
+				"INTERIOR",
+				"TRIMS",
+				"ZK049"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					464.10,
+					"464,10 €"
+				],
+				"netPrice": [
+					390.00,
+					"390,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 464.10,
+				"formattedPrice": "464,10 €",
+				"netPrice": 390.00,
+				"formattedNetPrice": "390,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-H73": {
+			"id": "SA-H73",
+			"name": "AMG Zierelemente Carbon",
+			"path": [
+				"INTERIOR",
+				"TRIMS",
+				"ZK049"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1130.50,
+					"1.130,50 €"
+				],
+				"netPrice": [
+					950.00,
+					"950,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1130.50,
+				"formattedPrice": "1.130,50 €",
+				"netPrice": 950.00,
+				"formattedNetPrice": "950,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-109": {
+			"id": "AU-109",
+			"name": "Ledernachbildung ARTICO nevagrau / balaobraun",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK030"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					238.00,
+					"238,00 €"
+				],
+				"netPrice": [
+					200.00,
+					"200,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 238.00,
+				"formattedPrice": "238,00 €",
+				"netPrice": 200.00,
+				"formattedNetPrice": "200,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"AU-111": {
+			"id": "AU-111",
+			"name": "Ledernachbildung ARTICO schwarz / spacegrau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK030"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"AU-119": {
+			"id": "AU-119",
+			"name": "Ledernachbildung ARTICO nevagrau / biscayablau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK030"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					238.00,
+					"238,00 €"
+				],
+				"netPrice": [
+					200.00,
+					"200,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 238.00,
+				"formattedPrice": "238,00 €",
+				"netPrice": 200.00,
+				"formattedNetPrice": "200,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"AU-121": {
+			"id": "AU-121",
+			"name": "Ledernachbildung ARTICO schwarz / balaobraun",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK030"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					238.00,
+					"238,00 €"
+				],
+				"netPrice": [
+					200.00,
+					"200,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 238.00,
+				"formattedPrice": "238,00 €",
+				"netPrice": 200.00,
+				"formattedNetPrice": "200,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"AU-131": {
+			"id": "AU-131",
+			"name": "Ledernachbildung ARTICO schwarz / biscayablau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK030"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					238.00,
+					"238,00 €"
+				],
+				"netPrice": [
+					200.00,
+					"200,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 238.00,
+				"formattedPrice": "238,00 €",
+				"netPrice": 200.00,
+				"formattedNetPrice": "200,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"AU-651": {
+			"id": "AU-651",
+			"name": "Ledernachbildung ARTICO / Mikrofaser MICROCUT schwarz / spacegrau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK030"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-201": {
+			"id": "AU-201",
+			"name": "Leder schwarz / spacegrau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK031"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					1547.00,
+					"1.547,00 €"
+				],
+				"netPrice": [
+					1300.00,
+					"1.300,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1547.00,
+				"formattedPrice": "1.547,00 €",
+				"netPrice": 1300.00,
+				"formattedNetPrice": "1.300,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-209": {
+			"id": "AU-209",
+			"name": "Leder nevagrau / balaobraun",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK031"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1785.00,
+					"1.785,00 €"
+				],
+				"netPrice": [
+					1500.00,
+					"1.500,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1785.00,
+				"formattedPrice": "1.785,00 €",
+				"netPrice": 1500.00,
+				"formattedNetPrice": "1.500,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-211": {
+			"id": "AU-211",
+			"name": "Leder schwarz / balaobraun",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK031"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1785.00,
+					"1.785,00 €"
+				],
+				"netPrice": [
+					1500.00,
+					"1.500,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1785.00,
+				"formattedPrice": "1.785,00 €",
+				"netPrice": 1500.00,
+				"formattedNetPrice": "1.500,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-219": {
+			"id": "AU-219",
+			"name": "Leder nevagrau / biscayablau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK031"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1785.00,
+					"1.785,00 €"
+				],
+				"netPrice": [
+					1500.00,
+					"1.500,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1785.00,
+				"formattedPrice": "1.785,00 €",
+				"netPrice": 1500.00,
+				"formattedNetPrice": "1.500,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-221": {
+			"id": "AU-221",
+			"name": "Leder schwarz / biscayablau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK031"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1785.00,
+					"1.785,00 €"
+				],
+				"netPrice": [
+					1500.00,
+					"1.500,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1785.00,
+				"formattedPrice": "1.785,00 €",
+				"netPrice": 1500.00,
+				"formattedNetPrice": "1.500,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-231": {
+			"id": "AU-231",
+			"name": "Leder schwarz / spacegrau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK031"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1547.00,
+					"1.547,00 €"
+				],
+				"netPrice": [
+					1300.00,
+					"1.300,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1547.00,
+				"formattedPrice": "1.547,00 €",
+				"netPrice": 1300.00,
+				"formattedNetPrice": "1.300,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-249": {
+			"id": "AU-249",
+			"name": "Leder nevagrau / biscayablau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK031"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1785.00,
+					"1.785,00 €"
+				],
+				"netPrice": [
+					1500.00,
+					"1.500,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1785.00,
+				"formattedPrice": "1.785,00 €",
+				"netPrice": 1500.00,
+				"formattedNetPrice": "1.500,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-801": {
+			"id": "AU-801",
+			"name": "Leder Nappa schwarz / spacegrau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK032"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2701.30,
+					"2.701,30 €"
+				],
+				"netPrice": [
+					2270.00,
+					"2.270,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2701.30,
+				"formattedPrice": "2.701,30 €",
+				"netPrice": 2270.00,
+				"formattedNetPrice": "2.270,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"AU-804": {
+			"id": "AU-804",
+			"name": "Leder Nappa balaobraun / schwarz",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK032"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					2701.30,
+					"2.701,30 €"
+				],
+				"netPrice": [
+					2270.00,
+					"2.270,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2701.30,
+				"formattedPrice": "2.701,30 €",
+				"netPrice": 2270.00,
+				"formattedNetPrice": "2.270,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"AU-814": {
+			"id": "AU-814",
+			"name": "Leder Nappa balaobraun / nevagrau",
+			"path": [
+				"INTERIOR",
+				"UPHOLSTERIES",
+				"ZK032"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					2701.30,
+					"2.701,30 €"
+				],
+				"netPrice": [
+					2270.00,
+					"2.270,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2701.30,
+				"formattedPrice": "2.701,30 €",
+				"netPrice": 2270.00,
+				"formattedNetPrice": "2.270,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"PV-E65": {
+			"id": "PV-E65",
+			"name": "Lenkraddrehknauf links",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK087"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					499.80,
+					"499,80 €"
+				],
+				"netPrice": [
+					420.00,
+					"420,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 499.80,
+				"formattedPrice": "499,80 €",
+				"netPrice": 420.00,
+				"formattedNetPrice": "420,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E66": {
+			"id": "PV-E66",
+			"name": "Lenkraddrehknauf rechts",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK087"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					499.80,
+					"499,80 €"
+				],
+				"netPrice": [
+					420.00,
+					"420,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 499.80,
+				"formattedPrice": "499,80 €",
+				"netPrice": 420.00,
+				"formattedNetPrice": "420,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E85": {
+			"id": "PV-E85",
+			"name": "Gurtschlossöffner",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK088"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					208.25,
+					"208,25 €"
+				],
+				"netPrice": [
+					175.00,
+					"175,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 208.25,
+				"formattedPrice": "208,25 €",
+				"netPrice": 175.00,
+				"formattedNetPrice": "175,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E88": {
+			"id": "PV-E88",
+			"name": "Kombischalterverlegung",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK088"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					297.50,
+					"297,50 €"
+				],
+				"netPrice": [
+					250.00,
+					"250,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 297.50,
+				"formattedPrice": "297,50 €",
+				"netPrice": 250.00,
+				"formattedNetPrice": "250,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E67": {
+			"id": "PV-E67",
+			"name": "Handbediengerät Classic",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK089"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2618.00,
+					"2.618,00 €"
+				],
+				"netPrice": [
+					2200.00,
+					"2.200,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2618.00,
+				"formattedPrice": "2.618,00 €",
+				"netPrice": 2200.00,
+				"formattedNetPrice": "2.200,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E68": {
+			"id": "PV-E68",
+			"name": "Handbediengerät Classic beledert",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK089"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					3213.00,
+					"3.213,00 €"
+				],
+				"netPrice": [
+					2700.00,
+					"2.700,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 3213.00,
+				"formattedPrice": "3.213,00 €",
+				"netPrice": 2700.00,
+				"formattedNetPrice": "2.700,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E83": {
+			"id": "PV-E83",
+			"name": "Handbediengerät Easy Speed beledert",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK089"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					4046.00,
+					"4.046,00 €"
+				],
+				"netPrice": [
+					3400.00,
+					"3.400,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 4046.00,
+				"formattedPrice": "4.046,00 €",
+				"netPrice": 3400.00,
+				"formattedNetPrice": "3.400,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E84": {
+			"id": "PV-E84",
+			"name": "Handbediengerät Easy Speed",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK089"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					3272.50,
+					"3.272,50 €"
+				],
+				"netPrice": [
+					2750.00,
+					"2.750,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 3272.50,
+				"formattedPrice": "3.272,50 €",
+				"netPrice": 2750.00,
+				"formattedNetPrice": "2.750,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E09": {
+			"id": "PV-E09",
+			"name": "Einstiegsschutz links",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK090"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					226.10,
+					"226,10 €"
+				],
+				"netPrice": [
+					190.00,
+					"190,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 226.10,
+				"formattedPrice": "226,10 €",
+				"netPrice": 190.00,
+				"formattedNetPrice": "190,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E87": {
+			"id": "PV-E87",
+			"name": "Pedalabdeckung",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK091"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					595.00,
+					"595,00 €"
+				],
+				"netPrice": [
+					500.00,
+					"500,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 595.00,
+				"formattedPrice": "595,00 €",
+				"netPrice": 500.00,
+				"formattedNetPrice": "500,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E89": {
+			"id": "PV-E89",
+			"name": "Gaspedalverlegung",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK091"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2023.00,
+					"2.023,00 €"
+				],
+				"netPrice": [
+					1700.00,
+					"1.700,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2023.00,
+				"formattedPrice": "2.023,00 €",
+				"netPrice": 1700.00,
+				"formattedNetPrice": "1.700,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E92": {
+			"id": "PV-E92",
+			"name": "Pedalerhöhung 2-Fach",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK091"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1035.30,
+					"1.035,30 €"
+				],
+				"netPrice": [
+					870.00,
+					"870,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1035.30,
+				"formattedPrice": "1.035,30 €",
+				"netPrice": 870.00,
+				"formattedNetPrice": "870,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E94": {
+			"id": "PV-E94",
+			"name": "Sitzverlagerung links nach hinten",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK092"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					892.50,
+					"892,50 €"
+				],
+				"netPrice": [
+					750.00,
+					"750,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 892.50,
+				"formattedPrice": "892,50 €",
+				"netPrice": 750.00,
+				"formattedNetPrice": "750,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E95": {
+			"id": "PV-E95",
+			"name": "Sitzverlagerung rechts nach hinten",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK092"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					892.50,
+					"892,50 €"
+				],
+				"netPrice": [
+					750.00,
+					"750,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 892.50,
+				"formattedPrice": "892,50 €",
+				"netPrice": 750.00,
+				"formattedNetPrice": "750,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E96": {
+			"id": "PV-E96",
+			"name": "Sitzerhöhung links nach oben",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK092"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					892.50,
+					"892,50 €"
+				],
+				"netPrice": [
+					750.00,
+					"750,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 892.50,
+				"formattedPrice": "892,50 €",
+				"netPrice": 750.00,
+				"formattedNetPrice": "750,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E97": {
+			"id": "PV-E97",
+			"name": "Sitzerhöhung rechts nach oben",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK092"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					892.50,
+					"892,50 €"
+				],
+				"netPrice": [
+					750.00,
+					"750,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 892.50,
+				"formattedPrice": "892,50 €",
+				"netPrice": 750.00,
+				"formattedNetPrice": "750,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E08": {
+			"id": "PV-E08",
+			"name": "Zulassungsgutachten für Fahrhilfen",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK093"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					226.10,
+					"226,10 €"
+				],
+				"netPrice": [
+					190.00,
+					"190,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 226.10,
+				"formattedPrice": "226,10 €",
+				"netPrice": 190.00,
+				"formattedNetPrice": "190,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PV-E5P": {
+			"id": "PV-E5P",
+			"name": "Verbau von Fahrhilfen für Menschen mit Behinderung",
+			"path": [
+				"INTERIOR",
+				"ZKL24",
+				"ZK093"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P16": {
+			"id": "PC-P16",
+			"name": "Fahranfänger- und Parkdienstmodus",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"DRIVING",
+				"DRIVING_ASSISTANTS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					59.50,
+					"59,50 €"
+				],
+				"netPrice": [
+					50.00,
+					"50,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 59.50,
+				"formattedPrice": "59,50 €",
+				"netPrice": 50.00,
+				"formattedNetPrice": "50,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-207": {
+			"id": "SA-207",
+			"name": "Aktiver Abstands-Assistent DISTRONIC",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"DRIVING",
+				"DRIVING_ASSISTANTS_OTHERS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-258": {
+			"id": "SA-258",
+			"name": "Aktiver Brems-Assistent",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"DRIVING",
+				"DRIVING_ASSISTANTS_OTHERS"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-5B0": {
+			"id": "SA-5B0",
+			"name": "Vorrüstung für DISTRONIC",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"DRIVING",
+				"DRIVING_ASSISTANTS_OTHERS"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P20": {
+			"id": "PC-P20",
+			"name": "Fahrassistenz-Paket Plus",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"DRIVING",
+				"DRIVING_ASSISTANTS_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P44": {
+			"id": "PC-P44",
+			"name": "Park-Paket mit Rückfahrkamera",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"PARKING",
+				"PARKING_ASSISTANTS_SYSTEMS"
+			],
+			"standard": true,
+			"enabled": false,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P47": {
+			"id": "PC-P47",
+			"name": "Park-Paket mit 360°-Kamera",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"PARKING",
+				"PARKING_ASSISTANTS_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PBH": {
+			"id": "PC-PBH",
+			"name": "Park-Paket mit Remote-Parkfunktionen",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"ASSISTANCESYSTEMS",
+				"PARKING",
+				"PARKING_ASSISTANTS_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1439.90,
+					"1.439,90 €"
+				],
+				"netPrice": [
+					1210.00,
+					"1.210,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1439.90,
+				"formattedPrice": "1.439,90 €",
+				"netPrice": 1210.00,
+				"formattedNetPrice": "1.210,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PAG": {
+			"id": "PC-PAG",
+			"name": "MBUX Hyperscreen",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"DISPLAY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					5831.00,
+					"5.831,00 €"
+				],
+				"netPrice": [
+					4900.00,
+					"4.900,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 5831.00,
+				"formattedPrice": "5.831,00 €",
+				"netPrice": 4900.00,
+				"formattedNetPrice": "4.900,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PAI": {
+			"id": "PC-PAI",
+			"name": "Display-Paket",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"DISPLAY"
+			],
+			"standard": true,
+			"enabled": false,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-256": {
+			"id": "SA-256",
+			"name": "AMG TRACK PACE",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"DISPLAY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					297.50,
+					"297,50 €"
+				],
+				"netPrice": [
+					250.00,
+					"250,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 297.50,
+				"formattedPrice": "297,50 €",
+				"netPrice": 250.00,
+				"formattedNetPrice": "250,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-444": {
+			"id": "SA-444",
+			"name": "Head-up-Display",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"DISPLAY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1297.10,
+					"1.297,10 €"
+				],
+				"netPrice": [
+					1090.00,
+					"1.090,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1297.10,
+				"formattedPrice": "1.297,10 €",
+				"netPrice": 1090.00,
+				"formattedNetPrice": "1.090,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-451": {
+			"id": "SA-451",
+			"name": "3D Fahrerdisplay",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"DISPLAY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1178.10,
+					"1.178,10 €"
+				],
+				"netPrice": [
+					990.00,
+					"990,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1178.10,
+				"formattedPrice": "1.178,10 €",
+				"netPrice": 990.00,
+				"formattedNetPrice": "990,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-865": {
+			"id": "SA-865",
+			"name": "TV-Tuner",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"DISPLAY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1178.10,
+					"1.178,10 €"
+				],
+				"netPrice": [
+					990.00,
+					"990,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1178.10,
+				"formattedPrice": "1.178,10 €",
+				"netPrice": 990.00,
+				"formattedNetPrice": "990,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-896": {
+			"id": "SA-896",
+			"name": "Vorrüstung für digitalen Fahrzeugschlüssel",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"MULTIMEDIA_CONNECTED_CARS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PBG": {
+			"id": "PC-PBG",
+			"name": "MBUX Navigation Premium",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"NAVIGATION"
+			],
+			"standard": true,
+			"enabled": false,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-897": {
+			"id": "SA-897",
+			"name": "Kabelloses Ladesystem für mobb Endgeräte vorn",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"SMARTpoh_INTEGRATION"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-810": {
+			"id": "SA-810",
+			"name": "Burmester® 3D-Surround-Soundsystem",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"MULTIMEDIA",
+				"SOUND",
+				"SOUND_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					1225.70,
+					"1.225,70 €"
+				],
+				"netPrice": [
+					1030.00,
+					"1.030,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 1225.70,
+				"formattedPrice": "1.225,70 €",
+				"netPrice": 1030.00,
+				"formattedNetPrice": "1.030,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P17": {
+			"id": "PC-P17",
+			"name": "KEYLESS-GO Komfort-Paket",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"SAFETY",
+				"LOCKING_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-889": {
+			"id": "SA-889",
+			"name": "KEYLESS-GO",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"SAFETY",
+				"LOCKING_SYSTEMS"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"RECOMMENDED"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-293": {
+			"id": "SA-293",
+			"name": "Sidebags im Fond",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"SAFETY",
+				"PASSENGER_SAFETY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					452.20,
+					"452,20 €"
+				],
+				"netPrice": [
+					380.00,
+					"380,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 452.20,
+				"formattedPrice": "452,20 €",
+				"netPrice": 380.00,
+				"formattedNetPrice": "380,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"SA-682": {
+			"id": "SA-682",
+			"name": "Feuerlöscher",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"SAFETY",
+				"PASSENGER_SAFETY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					142.80,
+					"142,80 €"
+				],
+				"netPrice": [
+					120.00,
+					"120,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 142.80,
+				"formattedPrice": "142,80 €",
+				"netPrice": 120.00,
+				"formattedNetPrice": "120,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P82": {
+			"id": "PC-P82",
+			"name": "GUARD 360° Fahrzeugschutz Plus",
+			"path": [
+				"MULTIMEDIA_SAFETY",
+				"SAFETY",
+				"VEHICLE_SAFETY"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					737.80,
+					"737,80 €"
+				],
+				"netPrice": [
+					620.00,
+					"620,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 737.80,
+				"formattedPrice": "737,80 €",
+				"netPrice": 620.00,
+				"formattedNetPrice": "620,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P55": {
+			"id": "PC-P55",
+			"name": "Night-Paket",
+			"path": [
+				"VARIANTS",
+				"LINES",
+				"LINE_ADD_ON_EXTERIOR"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					428.40,
+					"428,40 €"
+				],
+				"netPrice": [
+					360.00,
+					"360,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 428.40,
+				"formattedPrice": "428,40 €",
+				"netPrice": 360.00,
+				"formattedNetPrice": "360,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-P14": {
+			"id": "PC-P14",
+			"name": "Electric Art Interieur",
+			"path": [
+				"VARIANTS",
+				"LINES",
+				"ZK018"
+			],
+			"standard": true,
+			"enabled": true,
+			"filteredByFixation": true,
+			"selected": false,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING",
+				"incompatibleWithComponents": [
+					"AMG Line Exterieur & AMG Line Interieur"
+				]
+			},
+			"incompatibleWith": [
+				"AMG Line Exterieur & AMG Line Interieur"
+			]
+		},
+		"PC-PYF": {
+			"id": "PC-PYF",
+			"name": "AMG Line Exterieur",
+			"path": [
+				"VARIANTS",
+				"LINES",
+				"ZK096"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					3320.10,
+					"3.320,10 €"
+				],
+				"netPrice": [
+					2790.00,
+					"2.790,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 3320.10,
+				"formattedPrice": "3.320,10 €",
+				"netPrice": 2790.00,
+				"formattedNetPrice": "2.790,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PYH": {
+			"id": "PC-PYH",
+			"name": "AMG Line Exterieur & AMG Line Interieur",
+			"path": [
+				"VARIANTS",
+				"LINES",
+				"ZK096"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					5212.20,
+					"5.212,20 €"
+				],
+				"netPrice": [
+					4380.00,
+					"4.380,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 5212.20,
+				"formattedPrice": "5.212,20 €",
+				"netPrice": 4380.00,
+				"formattedNetPrice": "4.380,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PYB": {
+			"id": "PC-PYB",
+			"name": "Basis-Paket",
+			"path": [
+				"VARIANTS",
+				"PACKAGES_ADD_ON",
+				"PACKAGES_ADD_ON_ADD_ON"
+			],
+			"standard": true,
+			"enabled": false,
+			"filteredByFixation": false,
+			"selected": true,
+			"prices": {
+				"price": [
+					0.00,
+					"0,00 €"
+				],
+				"netPrice": [
+					0.00,
+					"0,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 0.00,
+				"formattedPrice": "0,00 €",
+				"netPrice": 0.00,
+				"formattedNetPrice": "0,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PYC": {
+			"id": "PC-PYC",
+			"name": "Advanced Paket",
+			"path": [
+				"VARIANTS",
+				"PACKAGE_TYPES",
+				"PACKAGE_TYPES_PACKAGE_TYPES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					2023.00,
+					"2.023,00 €"
+				],
+				"netPrice": [
+					1700.00,
+					"1.700,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 2023.00,
+				"formattedPrice": "2.023,00 €",
+				"netPrice": 1700.00,
+				"formattedNetPrice": "1.700,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"BEST_SELLING"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PYM": {
+			"id": "PC-PYM",
+			"name": "Advanced Plus Paket",
+			"path": [
+				"VARIANTS",
+				"PACKAGE_TYPES",
+				"PACKAGE_TYPES_PACKAGE_TYPES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					6664.00,
+					"6.664,00 €"
+				],
+				"netPrice": [
+					5600.00,
+					"5.600,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 6664.00,
+				"formattedPrice": "6.664,00 €",
+				"netPrice": 5600.00,
+				"formattedNetPrice": "5.600,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PYN": {
+			"id": "PC-PYN",
+			"name": "Premium Paket",
+			"path": [
+				"VARIANTS",
+				"PACKAGE_TYPES",
+				"PACKAGE_TYPES_PACKAGE_TYPES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					13375.60,
+					"13.375,60 €"
+				],
+				"netPrice": [
+					11240.00,
+					"11.240,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 13375.60,
+				"formattedPrice": "13.375,60 €",
+				"netPrice": 11240.00,
+				"formattedNetPrice": "11.240,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-PYO": {
+			"id": "PC-PYO",
+			"name": "Premium Plus Paket",
+			"path": [
+				"VARIANTS",
+				"PACKAGE_TYPES",
+				"PACKAGE_TYPES_PACKAGE_TYPES"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					17689.35,
+					"17.689,35 €"
+				],
+				"netPrice": [
+					14865.00,
+					"14.865,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 17689.35,
+				"formattedPrice": "17.689,35 €",
+				"netPrice": 14865.00,
+				"formattedNetPrice": "14.865,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-DB6": {
+			"id": "PC-DB6",
+			"name": "Edition Electric Art",
+			"path": [
+				"VARIANTS",
+				"ZK015"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					10174.50,
+					"10.174,50 €"
+				],
+				"netPrice": [
+					8550.00,
+					"8.550,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 10174.50,
+				"formattedPrice": "10.174,50 €",
+				"netPrice": 8550.00,
+				"formattedNetPrice": "8.550,00 €",
+				"currencyISO": "EUR"
+			},
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		},
+		"PC-DB7": {
+			"id": "PC-DB7",
+			"name": "Edition AMG-Line",
+			"path": [
+				"VARIANTS",
+				"ZK015"
+			],
+			"standard": false,
+			"enabled": true,
+			"filteredByFixation": false,
+			"selected": false,
+			"prices": {
+				"price": [
+					13155.45,
+					"13.155,45 €"
+				],
+				"netPrice": [
+					11055.00,
+					"11.055,00 €"
+				],
+				"zeroPrice": [
+					0,
+					"0,00 €"
+				],
+				"currencyISO": "EUR"
+			},
+			"price": {
+				"price": 13155.45,
+				"formattedPrice": "13.155,45 €",
+				"netPrice": 11055.00,
+				"formattedNetPrice": "11.055,00 €",
+				"currencyISO": "EUR"
+			},
+			"labels": [
+				"AMG"
+			],
+			"preAnnouncementInformation": {
+				"preAnnouncementType": "NOTHING"
+			}
+		}
+	}
+}

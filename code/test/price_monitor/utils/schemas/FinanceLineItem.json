@@ -1,0 +1,248 @@
+{
+  "type": "record",
+  "name": "FinanceLineItem",
+  "fields": [
+    {
+      "name": "recorded_at",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "vehicle_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "market",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Market",
+          "symbols": [
+            "DE",
+            "FR",
+            "AU",
+            "AT",
+            "NL",
+            "US",
+            "UK",
+            "SE"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "currency",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "vendor",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Vendor",
+          "symbols": [
+            "bmw",
+            "tesla",
+            "audi",
+            "mercedes_benz"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "series",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_range_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_range_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "line_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "line_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "contract_type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "term_of_agreement",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "annual_mileage",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "mileage_unit",
+      "type": "string",
+      "default": "Miles"
+    },
+    {
+      "name": "deposit",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "sales_offer",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "total_deposit",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "number_of_installments",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "monthly_rental_nlp",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "monthly_rental_glp",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "otr",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "total_payable_amount",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "total_credit_amount",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "optional_final_payment",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "option_purchase_fee",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "apr",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "fixed_roi",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "excess_mileage",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "option_type",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "option_description",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "option_gross_list_price",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "last_scraped_on",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "is_current",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    }
+  ]
+}

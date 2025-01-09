@@ -1,0 +1,307 @@
+name: Deployment
+
+on:
+  push:
+    branches: [main]
+  release:
+    types: [ published ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build_and_test:
+    name:
+    runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.version_step.outputs.POETRY_VERSION }}
+
+    steps:
+      - name: Github Action Setup
+        uses: actions/checkout@v3
+
+      - name: Github install chrome
+        uses: nanasess/setup-chromedriver@v2
+
+      - name: Python Setup
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install poetry
+        uses: snok/install-poetry@v1
+
+      - name: Install dependencies with poetry
+        run: |
+          poetry install
+
+      - name: Retrieve Build Version
+        id: version_step
+        run: echo "POETRY_VERSION=$(poetry version --short)" >> $GITHUB_OUTPUT
+
+      - name: Test Run
+        run: |
+          make test
+
+      - name: Black Formatting Test
+        run: |
+          poetry run black --check --diff .
+
+      - name: Isort Formatting Test
+        uses: isort/isort-action@master
+        with:
+          configuration: "--check-only --diff --profile black"
+        if: always()
+
+      - name: E2E Test
+        run: |
+          make e2e-test
+
+      - name: Download chrome
+        run: |
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+      - name: Create a docker image
+        run: make build-image
+
+      - name: Create tar file of image
+        run: |
+          docker save -o price-monitor-$(poetry version --short).tar price-monitor:$(poetry version --short)
+
+      - name: Package files
+        run: tar -czf application.tar.gz price-monitor-$(poetry version --short).tar config scripts
+
+      - name: Upload application artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ github.run_id }}
+          path: application.tar.gz
+
+
+  deploy_staging_config:
+    name: Deploy config to staging
+    needs: [ build_and_test ]
+    runs-on: ubuntu-latest
+    concurrency: staging
+    environment: staging
+
+    steps:
+      - name: Download application artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ github.run_id }}
+          path: .
+
+      - name: Unpack files
+        run: tar -xzf application.tar.gz
+
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SECRET_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Copy Setup Shell Script to Server
+        run: >
+          gcloud compute scp ./scripts/server_setup.sh ${{ secrets.STAGING_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+      - name: Setting Up Initial Server
+        run: >
+          gcloud compute ssh ${{ secrets.STAGING_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo chmod +x ~/server_setup.sh &&
+          sudo ~/server_setup.sh'
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replacing Version Variable with ${{needs.build_and_test.outputs.output1}}
+        env:
+          VERSION: ${{needs.build_and_test.outputs.output1}}
+          VENDOR: ''
+          MARKET: ''
+        with:
+          filename: config/staging/cron_script
+
+      - name: Copy the config and cron script to server
+        run: >
+          gcloud compute scp --recurse config/staging ${{ secrets.STAGING_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+      - name: Config/Cron Destination Setup
+        run: >
+          gcloud compute ssh ${{ secrets.STAGING_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo mkdir --parent /opt/price-monitor/config/ &&
+          sudo mv ~/staging/config.json /opt/price-monitor/config/ &&
+          sudo mv ~/staging/cron_script /etc/cron.daily'
+
+
+  deploy_staging_image:
+    name: Deploy Image to staging
+    needs: [ build_and_test, deploy_staging_config ]
+    runs-on: ubuntu-latest
+    concurrency: staging
+
+    steps:
+
+      - name: Download application artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ github.run_id }}
+          path: .
+
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SECRET_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Unpack files
+        run: tar -xzf application.tar.gz
+
+
+      - name: Copy the image to server
+        run: >
+          gcloud compute scp price-monitor-${{needs.build_and_test.outputs.output1}}.tar ${{ secrets.STAGING_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+      - name: Load tar file as image & Cleanup Old Images
+        run: >
+          gcloud compute ssh ${{ secrets.STAGING_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo docker system prune -af && 
+          sudo docker load -i ~/price-monitor-${{needs.build_and_test.outputs.output1}}.tar && sudo rm -f ~/price-monitor*'
+
+  deploy_production_config:
+    name: Deploy config to production
+    needs: [ build_and_test,deploy_staging_image ]
+    runs-on: ubuntu-latest
+    environment: production
+    concurrency: production
+    if: ${{ github.event_name == 'release' }}
+
+    steps:
+      - name: Download application artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ github.run_id }}
+          path: .
+
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SECRET_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Unpack files
+        run: tar -xzf application.tar.gz
+
+      - name: Copy Setup Shell Script to Server
+        run: >
+          gcloud compute scp ./scripts/server_setup.sh ${{ secrets.PROD_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+      - name: Setting Up Initial Server
+        run: >
+          gcloud compute ssh ${{ secrets.PROD_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo chmod +x ~/server_setup.sh &&
+          sudo ~/server_setup.sh'
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replacing Version Variable with ${{needs.build_and_test.outputs.output1}}
+        env:
+          VERSION: ${{needs.build_and_test.outputs.output1}}
+          VENDOR: ''
+          MARKET: ''
+        with:
+          filename: config/production/cron_script
+
+      - name: Copy the config and cron script to server
+        run: >
+          gcloud compute scp --recurse config/production ${{ secrets.PROD_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+      - name: Config/Cron Destination Setup
+        run: >
+          gcloud compute ssh ${{ secrets.PROD_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo mkdir --parent /opt/price-monitor/config/ &&
+          sudo mv ~/production/config.json /opt/price-monitor/config/ &&
+          sudo mv ~/production/mercedes_config.json /opt/price-monitor/config/ &&
+          sudo mv ~/production/cron_script /etc/cron.daily'
+
+  deploy_production_image:
+    name: Deploy Image File to production
+    needs: [ build_and_test,deploy_production_config ]
+    runs-on: ubuntu-latest
+    concurrency: production
+    if: ${{ github.event_name == 'release' }}
+
+    steps:
+
+      - name: Download application artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ${{ github.run_id }}
+          path: .
+
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SECRET_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Unpack files
+        run: tar -xzf application.tar.gz
+
+
+      - name: Copy the image to server
+        run: >
+          gcloud compute scp price-monitor-${{needs.build_and_test.outputs.output1}}.tar ${{ secrets.PROD_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+
+      - name: Load tar file as image & Cleanup Old Images
+        run: >
+          gcloud compute ssh ${{ secrets.PROD_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo docker system prune -af &&
+          sudo docker load -i ~/price-monitor-${{needs.build_and_test.outputs.output1}}.tar && sudo rm -f ~/price-monitor*'

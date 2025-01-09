@@ -1,0 +1,123 @@
+{
+  "type": "record",
+  "name": "OptionPriceDifferenceItem",
+  "fields": [
+    {
+      "name": "recorded_at",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "vendor",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Vendor",
+          "symbols": [
+            "bmw",
+            "tesla",
+            "audi",
+            "mercedes_benz"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "market",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Market",
+          "symbols": [
+            "DE",
+            "FR",
+            "AU",
+            "AT",
+            "NL",
+            "US",
+            "UK",
+            "SE"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "option_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "option_old_price",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "option_new_price",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "currency",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "perc_change",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "option_price_change",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "reason",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "OptionPriceDifferenceReason",
+          "symbols": [
+            "PRICE_INCREASE",
+            "PRICE_DECREASE"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "model_range_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

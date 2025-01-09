@@ -1,0 +1,4067 @@
+{
+    "componentCategories": [
+        {
+            "id": "EXTERIOR",
+            "name": "Exterieur",
+            "cardinality": "NOT_DEFINED",
+            "categoryViewType": "DEFAULT",
+            "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT"
+            },
+            "subcategories": [
+                {
+                    "id": "EXTERIOR_STYLE",
+                    "name": "Exterieur Styles",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE020",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "ZK017",
+                            "name": "Exterieur \nAusstattungslinien",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-PUF"
+                            ],
+                            "contains": "LINES_EXTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "LINE_ADD_ON_EXTERIOR",
+                            "name": "Erweiterungen",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-PAZ",
+                                "PC-P60"
+                            ],
+                            "fixationInformation": {
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "PACKAGES_EXTERIOR",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "contains": "LINES_EXTERIOR"
+                },
+                {
+                    "id": "PAINTS",
+                    "name": "Farben",
+                    "cardinality": "EXACTLY_ONE",
+                    "categoryViewType": "SINGLE_CHOICE",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "SINGLE_CHOICE",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE020",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "ZK020",
+                            "name": "MANUFAKTUR Lacke",
+                            "cardinality": "NOT_DEFINED",
+                            "categoryViewType": "SINGLE_CHOICE",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "SINGLE_CHOICE",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "LU-799",
+                                "LU-956"
+                            ],
+                            "contains": "PAINTS",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "ZK034",
+                            "name": "Metallic",
+                            "cardinality": "NOT_DEFINED",
+                            "categoryViewType": "SINGLE_CHOICE",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "SINGLE_CHOICE",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "LU-197",
+                                "LU-922",
+                                "LU-992"
+                            ],
+                            "contains": "PAINTS",
+                            "incompatible": false,
+                            "preSelect": false
+                        },
+                        {
+                            "id": "ZK035",
+                            "name": "Uni",
+                            "cardinality": "NOT_DEFINED",
+                            "categoryViewType": "SINGLE_CHOICE",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "SINGLE_CHOICE",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "LU-040",
+                                "LU-149"
+                            ],
+                            "contains": "PAINTS",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "contains": "PAINTS"
+                },
+                {
+                    "id": "WHEELS",
+                    "name": "Räder",
+                    "cardinality": "EXACTLY_ONE",
+                    "categoryViewType": "SINGLE_CHOICE",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "SINGLE_CHOICE",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE090",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "21_INCH",
+                            "name": "53,3 cm (21\")",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "SINGLE_CHOICE",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "SINGLE_CHOICE",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE090",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-RWZ",
+                                "SA-RQW",
+                                "SA-RWQ"
+                            ],
+                            "contains": "WHEELS",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "22_INCH",
+                            "name": "55,9 cm (22\")",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "SINGLE_CHOICE",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "SINGLE_CHOICE",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE090",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-RPF"
+                            ],
+                            "contains": "WHEELS",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "contains": "WHEELS"
+                },
+                {
+                    "id": "TYRES",
+                    "name": "Reifen",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE090",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "TYRES_TYRES",
+                            "name": "Reifen",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-R01"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                            "incompatible": false
+                        },
+                        {
+                            "id": "WINTER_WHEELS",
+                            "name": "Winterkompletträder",
+                            "cardinality": "ONE_OR_NONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "subcategories": [
+                                {
+                                    "id": "WINTER_WHEELS_WHEELS",
+                                    "name": "Winterkompletträder",
+                                    "cardinality": "ONE_OR_NONE",
+                                    "categoryViewType": "DEFAULT",
+                                    "categoryViewConfiguration": {
+                                        "categoryViewType": "DEFAULT",
+                                        "stageV2": {
+                                            "view": "EXTERIOR_360",
+                                            "perspective": "BE020",
+                                            "state": [
+                                                "SZT"
+                                            ]
+                                        }
+                                    },
+                                    "componentIds": [
+                                        "SA-8R9"
+                                    ],
+                                    "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                                    "incompatible": false,
+                                    "preSelect": true
+                                },
+                                {
+                                    "id": "WHEELS_PRE_ASSEMBLY",
+                                    "name": "Räder Vormontage",
+                                    "cardinality": "ONE_OR_NONE",
+                                    "categoryViewType": "DEFAULT",
+                                    "categoryViewConfiguration": {
+                                        "categoryViewType": "DEFAULT",
+                                        "stageV2": {
+                                            "view": "EXTERIOR_360",
+                                            "perspective": "BE020",
+                                            "state": [
+                                                "SZT"
+                                            ]
+                                        }
+                                    },
+                                    "componentIds": [
+                                        "SA-652"
+                                    ],
+                                    "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                                    "incompatible": false,
+                                    "preSelect": false
+                                }
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+                        }
+                    ],
+                    "contains": "WHEELS_ACCESSORIES"
+                },
+                {
+                    "id": "HEADLIGHTS",
+                    "name": "Scheinwerfer",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE000",
+                            "state": [
+                                "SZN"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "HEADLIGHTS_HEADLIGHTS",
+                            "name": "Scheinwerfer",
+                            "cardinality": "ONE_OR_NONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-PAX"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "HEADLIGHTS"
+                },
+                {
+                    "id": "EXTERIOR_EXTRAS",
+                    "name": "Exterieur Extras",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE020",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "GLASS_AND_ROOF",
+                            "name": "Glas und Dach",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "subcategories": [
+                                {
+                                    "id": "GLASS",
+                                    "name": "Scheiben",
+                                    "cardinality": "ARBITRARY",
+                                    "categoryViewType": "DEFAULT",
+                                    "categoryViewConfiguration": {
+                                        "categoryViewType": "DEFAULT",
+                                        "stageV2": {
+                                            "view": "INTERIOR_360",
+                                            "perspective": "BIS1",
+                                            "state": [
+                                                "SZT"
+                                            ]
+                                        }
+                                    },
+                                    "componentIds": [
+                                        "SA-U50",
+                                        "SA-597",
+                                        "PC-PAF"
+                                    ],
+                                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                                    "incompatible": false,
+                                    "preSelect": true
+                                }
+                            ],
+                            "contains": "PACKAGES_EXTERIOR"
+                        },
+                        {
+                            "id": "TRANSPORT",
+                            "name": "Transport",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-550"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                            "incompatible": false
+                        },
+                        {
+                            "id": "EXTERIOR_EXTRAS_OTHERS",
+                            "name": "Sonstiges",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-846"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                            "incompatible": false
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+                }
+            ],
+            "contains": "NOT_DEFINED"
+        },
+        {
+            "id": "INTERIOR",
+            "name": "Interieur",
+            "cardinality": "NOT_DEFINED",
+            "categoryViewType": "DEFAULT",
+            "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT"
+            },
+            "subcategories": [
+                {
+                    "id": "INTERIOR_STYLE",
+                    "name": "Interieur Styles",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "ZK018",
+                            "name": "Interieur Ausstattungslinien",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-PTF"
+                            ],
+                            "contains": "LINES_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "LINES_INTERIOR"
+                },
+                {
+                    "id": "UPHOLSTERIES",
+                    "name": "Polster",
+                    "cardinality": "EXACTLY_ONE",
+                    "categoryViewType": "SINGLE_CHOICE",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "SINGLE_CHOICE",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "ZK030",
+                            "name": "Ledernachbildung ARTICO",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "SINGLE_CHOICE",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "SINGLE_CHOICE",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "AU-651"
+                            ],
+                            "contains": "UPHOLSTERIES",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "ZK032",
+                            "name": "Leder Nappa",
+                            "cardinality": "NOT_DEFINED",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT"
+                            },
+                            "componentIds": [
+                                "AU-851",
+                                "AU-859",
+                                "AU-861"
+                            ],
+                            "contains": "NOT_DEFINED",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "contains": "UPHOLSTERIES"
+                },
+                {
+                    "id": "SEATS",
+                    "name": "Sitze ",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "SEATS_SEATS",
+                            "name": "Sitze ",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-U17",
+                                "SA-Y05",
+                                "SA-872",
+                                "SA-401"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "SEATS"
+                },
+                {
+                    "id": "TRIMS",
+                    "name": "Zierelemente",
+                    "cardinality": "ONE_OR_NONE",
+                    "categoryViewType": "SINGLE_CHOICE",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "SINGLE_CHOICE",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "ZK049",
+                            "name": "Zierelemente",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "SINGLE_CHOICE",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "SINGLE_CHOICE",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-H08",
+                                "SA-51H",
+                                "SA-H67",
+                                "SA-H39",
+                                "SA-H20",
+                                "SA-H73"
+                            ],
+                            "contains": "TRIMS",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "TRIMS"
+                },
+                {
+                    "id": "CENTER_CONSOLE",
+                    "name": "Mittelkonsole",
+                    "cardinality": "ONE_OR_NONE",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "ZK065",
+                            "name": "Mittelkonsole",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-697",
+                                "SA-732",
+                                "SA-757",
+                                "SA-775",
+                                "SA-781",
+                                "SA-661"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+                },
+                {
+                    "id": "STEERING_WHEEL",
+                    "name": "Lenkräder",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "STEERING_WHEEL_STEERING_WHEEL",
+                            "name": "Lenkräder",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-L6J",
+                                "SA-L6K",
+                                "SA-L6H"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "STEERING_WHEEL_OTHERS",
+                            "name": "Sonstiges",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-443"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+                },
+                {
+                    "id": "INTERIOR_EXTRAS",
+                    "name": "Interieur Extras",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "SUN_PROTECTION",
+                            "name": "Sonnenschutz",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-543"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "CEILING",
+                            "name": "Innenhimmel",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-51U",
+                                "SA-59U",
+                                "SA-61U"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": false
+                        },
+                        {
+                            "id": "CLIMATE_CONTROL",
+                            "name": "Klimakontrolle",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-580",
+                                "PC-P53",
+                                "SA-581"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+                }
+            ],
+            "contains": "NOT_DEFINED"
+        },
+        {
+            "id": "PACKAGES",
+            "name": "Pakete",
+            "cardinality": "ARBITRARY",
+            "categoryViewType": "DEFAULT",
+            "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT"
+            },
+            "subcategories": [
+                {
+                    "id": "PACKAGE_TYPES",
+                    "name": "Ausstattungspakete",
+                    "cardinality": "ONE_OR_NONE",
+                    "categoryViewType": "EQUIPMENT_LEVELS",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "EQUIPMENT_LEVELS"
+                    },
+                    "subcategories": [
+                        {
+                            "id": "PACKAGE_TYPES_HIGH",
+                            "name": "Ausstattungspakete AMG Line",
+                            "cardinality": "EXACTLY_ONE",
+                            "categoryViewType": "EQUIPMENT_LEVELS",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "EQUIPMENT_LEVELS"
+                            },
+                            "componentIds": [
+                                "PC-PSO",
+                                "PC-PSR"
+                            ],
+                            "fixationInformation": {
+                                "affectsFurtherSelection": true
+                            },
+                            "contains": "TYPES",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "TYPES"
+                }
+            ],
+            "contains": "PACKAGES"
+        },
+        {
+            "id": "MULTIMEDIA_SAFETY",
+            "name": "Multimedia und Sicherheit",
+            "cardinality": "NOT_DEFINED",
+            "categoryViewType": "DEFAULT",
+            "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT"
+            },
+            "subcategories": [
+                {
+                    "id": "MULTIMEDIA",
+                    "name": "Multimedia",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "DISPLAY",
+                            "name": "Display",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-256",
+                                "SA-865",
+                                "SA-444",
+                                "PC-PAG"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        },
+                        {
+                            "id": "NAVIGATION",
+                            "name": "Navigation",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "PC-PBG"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": false
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+                },
+                {
+                    "id": "ASSISTANCESYSTEMS",
+                    "name": "Assistenzsysteme",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "DRIVING",
+                            "name": "Fahrassistenten",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "subcategories": [
+                                {
+                                    "id": "DRIVING_ASSISTANTS_OTHERS",
+                                    "name": "Sonstiges",
+                                    "cardinality": "ARBITRARY",
+                                    "categoryViewType": "DEFAULT",
+                                    "categoryViewConfiguration": {
+                                        "categoryViewType": "DEFAULT",
+                                        "stageV2": {
+                                            "view": "INTERIOR_360",
+                                            "perspective": "BIS1",
+                                            "state": [
+                                                "SZT"
+                                            ]
+                                        }
+                                    },
+                                    "componentIds": [
+                                        "SA-553"
+                                    ],
+                                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                                    "incompatible": false,
+                                    "preSelect": true
+                                }
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+                        },
+                        {
+                            "id": "PARKING",
+                            "name": "Parkassistenten",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "subcategories": [
+                                {
+                                    "id": "PARKING_ASSISTANTS_SYSTEMS",
+                                    "name": "Park-Pakete",
+                                    "cardinality": "ONE_OR_NONE",
+                                    "categoryViewType": "DEFAULT",
+                                    "categoryViewConfiguration": {
+                                        "categoryViewType": "DEFAULT",
+                                        "stageV2": {
+                                            "view": "EXTERIOR_360",
+                                            "perspective": "BE020",
+                                            "state": [
+                                                "SZT"
+                                            ]
+                                        }
+                                    },
+                                    "componentIds": [
+                                        "PC-P47",
+                                        "PC-PBH"
+                                    ],
+                                    "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                                    "incompatible": false,
+                                    "preSelect": true
+                                }
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+                },
+                {
+                    "id": "SAFETY",
+                    "name": "Sicherheit",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "INTERIOR_360",
+                            "perspective": "BIS1",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "PASSENGER_SAFETY",
+                            "name": "Fahrgastsicherheit",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "INTERIOR_360",
+                                    "perspective": "BIS1",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-682",
+                                "SA-293"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_INTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_INTERIOR"
+                }
+            ],
+            "contains": "NOT_DEFINED"
+        },
+        {
+            "id": "CHASSIS",
+            "name": "Antrieb und Fahrwerk",
+            "cardinality": "ARBITRARY",
+            "categoryViewType": "DEFAULT",
+            "categoryViewConfiguration": {
+                "categoryViewType": "DEFAULT",
+                "stageV2": {
+                    "view": "EXTERIOR_360",
+                    "perspective": "BE020",
+                    "state": [
+                        "SZT"
+                    ]
+                }
+            },
+            "subcategories": [
+                {
+                    "id": "CHARGING",
+                    "name": "Laden",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE020",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "CHARGING_CABLES",
+                            "name": "Fahrzeugladekabel",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-9B6",
+                                "SA-B30",
+                                "SA-B80",
+                                "SA-9B7"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+                },
+                {
+                    "id": "CHASSIS_CHASSIS",
+                    "name": "Fahrwerk",
+                    "cardinality": "ARBITRARY",
+                    "categoryViewType": "DEFAULT",
+                    "categoryViewConfiguration": {
+                        "categoryViewType": "DEFAULT",
+                        "stageV2": {
+                            "view": "EXTERIOR_360",
+                            "perspective": "BE020",
+                            "state": [
+                                "SZT"
+                            ]
+                        }
+                    },
+                    "subcategories": [
+                        {
+                            "id": "BRAKES",
+                            "name": "Bremsen",
+                            "cardinality": "ARBITRARY",
+                            "categoryViewType": "DEFAULT",
+                            "categoryViewConfiguration": {
+                                "categoryViewType": "DEFAULT",
+                                "stageV2": {
+                                    "view": "EXTERIOR_360",
+                                    "perspective": "BE020",
+                                    "state": [
+                                        "SZT"
+                                    ]
+                                }
+                            },
+                            "componentIds": [
+                                "SA-U70",
+                                "SA-B07"
+                            ],
+                            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR",
+                            "incompatible": false,
+                            "preSelect": true
+                        }
+                    ],
+                    "contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+                }
+            ],
+            "contains": "SPECIAL_EQUIPMENTS_EXTERIOR"
+        }
+    ],
+    "components": {
+        "SA-256": {
+            "id": "SA-256",
+            "name": "AMG TRACK PACE",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "MULTIMEDIA",
+                "DISPLAY"
+            ],
+            "standard": true,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ]
+        },
+        "SA-865": {
+            "id": "SA-865",
+            "name": "TV-Tuner",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "MULTIMEDIA",
+                "DISPLAY"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1178.10,
+                    "1.178,10 €"
+                ],
+                "netPrice": [
+                    990.00,
+                    "990,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1178.10,
+                "formattedPrice": "1.178,10 €",
+                "netPrice": 990.00,
+                "formattedNetPrice": "990,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-444": {
+            "id": "SA-444",
+            "name": "Head-up Display",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "MULTIMEDIA",
+                "DISPLAY"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1297.10,
+                    "1.297,10 €"
+                ],
+                "netPrice": [
+                    1090.00,
+                    "1.090,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1297.10,
+                "formattedPrice": "1.297,10 €",
+                "netPrice": 1090.00,
+                "formattedNetPrice": "1.090,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "RECOMMENDED"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-872": {
+            "id": "SA-872",
+            "name": "Sitzheizung im Fond",
+            "path": [
+                "INTERIOR",
+                "SEATS",
+                "SEATS_SEATS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    428.40,
+                    "428,40 €"
+                ],
+                "netPrice": [
+                    360.00,
+                    "360,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 428.40,
+                "formattedPrice": "428,40 €",
+                "netPrice": 360.00,
+                "formattedNetPrice": "360,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-580": {
+            "id": "SA-580",
+            "name": "Klimatisierungsautomatik THERMATIC",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_EXTRAS",
+                "CLIMATE_CONTROL"
+            ],
+            "standard": true,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-581": {
+            "id": "SA-581",
+            "name": "Klimatisierungsautomatik THERMOTRONIC",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_EXTRAS",
+                "CLIMATE_CONTROL"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    797.30,
+                    "797,30 €"
+                ],
+                "netPrice": [
+                    670.00,
+                    "670,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 797.30,
+                "formattedPrice": "797,30 €",
+                "netPrice": 670.00,
+                "formattedNetPrice": "670,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "RECOMMENDED"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-401": {
+            "id": "SA-401",
+            "name": "Sitzklimatisierung für Fahrer und Beifahrer",
+            "path": [
+                "INTERIOR",
+                "SEATS",
+                "SEATS_SEATS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    916.30,
+                    "916,30 €"
+                ],
+                "netPrice": [
+                    770.00,
+                    "770,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 916.30,
+                "formattedPrice": "916,30 €",
+                "netPrice": 770.00,
+                "formattedNetPrice": "770,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "RECOMMENDED"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-697": {
+            "id": "SA-697",
+            "name": "Mittelkonsole in Holz Nussbaum Schiffsdeck offenporig",
+            "path": [
+                "INTERIOR",
+                "CENTER_CONSOLE",
+                "ZK065"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-732": {
+            "id": "SA-732",
+            "name": "AMG Mittelkonsole Carbon",
+            "path": [
+                "INTERIOR",
+                "CENTER_CONSOLE",
+                "ZK065"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG",
+                "BEST_SELLING"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-757": {
+            "id": "SA-757",
+            "name": "Mittelkonsole in Schwarz hochglänzend",
+            "path": [
+                "INTERIOR",
+                "CENTER_CONSOLE",
+                "ZK065"
+            ],
+            "standard": true,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-775": {
+            "id": "SA-775",
+            "name": "Mittelkonsole Holz Linde linestructure anthrazit offenporig",
+            "path": [
+                "INTERIOR",
+                "CENTER_CONSOLE",
+                "ZK065"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-781": {
+            "id": "SA-781",
+            "name": "Mittelkonsole Holz Magnolie braun offenporig mit Mercedes-Benz Pattern in Aluminium",
+            "path": [
+                "INTERIOR",
+                "CENTER_CONSOLE",
+                "ZK065"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-661": {
+            "id": "SA-661",
+            "name": "Mittelkonsole Feinstrukturoptik schwarz",
+            "path": [
+                "INTERIOR",
+                "CENTER_CONSOLE",
+                "ZK065"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    178.50,
+                    "178,50 €"
+                ],
+                "netPrice": [
+                    150.00,
+                    "150,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 178.50,
+                "formattedPrice": "178,50 €",
+                "netPrice": 150.00,
+                "formattedNetPrice": "150,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-61U": {
+            "id": "SA-61U",
+            "name": "Innenhimmel Mikrofaser MICROCUT schwarz",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_EXTRAS",
+                "CEILING"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    2017.05,
+                    "2.017,05 €"
+                ],
+                "netPrice": [
+                    1695.00,
+                    "1.695,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 2017.05,
+                "formattedPrice": "2.017,05 €",
+                "netPrice": 1695.00,
+                "formattedNetPrice": "1.695,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-59U": {
+            "id": "SA-59U",
+            "name": "Innenhimmel Stoff nevagrau",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_EXTRAS",
+                "CEILING"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-51U": {
+            "id": "SA-51U",
+            "name": "Innenhimmel Stoff schwarz",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_EXTRAS",
+                "CEILING"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-543": {
+            "id": "SA-543",
+            "name": "Sonnenblende ausziehbar",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_EXTRAS",
+                "SUN_PROTECTION"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    113.05,
+                    "113,05 €"
+                ],
+                "netPrice": [
+                    95.00,
+                    "95,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 113.05,
+                "formattedPrice": "113,05 €",
+                "netPrice": 95.00,
+                "formattedNetPrice": "95,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-Y05": {
+            "id": "SA-Y05",
+            "name": "Sicherheitsgurte in Rot",
+            "path": [
+                "INTERIOR",
+                "SEATS",
+                "SEATS_SEATS"
+            ],
+            "standard": true,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-U70": {
+            "id": "SA-U70",
+            "name": "Bremssättel rot lackiert",
+            "path": [
+                "CHASSIS",
+                "CHASSIS_CHASSIS",
+                "BRAKES"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    809.20,
+                    "809,20 €"
+                ],
+                "netPrice": [
+                    680.00,
+                    "680,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 809.20,
+                "formattedPrice": "809,20 €",
+                "netPrice": 680.00,
+                "formattedNetPrice": "680,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-293": {
+            "id": "SA-293",
+            "name": "Sidebags im Fond",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "SAFETY",
+                "PASSENGER_SAFETY"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    452.20,
+                    "452,20 €"
+                ],
+                "netPrice": [
+                    380.00,
+                    "380,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 452.20,
+                "formattedPrice": "452,20 €",
+                "netPrice": 380.00,
+                "formattedNetPrice": "380,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-B07": {
+            "id": "SA-B07",
+            "name": "AMG Keramik Hochleistungs-Verbundbremsanlage",
+            "path": [
+                "CHASSIS",
+                "CHASSIS_CHASSIS",
+                "BRAKES"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    4998.00,
+                    "4.998,00 €"
+                ],
+                "netPrice": [
+                    4200.00,
+                    "4.200,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 4998.00,
+                "formattedPrice": "4.998,00 €",
+                "netPrice": 4200.00,
+                "formattedNetPrice": "4.200,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "RECOMMENDED",
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-682": {
+            "id": "SA-682",
+            "name": "Feuerlöscher",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "SAFETY",
+                "PASSENGER_SAFETY"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    142.80,
+                    "142,80 €"
+                ],
+                "netPrice": [
+                    120.00,
+                    "120,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 142.80,
+                "formattedPrice": "142,80 €",
+                "netPrice": 120.00,
+                "formattedNetPrice": "120,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-U17": {
+            "id": "SA-U17",
+            "name": "Entfall Sicherheitsgurte in Rot",
+            "path": [
+                "INTERIOR",
+                "SEATS",
+                "SEATS_SEATS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-846": {
+            "id": "SA-846",
+            "name": "Trittbretter beleuchtet in Aluminium-Optik mit Gumminoppen",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_EXTRAS",
+                "EXTERIOR_EXTRAS_OTHERS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    743.75,
+                    "743,75 €"
+                ],
+                "netPrice": [
+                    625.00,
+                    "625,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 743.75,
+                "formattedPrice": "743,75 €",
+                "netPrice": 625.00,
+                "formattedNetPrice": "625,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-U50": {
+            "id": "SA-U50",
+            "name": "Entfall wärmedämmend dunkel getöntes Glas",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_EXTRAS",
+                "GLASS_AND_ROOF",
+                "GLASS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-597": {
+            "id": "SA-597",
+            "name": "Frontscheibe, beheizt",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_EXTRAS",
+                "GLASS_AND_ROOF",
+                "GLASS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    690.20,
+                    "690,20 €"
+                ],
+                "netPrice": [
+                    580.00,
+                    "580,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 690.20,
+                "formattedPrice": "690,20 €",
+                "netPrice": 580.00,
+                "formattedNetPrice": "580,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-550": {
+            "id": "SA-550",
+            "name": "Anhängevorrichtung mit ESP® Anhängerstabilisierung",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_EXTRAS",
+                "TRANSPORT"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    999.60,
+                    "999,60 €"
+                ],
+                "netPrice": [
+                    840.00,
+                    "840,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 999.60,
+                "formattedPrice": "999,60 €",
+                "netPrice": 840.00,
+                "formattedNetPrice": "840,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-553": {
+            "id": "SA-553",
+            "name": "Anhängerrangier-Assistent",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "ASSISTANCESYSTEMS",
+                "DRIVING",
+                "DRIVING_ASSISTANTS_OTHERS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    416.50,
+                    "416,50 €"
+                ],
+                "netPrice": [
+                    350.00,
+                    "350,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 416.50,
+                "formattedPrice": "416,50 €",
+                "netPrice": 350.00,
+                "formattedNetPrice": "350,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-B30": {
+            "id": "SA-B30",
+            "name": "Ladekabel für Haushaltssteckdose, 5m, glatt",
+            "path": [
+                "CHASSIS",
+                "CHARGING",
+                "CHARGING_CABLES"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-9B6": {
+            "id": "SA-9B6",
+            "name": "Ladekabel für Wallbox und öffentliche Ladestation, 5m, glatt",
+            "path": [
+                "CHASSIS",
+                "CHARGING",
+                "CHARGING_CABLES"
+            ],
+            "standard": true,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-9B7": {
+            "id": "SA-9B7",
+            "name": "Ladekabel für Wallbox und öffentliche Ladestation, 8m, glatt",
+            "path": [
+                "CHASSIS",
+                "CHARGING",
+                "CHARGING_CABLES"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    83.30,
+                    "83,30 €"
+                ],
+                "netPrice": [
+                    70.00,
+                    "70,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 83.30,
+                "formattedPrice": "83,30 €",
+                "netPrice": 70.00,
+                "formattedNetPrice": "70,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "RECOMMENDED"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-B80": {
+            "id": "SA-B80",
+            "name": "Ladekabel für Haushaltssteckdose, 8m, glatt",
+            "path": [
+                "CHASSIS",
+                "CHARGING",
+                "CHARGING_CABLES"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    35.70,
+                    "35,70 €"
+                ],
+                "netPrice": [
+                    30.00,
+                    "30,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 35.70,
+                "formattedPrice": "35,70 €",
+                "netPrice": 30.00,
+                "formattedNetPrice": "30,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-8R9": {
+            "id": "SA-8R9",
+            "name": "Winter-Kompletträder M+S 4-fach",
+            "path": [
+                "EXTERIOR",
+                "TYRES",
+                "WINTER_WHEELS",
+                "WINTER_WHEELS_WHEELS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    4760.00,
+                    "4.760,00 €"
+                ],
+                "netPrice": [
+                    4000.00,
+                    "4.000,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 4760.00,
+                "formattedPrice": "4.760,00 €",
+                "netPrice": 4000.00,
+                "formattedNetPrice": "4.000,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-652": {
+            "id": "SA-652",
+            "name": "Sommer-Kompletträder montiert",
+            "path": [
+                "EXTERIOR",
+                "TYRES",
+                "WINTER_WHEELS",
+                "WHEELS_PRE_ASSEMBLY"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-R01": {
+            "id": "SA-R01",
+            "name": "Sommerreifen",
+            "path": [
+                "EXTERIOR",
+                "TYRES",
+                "TYRES_TYRES"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-443": {
+            "id": "SA-443",
+            "name": "Lenkradheizung",
+            "path": [
+                "INTERIOR",
+                "STEERING_WHEEL",
+                "STEERING_WHEEL_OTHERS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    309.40,
+                    "309,40 €"
+                ],
+                "netPrice": [
+                    260.00,
+                    "260,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 309.40,
+                "formattedPrice": "309,40 €",
+                "netPrice": 260.00,
+                "formattedNetPrice": "260,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-L6K": {
+            "id": "SA-L6K",
+            "name": "AMG Performance Lenkrad in Leder Nappa / Mikrofaser MICROCUT",
+            "path": [
+                "INTERIOR",
+                "STEERING_WHEEL",
+                "STEERING_WHEEL_STEERING_WHEEL"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    499.80,
+                    "499,80 €"
+                ],
+                "netPrice": [
+                    420.00,
+                    "420,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 499.80,
+                "formattedPrice": "499,80 €",
+                "netPrice": 420.00,
+                "formattedNetPrice": "420,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-L6J": {
+            "id": "SA-L6J",
+            "name": "AMG Performance Lenkrad in Leder Nappa",
+            "path": [
+                "INTERIOR",
+                "STEERING_WHEEL",
+                "STEERING_WHEEL_STEERING_WHEEL"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ]
+        },
+        "SA-L6H": {
+            "id": "SA-L6H",
+            "name": "AMG Performance Lenkrad in Carbon-Design / Mikrofaser MICROCUT",
+            "path": [
+                "INTERIOR",
+                "STEERING_WHEEL",
+                "STEERING_WHEEL_STEERING_WHEEL"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    975.80,
+                    "975,80 €"
+                ],
+                "netPrice": [
+                    820.00,
+                    "820,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 975.80,
+                "formattedPrice": "975,80 €",
+                "netPrice": 820.00,
+                "formattedNetPrice": "820,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "LU-992": {
+            "id": "LU-992",
+            "name": "selenitgrau metallic",
+            "path": [
+                "EXTERIOR",
+                "PAINTS",
+                "ZK034"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "LU-922": {
+            "id": "LU-922",
+            "name": "hightechsilber metallic",
+            "path": [
+                "EXTERIOR",
+                "PAINTS",
+                "ZK034"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "LU-197": {
+            "id": "LU-197",
+            "name": "obsidianschwarz metallic",
+            "path": [
+                "EXTERIOR",
+                "PAINTS",
+                "ZK034"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "BEST_SELLING"
+            ]
+        },
+        "LU-040": {
+            "id": "LU-040",
+            "name": "schwarz",
+            "path": [
+                "EXTERIOR",
+                "PAINTS",
+                "ZK035"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "LU-149": {
+            "id": "LU-149",
+            "name": "polarweiß",
+            "path": [
+                "EXTERIOR",
+                "PAINTS",
+                "ZK035"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "LU-956": {
+            "id": "LU-956",
+            "name": "MANUFAKTUR alpingrau uni",
+            "path": [
+                "EXTERIOR",
+                "PAINTS",
+                "ZK020"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1178.10,
+                    "1.178,10 €"
+                ],
+                "netPrice": [
+                    990.00,
+                    "990,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1178.10,
+                "formattedPrice": "1.178,10 €",
+                "netPrice": 990.00,
+                "formattedNetPrice": "990,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "LU-799": {
+            "id": "LU-799",
+            "name": "MANUFAKTUR diamantweiß bright",
+            "path": [
+                "EXTERIOR",
+                "PAINTS",
+                "ZK020"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1178.10,
+                    "1.178,10 €"
+                ],
+                "netPrice": [
+                    990.00,
+                    "990,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1178.10,
+                "formattedPrice": "1.178,10 €",
+                "netPrice": 990.00,
+                "formattedNetPrice": "990,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-P47": {
+            "id": "PC-P47",
+            "name": "Park-Paket mit 360°-Kamera",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "ASSISTANCESYSTEMS",
+                "PARKING",
+                "PARKING_ASSISTANTS_SYSTEMS"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "PC-P53": {
+            "id": "PC-P53",
+            "name": "ENERGIZING AIR CONTROL Plus",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_EXTRAS",
+                "CLIMATE_CONTROL"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    535.50,
+                    "535,50 €"
+                ],
+                "netPrice": [
+                    450.00,
+                    "450,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 535.50,
+                "formattedPrice": "535,50 €",
+                "netPrice": 450.00,
+                "formattedNetPrice": "450,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-P60": {
+            "id": "PC-P60",
+            "name": "AMG Night-Paket",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_STYLE",
+                "LINE_ADD_ON_EXTERIOR"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1130.50,
+                    "1.130,50 €"
+                ],
+                "netPrice": [
+                    950.00,
+                    "950,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1130.50,
+                "formattedPrice": "1.130,50 €",
+                "netPrice": 950.00,
+                "formattedNetPrice": "950,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-PAZ": {
+            "id": "PC-PAZ",
+            "name": "AMG Night-Paket II",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_STYLE",
+                "LINE_ADD_ON_EXTERIOR"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    654.50,
+                    "654,50 €"
+                ],
+                "netPrice": [
+                    550.00,
+                    "550,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 654.50,
+                "formattedPrice": "654,50 €",
+                "netPrice": 550.00,
+                "formattedNetPrice": "550,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-PAX": {
+            "id": "PC-PAX",
+            "name": "DIGITAL LIGHT mit Projektionsfunktion",
+            "path": [
+                "EXTERIOR",
+                "HEADLIGHTS",
+                "HEADLIGHTS_HEADLIGHTS"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "BEST_SELLING"
+            ]
+        },
+        "PC-PAG": {
+            "id": "PC-PAG",
+            "name": "MBUX Hyperscreen",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "MULTIMEDIA",
+                "DISPLAY"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    8568.00,
+                    "8.568,00 €"
+                ],
+                "netPrice": [
+                    7200.00,
+                    "7.200,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 8568.00,
+                "formattedPrice": "8.568,00 €",
+                "netPrice": 7200.00,
+                "formattedNetPrice": "7.200,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-PAF": {
+            "id": "PC-PAF",
+            "name": "Akustik-Komfort-Paket",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_EXTRAS",
+                "GLASS_AND_ROOF",
+                "GLASS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1071.00,
+                    "1.071,00 €"
+                ],
+                "netPrice": [
+                    900.00,
+                    "900,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1071.00,
+                "formattedPrice": "1.071,00 €",
+                "netPrice": 900.00,
+                "formattedNetPrice": "900,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "RECOMMENDED"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-PTF": {
+            "id": "PC-PTF",
+            "name": "Mercedes-AMG Interieur",
+            "path": [
+                "INTERIOR",
+                "INTERIOR_STYLE",
+                "ZK018"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG",
+                "BEST_SELLING"
+            ]
+        },
+        "PC-PBH": {
+            "id": "PC-PBH",
+            "name": "Park-Paket mit Remote-Parkfunktionen",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "ASSISTANCESYSTEMS",
+                "PARKING",
+                "PARKING_ASSISTANTS_SYSTEMS"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    892.50,
+                    "892,50 €"
+                ],
+                "netPrice": [
+                    750.00,
+                    "750,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 892.50,
+                "formattedPrice": "892,50 €",
+                "netPrice": 750.00,
+                "formattedNetPrice": "750,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-PBG": {
+            "id": "PC-PBG",
+            "name": "MBUX Navigation Premium",
+            "path": [
+                "MULTIMEDIA_SAFETY",
+                "MULTIMEDIA",
+                "NAVIGATION"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "PC-PSR": {
+            "id": "PC-PSR",
+            "name": "Premium Plus",
+            "path": [
+                "PACKAGES",
+                "PACKAGE_TYPES",
+                "PACKAGE_TYPES_HIGH"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    6104.70,
+                    "6.104,70 €"
+                ],
+                "netPrice": [
+                    5130.00,
+                    "5.130,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 6104.70,
+                "formattedPrice": "6.104,70 €",
+                "netPrice": 5130.00,
+                "formattedNetPrice": "5.130,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "BEST_SELLING"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "PC-PSO": {
+            "id": "PC-PSO",
+            "name": "Premium",
+            "path": [
+                "PACKAGES",
+                "PACKAGE_TYPES",
+                "PACKAGE_TYPES_HIGH"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "PC-PUF": {
+            "id": "PC-PUF",
+            "name": "Mercedes-AMG Exterieur",
+            "path": [
+                "EXTERIOR",
+                "EXTERIOR_STYLE",
+                "ZK017"
+            ],
+            "standard": true,
+            "enabled": false,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG",
+                "BEST_SELLING"
+            ]
+        },
+        "AU-651": {
+            "id": "AU-651",
+            "name": "Ledernachbildung ARTICO / Mikrofaser MICROCUT schwarz / spacegrau",
+            "path": [
+                "INTERIOR",
+                "UPHOLSTERIES",
+                "ZK030"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "BEST_SELLING"
+            ]
+        },
+        "AU-861": {
+            "id": "AU-861",
+            "name": "Leder Nappa AMG schwarz / balaobraun",
+            "path": [
+                "INTERIOR",
+                "UPHOLSTERIES",
+                "ZK032"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    2701.30,
+                    "2.701,30 €"
+                ],
+                "netPrice": [
+                    2270.00,
+                    "2.270,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 2701.30,
+                "formattedPrice": "2.701,30 €",
+                "netPrice": 2270.00,
+                "formattedNetPrice": "2.270,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "AU-859": {
+            "id": "AU-859",
+            "name": "Leder Nappa AMG nevagrau / biscayablau",
+            "path": [
+                "INTERIOR",
+                "UPHOLSTERIES",
+                "ZK032"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    2701.30,
+                    "2.701,30 €"
+                ],
+                "netPrice": [
+                    2270.00,
+                    "2.270,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 2701.30,
+                "formattedPrice": "2.701,30 €",
+                "netPrice": 2270.00,
+                "formattedNetPrice": "2.270,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "AU-851": {
+            "id": "AU-851",
+            "name": "Leder Nappa AMG schwarz / spacegrau",
+            "path": [
+                "INTERIOR",
+                "UPHOLSTERIES",
+                "ZK032"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    2701.30,
+                    "2.701,30 €"
+                ],
+                "netPrice": [
+                    2270.00,
+                    "2.270,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 2701.30,
+                "formattedPrice": "2.701,30 €",
+                "netPrice": 2270.00,
+                "formattedNetPrice": "2.270,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-H67": {
+            "id": "SA-H67",
+            "name": "Zierelemente 3D Reliefoptik anthrazit",
+            "path": [
+                "INTERIOR",
+                "TRIMS",
+                "ZK049"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    464.10,
+                    "464,10 €"
+                ],
+                "netPrice": [
+                    390.00,
+                    "390,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 464.10,
+                "formattedPrice": "464,10 €",
+                "netPrice": 390.00,
+                "formattedNetPrice": "390,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-H73": {
+            "id": "SA-H73",
+            "name": "AMG Zierelement Carbon",
+            "path": [
+                "INTERIOR",
+                "TRIMS",
+                "ZK049"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1130.50,
+                    "1.130,50 €"
+                ],
+                "netPrice": [
+                    950.00,
+                    "950,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1130.50,
+                "formattedPrice": "1.130,50 €",
+                "netPrice": 950.00,
+                "formattedNetPrice": "950,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG",
+                "BEST_SELLING"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-51H": {
+            "id": "SA-51H",
+            "name": "Zierelemente Lasercut hinterleuchtet mit Mercedes-Benz Pattern",
+            "path": [
+                "INTERIOR",
+                "TRIMS",
+                "ZK049"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    166.60,
+                    "166,60 €"
+                ],
+                "netPrice": [
+                    140.00,
+                    "140,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 166.60,
+                "formattedPrice": "166,60 €",
+                "netPrice": 140.00,
+                "formattedNetPrice": "140,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-H08": {
+            "id": "SA-H08",
+            "name": "Zierelemente Holz Linde linestructure anthrazit offenporig",
+            "path": [
+                "INTERIOR",
+                "TRIMS",
+                "ZK049"
+            ],
+            "standard": true,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            }
+        },
+        "SA-H20": {
+            "id": "SA-H20",
+            "name": "Zierelemente Holz Magnolie braun offenporig mit Mercedes-Benz Pattern in Aluminium",
+            "path": [
+                "INTERIOR",
+                "TRIMS",
+                "ZK049"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    821.10,
+                    "821,10 €"
+                ],
+                "netPrice": [
+                    690.00,
+                    "690,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 821.10,
+                "formattedPrice": "821,10 €",
+                "netPrice": 690.00,
+                "formattedNetPrice": "690,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-H39": {
+            "id": "SA-H39",
+            "name": "Zierelemente Holz Nussbaum Schiffsdeck offenporig",
+            "path": [
+                "INTERIOR",
+                "TRIMS",
+                "ZK049"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    702.10,
+                    "702,10 €"
+                ],
+                "netPrice": [
+                    590.00,
+                    "590,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 702.10,
+                "formattedPrice": "702,10 €",
+                "netPrice": 590.00,
+                "formattedNetPrice": "590,00 €",
+                "currencyISO": "EUR"
+            },
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-RWZ": {
+            "id": "SA-RWZ",
+            "name": "53,3 cm (21\") AMG Leichtmetallräder im 5-Doppelspeichen-Design",
+            "path": [
+                "EXTERIOR",
+                "WHEELS",
+                "21_INCH"
+            ],
+            "standard": true,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": true,
+            "prices": {
+                "price": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "netPrice": [
+                    0.00,
+                    "0,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG",
+                "BEST_SELLING"
+            ]
+        },
+        "SA-RWQ": {
+            "id": "SA-RWQ",
+            "name": "53,3 cm (21\") AMG Leichtmetallräder im Kreuzspeichen-Design",
+            "path": [
+                "EXTERIOR",
+                "WHEELS",
+                "21_INCH"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    1130.50,
+                    "1.130,50 €"
+                ],
+                "netPrice": [
+                    950.00,
+                    "950,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 1130.50,
+                "formattedPrice": "1.130,50 €",
+                "netPrice": 950.00,
+                "formattedNetPrice": "950,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-RPF": {
+            "id": "SA-RPF",
+            "name": "55,9 cm (22\") AMG Leichtmetallräder im Vielspeichen-Design",
+            "path": [
+                "EXTERIOR",
+                "WHEELS",
+                "22_INCH"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    2439.50,
+                    "2.439,50 €"
+                ],
+                "netPrice": [
+                    2050.00,
+                    "2.050,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 2439.50,
+                "formattedPrice": "2.439,50 €",
+                "netPrice": 2050.00,
+                "formattedNetPrice": "2.050,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        },
+        "SA-RQW": {
+            "id": "SA-RQW",
+            "name": "53,3 cm (21\") AMG Leichtmetallräder im Y-Speichen-Design",
+            "path": [
+                "EXTERIOR",
+                "WHEELS",
+                "21_INCH"
+            ],
+            "standard": false,
+            "enabled": true,
+            "filteredByFixation": false,
+            "selected": false,
+            "prices": {
+                "price": [
+                    535.50,
+                    "535,50 €"
+                ],
+                "netPrice": [
+                    450.00,
+                    "450,00 €"
+                ],
+                "zeroPrice": [
+                    0,
+                    "0,00 €"
+                ],
+                "currencyISO": "EUR"
+            },
+            "price": {
+                "price": 535.50,
+                "formattedPrice": "535,50 €",
+                "netPrice": 450.00,
+                "formattedNetPrice": "450,00 €",
+                "currencyISO": "EUR"
+            },
+            "labels": [
+                "AMG"
+            ],
+            "preAnnouncementInformation": {
+                "preAnnouncementType": "DEFAULT"
+            }
+        }
+    }
+}

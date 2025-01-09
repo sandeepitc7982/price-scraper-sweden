@@ -1,0 +1,287 @@
+{
+  "environment": "Test",
+  "e2e_tests": true,
+  "output": {
+    "directory": "data/",
+    "logs_directory": "logs/",
+    "prices_filename": "prices",
+    "finance_options_filename": "finance_options",
+    "differences_filename": "changelog"
+  },
+  "scraper": {},
+  "finance_scraper": {},
+  "feature_toggle": {
+    "is_type_hierarchy_enabled_MB": true
+  },
+    "data_quality_finance": {
+    "contract_type": "PCP",
+    "audi_series": [
+      "e-tron GT",
+      "Q4 e-tron",
+      "Q6 e-tron",
+      "Q8 e-tron",
+      "A1",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "R8"
+    ],
+    "bmw_series": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7",
+      "8",
+      "I",
+      "M",
+      "X",
+      "Z"
+    ],
+    "tesla_series": [
+      "my",
+      "m3"
+    ],
+    "currency": {
+      "UK": "GBP"
+    },
+    "numeric_columns": [
+      "monthly_rental_nlp",
+      "monthly_rental_glp",
+      "term_of_agreement",
+      "number_of_installments",
+      "deposit",
+      "total_deposit",
+      "total_credit_amount",
+      "total_payable_amount",
+      "otr",
+      "annual_mileage",
+      "excess_mileage",
+      "optional_final_payment",
+      "apr",
+      "fixed_roi",
+      "sales_offer",
+      "option_gross_list_price",
+      "option_purchase_fee"
+    ],
+    "acceptable_columns_check": {
+      "field_requirements": {
+        "null_allowable": [
+          "option_type",
+          "option_description",
+          "last_scraped_on",
+          "is_current"
+        ],
+        "zero_allowable": [
+          "sales_offer",
+          "option_gross_list_price",
+          "option_purchase_fee",
+          "apr",
+          "fixed_roi",
+          "is_current",
+          "last_scraped_on"
+        ],
+        "special_char_allowable": [
+          "option_type",
+          "option_description"
+        ]
+      }
+    },
+    "data_sampling_config": {
+      "navigation_columns": [
+        "vendor",
+        "series",
+        "model_range_code",
+        "model_range_description",
+        "model_code",
+        "model_description",
+        "line_code",
+        "line_description",
+        "contract_type",
+        "monthly_rental_glp"
+      ],
+      "exclude_columns_sample": [
+        "unique_car_line",
+        "date",
+        "mileage_unit",
+        "currency",
+        "market"
+      ],
+      "columns_per_car": 3,
+      "number_of_samples_for_verification": 5,
+      "vendor_filter_config": {
+        "bmw": {},
+        "audi": {},
+        "tesla": {}
+      }
+    },
+    "check_data_type_consistency": {
+      "data_type_requirements": {
+        "model_range_code": "String",
+        "model_range_description": "String",
+        "model_code": "String",
+        "model_description": "String",
+        "line_code": "String",
+        "line_description": "String",
+        "contract_type": "String",
+        "option_type": "String",
+        "option_description": "String"
+      },
+      "data_type_exclusion": [
+        "date",
+        "market",
+        "currency",
+        "vendor",
+        "mileage_unit",
+        "unique_car_line",
+        "series"
+      ]
+    },
+    "range_and_non_negative_check": {
+      "tolerance": 5,
+      "excluded_columns": [
+        "date",
+        "market",
+        "currency",
+        "vendor",
+        "mileage_unit",
+        "unique_car_line",
+        "series",
+        "is_current",
+        "last_scraped_on"
+      ],
+      "audi": {
+        "monthly_rental_glp": {
+          "ll": 227,
+          "ul": 2651
+        },
+        "apr": {
+          "ll": 1.9,
+          "ul": 9.9
+        }
+      },
+      "bmw": {
+        "monthly_rental_glp": {
+          "ll": 337,
+          "ul": 2500
+        },
+        "apr": {
+          "ll": 3.9,
+          "ul": 9.9
+        }
+      },
+      "tesla": {
+        "monthly_rental_glp": {
+          "ll": 400,
+          "ul": 654
+        },
+        "apr": {
+          "ll": 0,
+          "ul": 0
+        }
+      }
+    },
+    "standard_dev_check": {
+      "tolerance": 10,
+      "excluded_columns": [
+        "date",
+        "market",
+        "currency",
+        "vendor",
+        "mileage_unit",
+        "unique_car_line",
+        "apr",
+        "series"
+      ],
+      "audi": {
+        "model_range_code": 2.99,
+        "model_range_description": 4.77,
+        "model_code": 0,
+        "model_description": 7.74,
+        "line_code": 4.88,
+        "line_description": 4.88,
+        "term_of_agreement": 0,
+        "annual_mileage": 0,
+        "mileage_unit": 0,
+        "deposit": 0,
+        "sales_offer": 3612,
+        "total_deposit": 3662,
+        "number_of_installments": 0,
+        "monthly_rental_nlp": 414,
+        "monthly_rental_glp": 480,
+        "otr": 29948,
+        "total_payable_amount": 35158,
+        "total_credit_amount": 28965,
+        "optional_final_payment": 11616,
+        "option_purchase_fee": 0,
+        "apr": 1.5,
+        "fixed_roi": 1.5,
+        "excess_mileage": 10.78,
+        "option_type": 0.9,
+        "option_description": 3.52,
+        "option_gross_list_price": 87
+      },
+      "bmw": {
+        "model_range_code": 0.36,
+        "model_range_description": 7.48,
+        "model_code": 0,
+        "model_description": 6.25,
+        "line_code": 5.44,
+        "line_description": 4.75,
+        "contract_type": 0,
+        "term_of_agreement": 0,
+        "annual_mileage": 0,
+        "deposit": 0,
+        "sales_offer": 5700,
+        "total_deposit": 5250,
+        "number_of_installments": 0,
+        "monthly_rental_nlp": 380,
+        "monthly_rental_glp": 460,
+        "otr": 32570,
+        "total_payable_amount": 36000,
+        "total_credit_amount": 29900,
+        "optional_final_payment": 11009.84,
+        "apr": 1.21,
+        "fixed_roi": 1.21,
+        "excess_mileage": 7.4,
+        "option_type": 0,
+        "option_description": 2.66,
+        "option_gross_list_price": 130
+      },
+      "tesla": {
+        "model_range_code": 0,
+        "model_range_description": 0,
+        "model_code": 0,
+        "model_description": 0,
+        "line_code": 0,
+        "line_description": 1.78,
+        "contract_type": 4.7,
+        "term_of_agreement": 0,
+        "annual_mileage": 0,
+        "mileage_unit": 0,
+        "deposit": 0,
+        "total_deposit": 0,
+        "number_of_installments": 0,
+        "monthly_rental_nlp": 79,
+        "monthly_rental_glp": 94.8,
+        "otr": 7667,
+        "total_payable_amount": 7667,
+        "total_credit_amount": 7667,
+        "optional_final_payment": 3188,
+        "excess_mileage": 0,
+        "option_type": 0,
+        "option_description": 0,
+        "option_gross_list_price": 0
+      }
+    }
+  }
+}

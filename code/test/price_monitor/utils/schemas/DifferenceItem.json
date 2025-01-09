@@ -1,0 +1,145 @@
+{
+  "type": "record",
+  "name": "DifferenceItem",
+  "fields": [
+    {
+      "name": "recorded_at",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "vendor",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Vendor",
+          "symbols": [
+            "bmw",
+            "tesla",
+            "audi",
+            "mercedes_benz"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "series",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_range_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_range_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "model_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "line_code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "line_description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "old_value",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "new_value",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "reason",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "DifferenceReason",
+          "symbols": [
+            "NEW_LINE",
+            "LINE_REMOVED",
+            "PRICE_CHANGE",
+            "OPTION_ADDED",
+            "OPTION_REMOVED",
+            "OPTION_INCLUDED",
+            "OPTION_EXCLUDED",
+            "OPTION_PRICE_CHANGE"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "market",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "Market",
+          "symbols": [
+            "DE",
+            "FR",
+            "AU",
+            "AT",
+            "NL",
+            "US",
+            "UK",
+            "SE"
+          ]
+        }
+      ],
+      "default": null
+    }
+  ]
+}

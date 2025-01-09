@@ -1,0 +1,2442 @@
+{
+  "configuration": {
+    "assets": {
+      "exterior": {
+        "flyout": "/fast/abcd",
+        "fullscreen": "/fast/abcd",
+        "fullscreen.new": "/fast/abcd",
+        "stage.new": "/fast/abcd"
+      },
+      "exterior_front": {
+        "carstore.new": "/fast/abcd",
+        "compare.new": "/fast/abcd",
+        "fullscreen": "/fast/abcd",
+        "layerstage.new": "/fast/abcd"
+      },
+      "interior": {
+        "fullscreen": "/fast/abcd",
+        "fullscreen.new": "/fast/abcd"
+      }
+    },
+    "ave": "etrongt_rhd,F83RJ7,2024,6Y6Y,JN,WB4,E0A,6H0,1PE,2DS,0GA,4UF,GV0,6XK,EA0,5SJ,GM4,6TS,0K9,1X1,J9K,A8F,6K8,2EB,J2B,1LS,6FA,B0N,KB3,0VF,QJ0,C12,IT3,IU4,JE3,IW3,GW0,1BH,3S0,3FG,NI8,7AL,5MT,7M0,7X2,6A0,1P0,VF0,8K1,FP1,2V1,5L0,7G0,F0A,9R0,0YB,0JD,N02,8T6,VC0,G1X,GH1,A51,0N1,6NJ,5KA,KH5,8IY,KS0,KM2,4L6,K8S,EK0,QR9,4D0,GB0,KA2,KK3,6P1,6W1,5K5,QQ0,NW1,NJ0,ES7,L0R,QZ7,8G4,70W,73N,76H,EH1,1XW,AV0,9VD,2C5,7HA,FM0,D2V,7UG,FZ0,GP0,FT0,AQ0,47K,9JA,ER1,7K3,I43,1G8,4QE,4X4,A00,8VM,QL5,VI6,9P6,N4M,3L5,4A3,0LL,JX0,8Y1,5XC,7Y0,6I3,4KC,FA0,2W0,4F2,9B0,B09,5D1,NT1,QV3,1EX,2Z8,1T3,GA2,Q1G,9ZV,EW0,4GF,2WA,0TD,4ZC,3A1,JS1,VH0,9M3,L0R",
+    "carline": "etrongt",
+    "carlineName": "e-tron GT quattro",
+    "configHistory": "F83RJ70WB4_2024|6Y6Y|JN +F83RJ70WB4_2024 ",
+    "description": "e-tron GT quattro 60 quattro",
+    "eec": {
+      "canonical-source": "WLTP",
+      "wltp-status": "wltp"
+    },
+    "extColorCode": {
+      "backgroundColor": "#484D4E",
+      "selected": "6Y",
+      "textColor": "white"
+    },
+    "items": [
+      "6Y6Y",
+      "JN",
+      "F83RJ70WB4_2024"
+    ],
+    "mbv-ids": {
+      "exteriorColor": "F14 6Y6Y",
+      "interiorColor": "F56     JN",
+      "model": "F83RJ7\\0\\GWB4WB4",
+      "modelyear": "2024",
+      "prstring": "51954\\2024|F83RJ7\\0\\GWB4WB4|F14 6Y6Y|F56     JN",
+      "salesgroup": "51954"
+    },
+    "model": "F83RJ70WB4_2024",
+    "modelPrice": "86,585.00 GBP",
+    "modelyear": "2024",
+    "optionsPrice": "950.00 GBP",
+    "price": "87,535.00 GBP",
+    "prices": {
+      "model": "86,585.00 GBP",
+      "modelRaw": 86585.0,
+      "options": "950.00 GBP",
+      "optionsRaw": 950.0,
+      "rotr": "88,365.00 GBP",
+      "rotrRate": "830.00 GBP",
+      "rotrRateRaw": 830.0,
+      "rotrRaw": 88365.0,
+      "total": "87,535.00 GBP",
+      "totalRaw": 87535.0
+    },
+    "prices-pcs": {
+      "accessoriesNet": 0.0,
+      "accessoriesVat": 0.0,
+      "accessoriesWithVat": 0.0,
+      "colorsNet": 791.67,
+      "colorsVat": 158.33,
+      "colorsWithVat": 950.0,
+      "configExtraTax": 0.0,
+      "configGross": 87535.0,
+      "configNet": 72945.83,
+      "configTotalTax": 14589.17,
+      "configVat": 14589.17,
+      "configWithVat": 87535.0,
+      "equipmentsWithVat": 0.0,
+      "modelNet": 72154.17,
+      "modelVat": 14430.83,
+      "modelWithVat": 86585.0,
+      "optionsAndAccessoriesNet": 791.67,
+      "optionsAndAccessoriesVat": 158.33,
+      "optionsAndAccessoriesWithVat": 950.0,
+      "optionsNet": 791.67,
+      "optionsVat": 158.33,
+      "optionsWithVat": 950.0,
+      "otr": 830.0,
+      "otrCharges": 830.0,
+      "recommendedRetailPriceWithoutVat": 72945.83,
+      "salesPrice": 88365.0,
+      "ved": 0.0
+    },
+    "prstring": "F83RJ70WB4_2024|6Y6Y|JN",
+    "rawModelPrice": 86585.0,
+    "rawOptionsPrice": 950.0,
+    "rawPrice": 87535.0,
+    "showWltpWarning": false,
+    "stock-car-attrs": {
+      "attrs": [
+        "Audi-Sport.false",
+        "CARLINE.51954\\2024",
+        "TRIMLINE.tl_notrimline",
+        "air-condition-type.automatic",
+        "airbag-type.side-airbags-rear",
+        "anti-theft-type.alarm",
+        "assistance-system-type.advanced-key",
+        "body-doors.4",
+        "body-type.limousine",
+        "brake-material.default",
+        "carline.etrongt",
+        "chassis-type.default",
+        "color-type.pearl",
+        "convenience-type.child-seat-holder",
+        "drive-train.BEV",
+        "drive.quattro",
+        "engine-type.electrical",
+        "exterior-color.gray",
+        "fuel-technology.etron",
+        "fuel-type.etron",
+        "gear-type.automatic",
+        "gear.automatic",
+        "interface-type.phone",
+        "interior-color-carpet.black",
+        "interior-color-dashboard.black",
+        "interior-color-headlining.black",
+        "interior-color-seats.black",
+        "light-type.led-matrix",
+        "locking-system-type.comfort-key",
+        "material.combination",
+        "mbv-handbook.51954",
+        "model-group-range.etrongt",
+        "model-range.etrongt",
+        "modelCode.F83RJ7",
+        "modelYear.2024",
+        "navigation-system-type.mmi",
+        "seat-type.sport",
+        "sound-system-type.audi",
+        "steering-type.servo",
+        "steering-wheel-material.leather",
+        "steering-wheel-type.multi-function",
+        "tail-light-type.led",
+        "technology.fod",
+        "trimline.default",
+        "type.pre-heating",
+        "tyre-season.summer",
+        "vtp-drivetrain.electrical",
+        "wheel-material.light-metal",
+        "wheel-size.20",
+        "wheel-type.default"
+      ]
+    },
+    "techdata": {
+      "acceleration": "4,1 s",
+      "battery-charging-ac-100": "570 min",
+      "battery-charging-dc-10-80": "-",
+      "carbon-dioxide-emissions": "0\\xa0g/km",
+      "consumption-combined": "3.1\\xa0miles/kWh",
+      "hybrid-battery-energy-content-gross": "93,4 kWh",
+      "hybrid-battery-energy-content-net": "83,7 kWh",
+      "max-loading-power": "11,0 kW/ 270 kW",
+      "top-speed": "152 mph",
+      "wltp-electric-co2-combined": "0\\xa0g/km",
+      "wltp-electric-consumption-combined": "3.1\\xa0miles/kWh",
+      "wltp-electric-consumption-extra-high": "2.7\\xa0miles/kWh",
+      "wltp-electric-consumption-high": "3.5\\xa0miles/kWh",
+      "wltp-electric-consumption-low": "3.4\\xa0miles/kWh",
+      "wltp-electric-consumption-medium": "3.6\\xa0miles/kWh",
+      "wltp-electric-range-city": "360\\xa0miles",
+      "wltp-electric-range-combined": "303\\xa0miles"
+    },
+    "wltp-status": {
+      "engineType": "PEV",
+      "fuelTypes": [
+        "ELECTRICAL"
+      ],
+      "nedcForConfComplete": true,
+      "nedcMandatory": false,
+      "nedcRangeComplete": true,
+      "nedcRangeMandatory": false,
+      "wltpComputationStatus": "OK",
+      "wltpForConfComplete": true,
+      "wltpMandatory": false,
+      "wltpRangeComplete": true,
+      "wltpRangeInconsistent": false,
+      "wltpRangeMandatory": false,
+      "wltpRelevant": true
+    }
+  },
+  "header": {
+    "context": "nemo-uk:gb-en",
+    "hiddenRevision": "0",
+    "logged-in": false,
+    "manualRevision": "1",
+    "marketVersion": "mv-660",
+    "mode": "price",
+    "statuscode": 200,
+    "subsession": "578362813-1",
+    "taggedVersion": "mv-660",
+    "version": "etrongt-F8-20240306-174327"
+  },
+  "items": {
+    "0E0E": {
+      "id": "0E0E",
+      "itemType": "exteriorColor",
+      "price": "950.00 GBP",
+      "priceValue": 950.0,
+      "status": "11000"
+    },
+    "0GA": {
+      "id": "0GA",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Not shown",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "0K9": {
+      "id": "0K9",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "0LL": {
+      "id": "0LL",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "0N1": {
+      "id": "0N1",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "0TD": {
+      "id": "0TD",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "0VF": {
+      "id": "0VF",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "1BH": {
+      "id": "1BH",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "1BK": {
+      "id": "1BK",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "1BK_in_WC9": {
+      "id": "1BK_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "1EX": {
+      "id": "1EX",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "1G8": {
+      "id": "1G8",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "1LS": {
+      "id": "1LS",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "1P0": {
+      "id": "1P0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "1PE": {
+      "id": "1PE",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "1T3": {
+      "id": "1T3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "1X1": {
+      "id": "1X1",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "1XP": {
+      "id": "1XP",
+      "itemType": "equipment",
+      "price": "190.00 GBP",
+      "priceValue": 190.0,
+      "status": "11000"
+    },
+    "1XW": {
+      "id": "1XW",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "2C5": {
+      "id": "2C5",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "2DS": {
+      "id": "2DS",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "2EB": {
+      "id": "2EB",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "2PF": {
+      "id": "2PF",
+      "itemType": "equipment",
+      "price": "0.00 GBP",
+      "priceValue": 0.0,
+      "status": "11000"
+    },
+    "2V1": {
+      "id": "2V1",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "2W0": {
+      "id": "2W0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "2WA": {
+      "id": "2WA",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "2Z8": {
+      "id": "2Z8",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "3A1": {
+      "id": "3A1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "3FG": {
+      "id": "3FG",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "3L5": {
+      "id": "3L5",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "3S0": {
+      "id": "3S0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "47H": {
+      "id": "47H",
+      "itemType": "equipment",
+      "price": "300.00 GBP",
+      "priceValue": 300.0,
+      "status": "11000"
+    },
+    "47K": {
+      "id": "47K",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4A3": {
+      "id": "4A3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4D0": {
+      "id": "4D0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4D3": {
+      "id": "4D3",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "4D3_in_WC9": {
+      "id": "4D3_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "4F2": {
+      "id": "4F2",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4GF": {
+      "id": "4GF",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "4KC": {
+      "id": "4KC",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4L6": {
+      "id": "4L6",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4QE": {
+      "id": "4QE",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4UF": {
+      "id": "4UF",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4X4": {
+      "id": "4X4",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "4ZC": {
+      "id": "4ZC",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "5D1": {
+      "id": "5D1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "5K5": {
+      "id": "5K5",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "5KA": {
+      "id": "5KA",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "5L0": {
+      "id": "5L0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "5MH": {
+      "id": "5MH",
+      "itemType": "equipment",
+      "price": "1,195.00 GBP",
+      "priceValue": 1195.0,
+      "status": "11000"
+    },
+    "5MT": {
+      "id": "5MT",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "5SJ": {
+      "id": "5SJ",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "5XC": {
+      "id": "5XC",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6A0": {
+      "id": "6A0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6FA": {
+      "id": "6FA",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6H0": {
+      "id": "6H0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6H1": {
+      "id": "6H1",
+      "itemType": "equipment",
+      "price": "350.00 GBP",
+      "priceValue": 350.0,
+      "status": "11000"
+    },
+    "6I3": {
+      "id": "6I3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6I6": {
+      "id": "6I6",
+      "itemType": "equipment",
+      "price": "0.00 GBP",
+      "priceValue": 0.0,
+      "status": "11000"
+    },
+    "6K8": {
+      "id": "6K8",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6NJ": {
+      "id": "6NJ",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6P1": {
+      "id": "6P1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6TS": {
+      "id": "6TS",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "6W1": {
+      "id": "6W1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6XK": {
+      "id": "6XK",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "6Y6Y": {
+      "id": "6Y6Y",
+      "itemType": "exteriorColor",
+      "price": "950.00 GBP",
+      "priceValue": 950.0,
+      "status": "11010"
+    },
+    "70W": {
+      "id": "70W",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "73N": {
+      "id": "73N",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "76H": {
+      "id": "76H",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7AL": {
+      "id": "7AL",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7G0": {
+      "id": "7G0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7HA": {
+      "id": "7HA",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7HD": {
+      "id": "7HD",
+      "itemType": "equipment",
+      "price": "1,665.00 GBP",
+      "priceValue": 1665.0,
+      "status": "11000"
+    },
+    "7HF": {
+      "id": "7HF",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "7HF_in_PEH": {
+      "id": "7HF_in_PEH",
+      "itemType": "equipmentContent",
+      "price": "2,580.00 GBP",
+      "priceValue": 2580.0,
+      "status": "11000"
+    },
+    "7K3": {
+      "id": "7K3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7M0": {
+      "id": "7M0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7TN": {
+      "id": "7TN",
+      "itemType": "equipment",
+      "price": "770.00 GBP",
+      "priceValue": 770.0,
+      "status": "11000"
+    },
+    "7UG": {
+      "id": "7UG",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7X2": {
+      "id": "7X2",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "7X5": {
+      "id": "7X5",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "7X5_in_PCF": {
+      "id": "7X5_in_PCF",
+      "itemType": "equipmentContent",
+      "price": "1,760.00 GBP",
+      "priceValue": 1760.0,
+      "status": "11000"
+    },
+    "7Y0": {
+      "id": "7Y0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "7Y1": {
+      "id": "7Y1",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "7Y1_in_PCM": {
+      "id": "7Y1_in_PCM",
+      "itemType": "equipmentContent",
+      "price": "1,345.00 GBP",
+      "priceValue": 1345.0,
+      "status": "11000"
+    },
+    "8G4": {
+      "id": "8G4",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "8G4_in_WB4": {
+      "id": "8G4_in_WB4",
+      "itemType": "equipmentContent",
+      "status": "00000"
+    },
+    "8G4_in_WC9": {
+      "id": "8G4_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "8IY": {
+      "id": "8IY",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "8IZ": {
+      "id": "8IZ",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "8IZ_in_WC9": {
+      "id": "8IZ_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "8K1": {
+      "id": "8K1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "8R8R": {
+      "id": "8R8R",
+      "itemType": "exteriorColor",
+      "price": "950.00 GBP",
+      "priceValue": 950.0,
+      "status": "11000"
+    },
+    "8T5": {
+      "id": "8T5",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "8T5_in_PCC": {
+      "id": "8T5_in_PCC",
+      "itemType": "equipmentContent",
+      "price": "1,355.00 GBP",
+      "priceValue": 1355.0,
+      "status": "11000"
+    },
+    "8T6": {
+      "id": "8T6",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "8VM": {
+      "id": "8VM",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "8VP": {
+      "id": "8VP",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "8VP_in_WC9": {
+      "id": "8VP_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "8Y1": {
+      "id": "8Y1",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "9B0": {
+      "id": "9B0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "9JA": {
+      "id": "9JA",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "9JD": {
+      "id": "9JD",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "9M3": {
+      "id": "9M3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "9P6": {
+      "id": "9P6",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "9R0": {
+      "id": "9R0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "9VD": {
+      "id": "9VD",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "9VS": {
+      "id": "9VS",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "9VS_in_WC3": {
+      "id": "9VS_in_WC3",
+      "itemType": "equipmentContent",
+      "price": "3,195.00 GBP",
+      "priceValue": 3195.0,
+      "status": "11000"
+    },
+    "9VS_in_WC9": {
+      "id": "9VS_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "9W9W": {
+      "id": "9W9W",
+      "itemType": "exteriorColor",
+      "price": "950.00 GBP",
+      "priceValue": 950.0,
+      "status": "11000"
+    },
+    "9ZV": {
+      "id": "9ZV",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "A00": {
+      "id": "A00",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "A51": {
+      "id": "A51",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "A8F": {
+      "id": "A8F",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "AQ0": {
+      "id": "AQ0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "AV0": {
+      "id": "AV0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "B09": {
+      "id": "B09",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "B0N": {
+      "id": "B0N",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "C00": {
+      "id": "C00",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden for UK",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "D2V": {
+      "id": "D2V",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "E0A": {
+      "id": "E0A",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "EA0": {
+      "id": "EA0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "EA6": {
+      "id": "EA6",
+      "itemType": "equipment",
+      "price": "700.00 GBP",
+      "priceValue": 700.0,
+      "status": "11000"
+    },
+    "EA9": {
+      "id": "EA9",
+      "itemType": "equipment",
+      "price": "1,800.00 GBP",
+      "priceValue": 1800.0,
+      "status": "11000"
+    },
+    "EH1": {
+      "id": "EH1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "EK0": {
+      "id": "EK0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "ER1": {
+      "id": "ER1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "ES7": {
+      "id": "ES7",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "EW0": {
+      "id": "EW0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "servicePackageDisclaimer": "Audi Service Plan administered by Volkswagen Financial Services",
+      "servicePackageFootnote": "Audi Service Plan administered by Volkswagen Financial Services",
+      "status": "00000"
+    },
+    "F0A": {
+      "id": "F0A",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "F83RJ70N0QPCYPHZPV3PXCQ1JWB2YEN1XP47I5MH_2024": {
+      "id": "F83RJ70N0QPCYPHZPV3PXCQ1JWB2YEN1XP47I5MH_2024",
+      "itemType": "model",
+      "price": "111,735.00 GBP",
+      "priceValue": 111735.0,
+      "status": "11000"
+    },
+    "F83RJ70WB4_2024": {
+      "id": "F83RJ70WB4_2024",
+      "itemType": "model",
+      "price": "86,585.00 GBP",
+      "priceValue": 86585.0,
+      "status": "11010"
+    },
+    "FA0": {
+      "id": "FA0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "FI": {
+      "id": "FI",
+      "itemType": "rawInteriorColor",
+      "status": "11000"
+    },
+    "FM0": {
+      "id": "FM0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "FO": {
+      "id": "FO",
+      "itemType": "rawInteriorColor",
+      "status": "11000"
+    },
+    "FP1": {
+      "id": "FP1",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden",
+          "type": "debug"
+        },
+        {
+          "text": "Derzeit noch nicht freigegeben, S. Truxa  VT-5, 24.07.20.",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "FQ": {
+      "id": "FQ",
+      "itemType": "rawInteriorColor",
+      "status": "11000"
+    },
+    "FT0": {
+      "id": "FT0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "FT1": {
+      "id": "FT1",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "FT1_in_PCF": {
+      "id": "FT1_in_PCF",
+      "itemType": "equipmentContent",
+      "price": "1,760.00 GBP",
+      "priceValue": 1760.0,
+      "status": "11000"
+    },
+    "FZ0": {
+      "id": "FZ0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "G1X": {
+      "id": "G1X",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "GA2": {
+      "id": "GA2",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "GB0": {
+      "id": "GB0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "GH1": {
+      "id": "GH1",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "GM3": {
+      "id": "GM3",
+      "itemType": "equipment",
+      "price": "500.00 GBP",
+      "priceValue": 500.0,
+      "status": "11000"
+    },
+    "GM4": {
+      "id": "GM4",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "GP0": {
+      "id": "GP0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "GV0": {
+      "id": "GV0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "GW0": {
+      "id": "GW0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "I43": {
+      "id": "I43",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "IT3": {
+      "id": "IT3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "IU4": {
+      "id": "IU4",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "IW3": {
+      "id": "IW3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "J2B": {
+      "id": "J2B",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "J9K": {
+      "id": "J9K",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "JE3": {
+      "id": "JE3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "JN": {
+      "id": "JN",
+      "itemType": "rawInteriorColor",
+      "status": "11010"
+    },
+    "JS1": {
+      "id": "JS1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "JX0": {
+      "id": "JX0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "JX1": {
+      "id": "JX1",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "JX1_in_PCM": {
+      "id": "JX1_in_PCM",
+      "itemType": "equipmentContent",
+      "price": "1,345.00 GBP",
+      "priceValue": 1345.0,
+      "status": "11000"
+    },
+    "K8S": {
+      "id": "K8S",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "KA2": {
+      "id": "KA2",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "KA6": {
+      "id": "KA6",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "KA6_in_PCF": {
+      "id": "KA6_in_PCF",
+      "itemType": "equipmentContent",
+      "price": "1,760.00 GBP",
+      "priceValue": 1760.0,
+      "status": "11000"
+    },
+    "KB3": {
+      "id": "KB3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "KH5": {
+      "id": "KH5",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "KK3": {
+      "id": "KK3",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden for UK",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "KM2": {
+      "id": "KM2",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "KS0": {
+      "id": "KS0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "KS1": {
+      "id": "KS1",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "hide HUD as single option",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "KS1_in_WC3": {
+      "id": "KS1_in_WC3",
+      "itemType": "equipmentContent",
+      "message": [
+        {
+          "text": "hide HUD as single option",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "KS1_in_WC9": {
+      "id": "KS1_in_WC9",
+      "itemType": "equipmentContent",
+      "message": [
+        {
+          "text": "hide HUD as single option",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "K_MSIBN0Q_FI": {
+      "id": "K_MSIBN0Q_FI",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN0Q_FO": {
+      "id": "K_MSIBN0Q_FO",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN0Q_FQ": {
+      "id": "K_MSIBN0Q_FQ",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN0Q_JN": {
+      "id": "K_MSIBN0Q_JN",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN0Q_in_GWC9WC9_FI": {
+      "id": "K_MSIBN0Q_in_GWC9WC9_FI",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN0Q_in_GWC9WC9_FO": {
+      "id": "K_MSIBN0Q_in_GWC9WC9_FO",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN0Q_in_GWC9WC9_FQ": {
+      "id": "K_MSIBN0Q_in_GWC9WC9_FQ",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN0Q_in_GWC9WC9_JN": {
+      "id": "K_MSIBN0Q_in_GWC9WC9_JN",
+      "itemType": "interiorTile",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "K_MSIBN2Y_JN": {
+      "id": "K_MSIBN2Y_JN",
+      "itemType": "interiorTile",
+      "price": "2,580.00 GBP",
+      "priceValue": 2580.0,
+      "status": "11000"
+    },
+    "K_MSIBN4M_JN": {
+      "id": "K_MSIBN4M_JN",
+      "itemType": "interiorTile",
+      "price": "0.00 GBP",
+      "priceValue": 0.0,
+      "status": "11010"
+    },
+    "L0R": {
+      "id": "L0R",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "L5L5": {
+      "id": "L5L5",
+      "itemType": "exteriorColor",
+      "price": "950.00 GBP",
+      "priceValue": 950.0,
+      "status": "11000"
+    },
+    "M1M1": {
+      "id": "M1M1",
+      "itemType": "exteriorColor",
+      "price": "950.00 GBP",
+      "priceValue": 950.0,
+      "status": "11000"
+    },
+    "MTYPE_ATTR0V0": {
+      "id": "MTYPE_ATTR0V0",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "MTYPE_ATTR1V0": {
+      "id": "MTYPE_ATTR1V0",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "MTYPE_ATTR2V0": {
+      "id": "MTYPE_ATTR2V0",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "MTYPE_ATTR3V0": {
+      "id": "MTYPE_ATTR3V0",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "MTYPE_ATTR4V0": {
+      "id": "MTYPE_ATTR4V0",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "N02": {
+      "id": "N02",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "N0Q": {
+      "id": "N0Q",
+      "itemType": "equipment",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "N0Q_in_WC9": {
+      "id": "N0Q_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "N2Y": {
+      "id": "N2Y",
+      "itemType": "equipment",
+      "price": "2,580.00 GBP",
+      "priceValue": 2580.0,
+      "status": "11000"
+    },
+    "N4M": {
+      "id": "N4M",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "NI8": {
+      "id": "NI8",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "NJ0": {
+      "id": "NJ0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "NT1": {
+      "id": "NT1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "NW1": {
+      "id": "NW1",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "PCC": {
+      "id": "PCC",
+      "itemType": "equipment",
+      "price": "1,355.00 GBP",
+      "priceValue": 1355.0,
+      "status": "11000"
+    },
+    "PCF": {
+      "id": "PCF",
+      "itemType": "equipment",
+      "price": "1,760.00 GBP",
+      "priceValue": 1760.0,
+      "status": "11000"
+    },
+    "PCM": {
+      "id": "PCM",
+      "itemType": "equipment",
+      "price": "1,345.00 GBP",
+      "priceValue": 1345.0,
+      "status": "11000"
+    },
+    "PEH": {
+      "id": "PEH",
+      "itemType": "equipment",
+      "price": "2,580.00 GBP",
+      "priceValue": 2580.0,
+      "status": "11000"
+    },
+    "Q0Q0": {
+      "id": "Q0Q0",
+      "itemType": "exteriorColor",
+      "message": [
+        {
+          "text": "hidden",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "Q1G": {
+      "id": "Q1G",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "Q1J": {
+      "id": "Q1J",
+      "itemType": "equipment",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "Q1J_in_WC9": {
+      "id": "Q1J_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "Q2J": {
+      "id": "Q2J",
+      "itemType": "equipment",
+      "price": "2,580.00 GBP",
+      "priceValue": 2580.0,
+      "status": "11000"
+    },
+    "QJ0": {
+      "id": "QJ0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "QL5": {
+      "id": "QL5",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "QQ0": {
+      "id": "QQ0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "QQ2": {
+      "id": "QQ2",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "QQ2_in_WC3": {
+      "id": "QQ2_in_WC3",
+      "itemType": "equipmentContent",
+      "price": "3,195.00 GBP",
+      "priceValue": 3195.0,
+      "status": "11000"
+    },
+    "QQ2_in_WC9": {
+      "id": "QQ2_in_WC9",
+      "itemType": "equipmentContent",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "QR9": {
+      "id": "QR9",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "QR9_in_PCC": {
+      "id": "QR9_in_PCC",
+      "itemType": "equipmentContent",
+      "price": "1,355.00 GBP",
+      "priceValue": 1355.0,
+      "status": "11000"
+    },
+    "QV3": {
+      "id": "QV3",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "QZ7": {
+      "id": "QZ7",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "T9T9": {
+      "id": "T9T9",
+      "itemType": "exteriorColor",
+      "price": "0.00 GBP",
+      "priceValue": 0.0,
+      "status": "11000"
+    },
+    "VC0": {
+      "id": "VC0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "VF0": {
+      "id": "VF0",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "VH0": {
+      "id": "VH0",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "VI6": {
+      "id": "VI6",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "WB4": {
+      "id": "WB4",
+      "itemType": "equipment",
+      "status": "10011"
+    },
+    "WC3": {
+      "id": "WC3",
+      "itemType": "equipment",
+      "price": "3,195.00 GBP",
+      "priceValue": 3195.0,
+      "status": "11000"
+    },
+    "WC9": {
+      "id": "WC9",
+      "itemType": "equipment",
+      "price": "8,995.00 GBP",
+      "priceValue": 8995.0,
+      "status": "11000"
+    },
+    "Y1Y1": {
+      "id": "Y1Y1",
+      "itemType": "exteriorColor",
+      "price": "950.00 GBP",
+      "priceValue": 950.0,
+      "status": "11000"
+    },
+    "YCC": {
+      "id": "YCC",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden Global",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "YCD": {
+      "id": "YCD",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Hidden Global",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "YEA": {
+      "id": "YEA",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "YEE": {
+      "id": "YEE",
+      "itemType": "equipment",
+      "message": [
+        {
+          "text": "Migration",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "YEF": {
+      "id": "YEF",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "YEH": {
+      "id": "YEH",
+      "itemType": "equipment",
+      "status": "00000"
+    },
+    "Z000071154": {
+      "id": "Z000071154",
+      "itemType": "accessory",
+      "price": "44.00 GBP",
+      "priceValue": 44.0,
+      "status": "11000"
+    },
+    "Z000071154A": {
+      "id": "Z000071154A",
+      "itemType": "accessory",
+      "price": "62.00 GBP",
+      "priceValue": 62.0,
+      "status": "11000"
+    },
+    "Z000071154B": {
+      "id": "Z000071154B",
+      "itemType": "accessory",
+      "price": "73.00 GBP",
+      "priceValue": 73.0,
+      "status": "11000"
+    },
+    "Z4G0069641A": {
+      "id": "Z4G0069641A",
+      "itemType": "accessory",
+      "price": "279.50 GBP",
+      "priceValue": 279.5,
+      "status": "11000"
+    },
+    "Z4G0071127": {
+      "id": "Z4G0071127",
+      "itemType": "accessory",
+      "price": "395.00 GBP",
+      "priceValue": 395.0,
+      "status": "11000"
+    },
+    "Z4J3061180": {
+      "id": "Z4J3061180",
+      "itemType": "accessory",
+      "price": "123.00 GBP",
+      "priceValue": 123.0,
+      "status": "11000"
+    },
+    "Z4J3061197": {
+      "id": "Z4J3061197",
+      "itemType": "accessory",
+      "price": "117.00 GBP",
+      "priceValue": 117.0,
+      "status": "11000"
+    },
+    "Z4J3061501A_041": {
+      "id": "Z4J3061501A_041",
+      "itemType": "accessory",
+      "price": "75.50 GBP",
+      "priceValue": 75.5,
+      "status": "11000"
+    },
+    "Z4J3061511__041": {
+      "id": "Z4J3061511__041",
+      "itemType": "accessory",
+      "price": "58.00 GBP",
+      "priceValue": 58.0,
+      "status": "11000"
+    },
+    "Z4J3071126": {
+      "id": "Z4J3071126",
+      "itemType": "accessory",
+      "price": "850.00 GBP",
+      "priceValue": 850.0,
+      "status": "11000"
+    },
+    "Z4J3071801": {
+      "id": "Z4J3071801",
+      "itemType": "accessory",
+      "price": "54.50 GBP",
+      "priceValue": 54.5,
+      "status": "11000"
+    },
+    "Z4J3071802": {
+      "id": "Z4J3071802",
+      "itemType": "accessory",
+      "price": "78.50 GBP",
+      "priceValue": 78.5,
+      "status": "11000"
+    },
+    "Z4J3071803": {
+      "id": "Z4J3071803",
+      "itemType": "accessory",
+      "price": "91.00 GBP",
+      "priceValue": 91.0,
+      "status": "11000"
+    },
+    "Z4K0063511": {
+      "id": "Z4K0063511",
+      "itemType": "accessory",
+      "price": "582.00 GBP",
+      "priceValue": 582.0,
+      "status": "11000"
+    },
+    "Z4K0063511A": {
+      "id": "Z4K0063511A",
+      "itemType": "accessory",
+      "price": "695.00 GBP",
+      "priceValue": 695.0,
+      "status": "11000"
+    },
+    "Z4K0071200__Y9B": {
+      "id": "Z4K0071200__Y9B",
+      "itemType": "accessory",
+      "price": "582.50 GBP",
+      "priceValue": 582.5,
+      "status": "11000"
+    },
+    "Z4K1071200__Y9B": {
+      "id": "Z4K1071200__Y9B",
+      "itemType": "accessory",
+      "price": "634.50 GBP",
+      "priceValue": 634.5,
+      "status": "11000"
+    },
+    "Z4K2071200__Y9B": {
+      "id": "Z4K2071200__Y9B",
+      "itemType": "accessory",
+      "price": "842.00 GBP",
+      "priceValue": 842.0,
+      "status": "11000"
+    },
+    "Z4M0071129": {
+      "id": "Z4M0071129",
+      "itemType": "accessory",
+      "price": "219.00 GBP",
+      "priceValue": 219.0,
+      "status": "11000"
+    },
+    "Z4M8071006A": {
+      "id": "Z4M8071006A",
+      "itemType": "accessory",
+      "price": "160.50 GBP",
+      "priceValue": 160.5,
+      "status": "11000"
+    },
+    "Z4M8071208A_3Q0": {
+      "id": "Z4M8071208A_3Q0",
+      "itemType": "accessory",
+      "message": [
+        {
+          "text": "ausblendet durch aoz-hidden-flags",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "Z4M8071208B_3Q0": {
+      "id": "Z4M8071208B_3Q0",
+      "itemType": "accessory",
+      "price": "66.00 GBP",
+      "priceValue": 66.0,
+      "status": "11000"
+    },
+    "Z4M8071208__3Q0": {
+      "id": "Z4M8071208__3Q0",
+      "itemType": "accessory",
+      "price": "72.50 GBP",
+      "priceValue": 72.5,
+      "status": "11000"
+    },
+    "Z4N0071208A_Y9T": {
+      "id": "Z4N0071208A_Y9T",
+      "itemType": "accessory",
+      "price": "42.50 GBP",
+      "priceValue": 42.5,
+      "status": "11000"
+    },
+    "Z80A057800": {
+      "id": "Z80A057800",
+      "itemType": "accessory",
+      "price": "39.00 GBP",
+      "priceValue": 39.0,
+      "status": "11000"
+    },
+    "Z80A071128": {
+      "id": "Z80A071128",
+      "itemType": "accessory",
+      "price": "180.00 GBP",
+      "priceValue": 180.0,
+      "status": "11000"
+    },
+    "Z80A071215": {
+      "id": "Z80A071215",
+      "itemType": "accessory",
+      "price": "32.50 GBP",
+      "priceValue": 32.5,
+      "status": "11000"
+    },
+    "Z80A087009": {
+      "id": "Z80A087009",
+      "itemType": "accessory",
+      "price": "19.00 GBP",
+      "priceValue": 19.0,
+      "status": "11000"
+    },
+    "Z81A087009": {
+      "id": "Z81A087009",
+      "itemType": "accessory",
+      "price": "11.00 GBP",
+      "priceValue": 11.0,
+      "status": "11000"
+    },
+    "Z8U0061109": {
+      "id": "Z8U0061109",
+      "itemType": "accessory",
+      "price": "53.50 GBP",
+      "priceValue": 53.5,
+      "status": "11000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC001": {
+      "id": "exclusive_exterior_LC_PR_AEEXC001",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Farbkachel fehlt, 5.3.2020\nQ2 PA: Rendering fehlt, 03.09.2020",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC005": {
+      "id": "exclusive_exterior_LC_PR_AEEXC005",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC015": {
+      "id": "exclusive_exterior_LC_PR_AEEXC015",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC027": {
+      "id": "exclusive_exterior_LC_PR_AEEXC027",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC028": {
+      "id": "exclusive_exterior_LC_PR_AEEXC028",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kommunikationsfarbe Audi exclusive",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC030": {
+      "id": "exclusive_exterior_LC_PR_AEEXC030",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC032": {
+      "id": "exclusive_exterior_LC_PR_AEEXC032",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC034": {
+      "id": "exclusive_exterior_LC_PR_AEEXC034",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC037": {
+      "id": "exclusive_exterior_LC_PR_AEEXC037",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC038": {
+      "id": "exclusive_exterior_LC_PR_AEEXC038",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC042": {
+      "id": "exclusive_exterior_LC_PR_AEEXC042",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC051": {
+      "id": "exclusive_exterior_LC_PR_AEEXC051",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC058": {
+      "id": "exclusive_exterior_LC_PR_AEEXC058",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC059": {
+      "id": "exclusive_exterior_LC_PR_AEEXC059",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Farbkachel fehlt, 5.3.2020\nQ2 PA Rendering fehlt, 03.09.2020",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC060": {
+      "id": "exclusive_exterior_LC_PR_AEEXC060",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC062": {
+      "id": "exclusive_exterior_LC_PR_AEEXC062",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC063": {
+      "id": "exclusive_exterior_LC_PR_AEEXC063",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC067": {
+      "id": "exclusive_exterior_LC_PR_AEEXC067",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Renderings fehlen",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC070": {
+      "id": "exclusive_exterior_LC_PR_AEEXC070",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC071": {
+      "id": "exclusive_exterior_LC_PR_AEEXC071",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC079": {
+      "id": "exclusive_exterior_LC_PR_AEEXC079",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC080": {
+      "id": "exclusive_exterior_LC_PR_AEEXC080",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC081": {
+      "id": "exclusive_exterior_LC_PR_AEEXC081",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC084": {
+      "id": "exclusive_exterior_LC_PR_AEEXC084",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kommunikationsfarbe Audi Exclusive",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC085": {
+      "id": "exclusive_exterior_LC_PR_AEEXC085",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC086": {
+      "id": "exclusive_exterior_LC_PR_AEEXC086",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC087": {
+      "id": "exclusive_exterior_LC_PR_AEEXC087",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC088": {
+      "id": "exclusive_exterior_LC_PR_AEEXC088",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC089": {
+      "id": "exclusive_exterior_LC_PR_AEEXC089",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kommunikationsfarbe Audi exclusive",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC090": {
+      "id": "exclusive_exterior_LC_PR_AEEXC090",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19\nKein Angebot mehr MJ 2024, Lt Klaus Korger, 04.05.2023",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC091": {
+      "id": "exclusive_exterior_LC_PR_AEEXC091",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC092": {
+      "id": "exclusive_exterior_LC_PR_AEEXC092",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19\nKein Angebot mehr MJ 2024, Lt Klaus Korger, 04.05.2023",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC093": {
+      "id": "exclusive_exterior_LC_PR_AEEXC093",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Farbkachel fehlt, 5.3.2020\nKein Angebot MJ 2021",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC094": {
+      "id": "exclusive_exterior_LC_PR_AEEXC094",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19\nKein Angebot mehr MJ 2024, Lt Klaus Korger, 04.05.2023",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC095": {
+      "id": "exclusive_exterior_LC_PR_AEEXC095",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Farbkachel fehlt, 5.3.2020",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC096": {
+      "id": "exclusive_exterior_LC_PR_AEEXC096",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC097": {
+      "id": "exclusive_exterior_LC_PR_AEEXC097",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC098": {
+      "id": "exclusive_exterior_LC_PR_AEEXC098",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19\nFarbe nicht mehr als Individuallackierung machbar, Mail M. Tschirne, 19.11.19\nFarbe in der Matrix von VS-22 enthalten - deshalb die Freigabe 12.03.20",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC099": {
+      "id": "exclusive_exterior_LC_PR_AEEXC099",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC101": {
+      "id": "exclusive_exterior_LC_PR_AEEXC101",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC102": {
+      "id": "exclusive_exterior_LC_PR_AEEXC102",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Farbkachel fehlt, 5.3.2020\nQ2 PA Rendering fehlt, 03.09.2020",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC103": {
+      "id": "exclusive_exterior_LC_PR_AEEXC103",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC104": {
+      "id": "exclusive_exterior_LC_PR_AEEXC104",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kommunikationsfarbe Audi exclusive",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC105": {
+      "id": "exclusive_exterior_LC_PR_AEEXC105",
+      "itemType": "exclusiveExteriorColor",
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC106": {
+      "id": "exclusive_exterior_LC_PR_AEEXC106",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC108": {
+      "id": "exclusive_exterior_LC_PR_AEEXC108",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC109": {
+      "id": "exclusive_exterior_LC_PR_AEEXC109",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Farbkachel fehlt, 5.3.2020\nRendert nicht, A8*, 27.01.22",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "exclusive_exterior_LC_PR_AEEXC110": {
+      "id": "exclusive_exterior_LC_PR_AEEXC110",
+      "itemType": "exclusiveExteriorColor",
+      "message": [
+        {
+          "text": "Kein Angebot dieser Farben in diesen Carlines oder Renderings no,ch nicht produziert, 26.7.19 + Q2 PA, 03.09.2020\nFarbbezeichnung Falsch - 110 ist Arablau, 4.3.2020",
+          "type": "debug"
+        }
+      ],
+      "status": "00000"
+    },
+    "trimline_default": {
+      "id": "trimline_default",
+      "itemType": "trimline",
+      "status": "11010"
+    },
+    "trimline_vorsprung": {
+      "id": "trimline_vorsprung",
+      "itemType": "trimline",
+      "status": "11000"
+    }
+  },
+  "itemsUpdateMode": "full"
+}

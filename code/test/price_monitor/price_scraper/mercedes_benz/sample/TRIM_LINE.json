@@ -1,0 +1,604 @@
+{
+  "alternatives": [
+    {
+      "added": [
+        {
+          "id": "PC-PSE",
+          "name": "Progressive Line Advanced",
+          "label": "Progressive Line Advanced",
+          "price": {
+            "price": 3379.60,
+            "formattedPrice": "3.379,60 €",
+            "netPrice": 2840.00,
+            "formattedNetPrice": "2.840,00 €",
+            "currencyISO": "EUR"
+          },
+          "type": "PACKAGES",
+          "conflictItem": false,
+          "includedComponents": [
+            {
+              "id": "PC-PDA",
+              "name": "Advanced-Paket",
+              "label": "Advanced-Paket",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "PC-P49",
+              "name": "Spiegel-Paket",
+              "label": "Spiegel-Paket",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-500",
+              "name": "Außenspiegel elektrisch anklappbar",
+              "label": "Außenspiegel elektrisch anklappbar",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-632",
+              "name": "LED High Performance-Scheinwerfer",
+              "label": "LED High Performance-Scheinwerfer",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "PC-P44",
+              "name": "Park-Paket mit Rückfahrkamera",
+              "label": "Park-Paket mit Rückfahrkamera",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-235",
+              "name": "Aktiver Park-Assistent mit PARKTRONIC",
+              "label": "Aktiver Park-Assistent mit PARKTRONIC",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-218",
+              "name": "Rückfahrkamera",
+              "label": "Rückfahrkamera",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-U22",
+              "name": "4-Wege-Lordosenstütze",
+              "label": "4-Wege-Lordosenstütze",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-608",
+              "name": "Adaptiver Fernlicht-Assistent",
+              "label": "Adaptiver Fernlicht-Assistent",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "PC-P59",
+              "name": "Progressive",
+              "label": "Progressive",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": true
+            },
+            {
+              "id": "PC-U62",
+              "name": "Licht- und Sicht-Paket",
+              "label": "Licht- und Sicht-Paket",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-543",
+              "name": "Sonnenblende mit beleuchtetem Make-up-Spiegel",
+              "label": "Sonnenblende mit beleuchtetem Make-up-Spiegel",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-7U2",
+              "name": "Komfortsitze",
+              "label": "Komfortsitze",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            },
+            {
+              "id": "SA-310",
+              "name": "Doppelcupholder",
+              "label": "Doppelcupholder",
+              "price": {
+                "price": 0.00,
+                "formattedPrice": "0,00 €",
+                "netPrice": 0.00,
+                "formattedNetPrice": "0,00 €",
+                "currencyISO": "EUR"
+              },
+              "conflictItem": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "price": 3379.60,
+        "formattedPrice": "3.379,60 €",
+        "netPrice": 2840.00,
+        "formattedNetPrice": "2.840,00 €",
+        "currencyISO": "EUR"
+      },
+      "vehicleId": "de_DE__1770841__AU-311_GC-429_LE-L_LU-696_MJ-805_PC-P44-P49-P59-PBG-PDA-PSE-U59-U62_SA-00U-01U-02B-20U-213-218-235-243-252-258-25R-270-286-287-294-310-345-351-355-362-365-367-428-475-500-504-521-52H-537-543-580-58U-5B0-608-632-677-70B-72B-73B-79B-7U2-859-873-88B-927-969-986-B01-B51-B59-L3E-R01-U01-U10-U12-U22-U54-U60_SC-0B2-0S3-0U1-1B3-1U5-2U1-2U8-3S6-4S6-502-51B-6P5-7B4-7S8-8P3-8S8-8U6-8U8-98B-998-9U8-B09-B10-K13-K31-K37-K45-PXV-PYY-R7D-V50"
+    }
+  ],
+  "conflictItem": {
+    "id": "PC-P59",
+    "name": "Progressive",
+    "type": "PACKAGES",
+    "state": "ADDED",
+    "price": {
+      "price": 0.00,
+      "formattedPrice": "0,00 €",
+      "netPrice": 0.00,
+      "formattedNetPrice": "0,00 €",
+      "currencyISO": "EUR"
+    }
+  },
+  "conflictDetails": {
+    "conflictType": "PART_OF_PACKAGE",
+    "componentChangeState": "ADDED",
+    "priceDifference": "POSITIVE",
+    "dependedComponentName": "Progressive Line Advanced"
+  },
+  "vehicle": {
+    "name": "A 180 Kompaktlimousine",
+    "baumuster": "1770841",
+    "modelId": "1770841",
+    "modelYear": "805",
+    "typeClass": "W177",
+    "vehicleClass": "A-Klasse",
+    "vehicleClassId": "A-KLASSE",
+    "vehicleBody": "Kompakt-Limousine",
+    "vehicleBodyId": "KOMPAKT-LIMOUSINE",
+    "vehicleId": "de_DE__1770841__AU-311_GC-429_LE-L_LU-696_MJ-805_PC-P44-P49-P59-PBG-PDA-PSE-U59-U62_SA-00U-01U-02B-20U-213-218-235-243-252-258-25R-270-286-287-294-310-345-351-355-362-365-367-428-475-500-504-521-52H-537-543-580-58U-5B0-608-632-677-70B-72B-73B-79B-7U2-859-873-88B-927-969-986-B01-B51-B59-L3E-R01-U01-U10-U12-U22-U54-U60_SC-0B2-0S3-0U1-1B3-1U5-2U1-2U8-3S6-4S6-502-51B-6P5-7B4-7S8-8P3-8S8-8U6-8U8-98B-998-9U8-B09-B10-K13-K31-K37-K45-PXV-PYY-R7D-V50",
+    "productGroup": "PC",
+    "lengthPickerEnabled": false,
+    "ocapiInformation": {
+      "technicalValues": [
+        {
+          "id": "combustionPowerKw",
+          "label": "Leistung",
+          "value": "100 kW",
+          "rawValue": "100"
+        },
+        {
+          "id": "fuelType",
+          "label": "Kraftstoffart",
+          "value": "Super",
+          "rawValue": "Super"
+        },
+        {
+          "id": "emissionStandard",
+          "label": "Abgasnorm",
+          "value": "Euro 6e",
+          "rawValue": "Euro 6e"
+        },
+        {
+          "id": "electricPowerKw",
+          "label": "Leistung elektrisch in kW",
+          "value": "10 kW",
+          "rawValue": "10"
+        },
+        {
+          "id": "co2EmissionWltp",
+          "label": "CO₂-Emissionen gesamt (kombiniert)",
+          "value": "134 g/km",
+          "rawValue": "134"
+        },
+        {
+          "id": "electricRangeWltp",
+          "label": "Elektrische Reichweite",
+          "value": ""
+        },
+        {
+          "id": "electricConsumptionWltp",
+          "label": "Verbrauch gesamt (kombiniert)",
+          "value": "5,9 l/100km",
+          "rawValue": "5.9"
+        },
+        {
+          "id": "maxWeight",
+          "label": "Zul. Gesamtgewicht (EU)",
+          "value": "1.920 kg",
+          "rawValue": "1920"
+        },
+        {
+          "id": "seats",
+          "label": "Sitzplätze",
+          "value": "5",
+          "rawValue": "5"
+        }
+      ]
+    },
+    "priceInformation": {
+      "currencyISO": "EUR",
+      "basePrice": {
+        "price": 37401.70,
+        "formattedPrice": "37.401,70 €",
+        "netPrice": 31430.00,
+        "formattedNetPrice": "31.430,00 €",
+        "currencyISO": "EUR"
+      },
+      "configurationPrice": {
+        "price": 40781.30,
+        "formattedPrice": "40.781,30 €",
+        "netPrice": 34270.00,
+        "formattedNetPrice": "34.270,00 €",
+        "currencyISO": "EUR"
+      },
+      "totalOptionPrice": {
+        "price": 3379.60,
+        "formattedPrice": "3.379,60 €",
+        "netPrice": 2840.00,
+        "formattedNetPrice": "2.840,00 €",
+        "currencyISO": "EUR"
+      }
+    },
+    "stageV2": {
+      "cosyId": "COSY-EU-100",
+      "hasImageError": false,
+      "metaData": {
+        "baseInfo": {
+          "baseUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/DE/177084/805/iris.webp",
+          "initialStageView": "EXTERIOR_360",
+          "fallbackImageUrl": "https://images.oneweb.mercedes-benz.com/iris/europe/iris.png?q=COSY-EU-100",
+          "backgrounds": [
+            {
+              "id": "MUSEUM",
+              "states": {
+                "DAY": {
+                  "id": "DAY",
+                  "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/3/ce/f19bab99ea61f29d8282b8d9d13b82b758673.jpg",
+                  "stageViewState": "SZT"
+                },
+                "NIGHT": {
+                  "id": "NIGHT",
+                  "backgroundUrl": "https://assets.oneweb.mercedes-benz.com/bbd/images/v1/4216/6/a8/a32b57ca2f1c38a3c00058903c1977cb41912.jpg",
+                  "stageViewState": "SZN"
+                }
+              }
+            }
+          ]
+        },
+        "views": {
+          "EXTERIOR_360": {
+            "initialModeConfig": {
+              "perspective": "BE020",
+              "state": [
+                "SZT"
+              ]
+            },
+            "perspectives": [
+              "BE000",
+              "BE010",
+              "BE020",
+              "BE030",
+              "BE040",
+              "BE050",
+              "BE060",
+              "BE070",
+              "BE080",
+              "BE090",
+              "BE100",
+              "BE110",
+              "BE120",
+              "BE130",
+              "BE140",
+              "BE150",
+              "BE160",
+              "BE170",
+              "BE180",
+              "BE190",
+              "BE200",
+              "BE210",
+              "BE220",
+              "BE230",
+              "BE240",
+              "BE250",
+              "BE260",
+              "BE270",
+              "BE280",
+              "BE290",
+              "BE300",
+              "BE310",
+              "BE320",
+              "BE330",
+              "BE340",
+              "BE350"
+            ],
+            "previewImageParameters": [
+              {
+                "key": "BKGND",
+                "value": "8"
+              },
+              {
+                "key": "POV",
+                "value": "BE020"
+              },
+              {
+                "key": "IMGT",
+                "value": "W27"
+              }
+            ],
+            "states": [
+              {
+                "states": [
+                  "SZT",
+                  "SZN"
+                ]
+              }
+            ],
+            "imageTypes": [
+              {
+                "value": "W27",
+                "mimeType": "image/webp"
+              }
+            ],
+            "additionalParameters": [
+              {
+                "key": "BKGND",
+                "value": "9"
+              },
+              {
+                "key": "uni",
+                "value": "m"
+              }
+            ],
+            "fullScreenDefinition": {
+              "perspectives": [
+                "BE000",
+                "BE010",
+                "BE020",
+                "BE030",
+                "BE040",
+                "BE050",
+                "BE060",
+                "BE070",
+                "BE080",
+                "BE090",
+                "BE100",
+                "BE110",
+                "BE120",
+                "BE130",
+                "BE140",
+                "BE150",
+                "BE160",
+                "BE170",
+                "BE180",
+                "BE190",
+                "BE200",
+                "BE210",
+                "BE220",
+                "BE230",
+                "BE240",
+                "BE250",
+                "BE260",
+                "BE270",
+                "BE280",
+                "BE290",
+                "BE300",
+                "BE310",
+                "BE320",
+                "BE330",
+                "BE340",
+                "BE350"
+              ],
+              "states": [
+                {
+                  "states": [
+                    "SZT",
+                    "SZN"
+                  ]
+                }
+              ],
+              "additionalParameters": [
+                {
+                  "key": "BKGND",
+                  "value": "8"
+                }
+              ],
+              "imageType": {
+                "value": "A27",
+                "mimeType": "image/jpeg"
+              }
+            }
+          },
+          "INTERIOR": {
+            "initialModeConfig": {
+              "perspective": "BI1",
+              "state": [
+                "SZT"
+              ]
+            },
+            "perspectives": [
+              "BI1",
+              "BI2",
+              "BI3",
+              "BI4"
+            ],
+            "previewImageParameters": [
+              {
+                "key": "BKGND",
+                "value": "8"
+              },
+              {
+                "key": "POV",
+                "value": "BI1"
+              },
+              {
+                "key": "IMGT",
+                "value": "W27"
+              }
+            ],
+            "states": [
+              {
+                "states": [
+                  "SZT",
+                  "SZN"
+                ]
+              }
+            ],
+            "imageTypes": [
+              {
+                "value": "W27",
+                "mimeType": "image/webp"
+              }
+            ],
+            "additionalParameters": [
+              {
+                "key": "fb",
+                "value": "1"
+              },
+              {
+                "key": "BKGND",
+                "value": "8"
+              }
+            ]
+          },
+          "INTERIOR_360": {
+            "initialModeConfig": {
+              "perspective": "BIS1",
+              "state": [
+                "SZT"
+              ]
+            },
+            "perspectives": [
+              "BIS1",
+              "BIS2",
+              "BIS3",
+              "BIS4",
+              "BIS5",
+              "BIS6"
+            ],
+            "states": [
+              {
+                "states": [
+                  "SZT",
+                  "SZN"
+                ]
+              }
+            ],
+            "imageTypes": [
+              {
+                "value": "W27",
+                "mimeType": "image/webp"
+              }
+            ],
+            "additionalParameters": [
+              {
+                "key": "BKGND",
+                "value": "8"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "plsInformationSection": {
+      "technicalData": {
+        "co2EmissionTotalCombined": 134,
+        "fuelConsumptionTotalCombined": 5.9,
+        "engine": {
+          "type": "COMBUSTOR",
+          "driveCycle": {
+            "wltp": {
+              "emission": {
+                "total": 134
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

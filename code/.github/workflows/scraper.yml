@@ -1,0 +1,241 @@
+name: Scraper
+
+on:
+  workflow_dispatch:
+    inputs:
+      Environment:
+        description: 'Environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - Staging
+          - Production
+          - Both
+      Vendor:
+        description: 'Vendor'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - All
+          - audi
+          - bmw
+          - mercedes_benz
+          - tesla
+      Market:
+        description: 'market'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - All
+          - DE
+          - US
+          - FR
+          - NL
+          - AT
+          - AU
+          - UK
+          - SE
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  staging_scraper:
+    name: Staging Scraper
+    runs-on: ubuntu-latest
+    if: ${{ (inputs.Environment == 'Staging') || (inputs.Environment == 'Both') }}
+
+    steps:
+      - name: Github Action Setup
+        uses: actions/checkout@v3
+
+      - name: Install poetry
+        uses: snok/install-poetry@v1
+
+      - name: Retrieve Build Version
+        id: version_step
+        run: echo "POETRY_VERSION=$(poetry version --short)" >> $GITHUB_OUTPUT
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Version Variable
+        env:
+          VERSION: ${{ steps.version_step.outputs.POETRY_VERSION }}
+        with:
+          filename: config/staging/cron_script
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Scraping Variables with inputs
+        if: inputs.Vendor != 'All'
+        env:
+          VENDOR: '--scraper ${{ inputs.Vendor }}'
+        with:
+          filename: config/staging/cron_script
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Scraping Variables with inputs
+        if: inputs.Market == 'All'
+        env:
+          VENDOR: ''
+        with:
+          filename: config/staging/cron_script
+
+      - uses: falnyr/replace-env-vars-action@master
+        name:  Replace Market Value
+        if: inputs.Market != 'All'
+        env:
+          MARKET: '--market ${{ inputs.Market }}'
+        with:
+          filename: config/staging/cron_script
+
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Market Value
+        if: inputs.Market == 'All'
+        env:
+          MARKET: ''
+        with:
+          filename: config/staging/cron_script
+
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SECRET_KEY }}
+
+      - name: Copy the script to server
+        run: >
+          gcloud compute scp  config/staging/cron_script ${{ secrets.STAGING_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+      - name: Retrieve Yesterday's Date
+        id: yesterday_date
+        run: echo "YESTERDAY_DATE=$(date -d '-1 day' +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Download the yesterday's data folder from bucket
+        run: >
+          gcloud compute ssh ${{ secrets.STAGING_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'cd /opt/price-monitor &&
+          sudo gsutil -m cp -r "gs://${{ secrets.STAGING_BUCKET_NAME }}/date=${{ steps.yesterday_date.outputs.YESTERDAY_DATE }}" data'
+
+      - name: Retrieve Today's Date
+        id: today_date
+        run: echo "TODAY_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Download the today's data folder from bucket
+        run: >
+          gcloud compute ssh ${{ secrets.STAGING_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'cd /opt/price-monitor &&
+          sudo gsutil -m cp -r "gs://${{ secrets.STAGING_BUCKET_NAME }}/date=${{ steps.today_date.outputs.TODAY_DATE }}" data'
+
+      - name: Start the scrapper
+        run: >
+          gcloud compute ssh ${{ secrets.STAGING_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo ./cron_script </dev/null &>/dev/null &'
+
+  production_scraper:
+    name: Production Scraper
+    runs-on: ubuntu-latest
+    if: ${{ (inputs.Environment == 'Production') || (inputs.Environment == 'Both') }}
+
+    steps:
+      - name: Github Action Setup
+        uses: actions/checkout@v3
+
+      - name: Install poetry
+        uses: snok/install-poetry@v1
+
+      - name: Retrieve Build Version
+        id: version_step
+        run: echo "POETRY_VERSION=$(poetry version --short)" >> $GITHUB_OUTPUT
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Version Variable
+        env:
+          VERSION: ${{ steps.version_step.outputs.POETRY_VERSION }}
+        with:
+          filename: config/production/cron_script
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Scraping Variables with inputs
+        if: inputs.Vendor != 'All'
+        env:
+          VENDOR: '--scraper ${{ inputs.Vendor }}'
+        with:
+          filename: config/production/cron_script
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Scraping Variables with inputs
+        if: inputs.Market == 'All'
+        env:
+          VENDOR: ''
+        with:
+          filename: config/production/cron_script
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Market Value
+        if: inputs.Market != 'All'
+        env:
+          MARKET: '--market ${{ inputs.Market }}'
+        with:
+          filename: config/production/cron_script
+
+
+      - uses: falnyr/replace-env-vars-action@master
+        name: Replace Market Value
+        if: inputs.Market == 'All'
+        env:
+          MARKET: ''
+        with:
+          filename: config/production/cron_script
+
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_SECRET_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+
+      - name: Copy the script to server
+        run: >
+          gcloud compute scp  config/production/cron_script ${{ secrets.PROD_VM_NAME }}:~
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+
+      - name: Retrieve Today's Date
+        id: today_date
+        run: echo "TODAY_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Download the today's data folder from bucket
+        run: >
+          gcloud compute ssh ${{ secrets.PROD_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'cd /opt/price-monitor &&
+          sudo gsutil -m cp -r "gs://${{ secrets.PROD_BUCKET_NAME }}/date=${{ steps.today_date.outputs.TODAY_DATE }}" data'
+
+      - name: Start the scrapper
+        run: >
+          gcloud compute ssh ${{ secrets.PROD_VM_NAME }}
+          --zone ${{ secrets.GCP_ZONE }}
+          --ssh-key-expire-after ${{ secrets.SSH_KEY_EXPIRE_TIME }}
+          --quiet --tunnel-through-iap
+          --command 'sudo ./cron_script </dev/null &>/dev/null &'

@@ -1,0 +1,274 @@
+{
+  "FHLSW": {
+    "constructible": false,
+    "errorCode": "RUL_B_1018",
+    "errorMessage": "Unsolvable conflicts: Cause:  \n (REM_FEGAT) origin: COMPONENT_ADD  FHLSW, 1, C, DO, STOFF,  ,   , Stoff 'Trigon'/Alcantara Schwarz (SW), [Upholstery].",
+    "traceId": "cbeaf3a6-8ec5-4a70-876a-161d33c517b9",
+    "addedElement": "FHLSW"
+  },
+  "FKFIX": {
+    "constructible": false,
+    "errorCode": "RUL_B_1018",
+    "errorMessage": "Unsolvable conflicts: Cause:  \n (REM_FEGAT) origin: COMPONENT_ADD  FKFIX, 1, C, DO, STOFF,  ,   , Stoff-/Sensatec-Kombination Anthrazit/Akzent Orange (SW), [Upholstery] \n (ADD_S0481) origin: COMPONENT_ADD  FKFIX, 1, C, DO, STOFF,  ,   , Stoff-/Sensatec-Kombination Anthrazit/Akzent Orange (SW), [Upholstery].",
+    "traceId": "cbeaf3a6-8ec5-4a70-876a-161d33c517b9",
+    "addedElement": "FKFIX"
+  },
+  "FKFL1": {
+    "constructible": true,
+    "configuration": {
+      "modelCode": "7K11",
+      "elements": {
+        "S0548": { "code": "S0548", "type": "option" },
+        "S0654": { "code": "S0654", "type": "option" },
+        "FKFL1": { "code": "FKFL1", "type": "option" },
+        "S0423": { "code": "S0423", "type": "option" },
+        "S01CB": { "code": "S01CB", "type": "option" },
+        "S08TF": { "code": "S08TF", "type": "option" },
+        "S0481": { "code": "S0481", "type": "option" },
+        "S0230": { "code": "S0230", "type": "option" },
+        "S02VB": { "code": "S02VB", "type": "option" },
+        "S04NE": { "code": "S04NE", "type": "option" },
+        "S06AK": { "code": "S06AK", "type": "option" },
+        "S0428": { "code": "S0428", "type": "option" },
+        "S05DA": { "code": "S05DA", "type": "option" },
+        "S06AF": { "code": "S06AF", "type": "option" },
+        "S06AE": { "code": "S06AE", "type": "option" },
+        "S0931": { "code": "S0931", "type": "option" },
+        "S04GN": { "code": "S04GN", "type": "option" },
+        "S09QX": { "code": "S09QX", "type": "option" },
+        "S0249": { "code": "S0249", "type": "option" },
+        "S05AQ": { "code": "S05AQ", "type": "option" },
+        "S06WD": { "code": "S06WD", "type": "option" },
+        "S0851": { "code": "S0851", "type": "option" },
+        "S08KA": { "code": "S08KA", "type": "option" },
+        "S0240": { "code": "S0240", "type": "option" },
+        "S01DF": { "code": "S01DF", "type": "option" },
+        "S0801": { "code": "S0801", "type": "option" },
+        "S0879": { "code": "S0879", "type": "option" },
+        "S06C4": { "code": "S06C4", "type": "option" },
+        "S08WL": { "code": "S08WL", "type": "option" },
+        "S01DZ": { "code": "S01DZ", "type": "option" },
+        "S08R9": { "code": "S08R9", "type": "option" },
+        "P0668": { "code": "P0668", "type": "option" },
+        "S06NS": { "code": "S06NS", "type": "option" },
+        "S06U3": { "code": "S06U3", "type": "option" }
+      }
+    },
+    "configurationChanges": {
+      "addedElements": {
+        "FKFL1": { "code": "FKFL1", "type": "option" },
+        "S0481": { "code": "S0481", "type": "option" }
+      },
+      "removedElements": { "FEGAT": { "code": "FEGAT", "type": "option" } }
+    },
+    "classifiedConfiguration": {
+      "transmission": { "type": "manual" },
+      "volt48": { "isVolt48Variant": false }
+    },
+    "addedElement": "FKFL1"
+  },
+  "FKKSW": {
+    "constructible": false,
+    "errorCode": "RUL_B_1018",
+    "errorMessage": "Unsolvable conflicts: Cause:  \n (REM_FEGAT) origin: COMPONENT_ADD  FKKSW, 1, C, DO, STOFF,  ,   , Stoff 'Trigon'/Sensatec | Schwarz, [Upholstery].",
+    "traceId": "cbeaf3a6-8ec5-4a70-876a-161d33c517b9",
+    "addedElement": "FKKSW"
+  },
+  "FLCEF": {
+    "constructible": false,
+    "errorCode": "RUL_B_1018",
+    "errorMessage": "Unsolvable conflicts: Cause:  \n (REM_FEGAT) origin: COMPONENT_ADD  FLCEF, 1, C, DO, LEDER,  ,   , Leder Dakota Schwarz/Elfenbeinweiss, [Upholstery] \n (ADD_S0711) origin: COMPONENT_ADD  FLCEF, 1, C, DO, LEDER,  ,   , Leder Dakota Schwarz/Elfenbeinweiss, [Upholstery].",
+    "traceId": "cbeaf3a6-8ec5-4a70-876a-161d33c517b9",
+    "addedElement": "FLCEF"
+  },
+  "FLCRS": {
+    "constructible": false,
+    "errorCode": "RUL_B_1018",
+    "errorMessage": "Unsolvable conflicts: Cause:  \n (REM_FEGAT) origin: COMPONENT_ADD  FLCRS, 1, C, DO, LEDER,  ,   , Leder Dakota Schwarz/Rot, [Upholstery] \n (ADD_S0711) origin: COMPONENT_ADD  FLCRS, 1, C, DO, LEDER,  ,   , Leder Dakota Schwarz/Rot, [Upholstery] \n (ADD_S0255), all solutions: [(ADD_S0255), (ADD_S0710)] origin: COMPONENT_ADD  FLCRS, 1, C, DO, LEDER,  ,   , Leder Dakota Schwarz/Rot, [Upholstery] \n (REM_S0240) origin: COMPONENT_ADD  S0255, 1, C, DO, LENKR,  ,   , Sport-Lederlenkrad, [Komfort].",
+    "traceId": "cbeaf3a6-8ec5-4a70-876a-161d33c517b9",
+    "addedElement": "FLCRS"
+  },
+  "FPDFM": {
+    "constructible": true,
+    "configuration": {
+      "modelCode": "7K11",
+      "elements": {
+        "S0255": { "code": "S0255", "type": "option" },
+        "S0548": { "code": "S0548", "type": "option" },
+        "S0654": { "code": "S0654", "type": "option" },
+        "S0423": { "code": "S0423", "type": "option" },
+        "S01CB": { "code": "S01CB", "type": "option" },
+        "S08TF": { "code": "S08TF", "type": "option" },
+        "S0481": { "code": "S0481", "type": "option" },
+        "S0230": { "code": "S0230", "type": "option" },
+        "S02VB": { "code": "S02VB", "type": "option" },
+        "S04NE": { "code": "S04NE", "type": "option" },
+        "S06AK": { "code": "S06AK", "type": "option" },
+        "S0428": { "code": "S0428", "type": "option" },
+        "S05DA": { "code": "S05DA", "type": "option" },
+        "S06AF": { "code": "S06AF", "type": "option" },
+        "S06AE": { "code": "S06AE", "type": "option" },
+        "S0931": { "code": "S0931", "type": "option" },
+        "S04GN": { "code": "S04GN", "type": "option" },
+        "S09QX": { "code": "S09QX", "type": "option" },
+        "S0249": { "code": "S0249", "type": "option" },
+        "S05AQ": { "code": "S05AQ", "type": "option" },
+        "S06WD": { "code": "S06WD", "type": "option" },
+        "S0851": { "code": "S0851", "type": "option" },
+        "S08KA": { "code": "S08KA", "type": "option" },
+        "FPDFM": { "code": "FPDFM", "type": "option" },
+        "S0494": { "code": "S0494", "type": "option" },
+        "S01DF": { "code": "S01DF", "type": "option" },
+        "S0801": { "code": "S0801", "type": "option" },
+        "S0879": { "code": "S0879", "type": "option" },
+        "S06C4": { "code": "S06C4", "type": "option" },
+        "S08WL": { "code": "S08WL", "type": "option" },
+        "S01DZ": { "code": "S01DZ", "type": "option" },
+        "S08R9": { "code": "S08R9", "type": "option" },
+        "P0668": { "code": "P0668", "type": "option" },
+        "S06NS": { "code": "S06NS", "type": "option" },
+        "S06U3": { "code": "S06U3", "type": "option" }
+      }
+    },
+    "configurationChanges": {
+      "addedElements": {
+        "S0255": { "code": "S0255", "type": "option" },
+        "S0481": { "code": "S0481", "type": "option" },
+        "FPDFM": { "code": "FPDFM", "type": "option" },
+        "S0494": { "code": "S0494", "type": "option" }
+      },
+      "removedElements": {
+        "S0240": { "code": "S0240", "type": "option" },
+        "FEGAT": { "code": "FEGAT", "type": "option" }
+      }
+    },
+    "classifiedConfiguration": {
+      "transmission": { "type": "manual" },
+      "volt48": { "isVolt48Variant": false }
+    },
+    "addedElement": "FPDFM"
+  },
+  "FPDMY": {
+    "constructible": true,
+    "configuration": {
+      "modelCode": "7K11",
+      "elements": {
+        "S0255": { "code": "S0255", "type": "option" },
+        "S0548": { "code": "S0548", "type": "option" },
+        "FPDMY": { "code": "FPDMY", "type": "option" },
+        "S0654": { "code": "S0654", "type": "option" },
+        "S0423": { "code": "S0423", "type": "option" },
+        "S01CB": { "code": "S01CB", "type": "option" },
+        "S08TF": { "code": "S08TF", "type": "option" },
+        "S0230": { "code": "S0230", "type": "option" },
+        "S02VB": { "code": "S02VB", "type": "option" },
+        "S04NE": { "code": "S04NE", "type": "option" },
+        "S06AK": { "code": "S06AK", "type": "option" },
+        "S0428": { "code": "S0428", "type": "option" },
+        "S05DA": { "code": "S05DA", "type": "option" },
+        "S06AF": { "code": "S06AF", "type": "option" },
+        "S06AE": { "code": "S06AE", "type": "option" },
+        "S0931": { "code": "S0931", "type": "option" },
+        "S04GN": { "code": "S04GN", "type": "option" },
+        "S09QX": { "code": "S09QX", "type": "option" },
+        "S0249": { "code": "S0249", "type": "option" },
+        "S05AQ": { "code": "S05AQ", "type": "option" },
+        "S06WD": { "code": "S06WD", "type": "option" },
+        "S0851": { "code": "S0851", "type": "option" },
+        "S08KA": { "code": "S08KA", "type": "option" },
+        "S0494": { "code": "S0494", "type": "option" },
+        "S01DF": { "code": "S01DF", "type": "option" },
+        "S0801": { "code": "S0801", "type": "option" },
+        "S0879": { "code": "S0879", "type": "option" },
+        "S06C4": { "code": "S06C4", "type": "option" },
+        "S08WL": { "code": "S08WL", "type": "option" },
+        "S01DZ": { "code": "S01DZ", "type": "option" },
+        "S08R9": { "code": "S08R9", "type": "option" },
+        "P0668": { "code": "P0668", "type": "option" },
+        "S06NS": { "code": "S06NS", "type": "option" },
+        "S06U3": { "code": "S06U3", "type": "option" }
+      }
+    },
+    "configurationChanges": {
+      "addedElements": {
+        "S0255": { "code": "S0255", "type": "option" },
+        "FPDMY": { "code": "FPDMY", "type": "option" },
+        "S0494": { "code": "S0494", "type": "option" }
+      },
+      "removedElements": {
+        "S0240": { "code": "S0240", "type": "option" },
+        "FEGAT": { "code": "FEGAT", "type": "option" }
+      }
+    },
+    "classifiedConfiguration": {
+      "transmission": { "type": "manual" },
+      "volt48": { "isVolt48Variant": false }
+    },
+    "addedElement": "FPDMY"
+  },
+  "FPDN4": {
+    "constructible": false,
+    "errorCode": "RUL_B_1018",
+    "errorMessage": "Unsolvable conflicts: Cause:  \n (REM_FEGAT) origin: COMPONENT_ADD  FPDN4, 1, C, DO, LEDER,  ,   , Leder 'Dakota' mit Perforierung Schwarz/Blau, [Upholstery].",
+    "traceId": "cbeaf3a6-8ec5-4a70-876a-161d33c517b9",
+    "addedElement": "FPDN4"
+  },
+  "FPDSW": {
+    "constructible": true,
+    "configuration": {
+      "modelCode": "7K11",
+      "elements": {
+        "S0255": { "code": "S0255", "type": "option" },
+        "S0548": { "code": "S0548", "type": "option" },
+        "S0654": { "code": "S0654", "type": "option" },
+        "S0423": { "code": "S0423", "type": "option" },
+        "S01CB": { "code": "S01CB", "type": "option" },
+        "S08TF": { "code": "S08TF", "type": "option" },
+        "S0230": { "code": "S0230", "type": "option" },
+        "S02VB": { "code": "S02VB", "type": "option" },
+        "S04NE": { "code": "S04NE", "type": "option" },
+        "S06AK": { "code": "S06AK", "type": "option" },
+        "S0428": { "code": "S0428", "type": "option" },
+        "S05DA": { "code": "S05DA", "type": "option" },
+        "S06AF": { "code": "S06AF", "type": "option" },
+        "S06AE": { "code": "S06AE", "type": "option" },
+        "S0931": { "code": "S0931", "type": "option" },
+        "S04GN": { "code": "S04GN", "type": "option" },
+        "S09QX": { "code": "S09QX", "type": "option" },
+        "S0249": { "code": "S0249", "type": "option" },
+        "S05AQ": { "code": "S05AQ", "type": "option" },
+        "S06WD": { "code": "S06WD", "type": "option" },
+        "S0851": { "code": "S0851", "type": "option" },
+        "S08KA": { "code": "S08KA", "type": "option" },
+        "S0494": { "code": "S0494", "type": "option" },
+        "S01DF": { "code": "S01DF", "type": "option" },
+        "S0801": { "code": "S0801", "type": "option" },
+        "FPDSW": { "code": "FPDSW", "type": "option" },
+        "S0879": { "code": "S0879", "type": "option" },
+        "S06C4": { "code": "S06C4", "type": "option" },
+        "S08WL": { "code": "S08WL", "type": "option" },
+        "S01DZ": { "code": "S01DZ", "type": "option" },
+        "S08R9": { "code": "S08R9", "type": "option" },
+        "P0668": { "code": "P0668", "type": "option" },
+        "S06NS": { "code": "S06NS", "type": "option" },
+        "S06U3": { "code": "S06U3", "type": "option" }
+      }
+    },
+    "configurationChanges": {
+      "addedElements": {
+        "S0255": { "code": "S0255", "type": "option" },
+        "FPDSW": { "code": "FPDSW", "type": "option" },
+        "S0494": { "code": "S0494", "type": "option" }
+      },
+      "removedElements": {
+        "S0240": { "code": "S0240", "type": "option" },
+        "FEGAT": { "code": "FEGAT", "type": "option" }
+      }
+    },
+    "classifiedConfiguration": {
+      "transmission": { "type": "manual" },
+      "volt48": { "isVolt48Variant": false }
+    },
+    "addedElement": "FPDSW"
+  }
+}

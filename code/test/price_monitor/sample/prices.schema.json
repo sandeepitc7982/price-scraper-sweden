@@ -1,0 +1,114 @@
+{
+  "name": "LineItem",
+  "type": "record",
+  "fields": [
+    {
+      "name": "vendor",
+      "type": {
+        "name": "Vendor",
+        "type": "enum",
+        "symbols": [
+          "bmw",
+          "tesla",
+          "audi",
+          "mercedes_benz"
+        ]
+      }
+    },
+    {
+      "name": "series",
+      "type": "string"
+    },
+    {
+      "name": "model_range_code",
+      "type": "string"
+    },
+    {
+      "name": "model_range_description",
+      "type": "string"
+    },
+    {
+      "name": "model_code",
+      "type": "string"
+    },
+    {
+      "name": "model_description",
+      "type": "string"
+    },
+    {
+      "name": "line_code",
+      "type": "string"
+    },
+    {
+      "name": "line_description",
+      "type": "string"
+    },
+    {
+      "name": "line_option_codes",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "LineItemOptionCode",
+          "type": "record",
+          "fields": [
+            {
+              "name": "code",
+              "type": "string"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "type",
+              "type": "string"
+            },
+            {
+              "name": "included",
+              "type": "boolean"
+            },
+            {
+              "name": "net_list_price",
+              "type": "double",
+              "default": 0
+            },
+            {
+              "name": "gross_list_price",
+              "type": "double",
+              "default": 0
+            }
+          ],
+          "doc": "LineItemOptionCode(code: str, description: str, type: str, included: bool, net_list_price: float = 0.0, gross_list_price: float = 0.0)"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "name": "net_list_price",
+      "type": "double"
+    },
+    {
+      "name": "gross_list_price",
+      "type": "double"
+    },
+    {
+      "name": "market",
+      "type": {
+        "name": "Market",
+        "type": "enum",
+        "symbols": [
+          "DE",
+          "FR",
+          "AU",
+          "AT",
+          "NL",
+          "US"
+        ]
+      }
+    }
+  ],
+  "doc": "LineItem(date: str, vendor: src.price_monitor.model.vendor.Vendor, series: str, model_range_code: str, model_range_description: str, model_code: str, model_description: str, line_code: str, line_description: str, line_option_codes: List[src.price_monitor.model.line_item.LineItemOptionCode], currency: str, net_list_price: float, gross_list_price: float, market: src.price_monitor.model.vendor.Market)"
+}

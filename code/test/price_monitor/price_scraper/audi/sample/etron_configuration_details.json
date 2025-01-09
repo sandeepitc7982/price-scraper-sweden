@@ -1,0 +1,157 @@
+{
+  "items" : {
+    "0E0E" : {
+      "id" : "0E0E",
+      "itemType" : "exteriorColor",
+      "price" : "1.050,00 EUR",
+      "priceValue" : 1050.0,
+      "status" : "11010"
+    },
+    "0GA" : {
+      "id" : "0GA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JA" : {
+      "id" : "0JA",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JB" : {
+      "id" : "0JB",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JC" : {
+      "id" : "0JC",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JD" : {
+      "id" : "0JD",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JE" : {
+      "id" : "0JE",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JF" : {
+      "id" : "0JF",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0JZ" : {
+      "id" : "0JZ",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0K9" : {
+      "id" : "0K9",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0LW" : {
+      "id" : "0LW",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0N1" : {
+      "id" : "0N1",
+      "itemType" : "equipment",
+      "status" : "10011"
+    },
+    "0N5" : {
+      "id" : "0N5",
+      "itemType" : "equipment",
+      "status" : "00000"
+    },
+    "0N5_in_PA2" : {
+      "id" : "0N5_in_PA2",
+      "itemType" : "equipmentContent",
+      "price" : "4.390,00 EUR",
+      "priceValue" : 4390.0,
+      "status" : "11000"
+    },
+    "0N5_in_PA3" : {
+      "id" : "0N5_in_PA3",
+      "itemType" : "equipmentContent",
+      "price" : "4.890,00 EUR",
+      "priceValue" : 4890.0,
+      "status" : "11000"
+    },
+    "0N5_in_PHZ" : {
+      "id" : "0N5_in_PHZ",
+      "itemType" : "equipmentContent",
+      "price" : "1.390,00 EUR",
+      "priceValue" : 1390.0,
+      "status" : "11000"
+    },
+    "0TD" : {
+      "id" : "0TD",
+      "itemType" : "equipment",
+      "message" : [ {
+        "text" : "Wunsch VE-D12 lt. Mail K. Hemmann, 22.09.2020\nRS Q3 nicht relevant vor Kunde\ne-tron GT* nicht kundenrelevant",
+        "type" : "debug"
+      } ],
+      "status" : "00000"
+    },
+    "1BK" : {
+      "id" : "1BK",
+      "itemType" : "equipment",
+      "price" : "1.500,00 EUR",
+      "priceValue" : 1500.0,
+      "status" : "11000"
+    },
+    "3BH" : {
+      "id" : "3BH",
+      "itemType" : "equipment",
+      "price" : "0,00 EUR",
+      "priceValue" : 0.0,
+      "status" : "11000"
+    },
+    "2C5" : {
+      "id" : "2C5",
+      "itemType" : "equipment",
+      "message" : [ {
+        "text" : "Migration",
+        "type" : "debug"
+      } ],
+      "status" : "00000"
+    },
+    "Z4K0064317__Y3U" : {
+      "id" : "Z4K0064317__Y3U",
+      "itemType" : "accessory",
+      "message" : [ {
+        "text" : "ausblendet durch aoz-hidden-flags",
+        "type" : "debug"
+      } ],
+      "status" : "00000"
+    },
+    "Z4K0064317__Z7G" : {
+      "id" : "Z4K0064317__Z7G",
+      "itemType" : "accessory",
+      "message" : [ {
+        "text" : "ausblendet durch aoz-hidden-flags",
+        "type" : "debug"
+      } ],
+      "status" : "11010"
+    },
+    "Z4K0064317__Z7S" : {
+      "id" : "Z4K0064317__Z7S",
+      "itemType" : "accessory",
+      "message" : [ {
+        "text" : "ausblendet durch aoz-hidden-flags",
+        "type" : "debug"
+      } ],
+      "status" : "00000"
+    },
+    "trimline_default" : {
+      "id" : "trimline_default",
+      "itemType" : "trimline",
+      "status" : "11010"
+    }
+  },
+  "itemsUpdateMode" : "full"
+}

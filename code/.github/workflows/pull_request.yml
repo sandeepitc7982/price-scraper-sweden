@@ -1,0 +1,51 @@
+name: Pull Request
+
+on:
+  pull_request:
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Github Action Setup
+        uses: actions/checkout@v3
+
+      - name: Github install chrome
+        uses: nanasess/setup-chromedriver@v2
+
+      - name: Python Setup
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      - name: Install dependencies with poetry
+        run: |
+          poetry install
+
+      - name: Install webdriver package
+        run: |
+          pip install webdriver-manager
+
+      - name: Black Formatting Test
+        run: |
+          poetry run black --check --diff .
+
+      - name: Isort Formatting Test
+        uses: isort/isort-action@master
+        with:
+          configuration: "--check-only --diff --profile black"
+        if: always()
+
+      - name: Test Run
+        run: |
+          make test

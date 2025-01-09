@@ -1,0 +1,1701 @@
+{
+    "closestEffectDate": "2022-11-21",
+    "closestOrderDate": "2022-11-21",
+    "Z": {
+        "code": "Z",
+        "availableLanguages": [
+            "de"
+        ],
+        "additionalData": {
+            "sortOrder": [
+                "G29"
+            ],
+            "description": {
+                "de": {
+                    "longDescription": "Z"
+                }
+            },
+            "seriesOrder": [
+                "i",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "X",
+                "Z",
+                "M"
+            ]
+        },
+        "modelRanges": {
+            "G29": {
+                "models": {
+                    "HF51": {
+                        "timeslices": [
+                            {
+                                "effectDateFrom": "2018-11-01",
+                                "orderDateFrom": "2017-09-12"
+                            }
+                        ],
+                        "agBodyStyle": "RO",
+                        "technicalData": {
+                            "cylinderCapacity": "3,00",
+                            "enginePower": "250",
+                            "engNumberOfCylinders": "",
+                            "abeHub": "2998",
+                            "length": "0000",
+                            "width": "0000",
+                            "height": "0000",
+                            "weight": "0000"
+                        },
+                        "engConcept": "I",
+                        "derivative": "Z4 M40I",
+                        "manufacturer": "WB",
+                        "transmission": "SCH",
+                        "lineMake": "B1",
+                        "modelCode": "HF51",
+                        "additionalData": {
+                            "vehicleTechnicalData": {
+                                "cylinderCapacity": "3,00",
+                                "enginePower": "250",
+                                "engNumberOfCylinders": "",
+                                "abeHub": "2998",
+                                "length": "0000",
+                                "width": "0000",
+                                "height": "0000",
+                                "weight": "0000"
+                            }
+                        },
+                        "lines": {},
+                        "brand": "BM",
+                        "dealerOffer": true,
+                        "effectDate": "2023-01-02",
+                        "firstTvoChecked": true,
+                        "driveType": "HR",
+                        "configurationDates": {
+                            "earliestEffectDate": "2018-11-01",
+                            "earliestOrderDate": "2017-09-12"
+                        },
+                        "steering": "LL",
+                        "bodyStyle": "RO",
+                        "transmissionVariants": [
+                            {
+                                "constructible": false,
+                                "effectDate": "2023-01-02",
+                                "transmission": {
+                                    "type": "manual"
+                                },
+                                "orderDate": "2022-10-31",
+                                "volt48": {
+                                    "isVolt48Variant": false
+                                }
+                            }
+                        ],
+                        "modelRange": "G29",
+                        "taxDate": "2022-10-31",
+                        "fuelType": "O",
+                        "sportsFlag": "N",
+                        "agModelCode": "HF51",
+                        "series": "Z",
+                        "marketExcludedElements": [
+                            "S0931"
+                        ],
+                        "phrases": {
+                            "de": {
+                                "longDescription": "BMW Z4 M40i"
+                            }
+                        },
+                        "orderDate": "2022-10-31",
+                        "hybridFlag": "NOHY",
+                        "hybridCode": "NOHY"
+                    },
+                    "HF31": {
+                        "timeslices": [
+                            {
+                                "effectDateFrom": "2018-11-01",
+                                "orderDateFrom": "2017-09-12"
+                            }
+                        ],
+                        "agBodyStyle": "RO",
+                        "technicalData": {
+                            "cylinderCapacity": "2,00",
+                            "enginePower": "190",
+                            "engNumberOfCylinders": "",
+                            "abeHub": "1998",
+                            "length": "0000",
+                            "width": "0000",
+                            "height": "0000",
+                            "weight": "0000"
+                        },
+                        "engConcept": "I",
+                        "derivative": "Z4 30I",
+                        "manufacturer": "WB",
+                        "transmission": "SCH",
+                        "lineMake": "B1",
+                        "modelCode": "HF31",
+                        "additionalData": {
+                            "vehicleTechnicalData": {
+                                "cylinderCapacity": "2,00",
+                                "enginePower": "190",
+                                "engNumberOfCylinders": "",
+                                "abeHub": "1998",
+                                "length": "0000",
+                                "width": "0000",
+                                "height": "0000",
+                                "weight": "0000"
+                            }
+                        },
+                        "lines": {},
+                        "brand": "BM",
+                        "dealerOffer": true,
+                        "effectDate": "2023-01-02",
+                        "firstTvoChecked": true,
+                        "driveType": "HR",
+                        "configurationDates": {
+                            "earliestEffectDate": "2018-11-01",
+                            "earliestOrderDate": "2017-09-12"
+                        },
+                        "steering": "LL",
+                        "bodyStyle": "RO",
+                        "transmissionVariants": [
+                            {
+                                "constructible": false,
+                                "effectDate": "2023-01-02",
+                                "transmission": {
+                                    "type": "manual"
+                                },
+                                "orderDate": "2022-10-31",
+                                "volt48": {
+                                    "isVolt48Variant": false
+                                }
+                            }
+                        ],
+                        "modelRange": "G29",
+                        "taxDate": "2022-10-31",
+                        "fuelType": "O",
+                        "sportsFlag": "N",
+                        "agModelCode": "HF31",
+                        "series": "Z",
+                        "phrases": {
+                            "de": {
+                                "longDescription": "BMW Z4 sDrive30i"
+                            }
+                        },
+                        "marketExcludedElements": [
+                            "S0931"
+                        ],
+                        "orderDate": "2022-10-31",
+                        "hybridFlag": "NOHY",
+                        "hybridCode": "NOHY"
+                    },
+                    "HF11": {
+                        "timeslices": [
+                            {
+                                "effectDateFrom": "2018-11-01",
+                                "orderDateFrom": "2017-09-12"
+                            }
+                        ],
+                        "agBodyStyle": "RO",
+                        "technicalData": {
+                            "cylinderCapacity": "2,00",
+                            "enginePower": "145",
+                            "engNumberOfCylinders": "",
+                            "abeHub": "1998",
+                            "length": "0000",
+                            "width": "0000",
+                            "height": "0000",
+                            "weight": "0000"
+                        },
+                        "engConcept": "I",
+                        "derivative": "Z4 20I",
+                        "manufacturer": "WB",
+                        "transmission": "SCH",
+                        "lineMake": "B1",
+                        "modelCode": "HF11",
+                        "additionalData": {
+                            "vehicleTechnicalData": {
+                                "cylinderCapacity": "2,00",
+                                "enginePower": "145",
+                                "engNumberOfCylinders": "",
+                                "abeHub": "1998",
+                                "length": "0000",
+                                "width": "0000",
+                                "height": "0000",
+                                "weight": "0000"
+                            }
+                        },
+                        "lines": {
+                            "0": "S0337"
+                        },
+                        "brand": "BM",
+                        "dealerOffer": true,
+                        "effectDate": "2023-01-02",
+                        "firstTvoChecked": true,
+                        "driveType": "HR",
+                        "configurationDates": {
+                            "earliestEffectDate": "2018-11-01",
+                            "earliestOrderDate": "2017-09-12"
+                        },
+                        "steering": "LL",
+                        "bodyStyle": "RO",
+                        "transmissionVariants": [
+                            {
+                                "constructible": true,
+                                "includedOptions": [
+                                    "S01CB",
+                                    "S01DF",
+                                    "S01P1",
+                                    "S0230",
+                                    "S02PA",
+                                    "S02VB",
+                                    "S0302",
+                                    "S0387",
+                                    "S0428",
+                                    "S0431",
+                                    "S0465",
+                                    "S0478",
+                                    "S0493",
+                                    "S0494",
+                                    "S04GN",
+                                    "S04NE",
+                                    "S0508",
+                                    "S0534",
+                                    "S0544",
+                                    "S0548",
+                                    "S0563",
+                                    "S05AV",
+                                    "S0654",
+                                    "S0676",
+                                    "S06AE",
+                                    "S06AF",
+                                    "S06AK",
+                                    "S06C4",
+                                    "S06U3",
+                                    "S06WD",
+                                    "S0715",
+                                    "S0801",
+                                    "S0851",
+                                    "S0879",
+                                    "S08KA",
+                                    "S08R9",
+                                    "S08TF",
+                                    "S08WL",
+                                    "S09QX"
+                                ],
+                                "effectDate": "2023-01-02",
+                                "transmission": {
+                                    "type": "manual"
+                                },
+                                "orderDate": "2022-10-31",
+                                "volt48": {
+                                    "isVolt48Variant": false
+                                }
+                            }
+                        ],
+                        "modelRange": "G29",
+                        "taxDate": "2022-10-31",
+                        "fuelType": "O",
+                        "sportsFlag": "N",
+                        "agModelCode": "HF11",
+                        "series": "Z",
+                        "phrases": {
+                            "de": {
+                                "longDescription": "BMW Z4 sDrive20i"
+                            }
+                        },
+                        "marketExcludedElements": [
+                            "S0931"
+                        ],
+                        "orderDate": "2022-10-31",
+                        "hybridFlag": "NOHY",
+                        "hybridCode": "NOHY"
+                    }
+                },
+                "code": "G29",
+                "additionalData": {
+                    "sortOrder": [
+                        "HF11",
+                        "HF31",
+                        "HF51"
+                    ],
+                    "description": {
+                        "de": {
+                            "longDescription": "BMW Z4"
+                        }
+                    }
+                },
+                "lines": {
+                    "M_PERFORMANCE_LINE": {
+                        "isGeneratedLine": true,
+                        "includedTransmissionVariants": [
+                            {
+                                "constructible": true,
+                                "configuration": {
+                                    "modelCode": "HF51",
+                                    "elements": {
+                                        "S06C4": {
+                                            "code": "S06C4",
+                                            "type": "option"
+                                        }
+                                    }
+                                },
+                                "configurationState": "9cff2172-41fd-4ac6-83a5-38ce42f51c97",
+                                "classifiedConfiguration": {
+                                    "transmission": {
+                                        "type": "automatic",
+                                        "transmissionOption": "S02TB"
+                                    },
+                                    "volt48": {
+                                        "isVolt48Variant": false
+                                    }
+                                },
+                                "transmissionName": {
+                                    "de": {
+                                        "longDescription": "Sport-Automatic Getriebe Steptronic"
+                                    }
+                                },
+                                "bestMatchOptions": [
+                                    "P0C31",
+                                    "S01XY"
+                                ],
+                                "noRangesClassifier": {
+                                    "minenvironmental_bonus": "false",
+                                    "maxenvironmental_bonus": "false"
+                                },
+                                "wltpRanges": {
+                                    "hybridCode": "NOHY",
+                                    "modelOptionCombinations": [
+                                        {
+                                            "includedOptions": [
+                                                "S02TB"
+                                            ],
+                                            "excludedOptions": [],
+                                            "computationDate": "2023-01-02",
+                                            "lastComputedDate": "2022-10-30T02:51:33.339Z",
+                                            "ranges": {
+                                                "co2": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 184,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 179,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 171,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 167,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 159,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 155,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 276,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 268,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 184,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 178,
+                                                        "relevant": true
+                                                    }
+                                                },
+                                                "fuelConsumption": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 8.1,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.9,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.6,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.4,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.1,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.9,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 12.2,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 11.8,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 8.1,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.9,
+                                                        "relevant": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "legislator": "EU"
+                                },
+                                "wltpClassifier": {},
+                                "emissionRanges": {},
+                                "classifier": {},
+                                "otdData": {
+                                    "businessKey": "VK_5000619159",
+                                    "status": 1,
+                                    "values": {
+                                        "C_DREHM_GES_KOMM_FTLBS": {
+                                            "referenceName": "C_DREHM_GES_KOMM_FTLBS",
+                                            "targetValue": 369
+                                        },
+                                        "C_DREHM_GES_KOMM": {
+                                            "referenceName": "C_DREHM_GES_KOMM",
+                                            "targetValue": 500
+                                        },
+                                        "C_LEIST_GES_KOMM_PS": {
+                                            "referenceName": "C_LEIST_GES_KOMM_PS",
+                                            "targetValue": 340
+                                        },
+                                        "C_LEISTUNG": {
+                                            "referenceName": "C_LEISTUNG",
+                                            "targetValue": 250
+                                        },
+                                        "C_LEISTUNG_PS": {
+                                            "referenceName": "C_LEISTUNG_PS",
+                                            "targetValue": 340
+                                        },
+                                        "C_LEIST_GES_KOMM": {
+                                            "referenceName": "C_LEIST_GES_KOMM"
+                                        },
+                                        "C_LEIST_GES_KOMM_BHP": {
+                                            "referenceName": "C_LEIST_GES_KOMM_BHP",
+                                            "targetValue": 335
+                                        },
+                                        "B_LGEW_EU": {
+                                            "referenceName": "B_LGEW_EU",
+                                            "targetValue": 1640
+                                        },
+                                        "E_0_100KMH": {
+                                            "referenceName": "E_0_100KMH",
+                                            "targetValue": 4.5
+                                        }
+                                    },
+                                    "preConfigurationOptions": [
+                                        "S02T4",
+                                        "S01CB",
+                                        "S01DF",
+                                        "S02TB",
+                                        "S02VF"
+                                    ]
+                                },
+                                "prices": {
+                                    "netListPrice": 56218.49,
+                                    "netPrice": 56218.49,
+                                    "netDiscount": 0.0,
+                                    "netDiscountPercent": 0.0,
+                                    "grossListPrice": 66900.0,
+                                    "grossListPriceUnrounded": 66900.0,
+                                    "grossPrice": 66900.0,
+                                    "grossPriceUnrounded": 66900.0,
+                                    "grossDiscount": 0.0,
+                                    "grossDiscountUnrounded": 0.0,
+                                    "grossDiscountPercent": 0.0,
+                                    "totalTaxes": 10681.51,
+                                    "totalTaxesListPrice": 10681.51,
+                                    "taxes": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "vat-S",
+                                            "taxPercentage": 0.19,
+                                            "taxValue": 10681.51,
+                                            "taxBase": 56218.49
+                                        }
+                                    ],
+                                    "taxesListPrice": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "vat-S",
+                                            "taxPercentage": 0.19,
+                                            "taxValue": 10681.51,
+                                            "taxBase": 56218.49
+                                        }
+                                    ],
+                                    "roundingDifferenceListPrice": 0.0,
+                                    "roundingDifference": 0.0,
+                                    "deltaPrice": {
+                                        "netListPrice": 0.0,
+                                        "netPrice": 0.0,
+                                        "netDiscount": 0.0,
+                                        "netDiscountPercent": 0.0,
+                                        "grossListPrice": 0.0,
+                                        "grossListPriceUnrounded": 0.0,
+                                        "grossPrice": 0.0,
+                                        "grossPriceUnrounded": 0.0,
+                                        "grossDiscount": 0.0,
+                                        "grossDiscountUnrounded": 0.0,
+                                        "grossDiscountPercent": 0.0,
+                                        "totalTaxes": 0.0,
+                                        "totalTaxesListPrice": 0.0,
+                                        "roundingDifferenceListPrice": 0.0,
+                                        "roundingDifference": 0.0
+                                    }
+                                }
+                            }
+                        ],
+                        "prices": {
+                            "netListPrice": 56218.49,
+                            "netPrice": 56218.49,
+                            "netDiscount": 0.0,
+                            "netDiscountPercent": 0.0,
+                            "grossListPrice": 66900.0,
+                            "grossListPriceUnrounded": 66900.0,
+                            "grossPrice": 66900.0,
+                            "grossPriceUnrounded": 66900.0,
+                            "grossDiscount": 0.0,
+                            "grossDiscountUnrounded": 0.0,
+                            "grossDiscountPercent": 0.0,
+                            "totalTaxes": 10681.51,
+                            "totalTaxesListPrice": 10681.51,
+                            "taxes": [
+                                {
+                                    "taxCategory": "PRODUCT",
+                                    "taxKey": "vat-S",
+                                    "taxPercentage": 0.19,
+                                    "taxValue": 10681.51,
+                                    "taxBase": 56218.49
+                                }
+                            ],
+                            "taxesListPrice": [
+                                {
+                                    "taxCategory": "PRODUCT",
+                                    "taxKey": "vat-S",
+                                    "taxPercentage": 0.19,
+                                    "taxValue": 10681.51,
+                                    "taxBase": 56218.49
+                                }
+                            ],
+                            "roundingDifferenceListPrice": 0.0,
+                            "roundingDifference": 0.0,
+                            "deltaPrice": {
+                                "netListPrice": 0.0,
+                                "netPrice": 0.0,
+                                "netDiscount": 0.0,
+                                "netDiscountPercent": 0.0,
+                                "grossListPrice": 0.0,
+                                "grossListPriceUnrounded": 0.0,
+                                "grossPrice": 0.0,
+                                "grossPriceUnrounded": 0.0,
+                                "grossDiscount": 0.0,
+                                "grossDiscountUnrounded": 0.0,
+                                "grossDiscountPercent": 0.0,
+                                "totalTaxes": 0.0,
+                                "totalTaxesListPrice": 0.0,
+                                "roundingDifferenceListPrice": 0.0,
+                                "roundingDifference": 0.0
+                            }
+                        },
+                        "defaultModel": {
+                            "prices": {
+                                "netListPrice": 56218.49,
+                                "netPrice": 56218.49,
+                                "netDiscount": 0.0,
+                                "netDiscountPercent": 0.0,
+                                "grossListPrice": 66900.0,
+                                "grossListPriceUnrounded": 66900.0,
+                                "grossPrice": 66900.0,
+                                "grossPriceUnrounded": 66900.0,
+                                "grossDiscount": 0.0,
+                                "grossDiscountUnrounded": 0.0,
+                                "grossDiscountPercent": 0.0,
+                                "totalTaxes": 10681.51,
+                                "totalTaxesListPrice": 10681.51,
+                                "taxes": [
+                                    {
+                                        "taxCategory": "PRODUCT",
+                                        "taxKey": "vat-S",
+                                        "taxPercentage": 0.19,
+                                        "taxValue": 10681.51,
+                                        "taxBase": 56218.49
+                                    }
+                                ],
+                                "taxesListPrice": [
+                                    {
+                                        "taxCategory": "PRODUCT",
+                                        "taxKey": "vat-S",
+                                        "taxPercentage": 0.19,
+                                        "taxValue": 10681.51,
+                                        "taxBase": 56218.49
+                                    }
+                                ],
+                                "roundingDifferenceListPrice": 0.0,
+                                "roundingDifference": 0.0,
+                                "deltaPrice": {
+                                    "netListPrice": 0.0,
+                                    "netPrice": 0.0,
+                                    "netDiscount": 0.0,
+                                    "netDiscountPercent": 0.0,
+                                    "grossListPrice": 0.0,
+                                    "grossListPriceUnrounded": 0.0,
+                                    "grossPrice": 0.0,
+                                    "grossPriceUnrounded": 0.0,
+                                    "grossDiscount": 0.0,
+                                    "grossDiscountUnrounded": 0.0,
+                                    "grossDiscountPercent": 0.0,
+                                    "totalTaxes": 0.0,
+                                    "totalTaxesListPrice": 0.0,
+                                    "roundingDifferenceListPrice": 0.0,
+                                    "roundingDifference": 0.0
+                                }
+                            },
+                            "modelCode": "HF51",
+                            "agModelCode": "HF51",
+                            "options": "FHCNL,P0300,S01CB,S01DF,S01P2,S0230,S02NH,S02PA,S02T4,S02TB,S02VB,S02VF,S0302,S0387,S0428,S0431,S0465,S0478,S0493,S0494,S04AW,S04KK,S04NE,S04UR,S0508,S0534,S0544,S0548,S0563,S05AV,S0654,S0676,S06AE,S06AF,S06AK,S06C4,S06U3,S06WD,S0710,S0711,S0715,S0760,S0801,S0851,S0879,S08KA,S08R9,S08TF,S08WL,S09QX"
+                        }
+                    },
+                    "BASIC_LINE": {
+                        "isGeneratedLine": true,
+                        "includedTransmissionVariants": [
+                            {
+                                "constructible": true,
+                                "configuration": {
+                                    "modelCode": "HF31",
+                                    "elements": {
+                                        "S06C4": {
+                                            "code": "S06C4",
+                                            "type": "option"
+                                        }
+                                    }
+                                },
+                                "configurationState": "e6592fa1-37d9-42ff-ba4b-21b7c950eac3",
+                                "classifiedConfiguration": {
+                                    "transmission": {
+                                        "type": "automatic",
+                                        "transmissionOption": "S02TB"
+                                    },
+                                    "volt48": {
+                                        "isVolt48Variant": false
+                                    }
+                                },
+                                "transmissionName": {
+                                    "de": {
+                                        "longDescription": "Sport-Automatic Getriebe Steptronic"
+                                    }
+                                },
+                                "bestMatchOptions": [
+                                    "FMASW",
+                                    "P0C56",
+                                    "S01P1"
+                                ],
+                                "noRangesClassifier": {
+                                    "minenvironmental_bonus": "false",
+                                    "maxenvironmental_bonus": "false"
+                                },
+                                "wltpRanges": {
+                                    "hybridCode": "NOHY",
+                                    "modelOptionCombinations": [
+                                        {
+                                            "includedOptions": [
+                                                "S02TB"
+                                            ],
+                                            "excludedOptions": [],
+                                            "computationDate": "2023-01-02",
+                                            "lastComputedDate": "2022-10-30T02:52:42.739Z",
+                                            "ranges": {
+                                                "co2": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 167,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 159,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 162,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 153,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 144,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 136,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 236,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 231,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 164,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 157,
+                                                        "relevant": true
+                                                    }
+                                                },
+                                                "fuelConsumption": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.4,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.0,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.2,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.8,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.4,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.0,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 10.4,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 10.2,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.3,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.9,
+                                                        "relevant": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "legislator": "EU"
+                                },
+                                "wltpClassifier": {},
+                                "emissionRanges": {},
+                                "classifier": {},
+                                "otdData": {
+                                    "businessKey": "VK_5000924227",
+                                    "status": 1,
+                                    "values": {
+                                        "C_DREHM_GES_KOMM_FTLBS": {
+                                            "referenceName": "C_DREHM_GES_KOMM_FTLBS",
+                                            "targetValue": 295
+                                        },
+                                        "C_DREHM_GES_KOMM": {
+                                            "referenceName": "C_DREHM_GES_KOMM",
+                                            "targetValue": 400
+                                        },
+                                        "C_LEIST_GES_KOMM_PS": {
+                                            "referenceName": "C_LEIST_GES_KOMM_PS",
+                                            "targetValue": 258
+                                        },
+                                        "C_LEISTUNG": {
+                                            "referenceName": "C_LEISTUNG",
+                                            "targetValue": 190
+                                        },
+                                        "C_LEISTUNG_PS": {
+                                            "referenceName": "C_LEISTUNG_PS",
+                                            "targetValue": 258
+                                        },
+                                        "C_LEIST_GES_KOMM": {
+                                            "referenceName": "C_LEIST_GES_KOMM",
+                                            "targetValue": 190
+                                        },
+                                        "C_LEIST_GES_KOMM_BHP": {
+                                            "referenceName": "C_LEIST_GES_KOMM_BHP",
+                                            "targetValue": 255
+                                        },
+                                        "B_LGEW_EU": {
+                                            "referenceName": "B_LGEW_EU",
+                                            "targetValue": 1545
+                                        },
+                                        "E_0_100KMH": {
+                                            "referenceName": "E_0_100KMH",
+                                            "targetValue": 5.4
+                                        }
+                                    },
+                                    "preConfigurationOptions": [
+                                        "S01CB",
+                                        "S01DF",
+                                        "S02TB",
+                                        "S0704"
+                                    ]
+                                },
+                                "prices": {}
+                            },
+                            {
+                                "constructible": true,
+                                "configuration": {
+                                    "modelCode": "HF11",
+                                    "elements": {
+                                        "FMASW": {
+                                            "code": "FMASW",
+                                            "type": "option"
+                                        }
+                                    }
+                                },
+                                "configurationState": "b7b4af5d-3761-4105-9de5-8adb2e94cb05",
+                                "classifiedConfiguration": {
+                                    "transmission": {
+                                        "type": "undefined"
+                                    },
+                                    "volt48": {
+                                        "isVolt48Variant": false
+                                    }
+                                },
+                                "transmissionName": {},
+                                "bestMatchOptions": [
+                                    "P0C56",
+                                    "S01P1"
+                                ],
+                                "noRangesClassifier": {
+                                    "minenvironmental_bonus": "false",
+                                    "maxenvironmental_bonus": "false"
+                                },
+                                "wltpRanges": {
+                                    "hybridCode": "NOHY",
+                                    "modelOptionCombinations": [
+                                        {
+                                            "includedOptions": [],
+                                            "excludedOptions": [
+                                                "S02TB"
+                                            ],
+                                            "computationDate": "2023-01-02",
+                                            "lastComputedDate": "2022-10-30T02:52:52.933Z",
+                                            "ranges": {
+                                                "co2": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 167,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 159,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 159,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 151,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 144,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 136,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 235,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 230,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 169,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 164,
+                                                        "relevant": true
+                                                    }
+                                                },
+                                                "fuelConsumption": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.4,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.1,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.0,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.7,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.4,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.0,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 10.4,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 10.2,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.5,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.3,
+                                                        "relevant": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "legislator": "EU"
+                                },
+                                "wltpClassifier": {},
+                                "emissionRanges": {},
+                                "classifier": {},
+                                "otdData": {
+                                    "businessKey": "VK_5000325642",
+                                    "status": 1,
+                                    "values": {
+                                        "C_DREHM_GES_KOMM_FTLBS": {
+                                            "referenceName": "C_DREHM_GES_KOMM_FTLBS",
+                                            "targetValue": 236
+                                        },
+                                        "C_DREHM_GES_KOMM": {
+                                            "referenceName": "C_DREHM_GES_KOMM",
+                                            "targetValue": 320
+                                        },
+                                        "C_LEIST_GES_KOMM_PS": {
+                                            "referenceName": "C_LEIST_GES_KOMM_PS"
+                                        },
+                                        "C_LEISTUNG": {
+                                            "referenceName": "C_LEISTUNG",
+                                            "targetValue": 145
+                                        },
+                                        "C_LEISTUNG_PS": {
+                                            "referenceName": "C_LEISTUNG_PS",
+                                            "targetValue": 197
+                                        },
+                                        "C_LEIST_GES_KOMM": {
+                                            "referenceName": "C_LEIST_GES_KOMM",
+                                            "targetValue": 145
+                                        },
+                                        "C_LEIST_GES_KOMM_BHP": {
+                                            "referenceName": "C_LEIST_GES_KOMM_BHP",
+                                            "targetValue": 194
+                                        },
+                                        "B_LGEW_EU": {
+                                            "referenceName": "B_LGEW_EU",
+                                            "targetValue": 1510
+                                        },
+                                        "E_0_100KMH": {
+                                            "referenceName": "E_0_100KMH",
+                                            "targetValue": 6.8
+                                        }
+                                    },
+                                    "preConfigurationOptions": [
+                                        "S01CB",
+                                        "S01DF"
+                                    ]
+                                },
+                                "prices": {
+                                    "netListPrice": 40756.3,
+                                    "netPrice": 40756.3,
+                                    "netDiscount": 0.0,
+                                    "netDiscountPercent": 0.0,
+                                    "grossListPrice": 48500.0,
+                                    "grossListPriceUnrounded": 48500.0,
+                                    "grossPrice": 48500.0,
+                                    "grossPriceUnrounded": 48500.0,
+                                    "grossDiscount": 0.0,
+                                    "grossDiscountUnrounded": 0.0,
+                                    "grossDiscountPercent": 0.0,
+                                    "totalTaxes": 7743.7,
+                                    "totalTaxesListPrice": 7743.7,
+                                    "taxes": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "vat-S",
+                                            "taxPercentage": 0.19,
+                                            "taxValue": 7743.7,
+                                            "taxBase": 40756.3
+                                        }
+                                    ],
+                                    "taxesListPrice": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "vat-S",
+                                            "taxPercentage": 0.19,
+                                            "taxValue": 7743.7,
+                                            "taxBase": 40756.3
+                                        }
+                                    ],
+                                    "roundingDifferenceListPrice": 0.0,
+                                    "roundingDifference": 0.0,
+                                    "deltaPrice": {
+                                        "netListPrice": 0.0,
+                                        "netPrice": 0.0,
+                                        "netDiscount": 0.0,
+                                        "netDiscountPercent": 0.0,
+                                        "grossListPrice": 0.0,
+                                        "grossListPriceUnrounded": 0.0,
+                                        "grossPrice": 0.0,
+                                        "grossPriceUnrounded": 0.0,
+                                        "grossDiscount": 0.0,
+                                        "grossDiscountUnrounded": 0.0,
+                                        "grossDiscountPercent": 0.0,
+                                        "totalTaxes": 0.0,
+                                        "totalTaxesListPrice": 0.0,
+                                        "roundingDifferenceListPrice": 0.0,
+                                        "roundingDifference": 0.0
+                                    }
+                                }
+                            },
+                            {
+                                "constructible": true,
+                                "configuration": {
+                                    "modelCode": "HF11",
+                                    "elements": {
+                                        "FMASW": {
+                                            "code": "FMASW",
+                                            "type": "option"
+                                        },
+                                        "S06C4": {
+                                            "code": "S06C4",
+                                            "type": "option"
+                                        },
+                                        "S0508": {
+                                            "code": "S0508",
+                                            "type": "option"
+                                        },
+                                        "S06WD": {
+                                            "code": "S06WD",
+                                            "type": "option"
+                                        },
+                                        "S0478": {
+                                            "code": "S0478",
+                                            "type": "option"
+                                        },
+                                        "S0654": {
+                                            "code": "S0654",
+                                            "type": "option"
+                                        },
+                                        "S0676": {
+                                            "code": "S0676",
+                                            "type": "option"
+                                        },
+                                        "S0534": {
+                                            "code": "S0534",
+                                            "type": "option"
+                                        },
+                                        "S06AE": {
+                                            "code": "S06AE",
+                                            "type": "option"
+                                        },
+                                        "S0879": {
+                                            "code": "S0879",
+                                            "type": "option"
+                                        },
+                                        "S06AF": {
+                                            "code": "S06AF",
+                                            "type": "option"
+                                        },
+                                        "S04GN": {
+                                            "code": "S04GN",
+                                            "type": "option"
+                                        },
+                                        "S0715": {
+                                            "code": "S0715",
+                                            "type": "option"
+                                        },
+                                        "S08WL": {
+                                            "code": "S08WL",
+                                            "type": "option"
+                                        },
+                                        "S08KA": {
+                                            "code": "S08KA",
+                                            "type": "option"
+                                        },
+                                        "S0493": {
+                                            "code": "S0493",
+                                            "type": "option"
+                                        },
+                                        "S0230": {
+                                            "code": "S0230",
+                                            "type": "option"
+                                        },
+                                        "S0494": {
+                                            "code": "S0494",
+                                            "type": "option"
+                                        },
+                                        "S01CB": {
+                                            "code": "S01CB",
+                                            "type": "option"
+                                        },
+                                        "S0431": {
+                                            "code": "S0431",
+                                            "type": "option"
+                                        },
+                                        "S01P1": {
+                                            "code": "S01P1",
+                                            "type": "option"
+                                        },
+                                        "S0851": {
+                                            "code": "S0851",
+                                            "type": "option"
+                                        },
+                                        "S05AV": {
+                                            "code": "S05AV",
+                                            "type": "option"
+                                        },
+                                        "S08TF": {
+                                            "code": "S08TF",
+                                            "type": "option"
+                                        },
+                                        "S04NE": {
+                                            "code": "S04NE",
+                                            "type": "option"
+                                        },
+                                        "S02VB": {
+                                            "code": "S02VB",
+                                            "type": "option"
+                                        },
+                                        "S08R9": {
+                                            "code": "S08R9",
+                                            "type": "option"
+                                        },
+                                        "S02TB": {
+                                            "code": "S02TB",
+                                            "type": "option"
+                                        },
+                                        "S09QX": {
+                                            "code": "S09QX",
+                                            "type": "option"
+                                        },
+                                        "S06AK": {
+                                            "code": "S06AK",
+                                            "type": "option"
+                                        },
+                                        "S02PA": {
+                                            "code": "S02PA",
+                                            "type": "option"
+                                        },
+                                        "P0300": {
+                                            "code": "P0300",
+                                            "type": "option"
+                                        },
+                                        "S0302": {
+                                            "code": "S0302",
+                                            "type": "option"
+                                        },
+                                        "S0544": {
+                                            "code": "S0544",
+                                            "type": "option"
+                                        },
+                                        "S0801": {
+                                            "code": "S0801",
+                                            "type": "option"
+                                        },
+                                        "S0548": {
+                                            "code": "S0548",
+                                            "type": "option"
+                                        },
+                                        "S0428": {
+                                            "code": "S0428",
+                                            "type": "option"
+                                        },
+                                        "S0563": {
+                                            "code": "S0563",
+                                            "type": "option"
+                                        },
+                                        "S0387": {
+                                            "code": "S0387",
+                                            "type": "option"
+                                        },
+                                        "S01DF": {
+                                            "code": "S01DF",
+                                            "type": "option"
+                                        },
+                                        "S0465": {
+                                            "code": "S0465",
+                                            "type": "option"
+                                        },
+                                        "S06U3": {
+                                            "code": "S06U3",
+                                            "type": "option"
+                                        }
+                                    }
+                                },
+                                "configurationState": "193f93cb-0fb6-4ce3-b5df-c9ac1a295dfd",
+                                "classifiedConfiguration": {
+                                    "transmission": {
+                                        "type": "automatic",
+                                        "transmissionOption": "S02TB"
+                                    },
+                                    "volt48": {
+                                        "isVolt48Variant": false
+                                    }
+                                },
+                                "transmissionName": {
+                                    "de": {
+                                        "longDescription": "Sport-Automatic Getriebe Steptronic"
+                                    }
+                                },
+                                "bestMatchOptions": [
+                                    "P0C56",
+                                    "S01P1"
+                                ],
+                                "noRangesClassifier": {
+                                    "minenvironmental_bonus": "false",
+                                    "maxenvironmental_bonus": "false"
+                                },
+                                "wltpRanges": {
+                                    "hybridCode": "NOHY",
+                                    "modelOptionCombinations": [
+                                        {
+                                            "includedOptions": [
+                                                "S02TB"
+                                            ],
+                                            "excludedOptions": [],
+                                            "computationDate": "2023-01-02",
+                                            "lastComputedDate": "2022-10-30T02:52:52.933Z",
+                                            "ranges": {
+                                                "co2": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 164,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 157,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 160,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 153,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 142,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 136,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 232,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 216,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 162,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 0,
+                                                        "value": 156,
+                                                        "relevant": true
+                                                    }
+                                                },
+                                                "fuelConsumption": {
+                                                    "combMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.3,
+                                                        "relevant": true
+                                                    },
+                                                    "combMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.9,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.1,
+                                                        "relevant": true
+                                                    },
+                                                    "exHighMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.8,
+                                                        "relevant": true
+                                                    },
+                                                    "highMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.3,
+                                                        "relevant": true
+                                                    },
+                                                    "highMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.0,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 10.3,
+                                                        "relevant": true
+                                                    },
+                                                    "lowMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 9.6,
+                                                        "relevant": true
+                                                    },
+                                                    "midMax": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 7.2,
+                                                        "relevant": true
+                                                    },
+                                                    "midMin": {
+                                                        "decimalPlaces": 1,
+                                                        "value": 6.9,
+                                                        "relevant": true
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "legislator": "EU"
+                                },
+                                "wltpClassifier": {},
+                                "emissionRanges": {},
+                                "classifier": {},
+                                "otdData": {
+                                    "businessKey": "VK_5000325641",
+                                    "status": 1,
+                                    "values": {
+                                        "C_DREHM_GES_KOMM_FTLBS": {
+                                            "referenceName": "C_DREHM_GES_KOMM_FTLBS",
+                                            "targetValue": 236
+                                        },
+                                        "C_DREHM_GES_KOMM": {
+                                            "referenceName": "C_DREHM_GES_KOMM",
+                                            "targetValue": 320
+                                        },
+                                        "C_LEIST_GES_KOMM_PS": {
+                                            "referenceName": "C_LEIST_GES_KOMM_PS",
+                                            "targetValue": 197
+                                        },
+                                        "C_LEISTUNG": {
+                                            "referenceName": "C_LEISTUNG",
+                                            "targetValue": 145
+                                        },
+                                        "C_LEISTUNG_PS": {
+                                            "referenceName": "C_LEISTUNG_PS",
+                                            "targetValue": 197
+                                        },
+                                        "C_LEIST_GES_KOMM": {
+                                            "referenceName": "C_LEIST_GES_KOMM",
+                                            "targetValue": 145
+                                        },
+                                        "C_LEIST_GES_KOMM_BHP": {
+                                            "referenceName": "C_LEIST_GES_KOMM_BHP",
+                                            "targetValue": 194
+                                        },
+                                        "B_LGEW_EU": {
+                                            "referenceName": "B_LGEW_EU",
+                                            "targetValue": 1525
+                                        },
+                                        "E_0_100KMH": {
+                                            "referenceName": "E_0_100KMH",
+                                            "targetValue": 6.6
+                                        }
+                                    },
+                                    "preConfigurationOptions": [
+                                        "S01CB",
+                                        "S01DF",
+                                        "S02TB"
+                                    ]
+                                },
+                                "prices": {
+                                    "netListPrice": 42731.09,
+                                    "netPrice": 42731.09,
+                                    "netDiscount": 0.0,
+                                    "netDiscountPercent": 0.0,
+                                    "grossListPrice": 50850.0,
+                                    "grossListPriceUnrounded": 50850.0,
+                                    "grossPrice": 50850.0,
+                                    "grossPriceUnrounded": 50850.0,
+                                    "grossDiscount": 0.0,
+                                    "grossDiscountUnrounded": 0.0,
+                                    "grossDiscountPercent": 0.0,
+                                    "totalTaxes": 8118.91,
+                                    "totalTaxesListPrice": 8118.91,
+                                    "taxes": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "vat-S",
+                                            "taxPercentage": 0.19,
+                                            "taxValue": 8118.91,
+                                            "taxBase": 42731.09
+                                        }
+                                    ],
+                                    "taxesListPrice": [
+                                        {
+                                            "taxCategory": "PRODUCT",
+                                            "taxKey": "vat-S",
+                                            "taxPercentage": 0.19,
+                                            "taxValue": 8118.91,
+                                            "taxBase": 42731.09
+                                        }
+                                    ],
+                                    "roundingDifferenceListPrice": 0.0,
+                                    "roundingDifference": 0.0,
+                                    "deltaPrice": {
+                                        "netListPrice": 1974.7899999999936,
+                                        "netPrice": 1974.7899999999936,
+                                        "netDiscount": 0.0,
+                                        "netDiscountPercent": 0.0,
+                                        "grossListPrice": 2350.0,
+                                        "grossListPriceUnrounded": 2350.0,
+                                        "grossPrice": 2350.0,
+                                        "grossPriceUnrounded": 2350.0,
+                                        "grossDiscount": 0.0,
+                                        "grossDiscountUnrounded": 0.0,
+                                        "grossDiscountPercent": 0.0,
+                                        "totalTaxes": 375.21000000000004,
+                                        "totalTaxesListPrice": 375.21000000000004,
+                                        "roundingDifferenceListPrice": 0.0,
+                                        "roundingDifference": 0.0
+                                    }
+                                }
+                            }
+                        ],
+                        "prices": {
+                            "netListPrice": 40756.3,
+                            "netPrice": 40756.3,
+                            "netDiscount": 0.0,
+                            "netDiscountPercent": 0.0,
+                            "grossListPrice": 48500.0,
+                            "grossListPriceUnrounded": 48500.0,
+                            "grossPrice": 48500.0,
+                            "grossPriceUnrounded": 48500.0,
+                            "grossDiscount": 0.0,
+                            "grossDiscountUnrounded": 0.0,
+                            "grossDiscountPercent": 0.0,
+                            "totalTaxes": 7743.7,
+                            "totalTaxesListPrice": 7743.7,
+                            "taxes": [
+                                {
+                                    "taxCategory": "PRODUCT",
+                                    "taxKey": "vat-S",
+                                    "taxPercentage": 0.19,
+                                    "taxValue": 7743.7,
+                                    "taxBase": 40756.3
+                                }
+                            ],
+                            "taxesListPrice": [
+                                {
+                                    "taxCategory": "PRODUCT",
+                                    "taxKey": "vat-S",
+                                    "taxPercentage": 0.19,
+                                    "taxValue": 7743.7,
+                                    "taxBase": 40756.3
+                                }
+                            ],
+                            "roundingDifferenceListPrice": 0.0,
+                            "roundingDifference": 0.0,
+                            "deltaPrice": {
+                                "netListPrice": 0.0,
+                                "netPrice": 0.0,
+                                "netDiscount": 0.0,
+                                "netDiscountPercent": 0.0,
+                                "grossListPrice": 0.0,
+                                "grossListPriceUnrounded": 0.0,
+                                "grossPrice": 0.0,
+                                "grossPriceUnrounded": 0.0,
+                                "grossDiscount": 0.0,
+                                "grossDiscountUnrounded": 0.0,
+                                "grossDiscountPercent": 0.0,
+                                "totalTaxes": 0.0,
+                                "totalTaxesListPrice": 0.0,
+                                "roundingDifferenceListPrice": 0.0,
+                                "roundingDifference": 0.0
+                            }
+                        },
+                        "defaultModel": {
+                            "prices": {
+                                "netListPrice": 40756.3,
+                                "netPrice": 40756.3,
+                                "netDiscount": 0.0,
+                                "netDiscountPercent": 0.0,
+                                "grossListPrice": 48500.0,
+                                "grossListPriceUnrounded": 48500.0,
+                                "grossPrice": 48500.0,
+                                "grossPriceUnrounded": 48500.0,
+                                "grossDiscount": 0.0,
+                                "grossDiscountUnrounded": 0.0,
+                                "grossDiscountPercent": 0.0,
+                                "totalTaxes": 7743.7,
+                                "totalTaxesListPrice": 7743.7,
+                                "taxes": [
+                                    {
+                                        "taxCategory": "PRODUCT",
+                                        "taxKey": "vat-S",
+                                        "taxPercentage": 0.19,
+                                        "taxValue": 7743.7,
+                                        "taxBase": 40756.3
+                                    }
+                                ],
+                                "taxesListPrice": [
+                                    {
+                                        "taxCategory": "PRODUCT",
+                                        "taxKey": "vat-S",
+                                        "taxPercentage": 0.19,
+                                        "taxValue": 7743.7,
+                                        "taxBase": 40756.3
+                                    }
+                                ],
+                                "roundingDifferenceListPrice": 0.0,
+                                "roundingDifference": 0.0,
+                                "deltaPrice": {
+                                    "netListPrice": 0.0,
+                                    "netPrice": 0.0,
+                                    "netDiscount": 0.0,
+                                    "netDiscountPercent": 0.0,
+                                    "grossListPrice": 0.0,
+                                    "grossListPriceUnrounded": 0.0,
+                                    "grossPrice": 0.0,
+                                    "grossPriceUnrounded": 0.0,
+                                    "grossDiscount": 0.0,
+                                    "grossDiscountUnrounded": 0.0,
+                                    "grossDiscountPercent": 0.0,
+                                    "totalTaxes": 0.0,
+                                    "totalTaxesListPrice": 0.0,
+                                    "roundingDifferenceListPrice": 0.0,
+                                    "roundingDifference": 0.0
+                                }
+                            },
+                            "modelCode": "HF11",
+                            "agModelCode": "HF11",
+                            "options": "FMASW,P0300,S01CB,S01DF,S01P1,S0230,S02PA,S02VB,S0302,S0387,S0428,S0431,S0465,S0478,S0493,S0494,S04GN,S04NE,S0508,S0534,S0544,S0548,S0563,S05AV,S0654,S0676,S06AE,S06AF,S06AK,S06C4,S06U3,S06WD,S0715,S0801,S0851,S0879,S08KA,S08R9,S08TF,S08WL,S09QX"
+                        }
+                    }
+                },
+                "modelDefaultCombinationEnabled": false
+            }
+        }
+    }
+}

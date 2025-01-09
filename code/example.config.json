@@ -1,0 +1,16 @@
+{
+  "output": {
+    "directory": "data/",
+    "prices_filename": "prices",
+    "differences_filename": "changelog",
+    "file_type": "dual"
+  },
+  "scraper": {
+    "enabled": ["bmw", "audi", "tesla"],
+    "markets": ["DE", "FR", "AT", "NL", "US"]
+  },
+  "notification": {
+    "channel": "gchat",
+    "gchat_url": "SECRET::projects/375378227731/secrets/stg_gchat_url/versions/1"
+  }
+}

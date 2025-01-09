@@ -1,0 +1,172 @@
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+- stage: test
+  displayName: 'Code Integrity Checks'
+  jobs:
+    - job: test
+      displayName: 'Code Integrity Checks'
+      steps:
+        - task: usePythonVersion@0
+          inputs:
+            versionSpec: '3.12'
+
+        - bash: 'pip3 install --upgrade pip'
+          displayName: 'install upgrade pip3'
+
+        - bash: 'python -m pip install poetry'
+          displayName: 'install poetry'
+
+        - bash: 'cd code && poetry install'
+          displayName: 'Install Dependencies'
+
+        - bash: 'cd code && make lint-xml && make lint'
+          displayName: 'Performing Linting Test'
+
+        - bash: 'cd code && make check-format'
+          displayName: 'Black Formatting Test'
+
+        - bash: 'cd code && make test-unit'
+          displayName: 'Test Run'
+
+        - bash: 'mkdir -p $(Pipeline.Workspace)/output && mv code/flake8-pricescraper.xml $(Pipeline.Workspace)/output/'
+          displayName: 'Moving Lint result for artifact'
+
+        - task: PublishBuildArtifacts@1
+          displayName: 'Publish Artifact: Linting Result'
+          inputs:
+            PathtoPublish: '$(Pipeline.Workspace)/output'
+            ArtifactName: 'Price_Scraper_Linting_Result'
+
+
+    - job: tesla_e2e_test
+      dependsOn:
+        - test
+      displayName: 'Tesla E2E Test'
+      condition: eq(variables['Build.SourceBranchName'], 'main')
+      steps:
+        - task: usePythonVersion@0
+          inputs:
+            versionSpec: '3.12'
+
+        - bash: 'pip3 install --upgrade pip'
+          displayName: 'install upgrade pip3'
+
+        - bash: 'python -m pip install poetry'
+          displayName: 'install poetry'
+
+        - bash: 'cd code && poetry install'
+          displayName: 'Install Dependencies'
+
+        - bash: 'cd code && make test-e2e VENDOR=tesla'
+          displayName: 'Running E2E Tests'
+
+    - job: bmw_e2e_test
+      dependsOn:
+        - test
+      displayName: 'BMW E2E Test'
+      condition: eq(variables['Build.SourceBranchName'], 'main')
+      steps:
+        - task: usePythonVersion@0
+          inputs:
+            versionSpec: '3.12'
+
+        - bash: 'pip3 install --upgrade pip'
+          displayName: 'install upgrade pip3'
+
+        - bash: 'python -m pip install poetry'
+          displayName: 'install poetry'
+
+        - bash: 'cd code && poetry install'
+          displayName: 'Install Dependencies'
+
+        - bash: 'cd code && make test-e2e VENDOR=bmw'
+          displayName: 'Running E2E Tests'
+
+
+    - job: audi_e2e_test
+      dependsOn:
+        - test
+      displayName: 'Audi E2E Test'
+      condition: eq(variables['Build.SourceBranchName'], 'main')
+      steps:
+        - task: usePythonVersion@0
+          inputs:
+            versionSpec: '3.12'
+
+        - bash: 'pip3 install --upgrade pip'
+          displayName: 'install upgrade pip3'
+
+        - bash: 'python -m pip install poetry'
+          displayName: 'install poetry'
+
+        - bash: 'cd code && poetry install'
+          displayName: 'Install Dependencies'
+
+        - bash: 'cd code && make test-e2e VENDOR=audi'
+          displayName: 'Running E2E Tests'
+
+    - job: mercedes_e2e_test
+      dependsOn:
+        - test
+      displayName: 'Mercedes E2E Test'
+      condition: eq(variables['Build.SourceBranchName'], 'main')
+      steps:
+        - task: usePythonVersion@0
+          inputs:
+            versionSpec: '3.12'
+
+        - bash: 'pip3 install --upgrade pip'
+          displayName: 'install upgrade pip3'
+
+        - bash: 'python -m pip install poetry'
+          displayName: 'install poetry'
+
+        - bash: 'cd code && poetry install'
+          displayName: 'Install Dependencies'
+
+        - bash: 'cd code && make test-e2e VENDOR=mercedes'
+          displayName: 'Running E2E Tests'
+
+- stage: Build
+  displayName: Build
+  dependsOn:
+    - test
+  condition: eq(variables['Build.SourceBranchName'], 'main')
+  jobs:
+    - job: build
+      displayName: 'Build Wheel File'
+      steps:
+        - task: usePythonVersion@0
+          inputs:
+            versionSpec: '3.12'
+
+        - bash: 'pip3 install --upgrade pip'
+          displayName: 'install upgrade pip3'
+
+        - bash: 'python -m pip install poetry'
+          displayName: 'install poetry'
+
+        - bash: 'cd code && poetry install'
+          displayName: 'Install Dependencies'
+
+        - bash: 'cd code && poetry build'
+          displayName: 'Building Wheel File'
+
+        - script: |
+            cd code
+            VERSION=$(poetry version --short)
+            mkdir -p $(Pipeline.Workspace)/output
+            mv dist/price_monitor-$VERSION-py3-none-any.whl $(Pipeline.Workspace)/output/
+          displayName: 'Packing Artifact files'
+
+        - task: PublishBuildArtifacts@1
+          displayName: 'Publish Artifact: Price Scraper'
+          inputs:
+            PathtoPublish: '$(Pipeline.Workspace)/output'
+            ArtifactName: 'Price_Scraper_Wheel_File'
