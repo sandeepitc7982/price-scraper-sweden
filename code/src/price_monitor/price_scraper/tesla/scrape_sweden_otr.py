@@ -13,7 +13,7 @@ from src.price_monitor.price_scraper.constants import USER_AGENT
 
 
 @retry(tries=3, delay=3, backoff=2)
-def get_otr_prices_for_model(
+def get_otr_prices_for_sweden_model(
     url: str,
 ):
     response = {}
@@ -22,6 +22,12 @@ def get_otr_prices_for_model(
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument(f"user-agent={USER_AGENT}")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--ignore-certificate-errors")
+    chrome_options.add_argument("--log-level=1")
+    chrome_options.add_argument("--disable-software-rasterizer")
+    chrome_options.add_argument("--enable-unsafe-swiftshader")
+
     # driver = webdriver.Chrome(
     #     options=chrome_options, service=ChromeService(ChromeDriverManager().install())
     # )
@@ -61,6 +67,7 @@ def get_otr_prices_for_model(
             (By.CLASS_NAME, "group--options_block--container")
         )
     )
+    
     for variant in variants:
         line_item_code = variant.get_attribute("data-id")
         variant.click()
@@ -71,6 +78,7 @@ def get_otr_prices_for_model(
 
     if len(response) == 0:
         raise Exception("Unable to Scrape OTR for Tesla UK")
+
     return response
 
 
@@ -84,7 +92,7 @@ def get_otr_price_for_trimline(driver):
     time.sleep(5)
 
     # Find the target element by its ID and scroll into view before clicking
-    button = driver.find_element(By.ID, "private-cash")
+    button = driver.find_element(By.ID, "cash")
     driver.execute_script("arguments[0].scrollIntoView(true);", button)
     driver.execute_script("arguments[0].click();", button)
 
@@ -94,6 +102,6 @@ def get_otr_price_for_trimline(driver):
     footer = WebDriverWait(driver, 3).until(
         ec.visibility_of_element_located((By.CLASS_NAME, "tds-text--h3"))
     )
-
+    
     otr = footer.text
     return otr

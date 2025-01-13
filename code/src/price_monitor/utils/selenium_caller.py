@@ -20,8 +20,11 @@ def selenium_execute_request(
     chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument(f"user-agent={USER_AGENT}")
+    # driver = webdriver.Chrome(
+    #     options=chrome_options, service=ChromeService(ChromeDriverManager().install())
+    # )
     driver = webdriver.Chrome(
-        options=chrome_options, service=ChromeService(ChromeDriverManager().install())
+        options=chrome_options
     )
     driver.get(url=url)
     response = driver.page_source

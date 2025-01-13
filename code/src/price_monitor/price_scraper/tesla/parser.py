@@ -287,3 +287,16 @@ def adjust_otr_price(line_items: LineItem, otr_prices):
 
 def parse_otr_price(price_str: str):
     return float(price_str[1:].replace(",", ""))
+
+
+def adjust_otr_sweden_price(line_items: LineItem, otr_prices):
+    for line_item in line_items:
+        line_item.on_the_road_price = parse_otr_sweden_price(
+            otr_prices.get(line_item.line_code, "0 kr")
+        )
+    return line_items
+
+
+def parse_otr_sweden_price(price_str: str):
+    filter_price_str = price_str.split(" ")[:-1]
+    return float("".join(filter_price_str))

@@ -14,8 +14,10 @@ from src.price_monitor.price_scraper.tesla.parser import (
     parse_available_models_links,
     parse_line_items,
     parse_model_and_series,
+    adjust_otr_sweden_price
 )
 from src.price_monitor.price_scraper.tesla.scrape_otr import get_otr_prices_for_model
+from src.price_monitor.price_scraper.tesla.scrape_sweden_otr import get_otr_prices_for_sweden_model
 from src.price_monitor.price_scraper.vendor_scraper import VendorScraper
 from src.price_monitor.utils.clock import yesterday_dashed_str_with_key
 from src.price_monitor.utils.selenium_caller import selenium_execute_request
@@ -111,6 +113,10 @@ class TeslaScraper(VendorScraper):
             if self.market == Market.UK:
                 otr_prices = get_otr_prices_for_model(url)
                 line_items = adjust_otr_price(line_items, otr_prices)
+            if self.market == Market.SE:
+                print("trueeeeeeeeeee")
+                otr_prices = get_otr_prices_for_sweden_model(url)
+                line_items = adjust_otr_sweden_price(line_items, otr_prices)
             return line_items
         except HTTPError as e:
             model, series = parse_model_and_series(model, self.market)

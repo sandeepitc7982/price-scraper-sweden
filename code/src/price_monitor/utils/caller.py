@@ -30,13 +30,13 @@ def execute_request(
     time.sleep(delay)
 
     if method == "get":
-        response = session.get(url, params=body, headers=headers, timeout=timeout)
+        response = session.get(url, params=body, headers=headers, timeout=timeout, verify=False)
     elif method == "post":
-        response = session.post(url, headers=headers, json=body, timeout=timeout)
+        response = session.post(url, headers=headers, json=body, timeout=timeout, verify=False)
     elif method == "put":
-        response = session.put(url, headers=headers, data=body, timeout=timeout)
+        response = session.put(url, headers=headers, data=body, timeout=timeout, verify=False)
     elif method == "delete":
-        response = session.delete(url, headers=headers)
+        response = session.delete(url, headers=headers, verify=False)
 
     response.raise_for_status()
 

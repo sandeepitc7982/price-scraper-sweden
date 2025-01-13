@@ -17,15 +17,18 @@
       ],
       "audi": [
         "DE",
-        "UK"
+        "UK",
+        "SE"
       ],
       "bmw": [
         "DE",
-        "UK"
+        "UK",
+        "SE"
       ],
       "tesla": [
         "DE",
-        "UK"
+        "UK",
+        "SE"
       ]
     }
   },

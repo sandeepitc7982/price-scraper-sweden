@@ -9,5 +9,6 @@ MARKET_MAP = {
     Market.AT: "de_at",
     Market.US: "",
     Market.UK: "en_gb",
+    Market.SE: "sv_se"
 }
 MODELS = ["Model Y", "Model X", "Model 3", "Model S"]
