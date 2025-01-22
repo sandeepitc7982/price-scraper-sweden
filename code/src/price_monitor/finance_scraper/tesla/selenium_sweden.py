@@ -1,5 +1,5 @@
 import time
-
+import re
 from loguru import logger
 from retry import retry
 from selenium import webdriver
@@ -15,15 +15,23 @@ from selenium.webdriver.support import expected_conditions as ec
 
 
 @retry(tries=3, delay=3, backoff=2)
-def get_finance_details_for_model(
+def get_finance_details_for_sweden_model(
     url: str,
 ):
     response = {}
     chrome_options = Options()
-    chrome_options.add_argument("--headless=new")
+    # chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument(f"user-agent={USER_AGENT}")
+    prefs = {
+        "intl.accept_languages": "en,en_US",
+        "translate_whitelists": {"sv": "en"},
+        "translate": {"enabled": True},
+        "translate_ignored_languages": "[]"
+    }
+
+    chrome_options.add_experimental_option("prefs", prefs)
     # driver = webdriver.Chrome(
     #     options=chrome_options, service=ChromeService(ChromeDriverManager().install())
     # )
@@ -32,6 +40,7 @@ def get_finance_details_for_model(
     )
     driver.maximize_window()
     driver.get(url=url)
+    time.sleep(3)
 
     try:
         button = driver.find_element(By.CLASS_NAME, "tds-modal-close")
@@ -50,7 +59,7 @@ def get_finance_details_for_model(
             ec.element_to_be_clickable((By.CLASS_NAME, "tds-icon-close"))
         )
         modal_close.click()
-        time.sleep(5)
+        time.sleep(3)
     except Exception:
         pass
 
@@ -58,7 +67,7 @@ def get_finance_details_for_model(
     for variant in variants:
         line_item_code = variant.get_attribute("data-id")
         variant.click()
-        time.sleep(5)
+        time.sleep(3)
 
         try:
             deep_blue_metallic_label = driver.find_element(
@@ -86,8 +95,6 @@ def get_finance_details_for_model(
 
 
 def get_finance_details_for_trimline(driver):
-    downpayment = 4999
-
     # Locate the footer
     footer = driver.find_element(By.TAG_NAME, "footer")
 
@@ -96,12 +103,7 @@ def get_finance_details_for_trimline(driver):
 
     finance_options = {}
 
-    finance_options["PCP"] = get_pcp_details(downpayment, driver)
-
-    # modal_close = WebDriverWait(driver, 10).until(
-    #     ec.element_to_be_clickable((By.CLASS_NAME, "tds-icon-close-filled"))
-    # )
-    # modal_close.click()
+    finance_options["PCP"] = get_pcp_details(driver)
 
     try:
         close_button = WebDriverWait(driver, 10).until(ec.element_to_be_clickable(
@@ -109,13 +111,22 @@ def get_finance_details_for_trimline(driver):
         ))
 
         close_button.click()
+        rental_text = button.text.split(" ")
+        d_pattern = r"^\d+(,\d+)*$"
+        rental_val = [item for item in rental_text if re.match(d_pattern, item)]
+        finance_options["PCP"]["rental_th"] = rental_val[0]
     except Exception as e:
         logger.error(f"Unable to click Modal close button: {e}")
+
+    try:
+        driver.execute_script("window.scrollTo(0, 0);")
+    except Exception as e:
+        logger.error(f"Unable to scroll to the top: {e}")
 
     return finance_options
 
 
-def get_pcp_details(downpayment, driver):
+def get_pcp_details(driver):
     try:
         # Find the finance options dropdown and click it
         button = driver.find_element(By.NAME, "finance-options-dropdown-selector")
@@ -127,7 +138,7 @@ def get_pcp_details(downpayment, driver):
 
         # Find the target element by its ID and scroll into view before clicking
         button = driver.find_element(
-            By.ID, "private-finplat.AUTO_LOAN:BALLOON_LOAN:CT_PRIVATE"
+            By.ID, "finplat.AUTO_LOAN:BALLOON_LOAN:CT_PRIVATE"
         )
         driver.execute_script("arguments[0].scrollIntoView(true);", button)
         driver.execute_script("arguments[0].click();", button)
@@ -136,9 +147,11 @@ def get_pcp_details(downpayment, driver):
         time.sleep(5)
 
         downpayment_field = driver.find_element("id", "cashDownPayment")
-        for _ in range(7):
-            downpayment_field.send_keys(Keys.BACKSPACE)
-        downpayment_field.send_keys(downpayment)
+        # # downpayment_field.clear()
+        # downpayment_field.send_keys(Keys.CONTROL, 'a')
+        # downpayment_field.send_keys(Keys.BACKSPACE)
+        # # driver.execute_script("arguments[0].value = '';", downpayment_field)
+        # downpayment_field.send_keys(downpayment)
 
         # Wait for the dropdown to be clickable and then click to open it
         dropdown_button = WebDriverWait(driver, 10).until(
@@ -152,20 +165,35 @@ def get_pcp_details(downpayment, driver):
         )
         option_48_months.click()
 
-        rental_th = WebDriverWait(driver, 10).until(
-            ec.visibility_of_element_located((By.CLASS_NAME, "price-tag"))
-        )
+        # rental_th = WebDriverWait(driver, 10).until(
+        #     ec.visibility_of_element_located((By.CLASS_NAME, "price-tag"))
+        # )
 
         # Wait until the paragraph with the representative example is visible
+        # pcp_details_text = WebDriverWait(driver, 10).until(
+        #     ec.visibility_of_element_located(
+        #         (By.XPATH, "//div[contains(@class, 'finance-modal-disclaimer')]//p[5]")
+        #     )
+        # )
+
+        variable_interest_rate_xpath = (
+            "//p[span[font/font[contains(text(), 'Private installment:')]]]/following-sibling::p[1]/span/font/font"
+        )
+
         pcp_details_text = WebDriverWait(driver, 10).until(
             ec.visibility_of_element_located(
-                (By.XPATH, "//div[contains(@class, 'finance-modal-disclaimer')]//p[2]")
+                (By.XPATH, variable_interest_rate_xpath)
             )
         )
+
+        
+        # pcp_details_text = driver.find_element(By.XPATH, variable_interest_rate_xpath)
+
         pcp_details = {
-            "rental_th": rental_th.text,
-            "details": pcp_details_text.text,
+            "downpayment": downpayment_field.get_attribute("value").replace("\u00a0", "").replace("kr", "").strip(),
+            "details": pcp_details_text.text
         }
+
         return pcp_details
     except Exception as e:
         logger.error(f"Unable to fetch pcp price {e}")

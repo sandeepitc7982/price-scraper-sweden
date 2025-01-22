@@ -9,6 +9,9 @@ from src.price_monitor.finance_scraper.finance_vendor_scraper import (
 from src.price_monitor.finance_scraper.tesla.finance_scraper import (
     FinanceScraperTeslaUk,
 )
+from src.price_monitor.finance_scraper.tesla.finance_scraper_sweden import (
+    FinanceScraperTeslaSweden,
+)
 from src.price_monitor.model.finance_line_item import FinanceLineItem
 from src.price_monitor.model.vendor import Market, Vendor
 from src.price_monitor.repository.finance_item_repository import (
@@ -59,4 +62,9 @@ class TeslaFinanceScraper(FinanceVendorScraper):
                 self.finance_line_item_repository, self.session, self.config
             )
             response = finance_scraper_uk.scrape_finance_options_for_uk()
+        if market == Market.SE:
+            finance_scraper_sweden = FinanceScraperTeslaSweden(
+                self.finance_line_item_repository, self.session, self.config
+            )
+            response = finance_scraper_sweden.scrape_finance_options_for_sweden()
         return response
