@@ -35,13 +35,16 @@
   "finance_scraper": {
     "enabled": {
       "audi": [
-        "UK"
+        "UK",
+        "SE"
       ],
       "bmw": [
-        "UK"
+        "UK",
+        "SE"
       ],
       "tesla": [
-        "UK"
+        "UK",
+        "SE"
       ]
     }
   },

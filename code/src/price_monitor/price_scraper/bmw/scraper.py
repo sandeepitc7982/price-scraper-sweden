@@ -45,7 +45,6 @@ from src.price_monitor.utils.clock import (
     yesterday_dashed_str_with_key,
 )
 
-
 def get_updated_token():
     api_token: str
     try:
@@ -156,6 +155,7 @@ class BMWScraper(VendorScraper):
                 line_item_repository=self.line_item_repository, config=self.config
             )
         model_matrix = get_model_matrix(self.market, self.session, self.req_header)
+
         parsed_line_items = parse_model_matrix_to_line_items(model_matrix, self.market)
 
         # For few APIs we need to provide the language of corresponding market in the URL.
@@ -174,8 +174,19 @@ class BMWScraper(VendorScraper):
             self.append_available_options(market, model_matrix, parsed_line_items)
         )
 
-        # Scraping IX models specifically for BMW UK
+        # # Scraping IX models specifically for BMW UK
         if market == Market.UK:
+            bmw_i_model_matrix, bmw_i_line_items = get_ix_models(
+                market, self.req_header, self.session
+            )
+            self.IX_MODELS = parse_ix_model_codes(bmw_i_model_matrix)
+            response.extend(
+                self.append_available_options(
+                    market, bmw_i_model_matrix, bmw_i_line_items
+                )
+            )
+        
+        if market == Market.SE:
             bmw_i_model_matrix, bmw_i_line_items = get_ix_models(
                 market, self.req_header, self.session
             )

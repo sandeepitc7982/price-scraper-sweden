@@ -4,6 +4,7 @@ import requests
 from loguru import logger
 
 from src.price_monitor.finance_scraper.bmw.finance_scraper import FinanceScraperBMWUk
+from src.price_monitor.finance_scraper.bmw.finance_scraper_sweden import FinanceScraperBMWSweden
 from src.price_monitor.finance_scraper.finance_vendor_scraper import (
     FinanceVendorScraper,
 )
@@ -84,6 +85,28 @@ class BMWFinanceScraper(FinanceVendorScraper):
             finance_scraper_uk.IX_MODELS = parse_ix_model_codes(bmw_i_model_matrix)
             response.extend(
                 finance_scraper_uk.scrape_finance_options_for_uk(
+                    bmw_i_line_items, bmw_i_model_matrix
+                )
+            )
+
+        if market == Market.SE:
+            finance_scraper_sweden = FinanceScraperBMWSweden(
+                self.finance_line_item_repository, self.session, self.config
+            )
+            finance_scraper_sweden.IX_MODELS = []
+            model_matrix = get_model_matrix(self.market, self.session, self.req_header)
+            parsed_line_items = parse_model_matrix_to_line_items(model_matrix, market)
+            response.extend(
+                finance_scraper_sweden.scrape_finance_options_for_sweden(
+                    parsed_line_items, model_matrix
+                )
+            )
+            bmw_i_model_matrix, bmw_i_line_items = get_ix_models(
+                market, self.req_header, self.session
+            )
+            finance_scraper_sweden.IX_MODELS = parse_ix_model_codes(bmw_i_model_matrix)
+            response.extend(
+                finance_scraper_sweden.scrape_finance_options_for_sweden(
                     bmw_i_line_items, bmw_i_model_matrix
                 )
             )

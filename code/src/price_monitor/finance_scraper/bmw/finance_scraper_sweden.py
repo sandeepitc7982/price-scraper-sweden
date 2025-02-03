@@ -1,8 +1,9 @@
 import requests
 from loguru import logger
+import csv
 
-from src.price_monitor.finance_scraper.bmw.constants import BMW_UK_FINANCE_OPTION_URL
-from src.price_monitor.finance_scraper.bmw.finance_parser import (
+from src.price_monitor.finance_scraper.bmw.constants import BMW_SWEDEN_FINANCE_OPTION_URL
+from src.price_monitor.finance_scraper.bmw.finance_parser_sweden import (
     parse_finance_line_item,
     parse_finance_line_item_for_pcp,
 )
@@ -31,6 +32,13 @@ from src.price_monitor.price_scraper.bmw.scraper import (
 from src.price_monitor.price_scraper.constants import E2E_TEST_LIST_SIZE
 from src.price_monitor.utils.caller import execute_request
 from src.price_monitor.utils.clock import yesterday_dashed_str_with_key
+
+# from pathlib import Path
+# import json
+
+# # Add this near the top of the file with other imports
+# output_path = Path('src/price_monitor/finance_scraper/bmw')
+# output_path.parent.mkdir(parents=True, exist_ok=True)
 
 
 def get_available_options(
@@ -209,7 +217,7 @@ def update_selected_options_with_metallic_paint(
     return selected_line_option_codes
 
 
-class FinanceScraperBMWUk:
+class FinanceScraperBMWSweden:
     def __init__(
         self,
         finance_line_item_repository: FileSystemFinanceLineItemRepository,
@@ -218,17 +226,16 @@ class FinanceScraperBMWUk:
     ):
         self.finance_line_item_repository = finance_line_item_repository
         self.config = config
-        self.market = Market.UK
+        self.market = Market.SE
         self.session = session
         self.vendor = Vendor.BMW
 
-    def scrape_finance_options_for_uk(self, parsed_line_items, model_matrix):
+    def scrape_finance_options_for_sweden(self, parsed_line_items, model_matrix):
         response = []
         if self.config.get("e2e_tests"):
             parsed_line_items = parsed_line_items[:E2E_TEST_LIST_SIZE]
 
         self.token = get_updated_token()
-        print("[[[[[[[[[[[[",self.token)
 
         for line_item in parsed_line_items:
             logger.debug(
@@ -239,7 +246,7 @@ class FinanceScraperBMWUk:
             )
             response.extend(finance_line_items)
 
-        logger.info(f"[UK] scraped {len(response)} Finance Items for BMW")
+        logger.info(f"[SWEDEN] scraped {len(response)} Finance Items for BMW")
         return response
 
     def get_finance_option_for_line(self, line_item, model_matrix):
@@ -273,7 +280,7 @@ class FinanceScraperBMWUk:
                 ix_models=self.IX_MODELS,
                 headers=headers,
                 session=requests.Session(),
-                market=Market.UK,
+                market=Market.SE,
             )
 
             is_volt_48_variant = parse_is_volt_48(state_and_is_volt_48_content)
@@ -313,57 +320,80 @@ class FinanceScraperBMWUk:
             )
 
             payload = {
-                "settings": {
-                    "application": "CONX",
-                    "taxDate": parse_tax_date(
-                        model_matrix,
-                        line_item.series,
-                        line_item.model_range_code,
-                        line_item.model_code,
-                    ),
-                    "effectDate": effect_date,
-                    "orderDate": parse_order_date(
-                        model_matrix,
-                        line_item.series,
-                        line_item.model_range_code,
-                        line_item.model_code,
-                    ),
+                "settings":{
+                    "application":"CONX",
+                    "priceTree":"DEFAULT",
+                    "gfsPolicy":"none",
+                    "taxDate":tax_date,
+                    "emissionConsumptionDate":tax_date,
+                    "accessoriesChannel":"con",
+                    "applicationMode":"default"
                 },
-                "vehicle": {
-                    "modelCode": line_item.model_code,
-                    "isVolt48Variant": is_volt_48_variant,
-                    "selectedEquipments": updated_line_option_codes,
+                "vehicle":{
+                    "modelCode":line_item.model_code,
+                    "isVolt48Variant":"null",
+                    "effectDate":effect_date,
+                    "orderDate":effect_date,
+                    "selectedOptions":updated_line_option_codes,
+                    "modelRange":line_item.model_range_code,
+                    "modelName":line_item.model_description.split("-")[0]
                 },
+                "isDetailCalculation":True
             }
             headers = {
                 "content-type": "application/json",
             }
-            url = BMW_UK_FINANCE_OPTION_URL
+            url = BMW_SWEDEN_FINANCE_OPTION_URL
             if line_item.model_code in self.IX_MODELS:
                 url = url.replace("bmwCar", "bmwi")
-            request_response = execute_request(
-                "post", url, headers=headers, body=payload
-            )
-            for finance_option in request_response["financeProductList"]:
-                finance_line_item = self.get_finance_line_item_for_finance_option(
-                    line_item,
-                    payload,
-                    finance_option["productId"],
-                    lowest_price_metallic_paint,
+            try:
+                request_response = execute_request(
+                    "post", url, headers=headers, body=payload
                 )
-                if finance_line_item is None:
-                    logger.error(
-                        f"Unable to fetch finance option details for {finance_option['productId']} for line item {line_item.series, line_item.model_range_code, line_item.model_range_description, line_item.model_code, line_item.model_description, line_item.line_description}"
-                    )
-                else:
-                    response.append(finance_line_item)
+            except Exception as e:
+                print(f"Reason: {e}")
+
+            finance_option = request_response["financeProduct"][1]
+            finance_line_item = self.get_finance_line_item_for_finance_option(
+                line_item,
+                payload,
+                finance_option,
+                lowest_price_metallic_paint,
+            )
+            if finance_line_item is None:
+                logger.error(
+                    f"Unable to fetch finance option details for {finance_option['productId']} for line item {line_item.series, line_item.model_range_code, line_item.model_range_description, line_item.model_code, line_item.model_description, line_item.line_description}"
+                )
+            else:
+                response.append(finance_line_item)
+
             logger.info(
                 f"Got {len(response)} finance options for line item {line_item.series, line_item.model_range_code, line_item.model_range_description, line_item.model_code, line_item.model_description, line_item.line_description}"
             )
+
+            # line_items = [
+            #     {
+            #         "series": line_item.series,
+            #         "model_range_code": line_item.model_range_code,
+            #         "model_range_description": line_item.model_range_description,
+            #         "model_code": line_item.model_code,
+            #         "model_description": line_item.model_description,
+            #         "line_description": line_item.line_description
+            #     }
+            # ]
+            # csv_filename = "line_items.csv"
+            # with open(csv_filename, mode="a", newline="") as file:
+            #     writer = csv.DictWriter(file, fieldnames=[
+            #         "series", "model_range_code", "model_range_description",
+            #         "model_code", "model_description", "line_description"
+            #     ])
+            #     writer.writerows(line_items)
+
+
         except requests.exceptions.HTTPError as e:
             response = self.finance_line_item_repository.load_model_filter_by_line_code(
                 yesterday_dashed_str_with_key(),
-                Market.UK,
+                Market.SE,
                 Vendor.BMW,
                 line_item.series,
                 line_item.model_range_code,
@@ -381,7 +411,7 @@ class FinanceScraperBMWUk:
         except Exception as e:
             response = self.finance_line_item_repository.load_model_filter_by_line_code(
                 yesterday_dashed_str_with_key(),
-                Market.UK,
+                Market.SE,
                 Vendor.BMW,
                 line_item.series,
                 line_item.model_range_code,
@@ -393,38 +423,60 @@ class FinanceScraperBMWUk:
             )
         return response
 
+
     def get_finance_line_item_for_finance_option(
-        self, line_item, payload, product_id, lowest_price_metallic_paint
-    ):
-        payload["financeProduct"] = {
-            "productId": product_id,
-            "parameters": [
-                {"id": "annualMileage", "value": 10000},
-                {"id": "downPaymentAmount/grossAmount", "value": 4999},
-                {"id": "term", "value": 48},
-            ],
-        }
-        headers = {
-            "content-type": "application/json",
-        }
-        url = BMW_UK_FINANCE_OPTION_URL
-        if line_item.model_code in self.IX_MODELS:
-            url = url.replace("bmwCar", "bmwi")
-        response = execute_request("post", url, headers=headers, body=payload)
-        if "PCP" in product_id:
+            self, line_item, payload, finance_details, lowest_price_metallic_paint
+        ):
+            payload["financedata"] = [
+                {
+                "financeProduct": [
+                    {
+                    "productCode": finance_details["productCode"],
+                    "productVersion": "1",
+                    "internalSFProductName": finance_details["internalSFProductName"],
+                    "parameterValues": [
+                        {
+                        "groupId": "Deposit",
+                        "parameterId": "DepositAmount",
+                        "value": finance_details["parameterValues"][0]["DepositAmount"][1],
+                        "dt": "C"
+                        },
+                        {
+                        "parameterId": "Term",
+                        "value": 48,
+                        "dt": "I"
+                        },
+                        {
+                          "groupId": "Balloon",
+                          "parameterId": "BalloonPercent",
+                          "value": finance_details["parameterValues"][0]["BalloonPercent"][1],
+                          "dt": "P"
+                        }
+                    ],
+                    "changedParameters": {
+                        "Term": 48
+                    },
+                    "lastChangedParameter": "Term",
+                    "selected": False
+                    }
+                ]
+                }
+            ]
+            
+            headers = {
+                "content-type": "application/json",
+            }
+            url = BMW_SWEDEN_FINANCE_OPTION_URL
+            if line_item.model_code in self.IX_MODELS:
+                url = url.replace("bmwCar", "bmwi")
+            response = execute_request("post", url, headers=headers, body=payload)
             line_item = parse_finance_line_item_for_pcp(
                 line_item,
-                product_id,
-                response["financeProductList"][0]["parameters"],
+                response["financeProduct"][0]["productCode"],
+                response["financeProduct"][0]["parameterValues"][0],
                 lowest_price_metallic_paint,
             )
-            return line_item
-        else:
-            for ele in response["financeProductList"][0]["parameters"]:
-                if ele["id"] == "installment/grossAmount":
-                    line_item = parse_finance_line_item(
-                        line_item, product_id, ele["value"]
-                    )
-                    return line_item
+            if line_item:
+                return line_item
 
-        return None
+            return None

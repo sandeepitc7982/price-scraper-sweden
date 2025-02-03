@@ -7,10 +7,13 @@ MARKET_MAP = {
     Market.AT: "at",
     Market.NL: "nl",
     Market.UK: "gb",
+    Market.SE: "se"
 }
 
 KW_UNIT = " kW"
 HP_UNIT = " hp"
+
+SWEDEN_G45_DESC = "BMW X3"
 
 MODEL_MATRICES_PATH = (
     "/model-matrices/vehicle-trees/connext-bmw/sources/pcaso/brands/bmwCar/countries"

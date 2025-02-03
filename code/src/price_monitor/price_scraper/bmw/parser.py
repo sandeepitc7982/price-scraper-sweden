@@ -19,7 +19,7 @@ from src.price_monitor.model.vendor import (
     Vendor,
     compute_net_list_price,
 )
-from src.price_monitor.price_scraper.bmw.constants import HP_UNIT, KW_UNIT, X_API_KEY
+from src.price_monitor.price_scraper.bmw.constants import HP_UNIT, KW_UNIT, X_API_KEY, SWEDEN_G45_DESC
 from src.price_monitor.price_scraper.constants import (
     MISSING_LINE_OPTION_DETAILS,
     NOT_AVAILABLE,
@@ -140,14 +140,17 @@ def _parse_transmission_variant_line_to_line_items(
         transmission_variant, "C_LEIST_GES_KOMM_PS", HP_UNIT
     )
 
+    if _get_available_language(series, market) in model_range["additionalData"]["description"]:
+        model_range_description = model_range["additionalData"]["description"][_get_available_language(series, market)]["longDescription"]
+    else:
+        model_range_description = str(SWEDEN_G45_DESC)
+
     return create_line_item(
         date=today_dashed_str(),
         vendor=Vendor.BMW,
         series=series["code"],
         model_range_code=model_range["code"],
-        model_range_description=model_range["additionalData"]["description"][
-            _get_available_language(series, market)
-        ]["longDescription"],
+        model_range_description=model_range_description,
         model_code=model_code,
         model_description=model_description,
         line_code=line_code,
@@ -165,7 +168,6 @@ def _parse_transmission_variant_line_to_line_items(
 
 def _generate_line_options(transmission_variant: dict) -> list[LineItemOptionCode]:
     response = []
-
     for option in transmission_variant["configuration"]["elements"].keys():
         response.append(create_default_line_item_option_code(option))
 
@@ -180,7 +182,6 @@ def adjust_line_options(
     line_description: str,
 ) -> list[LineItemOptionCode]:
     response = []
-
     for option in parsed_options:
         code = option.code
         option_price = options_price.get(code, 0)
