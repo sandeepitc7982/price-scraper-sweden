@@ -1,6 +1,5 @@
 import requests
 from loguru import logger
-import csv
 
 from src.price_monitor.finance_scraper.bmw.constants import BMW_SWEDEN_FINANCE_OPTION_URL
 from src.price_monitor.finance_scraper.bmw.finance_parser_sweden import (
@@ -32,14 +31,6 @@ from src.price_monitor.price_scraper.bmw.scraper import (
 from src.price_monitor.price_scraper.constants import E2E_TEST_LIST_SIZE
 from src.price_monitor.utils.caller import execute_request
 from src.price_monitor.utils.clock import yesterday_dashed_str_with_key
-
-# from pathlib import Path
-# import json
-
-# # Add this near the top of the file with other imports
-# output_path = Path('src/price_monitor/finance_scraper/bmw')
-# output_path.parent.mkdir(parents=True, exist_ok=True)
-
 
 def get_available_options(
     model_matrix, line_item, tax_date, effect_date, market, session, headers, ix_models
@@ -370,24 +361,6 @@ class FinanceScraperBMWSweden:
             logger.info(
                 f"Got {len(response)} finance options for line item {line_item.series, line_item.model_range_code, line_item.model_range_description, line_item.model_code, line_item.model_description, line_item.line_description}"
             )
-
-            # line_items = [
-            #     {
-            #         "series": line_item.series,
-            #         "model_range_code": line_item.model_range_code,
-            #         "model_range_description": line_item.model_range_description,
-            #         "model_code": line_item.model_code,
-            #         "model_description": line_item.model_description,
-            #         "line_description": line_item.line_description
-            #     }
-            # ]
-            # csv_filename = "line_items.csv"
-            # with open(csv_filename, mode="a", newline="") as file:
-            #     writer = csv.DictWriter(file, fieldnames=[
-            #         "series", "model_range_code", "model_range_description",
-            #         "model_code", "model_description", "line_description"
-            #     ])
-            #     writer.writerows(line_items)
 
 
         except requests.exceptions.HTTPError as e:
