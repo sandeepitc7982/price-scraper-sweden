@@ -205,9 +205,12 @@ def _create_line_item_from_trim(
     if market == Market.US:
         gross_list_price = GROSS_LIST_PRICE_FOR_US
 
-    line_description: str = trim["description"]
+    if "long_description" in trim:
+        line_desc: str = trim["long_description"]
+    else:
+        line_desc: str = trim["description"]
 
-    line_description = get_line_description(line_description)
+    line_description = get_line_description(str(line_desc))
 
     return create_line_item(
         date=today_dashed_str(),
@@ -230,7 +233,7 @@ def _create_line_item_from_trim(
 
 def get_line_description(line_description: str) -> str:
     for constant_model in MODELS:
-        line_description = line_description.replace("\xa0", " ")
+        line_description = line_description.encode("ascii", "ignore").decode()
         if constant_model in line_description:
             line_description = line_description.split(constant_model)[1]
             break

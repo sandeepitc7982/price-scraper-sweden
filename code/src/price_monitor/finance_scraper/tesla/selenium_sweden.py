@@ -20,7 +20,7 @@ def get_finance_details_for_sweden_model(
 ):
     response = {}
     chrome_options = Options()
-    # chrome_options.add_argument("--headless=new")
+    chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument(f"user-agent={USER_AGENT}")
@@ -71,7 +71,7 @@ def get_finance_details_for_sweden_model(
 
         try:
             deep_blue_metallic_label = driver.find_element(
-                By.XPATH, f"//label[@for='PAINT_{METALLIC_PAINT_CODE}']"
+                By.XPATH, f"//label[@for='PAINT_{METALLIC_PAINT_CODE}' or @for='PAINT_$PBSB']"
             )
 
             # Scroll the element into view

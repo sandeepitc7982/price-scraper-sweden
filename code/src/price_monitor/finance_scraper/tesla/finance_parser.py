@@ -13,7 +13,7 @@ from src.price_monitor.model.vendor import Market, Vendor, compute_net_list_pric
 def parse_lowest_price_metallic_paint(line_option_codes):
     lowest_price_metallic_paint = {}
     for option in line_option_codes:
-        if option.code == METALLIC_PAINT_CODE:
+        if option.code == METALLIC_PAINT_CODE or option.code == "$PBSB":
             lowest_price_metallic_paint = {
                 "paint_type": option.type,
                 "paint_description": option.description,

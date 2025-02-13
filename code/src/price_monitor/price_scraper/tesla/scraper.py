@@ -114,7 +114,6 @@ class TeslaScraper(VendorScraper):
                 otr_prices = get_otr_prices_for_model(url)
                 line_items = adjust_otr_price(line_items, otr_prices)
             if self.market == Market.SE:
-                print("trueeeeeeeeeee")
                 otr_prices = get_otr_prices_for_sweden_model(url)
                 line_items = adjust_otr_sweden_price(line_items, otr_prices)
             return line_items

@@ -47,7 +47,7 @@ def parse_finance_line_item_for_pcp(
         deposit=params["DepositAmount"],
         total_deposit=params["DepositAmount"],
         total_credit_amount=float(params["VehicleTransactionPrice"]) - float(params["DepositAmount"]),
-        total_payable_amount=params["TotalPaidAmount"],
+        total_payable_amount=round(float(params["TotalPaidAmount"])),
         otr=float(params["VehicleTransactionPrice"]),
         annual_mileage=10000,
         excess_mileage=0,

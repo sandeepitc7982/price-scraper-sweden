@@ -56,29 +56,28 @@ def get_finance_details_for_model(
 
     variants = driver.find_elements(By.CLASS_NAME, "group--options_block--container")
     for variant in variants:
-        line_item_code = variant.get_attribute("data-id")
-        variant.click()
-        time.sleep(5)
+        if variant.is_enabled():
+            line_item_code = variant.get_attribute("data-id")
+            variant.click()
+            time.sleep(5)
 
-        try:
-            deep_blue_metallic_label = driver.find_element(
-                By.XPATH, f"//label[@for='PAINT_{METALLIC_PAINT_CODE}']"
-            )
+            try:
+                deep_blue_metallic_label = driver.find_element(
+                    By.XPATH, f"//label[@for='PAINT_{METALLIC_PAINT_CODE}' or @for='PAINT_$PBSB']"
+                )
 
-            # Scroll the element into view
-            driver.execute_script(
-                "arguments[0].scrollIntoView(true);", deep_blue_metallic_label
-            )
+                driver.execute_script(
+                    "arguments[0].scrollIntoView(true);", deep_blue_metallic_label
+                )
 
-            # Click the label directly using JavaScript
-            driver.execute_script("arguments[0].click();", deep_blue_metallic_label)
+                # Click the label directly using JavaScript
+                driver.execute_script("arguments[0].click();", deep_blue_metallic_label)
+            except Exception as e:
+                logger.error(
+                    f"Error occurred while selecting lowest price metallic paint with code {METALLIC_PAINT_CODE}: {e}"
+                )
 
-        except Exception as e:
-            logger.error(
-                f"Error occurred while selecting lowest price metallic paint with code {METALLIC_PAINT_CODE}: {e}"
-            )
-
-        response[line_item_code] = get_finance_details_for_trimline(driver)
+            response[line_item_code] = get_finance_details_for_trimline(driver)
     driver.close()
     if len(response) == 0:
         raise "Unable to Scrape Finance Option for Tesla UK"
@@ -112,6 +111,11 @@ def get_finance_details_for_trimline(driver):
     except Exception as e:
         logger.error(f"Unable to click Modal close button: {e}")
 
+    try:
+        driver.execute_script("window.scrollTo(0, 0);")
+    except Exception as e:
+        logger.error(f"Unable to scroll to the top: {e}")
+
     return finance_options
 
 
@@ -134,12 +138,12 @@ def get_pcp_details(downpayment, driver):
 
         # Pause for 5 seconds after clicking
         time.sleep(5)
-
+        
         downpayment_field = driver.find_element("id", "cashDownPayment")
         for _ in range(7):
             downpayment_field.send_keys(Keys.BACKSPACE)
         downpayment_field.send_keys(downpayment)
-
+        
         # Wait for the dropdown to be clickable and then click to open it
         dropdown_button = WebDriverWait(driver, 10).until(
             ec.element_to_be_clickable((By.CSS_SELECTOR, "button.tds-dropdown-trigger"))
@@ -162,6 +166,7 @@ def get_pcp_details(downpayment, driver):
                 (By.XPATH, "//div[contains(@class, 'finance-modal-disclaimer')]//p[2]")
             )
         )
+
         pcp_details = {
             "rental_th": rental_th.text,
             "details": pcp_details_text.text,
