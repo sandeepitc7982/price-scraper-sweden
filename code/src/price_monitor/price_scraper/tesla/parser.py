@@ -89,8 +89,11 @@ def parse_available_models_links(page_headers: dict) -> Set[str]:
     model_links: Set[str] = set()
 
     for item in page_headers["centerLinks"][0]["panel"]["products"]:
-        if item["title"].startswith("Model"):
-            model_links.add(item["links"][1]["href"])
+        if "Model" in item["title"] and "design" in item["links"][1]["href"]:
+            if "?" in item["links"][1]["href"]:
+                model_links.add(item["links"][1]["href"].split("?")[0])
+            else:
+                model_links.add(item["links"][1]["href"])
 
     logger.trace(f"Found {len(model_links)} models")
     return model_links
