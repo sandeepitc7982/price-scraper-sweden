@@ -1,5 +1,6 @@
 import dataclasses
 import typing
+import hashlib
 from dataclasses import dataclass
 
 from dataclasses_avroschema import AvroModel
@@ -22,6 +23,7 @@ from src.price_monitor.utils.utils import validate_not_blank_or_empty
 @dataclass(eq=True)
 class LineItem(AvroModel):
     recorded_at: str | None = dataclasses.field(default=None, compare=False)
+    vehicle_id: str | None = dataclasses.field(default=None, compare=True)
     vendor: Vendor | None = dataclasses.field(default=None)
     series: str | None = dataclasses.field(default=None)
     model_range_code: str | None = dataclasses.field(default=None)
@@ -46,6 +48,7 @@ class LineItem(AvroModel):
     def __post_init__(self):
         self.recorded_at = current_timestamp_dashed_str_with_timezone()
         self.is_current = self._calculate_is_current()
+        self.vehicle_id = self.calculate_vehicle_id()
 
         # validate required fields
         validate_not_blank_or_empty(self.recorded_at, "recorded_at")
@@ -68,6 +71,20 @@ class LineItem(AvroModel):
             return self.last_scraped_on == today_dashed_str()
 
         return None
+    
+    def calculate_vehicle_id(self) -> str:
+        """Calculates the unique vehicle ID based on the given attributes."""
+        # Concatenate relevant attributes
+        data = f"{self.vendor}_{self.market}_{self.series}_{self.model_range_description}_{self.model_description}_{self.line_description}"
+
+        # Calculate the hash using a chosen algorithm (Blake2b)
+        hash_object = hashlib.blake2b(digest_size=4)
+        hash_object.update(data.encode("utf-8"))
+        hex_dig = hash_object.hexdigest()
+        # limiting vendor name to 3 digits ex: aud, tes, bmw
+        prefix_vendor = f"{self.vendor}"[:3]
+        # Create the final identifier
+        return f"{self.market}_{prefix_vendor}_{hex_dig}".lower()
 
     def line_option_code_keys(self) -> set:
         response = [option.code for option in self.line_option_codes]

@@ -228,7 +228,6 @@ class FinanceScraperBMWUk:
             parsed_line_items = parsed_line_items[:E2E_TEST_LIST_SIZE]
 
         self.token = get_updated_token()
-        print("[[[[[[[[[[[[",self.token)
 
         for line_item in parsed_line_items:
             logger.debug(

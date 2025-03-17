@@ -28,12 +28,12 @@ def get_otr_prices_for_sweden_model(
     chrome_options.add_argument("--disable-software-rasterizer")
     chrome_options.add_argument("--enable-unsafe-swiftshader")
 
-    # driver = webdriver.Chrome(
-    #     options=chrome_options, service=ChromeService(ChromeDriverManager().install())
-    # )
     driver = webdriver.Chrome(
-        options=chrome_options
+        options=chrome_options, service=ChromeService(ChromeDriverManager().install())
     )
+    # driver = webdriver.Chrome(
+    #     options=chrome_options
+    # )
     driver.maximize_window()
     driver.get(url=url)
 

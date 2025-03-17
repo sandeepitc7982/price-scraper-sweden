@@ -1,6 +1,6 @@
 import json
 import re
-
+import time
 from retry import retry
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -27,6 +27,7 @@ def selenium_execute_request(
         options=chrome_options
     )
     driver.get(url=url)
+    time.sleep(5)
     response = driver.page_source
     driver.close()
     if response_format == "json":
